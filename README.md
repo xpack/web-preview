@@ -1,4 +1,3 @@
-# preview.git
 
 A placeholder to experiment with new versions of the xPack web site.
 
