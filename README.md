@@ -9,7 +9,7 @@ By default it is disabled (this content is shown); to make it visible
 change the **Settings** -> **GitHub Pages** selection from 
 `master branch` to `gh-pages branch`.
 
-The preview URL is: https://xpack.github.io/preview/
+The preview URL is: [https://xpack.github.io/preview/](https://xpack.github.io/preview/)
 
-The GitHub project URL is: https://github.com/xpack/preview
+The GitHub project URL is: [https://github.com/xpack/preview](https://github.com/xpack/preview)
 
