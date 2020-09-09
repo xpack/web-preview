@@ -9,8 +9,28 @@
 <title>xpm run-script | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>xpm run-script</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="xpm run-script" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/xpm/cli/run-script/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/xpm/cli/run-script/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-10-09T09:57:00+00:00" />
+<script type="application/ld+json">
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","@type":"BlogPosting","headline":"xpm run-script","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2017-10-09T09:57:00+00:00","url":"https://xpack.github.io/web-preview/xpm/cli/run-script/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/cli/run-script/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -394,37 +414,37 @@ $('#toc').on('click', 'a', function() {
 
    <h2 id="synopsis">Synopsis</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xpm run-script [options...] [&lt;command&gt;] [-- &lt;script args&gt;]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xpm run-script [options...] [&lt;command&gt;] [-- &lt;script args&gt;]
 </code></pre></div></div>
 
 <p>Aliases:</p>
 <ul>
-  <li><code class="highlighter-rouge">run</code></li>
-  <li><code class="highlighter-rouge">rum</code></li>
+  <li><code class="language-plaintext highlighter-rouge">run</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rum</code></li>
 </ul>
 
 <h2 id="description">Description</h2>
 
-<p>This runs an arbitrary command listed in the <code class="highlighter-rouge">scripts</code> object
-in <code class="highlighter-rouge">package.json</code>.</p>
+<p>This runs an arbitrary command listed in the <code class="language-plaintext highlighter-rouge">scripts</code> object
+in <code class="language-plaintext highlighter-rouge">package.json</code>.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"h1b"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"echo </span><span class="se">\"</span><span class="s2">Error: no test specified</span><span class="se">\"</span><span class="s2"> &amp;&amp; exit 1"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"build"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xmake build -- all"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"clean"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xmake build -- clean"</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"h1b"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"echo </span><span class="se">\"</span><span class="s2">Error: no test specified</span><span class="se">\"</span><span class="s2"> &amp;&amp; exit 1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"build"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xmake build -- all"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"clean"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xmake build -- clean"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
+  </span><span class="nl">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
 <p>Options passed after the double dash separator are not processed
 but appended <em>as is</em> at the end of the command string.</p>
 
-<p>Before creating new processes to run the comman, <code class="highlighter-rouge">xpm run</code> prepends
-<code class="highlighter-rouge">xpacks/.bin:node_modules/.bin</code> to the environment <code class="highlighter-rouge">PATH</code>.</p>
+<p>Before creating new processes to run the comman, <code class="language-plaintext highlighter-rouge">xpm run</code> prepends
+<code class="language-plaintext highlighter-rouge">xpacks/.bin:node_modules/.bin</code> to the environment <code class="language-plaintext highlighter-rouge">PATH</code>.</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This has the effect that all
 binaries provided by locally-installed
@@ -433,9 +453,9 @@ present in the PATH.</div>
 
 <h2 id="options">Options</h2>
 
-<h3 id="help---help">Help (<code class="highlighter-rouge">--help</code>)</h3>
+<h3 id="help---help">Help (<code class="language-plaintext highlighter-rouge">--help</code>)</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ xpm run-script --help
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ xpm run-script --help
 
 xPack manager - run package specific script
 Usage: xpm run-script [options...] [&lt;command&gt;] [-- &lt;script args&gt;]
@@ -502,7 +522,7 @@ $
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Dec 6, 2019<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -522,7 +542,16 @@ $
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

@@ -9,8 +9,28 @@
 <title>GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-3-20180506 released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-3-20180506 released</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-3-20180506 released" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Version v7.2.0-3-20180506 is a maintenance release of GNU MCU Eclipse RISC-V Embedded GCC; it updates to the latest RISC-V sources and the build process was improved, to add gdb-py and to support even older GNU/Linux machines and processors." />
+<meta property="og:description" content="Version v7.2.0-3-20180506 is a maintenance release of GNU MCU Eclipse RISC-V Embedded GCC; it updates to the latest RISC-V sources and the build process was improved, to add gdb-py and to support even older GNU/Linux machines and processors." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2018/05/06/riscv-none-gcc-v7-2-0-3-20180506-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2018/05/06/riscv-none-gcc-v7-2-0-3-20180506-released/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-06T11:19:00+00:00" />
+<script type="application/ld+json">
+{"description":"Version v7.2.0-3-20180506 is a maintenance release of GNU MCU Eclipse RISC-V Embedded GCC; it updates to the latest RISC-V sources and the build process was improved, to add gdb-py and to support even older GNU/Linux machines and processors.","@type":"BlogPosting","headline":"GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-3-20180506 released","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2018-05-06T11:19:00+00:00","url":"https://xpack.github.io/web-preview/blog/2018/05/06/riscv-none-gcc-v7-2-0-3-20180506-released/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2018/05/06/riscv-none-gcc-v7-2-0-3-20180506-released/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -545,7 +565,7 @@
 
         <p>Version v7.2.0-3-20180506 is a maintenance release of <strong>GNU MCU Eclipse 
 RISC-V Embedded GCC</strong>; it updates to the latest RISC-V sources and the 
-build process was improved, to add <code class="highlighter-rouge">gdb-py</code> and to support even older 
+build process was improved, to add <code class="language-plaintext highlighter-rouge">gdb-py</code> and to support even older 
 GNU/Linux machines and processors.</p>
 
 <p><a href="https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v7.2.0-3-20180506/">Binary files »</a></p>
@@ -556,17 +576,17 @@ GNU/Linux machines and processors.</p>
 official <a href="https://github.com/riscv/riscv-gcc">RISC-V source files</a> 
 maintained by <a href="https://www.sifive.com">SiFive</a>.</p>
 
-<p>By the date of this release, the <code class="highlighter-rouge">riscv-gcc-7.3.0</code> branch is not yet 
+<p>By the date of this release, the <code class="language-plaintext highlighter-rouge">riscv-gcc-7.3.0</code> branch is not yet 
 stable, thus the current version is still based on GCC 7.2, using the 
 following commits:</p>
 
 <ul>
   <li>the <a href="https://github.com/riscv/riscv-gcc">riscv/riscv-gcc</a> project, 
-branch <code class="highlighter-rouge">riscv-gcc-7.2.0</code>, commit
+branch <code class="language-plaintext highlighter-rouge">riscv-gcc-7.2.0</code>, commit
 <a href="https://github.com/gnu-mcu-eclipse/riscv-none-gcc/commit/36e932c683490ddfa5225ad8d842b002a8a74ed4">36e932c</a>
 from from Jan 16th, 2018</li>
   <li>the <a href="https://github.com/riscv/riscv-binutils-gdb">riscv/riscv-binutils-gdb</a> 
-project, branch <code class="highlighter-rouge">riscv-binutils-2.29</code>, commit 
+project, branch <code class="language-plaintext highlighter-rouge">riscv-binutils-2.29</code>, commit 
 <a href="https://github.com/gnu-mcu-eclipse/riscv-binutils-gdb/commit/f60a065a25cc54169a34ed351931097a44703a5c">f60a065</a>
 from May 3rd, 2018</li>
   <li>the <a href="https://github.com/riscv/riscv-newlib">riscv/riscv-newlib</a> project,
@@ -576,14 +596,14 @@ from Feb 27th, 2018</li>
 
 <h2 id="improvements">Improvements</h2>
 
-<p>All architectures, ABIs and libraries supported by the <code class="highlighter-rouge">riscv64-unknown-elf</code> 
+<p>All architectures, ABIs and libraries supported by the <code class="language-plaintext highlighter-rouge">riscv64-unknown-elf</code> 
 toolchain are also supported, with the following improvements:</p>
 
 <ul>
-  <li>a newer <code class="highlighter-rouge">newlib</code> was included, which supports the ‘underscore’ syscall functions</li>
-  <li>the mandatory reference to <code class="highlighter-rouge">libgloss</code> in the linker configuration was removed</li>
-  <li>the <code class="highlighter-rouge">march=rv32imaf/mabi=ilp32f</code> library was added to the list of multilibs</li>
-  <li>support for <code class="highlighter-rouge">newlib-nano</code> was added</li>
+  <li>a newer <code class="language-plaintext highlighter-rouge">newlib</code> was included, which supports the ‘underscore’ syscall functions</li>
+  <li>the mandatory reference to <code class="language-plaintext highlighter-rouge">libgloss</code> in the linker configuration was removed</li>
+  <li>the <code class="language-plaintext highlighter-rouge">march=rv32imaf/mabi=ilp32f</code> library was added to the list of multilibs</li>
+  <li>support for <code class="language-plaintext highlighter-rouge">newlib-nano</code> was added</li>
   <li>the standard documentation, in PDF and HTML, was added</li>
 </ul>
 
@@ -604,9 +624,9 @@ page.</p>
 <p>The toolchain is also available as an 
 <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc">xPack</a> 
 and can be conveniently installed with 
-<a href="https://www.npmjs.com/package/xpm"><code class="highlighter-rouge">xpm</code></a>:</p>
+<a href="https://www.npmjs.com/package/xpm"><code class="language-plaintext highlighter-rouge">xpm</code></a>:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @gnu-mcu-eclipse/riscv-none-gcc
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @gnu-mcu-eclipse/riscv-none-gcc
 </code></pre></div></div>
 
 <p>This installs the latest available version.</p>
@@ -623,11 +643,11 @@ project.</p>
 functional for 64-bit devices, the build fails (fixed in 7.2.0-4):</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locale.c:(.text.__locale_ctype_ptr+0x8): relocation truncated to fit: R_RISCV_HI20 against `.LANCHOR0'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locale.c:(.text.__locale_ctype_ptr+0x8): relocation truncated to fit: R_RISCV_HI20 against `.LANCHOR0'
 </code></pre></div></div>
 
 <ul>
-  <li>the <code class="highlighter-rouge">libnosys</code> library does not export the correct underscore symbols.</li>
+  <li>the <code class="language-plaintext highlighter-rouge">libnosys</code> library does not export the correct underscore symbols.</li>
 </ul>
 
 <h2 id="checksums">Checksums</h2>
@@ -687,7 +707,7 @@ gnu-mcu-eclipse-riscv-none-gcc-7.2.0-3-20180506-1300-win64.zip
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 16, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -707,7 +727,16 @@ gnu-mcu-eclipse-riscv-none-gcc-7.2.0-3-20180506-1300-win64.zip
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

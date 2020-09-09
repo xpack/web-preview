@@ -9,8 +9,28 @@
 <title>GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.2 20190119 released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.2 20190119 released</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.2 20190119 released" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Version v8.2.1-1.2 20190119 is a maintenance release of GNU MCU Eclipse ARM Embedded GCC that fixes the 32-bit objcopy bug present in the previous release." />
+<meta property="og:description" content="Version v8.2.1-1.2 20190119 is a maintenance release of GNU MCU Eclipse ARM Embedded GCC that fixes the 32-bit objcopy bug present in the previous release." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2019/01/19/arm-none-eabi-gcc-v8-2-1-1-2-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2019/01/19/arm-none-eabi-gcc-v8-2-1-1-2-released/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-19T18:46:00+00:00" />
+<script type="application/ld+json">
+{"description":"Version v8.2.1-1.2 20190119 is a maintenance release of GNU MCU Eclipse ARM Embedded GCC that fixes the 32-bit objcopy bug present in the previous release.","@type":"BlogPosting","headline":"GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.2 20190119 released","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2019-01-19T18:46:00+00:00","url":"https://xpack.github.io/web-preview/blog/2019/01/19/arm-none-eabi-gcc-v8-2-1-1-2-released/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2019/01/19/arm-none-eabi-gcc-v8-2-1-1-2-released/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -566,9 +586,9 @@ present in the previous release.</p>
 <p>This release follows the official 
 <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm">GNU Arm Embedded Toolchain</a> 
 <strong>8-2018-q4-major</strong> release from December 20, 2018 and it is based on the 
-<code class="highlighter-rouge">gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2</code> source invariant.</p>
+<code class="language-plaintext highlighter-rouge">gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2</code> source invariant.</p>
 
-<p>The patch to fix <code class="highlighter-rouge">objcopy</code> is from <a href="https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=commitdiff;h=a9859e01726d085db79cff88550fdb38e2434e42;hp=171b8e19575654ab32321eb99f3fd112663ae7fa">git</a>.</p>
+<p>The patch to fix <code class="language-plaintext highlighter-rouge">objcopy</code> is from <a href="https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=commitdiff;h=a9859e01726d085db79cff88550fdb38e2434e42;hp=171b8e19575654ab32321eb99f3fd112663ae7fa">git</a>.</p>
 
 <h2 id="binaries">Binaries</h2>
 
@@ -590,9 +610,9 @@ page.</p>
 <p>The toolchain is also available as an 
 <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc">xPack</a> 
 and can be conveniently installed with 
-<a href="https://www.npmjs.com/package/xpm"><code class="highlighter-rouge">xpm</code></a>:</p>
+<a href="https://www.npmjs.com/package/xpm"><code class="language-plaintext highlighter-rouge">xpm</code></a>:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @gnu-mcu-eclipse/arm-none-eabi-gcc
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @gnu-mcu-eclipse/arm-none-eabi-gcc
 </code></pre></div></div>
 
 <p>This installs the latest available version.</p>
@@ -665,7 +685,7 @@ gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.2-20190119-1237-win64.zip
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 16, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -685,7 +705,16 @@ gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.2-20190119-1237-win64.zip
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

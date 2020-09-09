@@ -9,8 +9,28 @@
 <title>How to install the xPack Windows Build Tools binaries | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>How to install the xPack Windows Build Tools binaries</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="How to install the xPack Windows Build Tools binaries" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/windows-build-tools/install/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/windows-build-tools/install/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-07-14T13:26:00+00:00" />
+<script type="application/ld+json">
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","@type":"BlogPosting","headline":"How to install the xPack Windows Build Tools binaries","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2020-07-14T13:26:00+00:00","url":"https://xpack.github.io/web-preview/windows-build-tools/install/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/windows-build-tools/install/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -342,8 +362,8 @@ portable archives.</p>
 <h2 id="easy-install">Easy install</h2>
 
 <p>The easiest way to install Windows Build Tools is by using the <strong>binary xPack</strong>, available as
-<a href="https://www.npmjs.com/package/@xpack-dev-tools/windows-build-tools"><code class="highlighter-rouge">@xpack-dev-tools/windows-build-tools</code></a>
-from the <a href="https://www.npmjs.com"><code class="highlighter-rouge">npmjs.com</code></a> registry.</p>
+<a href="https://www.npmjs.com/package/@xpack-dev-tools/windows-build-tools"><code class="language-plaintext highlighter-rouge">@xpack-dev-tools/windows-build-tools</code></a>
+from the <a href="https://www.npmjs.com"><code class="language-plaintext highlighter-rouge">npmjs.com</code></a> registry.</p>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -358,24 +378,24 @@ follow the instructions from the
 <p>With xpm available, installing
 the latest version of the package is quite easy:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @xpack-dev-tools/windows-build-tools@latest
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @xpack-dev-tools/windows-build-tools@latest
 </code></pre></div></div>
 
 <p>This command will always install the latest available version,
 in the central xPacks repository, which is a platform dependent folder
-(check the output of the <code class="highlighter-rouge">xpm</code> command or the actual folder used on
+(check the output of the <code class="language-plaintext highlighter-rouge">xpm</code> command or the actual folder used on
 your platform).</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> 
 The install location can be configured using the
-<code class="highlighter-rouge">XPACKS_REPO_FOLDER</code> environment variable; for more details please check the
+<code class="language-plaintext highlighter-rouge">XPACKS_REPO_FOLDER</code> environment variable; for more details please check the
 <a href="/web-preview/xpm/folders/">xpm folders</a> page.
 </div>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The archive content is unpacked in a folder
-named <code class="highlighter-rouge">.content</code>. On some platforms
+named <code class="language-plaintext highlighter-rouge">.content</code>. On some platforms
 this might be hidden for normal browsing, and require
-separate options (like <code class="highlighter-rouge">ls -A</code>) or, in file browsers, to enable
+separate options (like <code class="language-plaintext highlighter-rouge">ls -A</code>) or, in file browsers, to enable
 settings like <strong>Show Hidden Files</strong>.</div>
 
 <p>xPacks aware tools, like the <strong>Eclipse Embedded CDT plug-ins</strong> automatically
@@ -383,7 +403,7 @@ identify binaries installed with
 xpm and provide a convenient method to manage paths.</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Automatic
-path discovery for the packages from the new <code class="highlighter-rouge">@xpack-dev-tools</code> scope was
+path discovery for the packages from the new <code class="language-plaintext highlighter-rouge">@xpack-dev-tools</code> scope was
 added to <strong>GNU MCU Eclipse plug-ins</strong> with v4.x; update
 older versions or configure the path manually.</div>
 
@@ -391,11 +411,11 @@ older versions or configure the path manually.</div>
 
 <p>To remove the installed xPack, the command is similar:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm uninstall <span class="nt">--global</span> @xpack-dev-tools/windows-build-tools
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm uninstall <span class="nt">--global</span> @xpack-dev-tools/windows-build-tools
 </code></pre></div></div>
 
 <p>(Note: not yet implemented. As a temporary workaround, simply remove the
-<code class="highlighter-rouge">xPacks/@xpack-dev-tools/windows-build-tools</code> folder, or one of the versioned
+<code class="language-plaintext highlighter-rouge">xPacks/@xpack-dev-tools/windows-build-tools</code> folder, or one of the versioned
 subfolders.)</p>
 
 <h2 id="manual-install">Manual install</h2>
@@ -421,38 +441,38 @@ page.</p>
 Download the latest version named like:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">xpack-windows-build-tools-2.12.2-win32-x64.zip</code></li>
-  <li><code class="highlighter-rouge">xpack-windows-build-tools-2.12.2-win32-x32.zip</code></li>
+  <li><code class="language-plaintext highlighter-rouge">xpack-windows-build-tools-2.12.2-win32-x64.zip</code></li>
+  <li><code class="language-plaintext highlighter-rouge">xpack-windows-build-tools-2.12.2-win32-x32.zip</code></li>
 </ul>
 
-<p>Select the <code class="highlighter-rouge">-x64</code> file for 64-bit Windows machines and the <code class="highlighter-rouge">-x32</code> file
+<p>Select the <code class="language-plaintext highlighter-rouge">-x64</code> file for 64-bit Windows machines and the <code class="language-plaintext highlighter-rouge">-x32</code> file
 for 32-bit Windows machines.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In case you wonder where the suffix comes
-from, it is exactly the Node.js <code class="highlighter-rouge">process.platform</code> and <code class="highlighter-rouge">process.arch</code>.
-The <code class="highlighter-rouge">win32</code> part is confusing, but we have to leave with it.</div>
+from, it is exactly the Node.js <code class="language-plaintext highlighter-rouge">process.platform</code> and <code class="language-plaintext highlighter-rouge">process.arch</code>.
+The <code class="language-plaintext highlighter-rouge">win32</code> part is confusing, but we have to leave with it.</div>
 
 <h3 id="unpack">Unpack</h3>
 
 <p>Unpack the archive and copy it into the
-<code class="highlighter-rouge">%userprofile%\AppData\Roaming\xPacks\windows-build-tools</code>
-(for example <code class="highlighter-rouge">C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools</code>) folder;
-according to Microsoft, <code class="highlighter-rouge">AppData\Roaming</code> is the recommended location for
+<code class="language-plaintext highlighter-rouge">%userprofile%\AppData\Roaming\xPacks\windows-build-tools</code>
+(for example <code class="language-plaintext highlighter-rouge">C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools</code>) folder;
+according to Microsoft, <code class="language-plaintext highlighter-rouge">AppData\Roaming</code> is the recommended location for
 installing user specific packages.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For manual installs, the recommended
 install location is slightly different from the xpm install folders,
-which use the scope (like <code class="highlighter-rouge">@xpack-dev-tools</code>) to group different tools,
-and <code class="highlighter-rouge">.content</code> to store the unpacked archive.</div>
+which use the scope (like <code class="language-plaintext highlighter-rouge">@xpack-dev-tools</code>) to group different tools,
+and <code class="language-plaintext highlighter-rouge">.content</code> to store the unpacked archive.</div>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Although perfectly possible to
 install Windows Build Tools in any folder, it is highly recommended to use this
 path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location.</div>
 
-<p>To check if <code class="highlighter-rouge">make</code> starts, use the following command:</p>
+<p>To check if <code class="language-plaintext highlighter-rouge">make</code> starts, use the following command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\ilg&gt;C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\ilg&gt;C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32
 Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -516,7 +536,7 @@ There is NO WARRANTY, to the extent permitted by law.
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 13, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -536,7 +556,16 @@ There is NO WARRANTY, to the extent permitted by law.
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

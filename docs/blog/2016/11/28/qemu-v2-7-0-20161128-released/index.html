@@ -9,8 +9,28 @@
 <title>GNU ARM Eclipse QEMU v2.7.0-20161128* released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>GNU ARM Eclipse QEMU v2.7.0-20161128* released</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="GNU ARM Eclipse QEMU v2.7.0-20161128* released" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Version 2.7.0-201611282115 is a new release, adding support for active graphical buttons." />
+<meta property="og:description" content="Version 2.7.0-201611282115 is a new release, adding support for active graphical buttons." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2016/11/28/qemu-v2-7-0-20161128-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2016/11/28/qemu-v2-7-0-20161128-released/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-11-28T20:19:00+00:00" />
+<script type="application/ld+json">
+{"description":"Version 2.7.0-201611282115 is a new release, adding support for active graphical buttons.","@type":"BlogPosting","headline":"GNU ARM Eclipse QEMU v2.7.0-20161128* released","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2016-11-28T20:19:00+00:00","url":"https://xpack.github.io/web-preview/blog/2016/11/28/qemu-v2-7-0-20161128-released/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2016/11/28/qemu-v2-7-0-20161128-released/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -573,15 +593,15 @@
 
 <ul>
   <li>the most compelling new feature is <strong>the addition of active graphical buttons</strong>; the rectangles around the buttons are sensitive, and moving the mouse over them <strong>changes the cursor to a hand</strong>; clicking the buttons is also functional, the <strong>Reset</strong> button triggers a board reset; the user button is also connected to the correspondig GPIO pin, and can be checked by <strong>reading the GPIO pin input</strong> value; it is also possible to configure the EXTI device to <strong>trigger interrupts on GPIO pin changes</strong>;</li>
-  <li>ths <strong>STM32</strong> implementation was extended to support the <code class="highlighter-rouge">EXTI</code> and the <code class="highlighter-rouge">SYSCFG</code> peripherals; now it is possible to trigger interrupts on GPIO pin changes;</li>
-  <li>the debug options were extended with two new trace options, <code class="highlighter-rouge">func</code> and <code class="highlighter-rouge">mr</code> (use them after <code class="highlighter-rouge">-d</code>).</li>
+  <li>ths <strong>STM32</strong> implementation was extended to support the <code class="language-plaintext highlighter-rouge">EXTI</code> and the <code class="language-plaintext highlighter-rouge">SYSCFG</code> peripherals; now it is possible to trigger interrupts on GPIO pin changes;</li>
+  <li>the debug options were extended with two new trace options, <code class="language-plaintext highlighter-rouge">func</code> and <code class="language-plaintext highlighter-rouge">mr</code> (use them after <code class="language-plaintext highlighter-rouge">-d</code>).</li>
 </ul>
 
 <h2 id="known-problems">Known problems</h2>
 
 <ul>
   <li>the graphical buttons are currently available only for the STM32F4DISCOVERY board (the user button is connected to GPIO A0); more boards will be added in future versions;</li>
-  <li>Ctrl-C does not interrupt the execution if the <code class="highlighter-rouge">--nographic</code> option is used.</li>
+  <li>Ctrl-C does not interrupt the execution if the <code class="language-plaintext highlighter-rouge">--nographic</code> option is used.</li>
 </ul>
 
 <h2 id="how-to-test-the-buttons">How to test the buttons</h2>
@@ -590,7 +610,7 @@
 
 <p><a href="https://github.com/gnu-mcu-eclipse/eclipse-qemu-test-projects/tree/master/f407-disc-birq">https://github.com/gnu-mcu-eclipse/eclipse-qemu-test-projects/tree/master/f407-disc-birq</a></p>
 
-<p>To use it, clone the <a href="https://github.com/gnu-mcu-eclipse/eclipse-qemu-test-projects">gnuarmeclipse/eclipse-qemu-test-projects</a> git and import the <code class="highlighter-rouge">f407-disc-birq</code> project. Build and run the application; the four coloured LEDs will lit for a second, then turn off; click the blue button; the LEDs will lit one by one. Click the black button; the board will reset.</p>
+<p>To use it, clone the <a href="https://github.com/gnu-mcu-eclipse/eclipse-qemu-test-projects">gnuarmeclipse/eclipse-qemu-test-projects</a> git and import the <code class="language-plaintext highlighter-rouge">f407-disc-birq</code> project. Build and run the application; the four coloured LEDs will lit for a second, then turn off; click the blue button; the LEDs will lit one by one. Click the black button; the board will reset.</p>
 
 <h2 id="download">Download</h2>
 
@@ -652,7 +672,7 @@ gnuarmeclipse-qemu-win64-2.7.0-201611282115-dev-setup.exe
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 16, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -672,7 +692,16 @@ gnuarmeclipse-qemu-win64-2.7.0-201611282115-dev-setup.exe
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

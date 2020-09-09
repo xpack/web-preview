@@ -9,8 +9,28 @@
 <title>xPack GNU Arm Embedded GCC v9.3.1-1.2 released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>xPack GNU Arm Embedded GCC v9.3.1-1.2 released</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="xPack GNU Arm Embedded GCC v9.3.1-1.2 released" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is the multi-platform xPack version of the GNU Arm Embedded Toolchain." />
+<meta property="og:description" content="This is the multi-platform xPack version of the GNU Arm Embedded Toolchain." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2020/07/27/arm-none-eabi-gcc-v9-3-1-1-2-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2020/07/27/arm-none-eabi-gcc-v9-3-1-1-2-released/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-07-27T08:23:00+00:00" />
+<script type="application/ld+json">
+{"description":"This is the multi-platform xPack version of the GNU Arm Embedded Toolchain.","@type":"BlogPosting","headline":"xPack GNU Arm Embedded GCC v9.3.1-1.2 released","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2020-07-27T08:23:00+00:00","url":"https://xpack.github.io/web-preview/blog/2020/07/27/arm-none-eabi-gcc-v9-3-1-1-2-released/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2020/07/27/arm-none-eabi-gcc-v9-3-1-1-2-released/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -582,19 +602,19 @@ various platforms are presented in the separate
 <h3 id="easy-install">Easy install</h3>
 
 <p>The easiest way to install GNU Arm Embedded GCC is with
-<a href="/web-preview/xpm/"><code class="highlighter-rouge">xpm</code></a>
+<a href="/web-preview/xpm/"><code class="language-plaintext highlighter-rouge">xpm</code></a>
 by using the <strong>binary xPack</strong>, available as
-<a href="https://www.npmjs.com/package/@xpack-dev-tools/arm-none-eabi-gcc"><code class="highlighter-rouge">@xpack-dev-tools/arm-none-eabi-gcc</code></a>
-from the <a href="https://www.npmjs.com"><code class="highlighter-rouge">npmjs.com</code></a> registry.</p>
+<a href="https://www.npmjs.com/package/@xpack-dev-tools/arm-none-eabi-gcc"><code class="language-plaintext highlighter-rouge">@xpack-dev-tools/arm-none-eabi-gcc</code></a>
+from the <a href="https://www.npmjs.com"><code class="language-plaintext highlighter-rouge">npmjs.com</code></a> registry.</p>
 
 <p>To install the latest version available, use:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @xpack-dev-tools/arm-none-eabi-gcc@latest
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @xpack-dev-tools/arm-none-eabi-gcc@latest
 </code></pre></div></div>
 
 <p>To install this specific version, use:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @xpack-dev-tools/arm-none-eabi-gcc@9.3.1-1.2.1
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @xpack-dev-tools/arm-none-eabi-gcc@9.3.1-1.2.1
 </code></pre></div></div>
 
 <h2 id="compliance">Compliance</h2>
@@ -602,22 +622,22 @@ from the <a href="https://www.npmjs.com"><code class="highlighter-rouge">npmjs.c
 <p>This release follows the official
 <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm">GNU Arm Embedded Toolchain</a>
 <strong>9-2020-q2-update</strong> release June 01, 2020 and it is based on the
-<code class="highlighter-rouge">gcc-arm-none-eabi-9-2020-q2-update-src.tar.bz2</code> source invariant.</p>
+<code class="language-plaintext highlighter-rouge">gcc-arm-none-eabi-9-2020-q2-update-src.tar.bz2</code> source invariant.</p>
 
 <p>For more details see the original Arm release text files:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">distro-info/arm-readme.txt</code></li>
-  <li><code class="highlighter-rouge">distro-info/arm-release.txt</code></li>
+  <li><code class="language-plaintext highlighter-rouge">distro-info/arm-readme.txt</code></li>
+  <li><code class="language-plaintext highlighter-rouge">distro-info/arm-release.txt</code></li>
 </ul>
 
 <h2 id="supported-libraries">Supported libraries</h2>
 
 <p>The supported libraries are:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> arm-none-eabi-gcc <span class="nt">-print-multi-lib</span>
-<span class="gp">.;</span>
-<span class="gp">arm/v5te/softfp;</span>@marm@march<span class="o">=</span>armv5te+fp@mfloat-abi<span class="o">=</span>softfp
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>arm-none-eabi-gcc <span class="nt">-print-multi-lib</span>
+<span class="gp">.;</span><span class="w">
+</span><span class="gp">arm/v5te/softfp;</span>@marm@march<span class="o">=</span>armv5te+fp@mfloat-abi<span class="o">=</span>softfp
 <span class="gp">arm/v5te/hard;</span>@marm@march<span class="o">=</span>armv5te+fp@mfloat-abi<span class="o">=</span>hard
 <span class="gp">thumb/nofp;</span>@mthumb@mfloat-abi<span class="o">=</span>soft
 <span class="gp">thumb/v7/nofp;</span>@mthumb@march<span class="o">=</span>armv7@mfloat-abi<span class="o">=</span>soft
@@ -650,19 +670,19 @@ without C++ exceptions support; fixed.</li>
 
 <h2 id="enhancements">Enhancements</h2>
 
-<p>The relative path in binaries was changed from <code class="highlighter-rouge">DT_RUNPATH</code> to <code class="highlighter-rouge">DT_RPATH</code>;
+<p>The relative path in binaries was changed from <code class="language-plaintext highlighter-rouge">DT_RUNPATH</code> to <code class="language-plaintext highlighter-rouge">DT_RPATH</code>;
 this improves reliability, since the binaries can no longer be affected
-by custom <code class="highlighter-rouge">LD_LIBRARY_PATH</code>, as when using <code class="highlighter-rouge">DT_RUNPATH</code>.</p>
+by custom <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code>, as when using <code class="language-plaintext highlighter-rouge">DT_RUNPATH</code>.</p>
 
 <h2 id="changes">Changes</h2>
 
 <p>There should be no functional changes.</p>
 
 <p>Starting with 9.x, the new archives are created with
-a single folder named <code class="highlighter-rouge">xpack-arm-none-eabi-gcc-9.3.1-1.2</code> instead of
-the hierarchical <code class="highlighter-rouge">xPacks/arm-none-eabi-gcc/9.3.1-1.2</code>. This internal
+a single folder named <code class="language-plaintext highlighter-rouge">xpack-arm-none-eabi-gcc-9.3.1-1.2</code> instead of
+the hierarchical <code class="language-plaintext highlighter-rouge">xPacks/arm-none-eabi-gcc/9.3.1-1.2</code>. This internal
 folder name is used consistently on all platforms. The archive extension
-was changed to <code class="highlighter-rouge">.tar.gz</code>.</p>
+was changed to <code class="language-plaintext highlighter-rouge">.tar.gz</code>.</p>
 
 <p>With these changes, the archives can now be used directly in other
 development environments (like Arduino), without having to repack them.</p>
@@ -671,7 +691,7 @@ development environments (like Arduino), without having to repack them.</p>
 
 <p>Support for Python scripting was added to GDB. This distribution provides
 two separate binaries,
-<code class="highlighter-rouge">arm-none-eabi-gdb-py</code> with Python 2.7 support, and <code class="highlighter-rouge">arm-none-eabi-gdb-py3</code> with
+<code class="language-plaintext highlighter-rouge">arm-none-eabi-gdb-py</code> with Python 2.7 support, and <code class="language-plaintext highlighter-rouge">arm-none-eabi-gdb-py3</code> with
 support for Python 3.7.</p>
 
 <p>Mode details on the prerequisites of running GDB with Python support are
@@ -680,7 +700,7 @@ available from
 
 <h2 id="text-user-interface-tui">Text User Interface (TUI)</h2>
 
-<p>Support for TUI was added to GDB. The <code class="highlighter-rouge">ncurses</code> library (v6.2) was added to
+<p>Support for TUI was added to GDB. The <code class="language-plaintext highlighter-rouge">ncurses</code> library (v6.2) was added to
 the distribution.</p>
 
 <p>Note: TUI is not available on Windows.</p>
@@ -700,26 +720,26 @@ runtime to be present on the host.</p>
 <p>All dependencies that are build as shared libraries are copied locally in the
 same folder as the executable.</p>
 
-<h3 id="dt_rpath-and-ld_library_path"><code class="highlighter-rouge">DT_RPATH</code> and <code class="highlighter-rouge">LD_LIBRARY_PATH</code></h3>
+<h3 id="dt_rpath-and-ld_library_path"><code class="language-plaintext highlighter-rouge">DT_RPATH</code> and <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code></h3>
 
 <p>On GNU/Linux the binaries are adjusted to use a relative path:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> readelf <span class="nt">-d</span> library.so | <span class="nb">grep </span>rpath
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>readelf <span class="nt">-d</span> library.so | <span class="nb">grep </span>rpath
 <span class="gp"> 0x000000000000001d (RPATH)            Library runpath: [$</span>ORIGIN]
 </code></pre></div></div>
 
-<p>Please note that in the GNU ld.so search strategy, the <code class="highlighter-rouge">DT_RPATH</code> has
-higher priority than <code class="highlighter-rouge">LD_LIBRARY_PATH</code>, so if this later one is set
+<p>Please note that in the GNU ld.so search strategy, the <code class="language-plaintext highlighter-rouge">DT_RPATH</code> has
+higher priority than <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code>, so if this later one is set
 in the environment, it should not interfere with the xPack binaries.</p>
 
-<h3 id="executable_path"><code class="highlighter-rouge">@executable_path</code></h3>
+<h3 id="executable_path"><code class="language-plaintext highlighter-rouge">@executable_path</code></h3>
 
-<p>Similarly, on macOS, the dynamic libraries are adjusted with <code class="highlighter-rouge">otool</code> to use a
+<p>Similarly, on macOS, the dynamic libraries are adjusted with <code class="language-plaintext highlighter-rouge">otool</code> to use a
 relative path.</p>
 
 <h2 id="documentation">Documentation</h2>
 
-<p>The original PDF documentation is available in the <code class="highlighter-rouge">share/doc</code> folder.</p>
+<p>The original PDF documentation is available in the <code class="language-plaintext highlighter-rouge">share/doc</code> folder.</p>
 
 <h2 id="supported-platforms">Supported platforms</h2>
 
@@ -746,7 +766,7 @@ folder on macOS 10.10.5.</li>
 <p>The scripts used to build this distribution are in:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">distro-info/scripts</code></li>
+  <li><code class="language-plaintext highlighter-rouge">distro-info/scripts</code></li>
 </ul>
 
 <p>For the prerequisites and more details on the build procedure, please see the
@@ -780,7 +800,7 @@ executed again.</p>
 
 <p>The SHA-256 hashes for the files are:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>622a4d54cef4c88f3a2ba2fc312a9490f5c406feb2ab16e3eda3cb053c12a1bf
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>622a4d54cef4c88f3a2ba2fc312a9490f5c406feb2ab16e3eda3cb053c12a1bf
 xpack-arm-none-eabi-gcc-9.3.1-1.2-darwin-x64.tar.gz
 
 fb3258a52d09bae05f81e15c0fecde0d8930e14fda6b3dee89971b6a5c0d6f21
@@ -861,7 +881,7 @@ for the individual file counters.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 27, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -881,7 +901,16 @@ for the individual file counters.</p>
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

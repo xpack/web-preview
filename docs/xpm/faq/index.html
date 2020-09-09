@@ -9,8 +9,28 @@
 <title>FAQ | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>FAQ</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="FAQ" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/xpm/faq/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/xpm/faq/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-28T08:03:00+00:00" />
+<script type="application/ld+json">
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","@type":"BlogPosting","headline":"FAQ","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2019-06-28T08:03:00+00:00","url":"https://xpack.github.io/web-preview/xpm/faq/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/faq/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -369,13 +389,13 @@
     
 
 
-   <h3 id="the-xpm-frequently-asked-questions">The <code class="highlighter-rouge">xpm</code> Frequently Asked Questions</h3>
+   <h3 id="the-xpm-frequently-asked-questions">The <code class="language-plaintext highlighter-rouge">xpm</code> Frequently Asked Questions</h3>
 
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
       <div class="panel-heading">
           <h4 class="panel-title">
-              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-1"><code class="highlighter-rouge">static async start () ... SyntaxError: Unexpected identifier</code></a>
+              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-1"><code class="language-plaintext highlighter-rouge">static async start () ... SyntaxError: Unexpected identifier</code></a>
           </h4>
       </div>
       <div id="collapse-1" class="panel-collapse collapse noCrossRef">
@@ -383,11 +403,11 @@
               
 <p>This problem occurs usually on GNU/Linux, and is caused by trying to use
 the outdated version of Node available in the distribution, which
-does not understand the <code class="highlighter-rouge">async</code> keyword.</p>
+does not understand the <code class="language-plaintext highlighter-rouge">async</code> keyword.</p>
 
 <p>Errors may look like:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ xpm -v
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ xpm -v
 /home/ilg/opt/npm/lib/node_modules/xpm/node_modules/@ilg/cli-start-options/lib/cli-application.js:150
   static async start () {
                ^^^^^
@@ -414,7 +434,7 @@ described in the <a href="/web-preview/install/">prerequisites</a> page.</p>
   <div class="panel panel-default">
       <div class="panel-heading">
           <h4 class="panel-title">
-              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-2"><code class="highlighter-rouge">error: Cannot read property 'path' of null</code></a>
+              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-2"><code class="language-plaintext highlighter-rouge">error: Cannot read property 'path' of null</code></a>
           </h4>
       </div>
       <div id="collapse-2" class="panel-collapse collapse noCrossRef">
@@ -429,7 +449,7 @@ thus preventing the packages to be installed.</p>
 
 <p>Errors may look like:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Downloading https://github.com/gnu-mcu-eclipse/qemu/releases/download/v2.8.0-4-20190211/gnu-mcu-eclipse-qemu-2.8.0-4-20190211-0633-win64.zip...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Downloading https://github.com/gnu-mcu-eclipse/qemu/releases/download/v2.8.0-4-20190211/gnu-mcu-eclipse-qemu-2.8.0-4-20190211-0633-win64.zip...
 { Error: sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= integrity checksum failed when using sha256: wanted sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= but got sha512-k1s9UW6Zb20llIuopUwbf3D38OP1F+Nkgf3wGWwsXPwoQfhuiR89+VF3Rrf7YF20fN3tG4/3jZSC3apiHbQ6NA== sha256-ABnfxLMtY8E5KqJkrtIlPB4ML7CSFvjizCabv7i7SbU=. (9 bytes)
 ...
 Extracting 'gnu-mcu-eclipse-qemu-2.8.0-4-20190211-0633-win64.zip'...
@@ -438,7 +458,7 @@ error: Cannot read property 'path' of null
 
 <p>The solution is to configure the antivirus program to be less aggressive,
 at least for files in the
-<code class="highlighter-rouge">AppData\Roaming\xPacks</code> and <code class="highlighter-rouge">AppData\Local\Caches\xPacks</code> folders.</p>
+<code class="language-plaintext highlighter-rouge">AppData\Roaming\xPacks</code> and <code class="language-plaintext highlighter-rouge">AppData\Local\Caches\xPacks</code> folders.</p>
 
 <p>If this is not possible, temporarily disable the antivirus program.</p>
 
@@ -449,7 +469,7 @@ at least for files in the
   <div class="panel panel-default">
       <div class="panel-heading">
           <h4 class="panel-title">
-              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-3">Cannot find the <code class="highlighter-rouge">Library</code> folder (on macOS)</a>
+              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-3">Cannot find the <code class="language-plaintext highlighter-rouge">Library</code> folder (on macOS)</a>
           </h4>
       </div>
       <div id="collapse-3" class="panel-collapse collapse noCrossRef">
@@ -460,8 +480,8 @@ this folder is hidden for regular browsing in Finder.</p>
 
 <p>To make it back visible, use:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> /usr/bin/chflags nohidden ~/Library
-<span class="gp">$</span> xattr <span class="nt">-d</span> com.apple.FinderInfo ~/Library
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>/usr/bin/chflags nohidden ~/Library
+<span class="gp">$</span><span class="w"> </span>xattr <span class="nt">-d</span> com.apple.FinderInfo ~/Library
 </code></pre></div></div>
 
           </div>
@@ -471,7 +491,7 @@ this folder is hidden for regular browsing in Finder.</p>
   <div class="panel panel-default">
       <div class="panel-heading">
           <h4 class="panel-title">
-              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-4">Cannot find the <code class="highlighter-rouge">.content</code> folder (on macOS)</a>
+              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-4">Cannot find the <code class="language-plaintext highlighter-rouge">.content</code> folder (on macOS)</a>
           </h4>
       </div>
       <div id="collapse-4" class="panel-collapse collapse noCrossRef">
@@ -482,7 +502,7 @@ all folders starting with a dot are hidden for regular browsing in Finder.</p>
 
 <p>Fortunately there is a workaround for this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmd+shift+'.'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmd+shift+'.'
 </code></pre></div></div>
 
 <p>This keyboard shortcut works like a toggle, using it once makes files
@@ -533,7 +553,7 @@ using it again reverts to hiding them.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Dec 27, 2019<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -553,7 +573,16 @@ using it again reverts to hiding them.</p>
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

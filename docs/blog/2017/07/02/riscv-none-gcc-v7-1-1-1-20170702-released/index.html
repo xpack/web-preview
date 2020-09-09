@@ -9,8 +9,28 @@
 <title>GNU MCU Eclipse RISC-V Embedded GCC v7.1.1-1-20170702-* released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>GNU MCU Eclipse RISC-V Embedded GCC v7.1.1-1-20170702-* released</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="GNU MCU Eclipse RISC-V Embedded GCC v7.1.1-1-20170702-* released" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Version v7.1.1-1-20170702-0625 is the first GNU MCU Eclipse RISC-V Embedded GCC release. It includes binaries for Windows, macOS and GNU/Linux." />
+<meta property="og:description" content="Version v7.1.1-1-20170702-0625 is the first GNU MCU Eclipse RISC-V Embedded GCC release. It includes binaries for Windows, macOS and GNU/Linux." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2017/07/02/riscv-none-gcc-v7-1-1-1-20170702-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2017/07/02/riscv-none-gcc-v7-1-1-1-20170702-released/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-02T19:38:00+00:00" />
+<script type="application/ld+json">
+{"description":"Version v7.1.1-1-20170702-0625 is the first GNU MCU Eclipse RISC-V Embedded GCC release. It includes binaries for Windows, macOS and GNU/Linux.","@type":"BlogPosting","headline":"GNU MCU Eclipse RISC-V Embedded GCC v7.1.1-1-20170702-* released","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2017-07-02T19:38:00+00:00","url":"https://xpack.github.io/web-preview/blog/2017/07/02/riscv-none-gcc-v7-1-1-1-20170702-released/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2017/07/02/riscv-none-gcc-v7-1-1-1-20170702-released/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -559,7 +579,7 @@
   <li>the <a href="https://github.com/riscv/riscv-newlib">riscv/riscv-newlib</a> project, commit <a href="https://github.com/riscv/riscv-newlib/commit/ccd8a0a4ffbbc00400892334eaf64a1616302b35">ccd8a0a</a> from May 2nd, 2017</li>
 </ul>
 
-<p>The supported architectures (<code class="highlighter-rouge">-march=</code>) are:</p>
+<p>The supported architectures (<code class="language-plaintext highlighter-rouge">-march=</code>) are:</p>
 
 <ul>
   <li>rv32i[m][a][f[d]][c]</li>
@@ -568,7 +588,7 @@
   <li>rv64g[c]</li>
 </ul>
 
-<p>The supported ABIs (<code class="highlighter-rouge">-mabi=</code>) are:</p>
+<p>The supported ABIs (<code class="language-plaintext highlighter-rouge">-mabi=</code>) are:</p>
 
 <ul>
   <li>ilp32 (32-bit, soft-float)</li>
@@ -581,7 +601,7 @@
 
 <p>The supported libraries are:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>march=rv32i/mabi=ilp32
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>march=rv32i/mabi=ilp32
 march=rv32im/mabi=ilp32
 march=rv32iac/mabi=ilp32
 march=rv32imac/mabi=ilp32
@@ -598,11 +618,11 @@ march=rv64imafdc/mabi=lp64d
 
 <h2 id="newlib-nano">newlib-nano</h2>
 
-<p>The only notable addition is support for <strong>newlib-nano</strong>, using the <code class="highlighter-rouge">--specs=nano.specs</code> option. For better results, this option must be added to both compile and link time (the next release of the GNU MCU Eclipse plug-ins will add support for this).</p>
+<p>The only notable addition is support for <strong>newlib-nano</strong>, using the <code class="language-plaintext highlighter-rouge">--specs=nano.specs</code> option. For better results, this option must be added to both compile and link time (the next release of the GNU MCU Eclipse plug-ins will add support for this).</p>
 
-<p>If no syscalls are needed, <code class="highlighter-rouge">--specs=nosys.specs</code> can be used at link time to provide empty implementations for the POSIX system calls.</p>
+<p>If no syscalls are needed, <code class="language-plaintext highlighter-rouge">--specs=nosys.specs</code> can be used at link time to provide empty implementations for the POSIX system calls.</p>
 
-<p>The <em>nano</em> versions of the libraries are compiled with <code class="highlighter-rouge">-Os -mcmodel=medlow</code>, while the regular versions are compiled with <code class="highlighter-rouge">-O2 -mcmodel=medany</code>.</p>
+<p>The <em>nano</em> versions of the libraries are compiled with <code class="language-plaintext highlighter-rouge">-Os -mcmodel=medlow</code>, while the regular versions are compiled with <code class="language-plaintext highlighter-rouge">-O2 -mcmodel=medany</code>.</p>
 
 <h2 id="documentation">Documentation</h2>
 
@@ -621,8 +641,8 @@ march=rv64imafdc/mabi=lp64d
 <p>[2017-09-14 update] Soon after this release was used in real projects, it was discovered that the general configuration of the toolchain was intended more to applications that include a kernel-like environment, and less to bare-metal environments. The main problems are:</p>
 
 <ul>
-  <li>the <code class="highlighter-rouge">newlib</code> configuration does not use the <code class="highlighter-rouge">underscore</code> syscall function, but the direct names (like <code class="highlighter-rouge">write()</code> instead of <code class="highlighter-rouge">_write()</code>), calls that are always forwarded to <code class="highlighter-rouge">libgloss</code></li>
-  <li>the compiler configuration always links <code class="highlighter-rouge">libgloss</code> to the application; <code class="highlighter-rouge">libgloss</code> implements all system calls via traps to a unix like kernel.</li>
+  <li>the <code class="language-plaintext highlighter-rouge">newlib</code> configuration does not use the <code class="language-plaintext highlighter-rouge">underscore</code> syscall function, but the direct names (like <code class="language-plaintext highlighter-rouge">write()</code> instead of <code class="language-plaintext highlighter-rouge">_write()</code>), calls that are always forwarded to <code class="language-plaintext highlighter-rouge">libgloss</code></li>
+  <li>the compiler configuration always links <code class="language-plaintext highlighter-rouge">libgloss</code> to the application; <code class="language-plaintext highlighter-rouge">libgloss</code> implements all system calls via traps to a unix like kernel.</li>
 </ul>
 
 <p>Both problems were fixed in the <a href="/web-preview/blog/2017/09/13/riscv-none-gcc-v7-1-1-2-20170912-released/">v7.1.1-2-20170912</a> release.</p>
@@ -693,7 +713,7 @@ gnu-mcu-eclipse-riscv-none-gcc-7.1.1-1-20170702-0625-win64.zip
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 16, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -713,7 +733,16 @@ gnu-mcu-eclipse-riscv-none-gcc-7.1.1-1-20170702-0625-win64.zip
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

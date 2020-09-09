@@ -9,8 +9,28 @@
 <title>xPack GNU RISC-V Embedded GCC v8.3.0-1.1 released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>xPack GNU RISC-V Embedded GCC v8.3.0-1.1 released</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="xPack GNU RISC-V Embedded GCC v8.3.0-1.1 released" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Download" />
+<meta property="og:description" content="Download" />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2019/11/01/riscv-none-embed-gcc-v8-3-0-1-1-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2019/11/01/riscv-none-embed-gcc-v8-3-0-1-1-released/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-01T18:17:00+00:00" />
+<script type="application/ld+json">
+{"description":"Download","@type":"BlogPosting","headline":"xPack GNU RISC-V Embedded GCC v8.3.0-1.1 released","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2019-11-01T18:17:00+00:00","url":"https://xpack.github.io/web-preview/blog/2019/11/01/riscv-none-embed-gcc-v8-3-0-1-1-released/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2019/11/01/riscv-none-embed-gcc-v8-3-0-1-1-released/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -559,19 +579,19 @@ various platforms are presented in the separate
 <h3 id="easy-install">Easy install</h3>
 
 <p>The easiest way to install GNU RISC-V Embedded GCC is with
-<a href="/web-preview/xpm/"><code class="highlighter-rouge">xpm</code></a>
+<a href="/web-preview/xpm/"><code class="language-plaintext highlighter-rouge">xpm</code></a>
 by using the <strong>binary xPack</strong>, available as
-<a href="https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc"><code class="highlighter-rouge">@xpack-dev-tools/riscv-none-embed-gcc</code></a>
-from the <a href="https://www.npmjs.com"><code class="highlighter-rouge">npmjs.com</code></a> registry.</p>
+<a href="https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc"><code class="language-plaintext highlighter-rouge">@xpack-dev-tools/riscv-none-embed-gcc</code></a>
+from the <a href="https://www.npmjs.com"><code class="language-plaintext highlighter-rouge">npmjs.com</code></a> registry.</p>
 
 <p>To install the latest version available, use:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @xpack-dev-tools/riscv-none-embed-gcc@latest
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @xpack-dev-tools/riscv-none-embed-gcc@latest
 </code></pre></div></div>
 
 <p>To install this specific version, use:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @xpack-dev-tools/riscv-none-embed-gcc@8.3.0-1.1.1
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @xpack-dev-tools/riscv-none-embed-gcc@8.3.0-1.1.1
 </code></pre></div></div>
 
 <h2 id="compliance">Compliance</h2>
@@ -589,30 +609,30 @@ even larger multilib set).</p>
 
 <ul>
   <li>the <a href="https://github.com/sifive/riscv-binutils-gdb">sifive/riscv-binutils-gdb</a>
-project, branch <code class="highlighter-rouge">sifive-binutils-2.32</code>, commit
+project, branch <code class="language-plaintext highlighter-rouge">sifive-binutils-2.32</code>, commit
 <a href="https://github.com/sifive/riscv-binutils-gdb/tree/03d23d58701bdd425c613b0be2d458bcde46912b">03d23d5</a>
 from 2 September 2019</li>
   <li>the <a href="https://github.com/sifive/riscv-gcc">sifive/riscv-gcc</a> project,
-branch <code class="highlighter-rouge">sifive-gcc-8.3.0</code>, commit
+branch <code class="language-plaintext highlighter-rouge">sifive-gcc-8.3.0</code>, commit
 <a href="https://github.com/sifive/riscv-gcc/tree/e195042babe2dc30d9fabb88d336d8c8679b3702">e195042</a>
 from from 7 Aug 2019</li>
-  <li>the <a href="https://github.com/sifive/riscv-newlib">sifive/riscv-newlib</a> project, the <code class="highlighter-rouge">master</code> branch,
+  <li>the <a href="https://github.com/sifive/riscv-newlib">sifive/riscv-newlib</a> project, the <code class="language-plaintext highlighter-rouge">master</code> branch,
 commit <a href="https://github.com/sifive/riscv-newlib/tree/0d24a86822a5ee73d6a6aa69e2a0118aa1e35204">0d24a86</a>
 from 9 July 2019</li>
 </ul>
 
 <p>GDB was upstreamed and does not require SiFive specific patches,
 so the current build uses
-<code class="highlighter-rouge">git://sourceware.org/git/binutils-gdb.git</code>, the <code class="highlighter-rouge">9b40759</code> commit from
+<code class="language-plaintext highlighter-rouge">git://sourceware.org/git/binutils-gdb.git</code>, the <code class="language-plaintext highlighter-rouge">9b40759</code> commit from
 28 Feb 2019.</p>
 
 <h2 id="supported-libraries">Supported libraries</h2>
 
 <p>The supported libraries are:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> riscv-none-embed-gcc <span class="nt">-print-multi-lib</span>
-<span class="gp">.;</span>
-<span class="gp">rv32e/ilp32e;</span>@march<span class="o">=</span>rv32e@mabi<span class="o">=</span>ilp32e
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>riscv-none-embed-gcc <span class="nt">-print-multi-lib</span>
+<span class="gp">.;</span><span class="w">
+</span><span class="gp">rv32e/ilp32e;</span>@march<span class="o">=</span>rv32e@mabi<span class="o">=</span>ilp32e
 <span class="gp">rv32ea/ilp32e;</span>@march<span class="o">=</span>rv32ea@mabi<span class="o">=</span>ilp32e
 <span class="gp">rv32em/ilp32e;</span>@march<span class="o">=</span>rv32em@mabi<span class="o">=</span>ilp32e
 <span class="gp">rv32eac/ilp32e;</span>@march<span class="o">=</span>rv32eac@mabi<span class="o">=</span>ilp32e
@@ -650,13 +670,13 @@ so the current build uses
 
 <ul>
   <li><a href="https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/issues/3">[#3]</a>
-Due to an omission in the build scripts, the content of the <code class="highlighter-rouge">libgcov</code>
+Due to an omission in the build scripts, the content of the <code class="language-plaintext highlighter-rouge">libgcov</code>
 library was mostly empty; the script was fixed and now the library has the
 expected content.</li>
   <li><a href="https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/issues/4">[#4]</a>
 Due to a bug in the build scripts, the Windows binaries included two
-copies of the <code class="highlighter-rouge">docs</code> folder, one in root and one in the <code class="highlighter-rouge">share</code> folder;
-the script was fixed and now there is only one copy in <code class="highlighter-rouge">share/docs</code>.</li>
+copies of the <code class="language-plaintext highlighter-rouge">docs</code> folder, one in root and one in the <code class="language-plaintext highlighter-rouge">share</code> folder;
+the script was fixed and now there is only one copy in <code class="language-plaintext highlighter-rouge">share/docs</code>.</li>
 </ul>
 
 <h2 id="improvements">Improvements</h2>
@@ -665,10 +685,10 @@ the script was fixed and now there is only one copy in <code class="highlighter-
 options are supported, and there are minimal functional changes</p>
 
 <ul>
-  <li><code class="highlighter-rouge">libgloss</code> was removed from the list of libraries always linked to the
-application, since it issues <code class="highlighter-rouge">ECALL</code>
+  <li><code class="language-plaintext highlighter-rouge">libgloss</code> was removed from the list of libraries always linked to the
+application, since it issues <code class="language-plaintext highlighter-rouge">ECALL</code>
 instructions that fail in bare metal environments</li>
-  <li><code class="highlighter-rouge">march=rv32imaf/mabi=ilp32f</code> was added to the list of multilibs</li>
+  <li><code class="language-plaintext highlighter-rouge">march=rv32imaf/mabi=ilp32f</code> was added to the list of multilibs</li>
   <li>the standard documentation, in PDF and HTML, is included</li>
   <li>experimental support for Pyhton in GDB was added</li>
 </ul>
@@ -676,39 +696,39 @@ instructions that fail in bare metal environments</li>
 <h2 id="newlib-nano">newlib-nano</h2>
 
 <p>Support for <strong>newlib-nano</strong> is available using the
-<code class="highlighter-rouge">--specs=nano.specs</code> option. For better results, this option must be
+<code class="language-plaintext highlighter-rouge">--specs=nano.specs</code> option. For better results, this option must be
 added to both compile and link time.</p>
 
 <h2 id="nosysspecs">nosys.specs</h2>
 
-<p>If no syscalls are needed, <code class="highlighter-rouge">--specs=nosys.specs</code> can be used at link
+<p>If no syscalls are needed, <code class="language-plaintext highlighter-rouge">--specs=nosys.specs</code> can be used at link
 time to provide empty implementations for the POSIX system calls.</p>
 
 <h2 id="compile-options">Compile options</h2>
 
-<p>The libraries are compiled with <code class="highlighter-rouge">-O2 -mcmodel=medany</code>. The nano version is
-compiled with <code class="highlighter-rouge">-Os -mcmodel=medany</code>.</p>
+<p>The libraries are compiled with <code class="language-plaintext highlighter-rouge">-O2 -mcmodel=medany</code>. The nano version is
+compiled with <code class="language-plaintext highlighter-rouge">-Os -mcmodel=medany</code>.</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> It is mandatory for the applications to
 be compiled with
-<code class="highlighter-rouge">-mcmodel=medany</code>, otherwise the link will fail.</div>
+<code class="language-plaintext highlighter-rouge">-mcmodel=medany</code>, otherwise the link will fail.</div>
 
 <h2 id="known-problems">Known problems</h2>
 
 <ul>
   <li><a href="https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/issues/5">[#5]</a>
-the <code class="highlighter-rouge">riscv-none-embed-gdb-py</code> fails to start on Ubuntu (and possibly
+the <code class="language-plaintext highlighter-rouge">riscv-none-embed-gdb-py</code> fails to start on Ubuntu (and possibly
 other Debian) systems, it fails with a message like:
-    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> <span class="nv">PYTHONHOME</span><span class="o">=</span>/usr <span class="nv">PYTHONPATH</span><span class="o">=</span>/usr/lib/python2.7 riscv-none-embed-gdb-py <span class="nt">--version</span>
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nv">PYTHONHOME</span><span class="o">=</span>/usr <span class="nv">PYTHONPATH</span><span class="o">=</span>/usr/lib/python2.7 riscv-none-embed-gdb-py <span class="nt">--version</span>
 <span class="go">Traceback (most recent call last):
-</span><span class="gp">File "/usr/lib/python2.7/site.py", line 554, in &lt;module&gt;</span>
-<span class="go">  main()
+</span><span class="gp">File "/usr/lib/python2.7/site.py", line 554, in &lt;module&gt;</span><span class="w">
+</span><span class="go">  main()
 File "/usr/lib/python2.7/site.py", line 536, in main
   known_paths = addusersitepackages(known_paths)
 File "/usr/lib/python2.7/site.py", line 272, in addusersitepackages
   user_site = getusersitepackages()
 File "/usr/lib/python2.7/site.py", line 247, in getusersitepackages
-</span><span class="gp">  user_base = getuserbase() #</span> this will also <span class="nb">set </span>USER_BASE
+</span><span class="gp">  user_base = getuserbase() #</span><span class="w"> </span>this will also <span class="nb">set </span>USER_BASE
 <span class="go">File "/usr/lib/python2.7/site.py", line 237, in getuserbase
   USER_BASE = get_config_var('userbase')
 File "/usr/lib/python2.7/sysconfig.py", line 587, in get_config_var
@@ -717,8 +737,8 @@ File "/usr/lib/python2.7/sysconfig.py", line 533, in get_config_vars
   _init_posix(_CONFIG_VARS)
 File "/usr/lib/python2.7/sysconfig.py", line 417, in _init_posix
   from _sysconfigdata import build_time_vars
-</span><span class="gp">File "/usr/lib/python2.7/_sysconfigdata.py", line 6, in &lt;module&gt;</span>
-<span class="go">  from _sysconfigdata_nd import *
+</span><span class="gp">File "/usr/lib/python2.7/_sysconfigdata.py", line 6, in &lt;module&gt;</span><span class="w">
+</span><span class="go">  from _sysconfigdata_nd import *
 ImportError: No module named _sysconfigdata_nd
 </span></code></pre></div>    </div>
     <p>Any help to diagnose this problem will be highly appreciated.</p>
@@ -727,7 +747,7 @@ ImportError: No module named _sysconfigdata_nd
 
 <h2 id="documentation">Documentation</h2>
 
-<p>The original PDF documentation is available in the <code class="highlighter-rouge">share/doc</code> folder.</p>
+<p>The original PDF documentation is available in the <code class="language-plaintext highlighter-rouge">share/doc</code> folder.</p>
 
 <h2 id="supported-platforms">Supported platforms</h2>
 
@@ -765,7 +785,7 @@ executed again.</p>
 
 <p>The SHA-256 hashes for the files are:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>532f719c11f7311a0103eac6ddd7dd012716a2c3030dd1ee7e64374b1af41d34
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>532f719c11f7311a0103eac6ddd7dd012716a2c3030dd1ee7e64374b1af41d34
 xpack-riscv-none-embed-gcc-8.3.0-1.1-darwin-x64.tgz
 
 c40d8e74a3f87839131287ecd68be2e691c84af0b75d684c1e47ab60687ff987
@@ -840,7 +860,7 @@ for the individual file counters.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 16, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -860,7 +880,16 @@ for the individual file counters.</p>
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>

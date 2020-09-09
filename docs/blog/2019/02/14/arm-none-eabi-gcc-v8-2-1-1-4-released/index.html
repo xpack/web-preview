@@ -9,8 +9,28 @@
 <title>GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.4 20190214 released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.4 20190214 released</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.4 20190214 released" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Version v8.2.1-1.4 20190214 is a maintenance release of GNU MCU Eclipse ARM Embedded GCC that fixes the bugs affecting Windows LTO builds, present in the previous release." />
+<meta property="og:description" content="Version v8.2.1-1.4 20190214 is a maintenance release of GNU MCU Eclipse ARM Embedded GCC that fixes the bugs affecting Windows LTO builds, present in the previous release." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2019/02/14/arm-none-eabi-gcc-v8-2-1-1-4-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2019/02/14/arm-none-eabi-gcc-v8-2-1-1-4-released/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-14T07:48:00+00:00" />
+<script type="application/ld+json">
+{"description":"Version v8.2.1-1.4 20190214 is a maintenance release of GNU MCU Eclipse ARM Embedded GCC that fixes the bugs affecting Windows LTO builds, present in the previous release.","@type":"BlogPosting","headline":"GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.4 20190214 released","dateModified":"2020-09-09T12:24:25+00:00","datePublished":"2019-02-14T07:48:00+00:00","url":"https://xpack.github.io/web-preview/blog/2019/02/14/arm-none-eabi-gcc-v8-2-1-1-4-released/","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2019/02/14/arm-none-eabi-gcc-v8-2-1-1-4-released/"},"author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?201907181733">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -41,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -570,7 +590,7 @@ LTO builds, present in the previous release.</p>
 <p>This release follows the official 
 <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm">GNU Arm Embedded Toolchain</a> 
 <strong>8-2018-q4-major</strong> release from December 20, 2018 and it is based on the 
-<code class="highlighter-rouge">gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2</code> source invariant.</p>
+<code class="language-plaintext highlighter-rouge">gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2</code> source invariant.</p>
 
 <h2 id="changes">Changes</h2>
 
@@ -585,10 +605,10 @@ bug fixes:</p>
 affecting C++ LTO projects
 <a href="https://sourceware.org/bugzilla/show_bug.cgi?id=24145">24145</a></li>
   <li>[Issue:<a href="https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/issues/3">#3</a>] 
-by default, the GCC build script fails to create <code class="highlighter-rouge">liblto_plugin-0.dll</code>
+by default, the GCC build script fails to create <code class="language-plaintext highlighter-rouge">liblto_plugin-0.dll</code>
 for static builds with mingw; code to create the plugin was added</li>
   <li>[Issue:<a href="https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/issues/1">#1</a>]
-the <code class="highlighter-rouge">liblto_plugin</code> copied/linked to the <code class="highlighter-rouge">lib/bdf-plugins</code> for <code class="highlighter-rouge">ar</code>
+the <code class="language-plaintext highlighter-rouge">liblto_plugin</code> copied/linked to the <code class="language-plaintext highlighter-rouge">lib/bdf-plugins</code> for <code class="language-plaintext highlighter-rouge">ar</code>
 to find it and be able to process archives with LTO objects</li>
   <li>a patch was applied to gcc to fix the Windows LTO with -g bug
 <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=89183">89183</a></li>
@@ -616,9 +636,9 @@ page.</p>
 <p>The toolchain is also available as an 
 <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc">xPack</a> 
 and can be conveniently installed with 
-<a href="https://www.npmjs.com/package/xpm"><code class="highlighter-rouge">xpm</code></a>:</p>
+<a href="https://www.npmjs.com/package/xpm"><code class="language-plaintext highlighter-rouge">xpm</code></a>:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> xpm install <span class="nt">--global</span> @gnu-mcu-eclipse/arm-none-eabi-gcc
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> @gnu-mcu-eclipse/arm-none-eabi-gcc
 </code></pre></div></div>
 
 <p>This installs the latest available version.</p>
@@ -691,7 +711,7 @@ gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.4-20190214-0604-win64.zip
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 16, 2020<br/> Site last generated: Sep 9, 2020 <br />
+<span>Page last updated:</span> Sep 9, 2020<br/> Site last generated: Sep 9, 2020 <br />
                 </div>
             </div>
 </footer>
@@ -711,7 +731,16 @@ gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.4-20190214-0604-win64.zip
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-16767008-13','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16767008-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-16767008-13');
+</script>
 
 
 </html>
