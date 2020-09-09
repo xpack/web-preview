@@ -863,7 +863,7 @@
 "title": "xPack QEMU Arm v2.8.0-8 released",
 "tags": "releasesqemuemulatorarmcortex-m",
 "keywords": "",
-"url": "/web-preview/blog/2019/11/04/qemu-arm-v2-8-0-8-released/",
+"url": "/web-preview/blog/2019/11/05/qemu-arm-v2-8-0-8-released/",
 "summary": "<p>Version 2.8.0-8 is a maintenance release, to fix a bug affecting STM32F1 GPIOs.</p>"
 }
 ,
@@ -1153,7 +1153,7 @@
 "title": "GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-4-20180606 released",
 "tags": "releasesriscvriscv-none-embed-gcc",
 "keywords": "",
-"url": "/web-preview/blog/2018/06/06/riscv-none-gcc-v7-2-0-4-20180606-released/",
+"url": "/web-preview/blog/2018/06/07/riscv-none-gcc-v7-2-0-4-20180606-released/",
 "summary": ""
 }
 ,
@@ -1233,7 +1233,7 @@
 "title": "GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-2-20180111 released",
 "tags": "releasesriscvriscv-none-embed-gcc",
 "keywords": "",
-"url": "/web-preview/blog/2018/01/12/riscv-none-gcc-v7-2-0-2-20180111-released/",
+"url": "/web-preview/blog/2018/01/13/riscv-none-gcc-v7-2-0-2-20180111-released/",
 "summary": ""
 }
 ,
@@ -1413,7 +1413,7 @@
 "title": "GNU ARM Eclipse QEMU v2.6.0-20160728* released",
 "tags": "releasesqemuemulatorarmcortex-mbasepridhcsrbkpt",
 "keywords": "",
-"url": "/web-preview/blog/2016/07/27/qemu-v2-6-0-20160728-released/",
+"url": "/web-preview/blog/2016/07/28/qemu-v2-6-0-20160728-released/",
 "summary": ""
 }
 ,
@@ -1483,7 +1483,7 @@
 "title": "GNU ARM Eclipse QEMU v2.3.50-20150801*-dev released",
 "tags": "releasesqemuemulatorarmcortex-mgpioledstmsystick",
 "keywords": "",
-"url": "/web-preview/blog/2015/08/01/qemu-v2-3-50-20150801-released/",
+"url": "/web-preview/blog/2015/08/02/qemu-v2-3-50-20150801-released/",
 "summary": ""
 }
 ,
