@@ -922,7 +922,7 @@
 "tags": "releasesqemuemulatorarmcortex-m",
 "keywords": "",
 "url": "/web-preview/blog/2020/10/14/qemu-arm-v2-8-0-10-released/",
-"summary": "<p>Version 2.8.0-10 is a maintenance release; it fixes some bugs and updates to the new, more robust, build scripts.</p>"
+"summary": "<p>Version 2.8.0-10 is a maintenance release; it fixes one bug and updates to the new, more robust, build scripts.</p>"
 }
 ,
 
