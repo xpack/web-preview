@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack Windows Build Tools binaries" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/windows-build-tools/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/windows-build-tools/install/","headline":"How to install the xPack Windows Build Tools binaries","dateModified":"2020-12-18T08:46:09+00:00","datePublished":"2020-07-14T13:26:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/windows-build-tools/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/windows-build-tools/install/","headline":"How to install the xPack Windows Build Tools binaries","dateModified":"2020-12-18T12:43:33+00:00","datePublished":"2020-07-14T13:26:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -347,10 +347,18 @@
 
    <h2 id="overview">Overview</h2>
 
-<p>The <strong>xPack Windows Build Tools</strong> can be installed automatically, via xpm (the
+<p>The <strong>xPack Windows Build Tools</strong> can be installed automatically, via <strong>xpm</strong> (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.</p>
 
+<ul id="profileTabs_1" class="nav nav-tabs">
+    <li class="active"><a href="#windows_1" data-toggle="tab">Windows</a></li>
+    <li><a href="#macos_1" data-toggle="tab">macOS</a></li>
+    <li><a href="#linux_1" data-toggle="tab">GNU/Linux</a></li>
+</ul>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="windows_1">
+		
 <h2 id="easy-install">Easy install</h2>
 
 <p>The easiest way to install Windows Build Tools is by using the <strong>binary xPack</strong>, available as
@@ -410,6 +418,16 @@ older versions or configure the path manually.</div>
 simply remove the <code class="language-plaintext highlighter-rouge">xPacks/@xpack-dev-tools/windows-build-tools</code> folder,
 or one of the versioned subfolders.</div>
 
+<h3 id="test">Test</h3>
+
+<p>To check if the xpm installed <code class="language-plaintext highlighter-rouge">make</code> starts, use something like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\windows-build-tools\2.12.2\.content\bin\make --version
+GNU Make 4.1
+Built for i686-w64-mingw32
+...
+</code></pre></div></div>
+
 <h2 id="manual-install">Manual install</h2>
 
 <p>For all platforms, the <strong>xPack Windows Build Tools</strong> binaries are released as portable
@@ -419,14 +437,6 @@ archives that can be installed in any location.</p>
 GitHub <a href="https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/">releases</a>
 page.</p>
 
-<ul id="profileTabs_1" class="nav nav-tabs">
-    <li class="active"><a href="#windows_1" data-toggle="tab">Windows</a></li>
-    <li><a href="#macos_1" data-toggle="tab">macOS</a></li>
-    <li><a href="#linux_1" data-toggle="tab">GNU/Linux</a></li>
-</ul>
-<div class="tab-content">
-	<div role="tabpanel" class="tab-pane active" id="windows_1">
-		
 <h3 id="download">Download</h3>
 
 <p>The Windows versions of <strong>xPack Windows Build Tools</strong> are packed as ZIP files.
@@ -447,7 +457,7 @@ The <code class="language-plaintext highlighter-rouge">win32</code> part is conf
 <h3 id="unpack">Unpack</h3>
 
 <p>Unpack the archive and copy it into the
-<code class="language-plaintext highlighter-rouge">%userprofile%\AppData\Roaming\xPacks\windows-build-tools</code>
+<code class="language-plaintext highlighter-rouge">%USERPROFILE%\AppData\Roaming\xPacks\windows-build-tools</code>
 (for example <code class="language-plaintext highlighter-rouge">C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools</code>) folder;
 according to Microsoft, <code class="language-plaintext highlighter-rouge">AppData\Roaming</code> is the recommended location for
 installing user specific packages.</p>
@@ -462,17 +472,14 @@ install Windows Build Tools in any folder, it is highly recommended to use this
 path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location.</div>
 
-<h3 id="test">Test</h3>
+<h3 id="test-1">Test</h3>
 
-<p>To check if <code class="language-plaintext highlighter-rouge">make</code> starts, use something like:</p>
+<p>To check if the manually installed <code class="language-plaintext highlighter-rouge">make</code> starts, use something like:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\ilg&gt;C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32
-Copyright (C) 1988-2014 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
+...
 </code></pre></div></div>
 
 
