@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack QEMU Arm binaries" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/qemu-arm/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/qemu-arm/install/","headline":"How to install the xPack QEMU Arm binaries","dateModified":"2020-12-17T18:18:37+00:00","datePublished":"2015-09-04T14:03:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/qemu-arm/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/qemu-arm/install/","headline":"How to install the xPack QEMU Arm binaries","dateModified":"2020-12-18T08:46:09+00:00","datePublished":"2015-09-04T14:03:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -406,9 +406,9 @@ older versions or configure the path manually.</div>
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm uninstall <span class="nt">--global</span> @xpack-dev-tools/qemu-arm
 </code></pre></div></div>
 
-<p>(Note: not yet implemented. As a temporary workaround, simply remove the
-<code class="language-plaintext highlighter-rouge">xPacks/@xpack-dev-tools/qemu</code> folder, or one of the versioned
-subfolders.)</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Not yet implemented. As a temporary workaround,
+simply remove the <code class="language-plaintext highlighter-rouge">xPacks/@xpack-dev-tools/qemu</code> folder,
+or one of the versioned subfolders.</div>
 
 <h2 id="manual-install">Manual install</h2>
 
@@ -461,7 +461,9 @@ install QEMU in any folder, it is highly recommended to use this
 path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location.</div>
 
-<p>To check if QEMU starts, use the following command:</p>
+<h3 id="test">Test</h3>
+
+<p>To check if QEMU starts, use something like:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\ilg&gt;C:\Users\ilg\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-2.8.0-7\bin\qemu-system-gnuarmeclipse.exe" --version
 xPack 64-bit QEMU emulator version 2.8.0-7 (v2.8.0-7-20180523-6-gee07085299-dirty)
@@ -535,7 +537,9 @@ for the executable in this location.</div>
 8 directories, 14 files
 </span></code></pre></div></div>
 
-<p>To check if QEMU starts, use:</p>
+<h3 id="test">Test</h3>
+
+<p>To check if QEMU starts, use something like:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse <span class="nt">--version</span>
 <span class="go">xPack 64-bit QEMU emulator version 2.8.0-7 (v2.8.0-4-20190211-47-g109b69f49a-dirty)
@@ -621,7 +625,9 @@ for the executable in this location.</div>
 9 directories, 21 files
 </span></code></pre></div></div>
 
-<p>To check if QEMU starts and is recent, use:</p>
+<h3 id="test">Test</h3>
+
+<p>To check if QEMU starts, use something like:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse <span class="nt">--version</span>
 <span class="go">xPack 64-bit QEMU emulator version 2.8.0-7 (v2.8.0-4-20190211-47-g109b69f49a-dirty)
@@ -685,7 +691,7 @@ drivers required.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Dec 17, 2020<br/> Site last generated: Dec 17, 2020 <br />
+<span>Page last updated:</span> Dec 18, 2020<br/> Site last generated: Dec 18, 2020 <br />
                 </div>
             </div>
 </footer>

@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack Ninja Build binaries" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/ninja-build/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/ninja-build/install/","headline":"How to install the xPack Ninja Build binaries","dateModified":"2020-12-17T18:18:37+00:00","datePublished":"2020-09-27T08:09:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/ninja-build/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/ninja-build/install/","headline":"How to install the xPack Ninja Build binaries","dateModified":"2020-12-18T08:46:09+00:00","datePublished":"2020-09-27T08:09:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -614,9 +614,9 @@ settings like <strong>Show Hidden Files</strong>.</div>
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm uninstall <span class="nt">--global</span> @xpack-dev-tools/ninja-build
 </code></pre></div></div>
 
-<p>(Note: not yet implemented. As a temporary workaround, simply remove the
-<code class="language-plaintext highlighter-rouge">xPacks/@xpack-dev-tools/ninja-build</code> folder, or one of the versioned
-subfolders.)</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Not yet implemented. As a temporary workaround,
+simply remove the <code class="language-plaintext highlighter-rouge">xPacks/@xpack-dev-tools/ninja-build</code> folder,
+or one of the versioned subfolders.</div>
 
 <h2 id="manual-install">Manual install</h2>
 
@@ -665,7 +665,9 @@ install location is slightly different from the xpm install folders,
 which use the scope (like <code class="language-plaintext highlighter-rouge">@xpack-dev-tools</code>) to group different tools,
 and <code class="language-plaintext highlighter-rouge">.content</code> to store the unpacked archive.</div>
 
-<p>To check if Ninja starts, use the following command:</p>
+<h3 id="test">Test</h3>
+
+<p>To check if Ninja starts, use something like:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\ilg&gt;C:\Users\ilg\AppData\Roaming\xPacks\ninja-build\xpack-ninja-1.10.1-1\bin\ninja.exe --version
 1.10.1
@@ -717,7 +719,9 @@ install location is different from the xpm install folders.</div>
 5 directories, 5 files
 </span></code></pre></div></div>
 
-<p>To check if Ninja starts, use:</p>
+<h3 id="test">Test</h3>
+
+<p>To check if Ninja starts, use something like:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/ninja-build/1.10.1-1/bin/ninja <span class="nt">--version</span>
 <span class="go">1.10.1
@@ -773,7 +777,9 @@ and <code class="language-plaintext highlighter-rouge">.content</code> to store 
 5 directories, 3 files
 </span></code></pre></div></div>
 
-<p>To check if Ninja starts and is recent, use:</p>
+<h3 id="test">Test</h3>
+
+<p>To check if Ninja starts, use something like:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1/bin/ninja <span class="nt">--version</span>
 <span class="go">1.10.1
@@ -831,7 +837,7 @@ and <code class="language-plaintext highlighter-rouge">.content</code> to store 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Dec 17, 2020<br/> Site last generated: Dec 17, 2020 <br />
+<span>Page last updated:</span> Dec 18, 2020<br/> Site last generated: Dec 18, 2020 <br />
                 </div>
             </div>
 </footer>
