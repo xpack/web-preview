@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack 101" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/intro/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/intro/","headline":"xPack 101","dateModified":"2020-12-22T15:25:57+00:00","datePublished":"2019-06-26T05:57:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/intro/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/intro/","headline":"xPack 101","dateModified":"2020-12-26T15:12:00+00:00","datePublished":"2019-06-26T05:57:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -597,7 +597,7 @@ a simple and uniform solution of
 installing different versions of the same package in different
 folders, and managing dependencies.</p>
 
-<h2 id="why-bothering-to-manage-versions-when-auto-configure-can-sort-out-the-differences">Why bothering to manage versions when auto-configure can sort out the differences?</h2>
+<h2 id="why-bother-to-manage-versions-when-auto-configure-can-sort-out-the-differences">Why bother to manage versions when auto-configure can sort out the differences?</h2>
 
 <p>The traditional way of dealing with different versions and variations between
 systems is to add a complex auto-configure mechanism that is able to detect
@@ -640,7 +640,7 @@ depend on other shared libraries or tools.</li>
 
 <p><strong>xPack</strong>, pronounced <em><strong>ɛks-pak</strong></em>, can be understood as <em>Universal Package</em>,
 or <em>Any Type Package</em>, and tries to suggest that, when compared to
-npm packages (which are basically about JavaScript), xPacks are more
+npm packages (which are basically JavaScript packages), xPacks are more
 general, and not linked/limited to a specific programming language.</p>
 
 <p>Initially the <em>x</em> came from <em>eXtended</em>, so <em>eXtended Packages</em> can
@@ -800,9 +800,9 @@ installing the module, npm will
 add a folder <code class="language-plaintext highlighter-rouge">node_modules/.bin</code> where a link to the <code class="language-plaintext highlighter-rouge">xpbuild</code> executable
 will be created (or a <code class="language-plaintext highlighter-rouge">xpbuild.cmd</code> stub on Windows).</p>
 
-<p>TODO: show the output of tree on the node_modules folder.</p>
+<p>TODO: show the output of the <code class="language-plaintext highlighter-rouge">tree</code> command on the <code class="language-plaintext highlighter-rouge">node_modules</code> folder.</p>
 
-<p>When running actions like <code class="language-plaintext highlighter-rouge">npm run build</code>, the <code class="language-plaintext highlighter-rouge">PATH</code> is automatically
+<p>When running actions like <code class="language-plaintext highlighter-rouge">xpm run build</code>, the <code class="language-plaintext highlighter-rouge">PATH</code> is automatically
 adjusted to <code class="language-plaintext highlighter-rouge">xpacks/.bin:node_modules/.bin:$PATH</code>, so the exact versions
 of the tools required in the dependencies list will be preferred over any
 existing tools with the same names that might be present in the <code class="language-plaintext highlighter-rouge">PATH</code>.</p>
@@ -1000,7 +1000,7 @@ for an xPack is as simple as this:</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Dec 22, 2020<br/> Site last generated: Dec 22, 2020 <br />
+<span>Page last updated:</span> Dec 26, 2020<br/> Site last generated: Dec 26, 2020 <br />
                 </div>
             </div>
 </footer>
