@@ -36,6 +36,14 @@
 
 
 
+{
+"title": "The xPack Build Definitions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/metadata/build/",
+"summary": "<p>The metadata used by the build tools.</p>"
+}
+,
 
 
 
@@ -49,6 +57,31 @@
 
 
 
+
+
+{
+"title": "The xPack Components Definitions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/metadata/components/",
+"summary": "<p>The metadata used to describe components.</p>"
+}
+,
+
+
+
+
+
+
+
+{
+"title": "The xPack Dvices Definitions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/metadata/devices/",
+"summary": "<p>The metadata used to describe devices.</p>"
+}
+,
 
 
 
@@ -376,6 +409,17 @@
 "keywords": "",
 "url": "/web-preview/develop/",
 "summary": "<p>Resources for xPack developers.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack Metadata",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/metadata/",
+"summary": "<p>The metadata used by xPack tools.</p>"
 }
 ,
 
@@ -923,6 +967,15 @@
 
 
 
+{
+"title": "The xPack Tools Sets Definitions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/metadata/tools-collections/",
+"summary": "<p>The metadata used to define build tools collections, like toolchains.</p>"
+}
+,
+
 
 
 
@@ -942,15 +995,13 @@
 
 
 {
-"title": "The xpbuild.json files",
+"title": "The xPack SVD Definitions",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/xpbuild/files/xpbuild-json/",
-"summary": ""
+"url": "/web-preview/metadata/xsvd/",
+"summary": "<p>The metadata used to describe peripheral registers.</p>"
 }
 ,
-
-
 
 
 
