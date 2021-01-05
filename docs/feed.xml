@@ -5,14 +5,14 @@
         <description>Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.</description>
         <link>https://xpack.github.io/web-preview/</link>
         <atom:link href="https://xpack.github.io/web-preview/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 05 Jan 2021 09:32:45 +0000</pubDate>
-        <lastBuildDate>Tue, 05 Jan 2021 09:32:45 +0000</lastBuildDate>
+        <pubDate>Tue, 05 Jan 2021 09:59:13 +0000</pubDate>
+        <lastBuildDate>Tue, 05 Jan 2021 09:59:13 +0000</lastBuildDate>
         <generator>Jekyll v3.9.0</generator>
         
         <item>
             <title>xPack GNU RISC-V Embedded GCC v10.1.0-1.1 released</title>
             <description>&lt;p&gt;&lt;a href=&quot;https://xpack.github.io/riscv-none-embed-gcc/&quot;&gt;The xPack GNU RISC-V Embedded GCC&lt;/a&gt;is the &lt;strong&gt;xPack&lt;/strong&gt; distribution of the&lt;a href=&quot;https://github.com/sifive/freedom-tools/releases&quot;&gt;SiFive RISC-V GCC&lt;/a&gt;.&lt;/p&gt;</description>
-            <pubDate>Tue, 05 Jan 2021 06:59:00 +0000</pubDate>
+            <pubDate>Tue, 05 Jan 2021 09:42:00 +0000</pubDate>
             <link>https://xpack.github.io/web-preview/blog/2021/01/05/riscv-none-embed-gcc-v10-1-0-1-1-released/</link>
             <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2021/01/05/riscv-none-embed-gcc-v10-1-0-1-1-released/</guid>
             

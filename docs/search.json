@@ -1023,7 +1023,7 @@
 "tags": "releasesriscvriscv-none-embed-gccgccbinariesc++",
 "keywords": "",
 "url": "/web-preview/blog/2021/01/05/riscv-none-embed-gcc-v10-1-0-1-1-released/",
-"summary": "<p>Version 10.1.0-1.1 is a maintenance release of the <strong>xPack GNU RISC-V Embedded GCC</strong>; it adds an embedded Python 3 instance, to make <code class="language-plaintext highlighter-rouge">riscv-none-embed-gdb-py3</code> standalone and run on any system.</p>"
+"summary": "<p>Version 10.1.0-1.1 is a new release of the <strong>xPack GNU RISC-V Embedded GCC</strong>; it follows the SiFive release 2020-08.0 .</p>"
 }
 ,
 
