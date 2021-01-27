@@ -96,87 +96,10 @@
 
 
 {
-"title": "The xPack QEMU Arm Frequently Asked Questions",
+"title": "FAQ",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/qemu-arm/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack Windows Build Tools Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/windows-build-tools/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack Meson Build Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/meson-build/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack CMake Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/cmake/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack OpenOCD Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/openocd/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack Ninja Build Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/ninja-build/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack GNU RISC-V Embedded GCC Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/riscv-none-embed-gcc/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack GNU Arm Embedded GCC Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/arm-none-eabi-gcc/faq/",
+"url": "/web-preview/xpm/faq/",
 "summary": ""
 }
 ,
@@ -195,10 +118,87 @@
 
 
 {
-"title": "FAQ",
+"title": "The xPack OpenOCD Frequently Asked Questions",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/xpm/faq/",
+"url": "/web-preview/openocd/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack Meson Build Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/meson-build/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack Windows Build Tools Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/windows-build-tools/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack Ninja Build Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/ninja-build/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack GNU Arm Embedded GCC Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/arm-none-eabi-gcc/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack GNU RISC-V Embedded GCC Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/riscv-none-embed-gcc/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack CMake Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/cmake/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack QEMU Arm Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/qemu-arm/faq/",
 "summary": ""
 }
 ,
@@ -253,99 +253,33 @@
 
 
 {
-"title": "The xPack QEMU Arm",
-"tags": "",
-"keywords": "qemuarmcortex-mgraphic",
-"url": "/web-preview/qemu-arm/",
-"summary": "<p>A binary distribution of QEMU Arm.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack Windows Build Tools",
-"tags": "",
-"keywords": "windows-build-tools",
-"url": "/web-preview/windows-build-tools/",
-"summary": "<p>A Windows binary distribution of GNU Make, to be used with Eclipse Embedded CDT.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack Meson Build",
-"tags": "",
-"keywords": "meson-build",
-"url": "/web-preview/meson-build/",
-"summary": "<p>A binary distribution of Meson Build.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack CMake",
-"tags": "",
-"keywords": "cmake",
-"url": "/web-preview/cmake/",
-"summary": "<p>A binary distribution of CMake.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack OpenOCD",
-"tags": "",
-"keywords": "openocd",
-"url": "/web-preview/openocd/",
-"summary": "<p>A binary distribution of OpenOCD.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack Ninja Build",
-"tags": "",
-"keywords": "ninja-build",
-"url": "/web-preview/ninja-build/",
-"summary": "<p>A binary distribution of Ninja Build.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack GNU RISC-V Embedded GCC",
-"tags": "",
-"keywords": "riscv-none-embed-gccriscvgccembedded",
-"url": "/web-preview/riscv-none-embed-gcc/",
-"summary": "<p>A binary distribution of GNU RISC-V Embedded GCC.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack GNU Arm Embedded GCC",
-"tags": "",
-"keywords": "arm-none-eabi-gccarmgccembedded",
-"url": "/web-preview/arm-none-eabi-gcc/",
-"summary": "<p>A binary distribution of GNU Arm Embedded GCC.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack Basic Project Builder",
+"title": "xPack Developer info",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/xpbuild/",
-"summary": "<p>A tool to build day to day projects without having to manually write make files, with an emphasis on C/C++ and embedded applications, inspired by Eclipse CDT managed builder (work in progress).</p>"
+"url": "/web-preview/develop/",
+"summary": "<p>Resources for xPack developers.</p>"
+}
+,
+
+
+
+{
+"title": "Maintainer info",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/maintain/",
+"summary": "<p>Resources for the xPack projects maintainers.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack Build Runner",
+"tags": "",
+"keywords": "make",
+"url": "/web-preview/xpninja/",
+"summary": "<p>A light and fast tool to build generic projects, inspired by Ninja Build but with the configuration files in JSON (in design phase).</p>"
 }
 ,
 
@@ -359,6 +293,8 @@
 "summary": "<p>A tool to manage project configurations, inspired by eCos CDL, but with the configuration files in JSON (in design phase).</p>"
 }
 ,
+
+
 
 
 
@@ -376,21 +312,6 @@
 
 
 {
-"title": "The xPack Build Runner",
-"tags": "",
-"keywords": "make",
-"url": "/web-preview/xpninja/",
-"summary": "<p>A light and fast tool to build generic projects, inspired by Ninja Build but with the configuration files in JSON (in design phase).</p>"
-}
-,
-
-
-
-
-
-
-
-{
 "title": "The xPack Package Manager",
 "tags": "",
 "keywords": "xPackpackagemanager",
@@ -401,16 +322,106 @@
 
 
 
+{
+"title": "The xPack Basic Project Builder",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpbuild/",
+"summary": "<p>A tool to build day to day projects without having to manually write make files, with an emphasis on C/C++ and embedded applications, inspired by Eclipse CDT managed builder (work in progress).</p>"
+}
+,
+
+
+
 
 
 {
-"title": "xPack Developer info",
+"title": "The xPack OpenOCD",
 "tags": "",
-"keywords": "",
-"url": "/web-preview/develop/",
-"summary": "<p>Resources for xPack developers.</p>"
+"keywords": "openocd",
+"url": "/web-preview/openocd/",
+"summary": "<p>A binary distribution of OpenOCD.</p>"
 }
 ,
+
+
+
+{
+"title": "The xPack Meson Build",
+"tags": "",
+"keywords": "meson-build",
+"url": "/web-preview/meson-build/",
+"summary": "<p>A binary distribution of Meson Build.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack Windows Build Tools",
+"tags": "",
+"keywords": "windows-build-tools",
+"url": "/web-preview/windows-build-tools/",
+"summary": "<p>A Windows binary distribution of GNU Make, to be used with Eclipse Embedded CDT.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack Ninja Build",
+"tags": "",
+"keywords": "ninja-build",
+"url": "/web-preview/ninja-build/",
+"summary": "<p>A binary distribution of Ninja Build.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack GNU Arm Embedded GCC",
+"tags": "",
+"keywords": "arm-none-eabi-gccarmgccembedded",
+"url": "/web-preview/arm-none-eabi-gcc/",
+"summary": "<p>A binary distribution of GNU Arm Embedded GCC.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack GNU RISC-V Embedded GCC",
+"tags": "",
+"keywords": "riscv-none-embed-gccriscvgccembedded",
+"url": "/web-preview/riscv-none-embed-gcc/",
+"summary": "<p>A binary distribution of GNU RISC-V Embedded GCC.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack CMake",
+"tags": "",
+"keywords": "cmake",
+"url": "/web-preview/cmake/",
+"summary": "<p>A binary distribution of CMake.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack QEMU Arm",
+"tags": "",
+"keywords": "qemuarmcortex-mgraphic",
+"url": "/web-preview/qemu-arm/",
+"summary": "<p>A binary distribution of QEMU Arm.</p>"
+}
+,
+
+
 
 
 
@@ -437,33 +448,11 @@
 
 
 {
-"title": "Maintainer info",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/maintain/",
-"summary": "<p>Resources for the xPack projects maintainers.</p>"
-}
-,
-
-
-
-{
 "title": "The xPack Project",
 "tags": "",
 "keywords": "packages, code sharing, reusing, libraries, applications, c/c++, embedded",
 "url": "/web-preview/",
 "summary": "<p>Tools to manage, configure and build complex, package based, multi-target projects.</p>"
-}
-,
-
-
-
-{
-"title": "xpbuild init",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/xpbuild/cli/init/",
-"summary": ""
 }
 ,
 
@@ -481,98 +470,10 @@
 
 
 {
-"title": "How to install the xPack QEMU Arm binaries",
+"title": "xpbuild init",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/qemu-arm/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack Windows Build Tools binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/windows-build-tools/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack Meson Build binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/meson-build/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack CMake binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/cmake/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack OpenOCD binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/openocd/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack Ninja Build binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/ninja-build/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack GNU RISC-V Embedded GCC binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/riscv-none-embed-gcc/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack GNU Arm Embedded GCC binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/arm-none-eabi-gcc/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install xpbuild",
-"tags": "",
-"keywords": "xpbuildxpackinstall",
-"url": "/web-preview/xpbuild/install/",
+"url": "/web-preview/xpbuild/cli/init/",
 "summary": ""
 }
 ,
@@ -596,6 +497,105 @@
 "keywords": "xpmnpmxpackinstall",
 "url": "/web-preview/xpm/install/",
 "summary": ""
+}
+,
+
+
+
+{
+"title": "How to install xpbuild",
+"tags": "",
+"keywords": "xpbuildxpackinstall",
+"url": "/web-preview/xpbuild/install/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to install the xPack OpenOCD binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/openocd/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack Meson Build binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/meson-build/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack Windows Build Tools binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/windows-build-tools/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack Ninja Build binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/ninja-build/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack GNU Arm Embedded GCC binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/arm-none-eabi-gcc/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack GNU RISC-V Embedded GCC binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/riscv-none-embed-gcc/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack CMake binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/cmake/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack QEMU Arm binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/qemu-arm/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
 
@@ -646,6 +646,17 @@
 ,
 
 
+
+
+
+{
+"title": "xpm list",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/cli/list/",
+"summary": ""
+}
+,
 
 
 
@@ -700,15 +711,13 @@
 
 
 {
-"title": "xpbuild - common options",
+"title": "How to get support",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/xpbuild/cli/",
+"url": "/web-preview/support/",
 "summary": ""
 }
 ,
-
-
 
 
 
@@ -737,13 +746,15 @@
 
 
 {
-"title": "How to get support",
+"title": "xpbuild - common options",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/support/",
+"url": "/web-preview/xpbuild/cli/",
 "summary": ""
 }
 ,
+
+
 
 
 
@@ -820,6 +831,8 @@
 
 
 
+
+
 {
 "title": "xpm run-script",
 "tags": "",
@@ -852,87 +865,10 @@
 
 
 {
-"title": "How to get help for xPack QEMU Arm",
+"title": "How to get help for xpm",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/qemu-arm/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack Windows Build Tools",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/windows-build-tools/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack Meson Build",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/meson-build/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack CMake",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/cmake/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack OpenOCD?",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/openocd/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack Ninja Build",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/ninja-build/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack GNU RISC-V Embedded GCC?",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/riscv-none-embed-gcc/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack GNU Arm Embedded GCC?",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/arm-none-eabi-gcc/support/",
+"url": "/web-preview/xpm/support/",
 "summary": ""
 }
 ,
@@ -951,10 +887,87 @@
 
 
 {
-"title": "How to get help for xpm",
+"title": "How to get help for xPack OpenOCD?",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/xpm/support/",
+"url": "/web-preview/openocd/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack Meson Build",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/meson-build/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack Windows Build Tools",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/windows-build-tools/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack Ninja Build",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/ninja-build/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack GNU Arm Embedded GCC?",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/arm-none-eabi-gcc/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack GNU RISC-V Embedded GCC?",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/riscv-none-embed-gcc/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack CMake",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/cmake/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack QEMU Arm",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/qemu-arm/support/",
 "summary": ""
 }
 ,
@@ -990,6 +1003,17 @@
 
 
 
+
+
+
+{
+"title": "xpm uninstall",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/cli/uninstall/",
+"summary": ""
+}
+,
 
 
 
@@ -1038,6 +1062,16 @@
 
 
 
+
+
+{
+"title": "xPack xpm v0.8.0 pre-release",
+"tags": "releasesxpmpackagemanager",
+"keywords": "",
+"url": "/web-preview/blog/2021/01/27/xpm-v0-8-0-released/",
+"summary": "<p>Version <strong>0.8.0</strong> is a new release of <strong>xpm</strong>; it allows to install xPacks from Git repositories and adds new commands (list, uninstall).</p>"
+}
+,
 
 
 {
