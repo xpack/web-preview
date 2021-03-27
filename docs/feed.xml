@@ -5,8 +5,8 @@
         <description>Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.</description>
         <link>https://xpack.github.io/web-preview/</link>
         <atom:link href="https://xpack.github.io/web-preview/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 17 Mar 2021 08:04:22 +0000</pubDate>
-        <lastBuildDate>Wed, 17 Mar 2021 08:04:22 +0000</lastBuildDate>
+        <pubDate>Sat, 27 Mar 2021 09:54:28 +0000</pubDate>
+        <lastBuildDate>Sat, 27 Mar 2021 09:54:28 +0000</lastBuildDate>
         <generator>Jekyll v3.9.0</generator>
         
         <item>
@@ -120,6 +120,24 @@
         </item>
         
         <item>
+            <title>xPack xpm v0.9.0 released</title>
+            <description>&lt;p&gt;&lt;strong&gt;xpm&lt;/strong&gt; is a&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; CLIapplication to manage&lt;a href=&quot;https://xpack.github.io/intro/#but-what-are-xpacks&quot;&gt;xPacks&lt;/a&gt; dependencies.&lt;/p&gt;</description>
+            <pubDate>Sat, 30 Jan 2021 19:49:00 +0000</pubDate>
+            <link>https://xpack.github.io/web-preview/blog/2021/01/30/xpm-v0-9-0-released/</link>
+            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2021/01/30/xpm-v0-9-0-released/</guid>
+            
+            <category>releases</category>
+            
+            <category>xpm</category>
+            
+            <category>package</category>
+            
+            <category>manager</category>
+            
+            
+        </item>
+        
+        <item>
             <title>xPack xpm v0.8.1 released</title>
             <description>&lt;p&gt;&lt;strong&gt;xpm&lt;/strong&gt; stands for &lt;strong&gt;x&lt;/strong&gt;Pack &lt;strong&gt;p&lt;/strong&gt;ackage &lt;strong&gt;m&lt;/strong&gt;anager and is a &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; CLIapplication to manage&lt;a href=&quot;https://xpack.github.io/intro/#but-what-are-xpacks&quot;&gt;xPacks&lt;/a&gt;.&lt;/p&gt;</description>
             <pubDate>Sat, 30 Jan 2021 19:49:00 +0000</pubDate>
@@ -171,30 +189,6 @@
             <category>binaries</category>
             
             <category>c++</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>xPack Windows Build Tools v4.2.1-2 released</title>
-            <description>&lt;p&gt;This is the &lt;strong&gt;xPack&lt;/strong&gt; distribution of &lt;strong&gt;Windows Build Tools&lt;/strong&gt; (formerly partof the GNU MCU/ARM Eclipse project).&lt;/p&gt;</description>
-            <pubDate>Mon, 28 Dec 2020 12:38:00 +0000</pubDate>
-            <link>https://xpack.github.io/web-preview/blog/2020/12/28/windows-build-tools-v4-2-1-2-released/</link>
-            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2020/12/28/windows-build-tools-v4-2-1-2-released/</guid>
-            
-            <category>releases</category>
-            
-            <category>windows-build-tools</category>
-            
-            <category>build</category>
-            
-            <category>make</category>
-            
-            <category>rm</category>
-            
-            <category>mkdir</category>
-            
-            <category>busybox</category>
             
             
         </item>

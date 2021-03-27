@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Resources for the xPack projects maintainers.">
-<meta name="keywords" content=" ">
-<title>Maintainer info | The xPack Project</title>
+<meta name="description" content="Version 0.9.0 is a new release of xpm; it adds support for configurations and configuration specific dependencies.">
+<meta name="keywords" content="releasesxpmpackagemanager,  ">
+<title>xPack xpm v0.9.0 released | The xPack Project</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
 
@@ -14,21 +14,21 @@
 <link type="application/rss+xml" rel="alternate" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Maintainer info</title>
+<title>xPack xpm v0.9.0 released</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Maintainer info" />
+<meta property="og:title" content="xPack xpm v0.9.0 released" />
 <meta name="author" content="Liviu Ionescu" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
-<meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
-<link rel="canonical" href="https://xpack.github.io/web-preview/maintain/" />
-<meta property="og:url" content="https://xpack.github.io/web-preview/maintain/" />
+<meta name="description" content="xpm is a Node.js CLI application to manage xPacks dependencies." />
+<meta property="og:description" content="xpm is a Node.js CLI application to manage xPacks dependencies." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/blog/2021/01/30/xpm-v0-9-0-released/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/blog/2021/01/30/xpm-v0-9-0-released/" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-07-10T07:00:00+00:00" />
+<meta property="article:published_time" content="2021-01-30T19:49:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Maintainer info" />
+<meta property="twitter:title" content="xPack xpm v0.9.0 released" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/maintain/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/maintain/","headline":"Maintainer info","dateModified":"2021-03-27T09:53:04+00:00","datePublished":"2019-07-10T07:00:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"xpm is a Node.js CLI application to manage xPacks dependencies.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2021/01/30/xpm-v0-9-0-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2021/01/30/xpm-v0-9-0-released/","headline":"xPack xpm v0.9.0 released","dateModified":"2021-03-27T09:53:04+00:00","datePublished":"2021-01-30T19:49:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -253,7 +253,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '/web-preview/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Maintainer info">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="xPack xpm v0.9.0 released">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -481,7 +481,7 @@
           
           
           
-          <li class="active"><a title="Overview" href="/web-preview/maintain/">Overview</a></li>
+          <li><a title="Overview" href="/web-preview/maintain/">Overview</a></li>
           
           
           
@@ -530,121 +530,235 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <div class="post-header">
-   <h1 class="post-title-main">Maintainer info</h1>
-</div>
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">xPack xpm v0.9.0 released</h1>
+        <p class="post-meta"><time datetime="2021-01-30T19:49:00+00:00" itemprop="datePublished">Jan 30, 2021</time> <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">/ Liviu Ionescu</span></span> /
+            
+            
+            
+            <a href="/web-preview/tags/releases/">releases</a>, 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+        </p>
 
 
+    </header>
 
-<div class="post-content">
-
-   
-    <div class="summary">Resources for the xPack projects maintainers.
-</div>
-   
-
-    
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-
-});
-</script>
-
-<div id="toc"></div>
-
-    
-
-
-   <h2 id="issues">Issues</h2>
-
-<p>NPM modules</p>
-
-<ul>
-  <li><a href="https://github.com/xpack/xpm-js">xpm</a> <a href="https://github.com/xpack/xpm-js/issues/"><img src="https://img.shields.io/github/issues/xpack/xpm-js.svg" alt="GitHub issues" /></a> <a href="https://github.com/xpack/xpm-js/pulls/"><img src="https://img.shields.io/github/issues-pr/xpack/xpm-js.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/xpack/xmake-js">xmake</a> <a href="https://github.com/xpack/xmake-js/issues/"><img src="https://img.shields.io/github/issues/xpack/xmake-js.svg" alt="GitHub issues" /></a> <a href="https://github.com/xpack/xmake-js/pulls/"><img src="https://img.shields.io/github/issues-pr/xpack/xmake-js.svg" alt="GitHub pulls" /></a></li>
-</ul>
-
-<p>xPacks</p>
-
-<ul>
-  <li><a href="https://github.com/gnu-mcu-eclipse/openocd-xpack/">@gnu-mcu-eclipse/openocd</a> <a href="https://github.com/gnu-mcu-eclipse/openocd-xpack/issues/"><img src="https://img.shields.io/github/issues/gnu-mcu-eclipse/openocd-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/gnu-mcu-eclipse/openocd-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/gnu-mcu-eclipse/openocd-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/gnu-mcu-eclipse/riscv-none-gcc-xpack/">@gnu-mcu-eclipse/riscv-none-gcc</a> <a href="https://github.com/gnu-mcu-eclipse/riscv-none-gcc-xpack/issues/"><img src="https://img.shields.io/github/issues/gnu-mcu-eclipse/riscv-none-gcc-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/gnu-mcu-eclipse/riscv-none-gcc-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/gnu-mcu-eclipse/riscv-none-gcc-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/startup-xpack/">@micro-os-plus/startup</a> <a href="https://github.com/micro-os-plus/startup-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/startup-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/startup-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/startup-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/c-libs-xpack/">@micro-os-plus/c-libs</a> <a href="https://github.com/micro-os-plus/c-libs-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/c-libs-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/c-libs-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/c-libs-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/cpp-libs-xpack/">@micro-os-plus/cpp-libs</a> <a href="https://github.com/micro-os-plus/cpp-libs-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/cpp-libs-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/cpp-libs-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/cpp-libs-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/diag-trace-xpack/">@micro-os-plus/diag-trace</a> <a href="https://github.com/micro-os-plus/diag-trace-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/diag-trace-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/diag-trace-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/diag-trace-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/riscv-arch-xpack/">@micro-os-plus/riscv-arch</a> <a href="https://github.com/micro-os-plus/riscv-arch-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/riscv-arch-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/riscv-arch-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/riscv-arch-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-templates-xpack/">@sifive/templates</a> <a href="https://github.com/micro-os-plus/sifive-templates-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/sifive-templates-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/sifive-templates-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/sifive-templates-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-devices-xpack/">@sifive/devices</a> <a href="https://github.com/micro-os-plus/sifive-devices-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/sifive-devices-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/sifive-devices-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/sifive-devices-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-hifive1-board-xpack/">@sifive/hifive1-board</a> <a href="https://github.com/micro-os-plus/sifive-hifive1-board-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/sifive-hifive1-board-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/sifive-hifive1-board-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/sifive-hifive1-board-xpack.svg" alt="GitHub pulls" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-arty-boards-xpack/">@sifive/arty-boards</a> <a href="https://github.com/micro-os-plus/sifive-arty-boards-xpack/issues/"><img src="https://img.shields.io/github/issues/micro-os-plus/sifive-arty-boards-xpack.svg" alt="GitHub issues" /></a> <a href="https://github.com/micro-os-plus/sifive-arty-boards-xpack/pulls/"><img src="https://img.shields.io/github/issues-pr/micro-os-plus/sifive-arty-boards-xpack.svg" alt="GitHub pulls" /></a></li>
-</ul>
-
-<h2 id="analytics">Analytics</h2>
-
-<p>NPM modules</p>
-
-<ul>
-  <li><a href="https://github.com/xpack/xpm-js/">xpm</a> <a href="https://www.npmjs.com/package/xpm/"><img src="https://img.shields.io/npm/v/xpm.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/xpm/"><img src="https://img.shields.io/npm/dw/xpm.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/xpm/"><img src="https://img.shields.io/npm/dt/xpm.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/xpack/xmake-js/">xmake</a> <a href="https://www.npmjs.com/package/xmake/"><img src="https://img.shields.io/npm/v/xmake.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/xmake/"><img src="https://img.shields.io/npm/dw/xmake.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/xmake/"><img src="https://img.shields.io/npm/dt/xmake.svg" alt="npm" /></a></li>
-</ul>
-
-<p>xPacks</p>
-
-<ul>
-  <li><a href="https://github.com/gnu-mcu-eclipse/openocd-xpack/">@gnu-mcu-eclipse/openocd</a> <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/openocd/"><img src="https://img.shields.io/npm/v/@gnu-mcu-eclipse/openocd.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/openocd/"><img src="https://img.shields.io/npm/dw/@gnu-mcu-eclipse/openocd.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/openocd/"><img src="https://img.shields.io/npm/dt/@gnu-mcu-eclipse/openocd.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/gnu-mcu-eclipse/riscv-none-gcc-xpack/">@gnu-mcu-eclipse/riscv-none-gcc</a> <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc/"><img src="https://img.shields.io/npm/v/@gnu-mcu-eclipse/riscv-none-gcc.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc/"><img src="https://img.shields.io/npm/dw/@gnu-mcu-eclipse/riscv-none-gcc.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc/"><img src="https://img.shields.io/npm/dt/@gnu-mcu-eclipse/riscv-none-gcc.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/startup-xpack/">@micro-os-plus/startup</a> <a href="https://www.npmjs.com/package/@micro-os-plus/startup/"><img src="https://img.shields.io/npm/v/@micro-os-plus/startup.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/startup/"><img src="https://img.shields.io/npm/dw/@micro-os-plus/startup.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/startup/"><img src="https://img.shields.io/npm/dt/@micro-os-plus/startup.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/c-libs-xpack/">@micro-os-plus/c-libs</a> <a href="https://www.npmjs.com/package/@micro-os-plus/c-libs/"><img src="https://img.shields.io/npm/v/@micro-os-plus/c-libs.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/c-libs/"><img src="https://img.shields.io/npm/dw/@micro-os-plus/c-libs.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/c-libs/"><img src="https://img.shields.io/npm/dt/@micro-os-plus/c-libs.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/cpp-libs-xpack/">@micro-os-plus/cpp-libs</a> <a href="https://www.npmjs.com/package/@micro-os-plus/cpp-libs/"><img src="https://img.shields.io/npm/v/@micro-os-plus/cpp-libs.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/cpp-libs/"><img src="https://img.shields.io/npm/dw/@micro-os-plus/cpp-libs.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/cpp-libs/"><img src="https://img.shields.io/npm/dt/@micro-os-plus/cpp-libs.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/diag-trace-xpack/">@micro-os-plus/diag-trace</a> <a href="https://www.npmjs.com/package/@micro-os-plus/diag-trace/"><img src="https://img.shields.io/npm/v/@micro-os-plus/diag-trace.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/diag-trace/"><img src="https://img.shields.io/npm/dw/@micro-os-plus/diag-trace.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/diag-trace/"><img src="https://img.shields.io/npm/dt/@micro-os-plus/diag-trace.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/riscv-arch-xpack/">@micro-os-plus/riscv-arch</a> <a href="https://www.npmjs.com/package/@micro-os-plus/riscv-arch/"><img src="https://img.shields.io/npm/v/@micro-os-plus/riscv-arch.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/riscv-arch/"><img src="https://img.shields.io/npm/dw/@micro-os-plus/riscv-arch.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@micro-os-plus/riscv-arch/"><img src="https://img.shields.io/npm/dt/@micro-os-plus/riscv-arch.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-templates-xpack/">@sifive/templates</a> <a href="https://www.npmjs.com/package/@sifive/templates/"><img src="https://img.shields.io/npm/v/@sifive/templates.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@sifive/templates/"><img src="https://img.shields.io/npm/dw/@sifive/templates.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@sifive/templates/"><img src="https://img.shields.io/npm/dt/@sifive/templates.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-devices-xpack/">@sifive/devices</a> <a href="https://www.npmjs.com/package/@sifive/devices/"><img src="https://img.shields.io/npm/v/@sifive/devices.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@sifive/devices/"><img src="https://img.shields.io/npm/dw/@sifive/devices.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@sifive/devices/"><img src="https://img.shields.io/npm/dt/@sifive/devices.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-hifive1-board-xpack/">@sifive/hifive1-board</a> <a href="https://www.npmjs.com/package/@sifive/hifive1-board/"><img src="https://img.shields.io/npm/v/@sifive/hifive1-board.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@sifive/hifive1-board/"><img src="https://img.shields.io/npm/dw/@sifive/hifive1-board.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@sifive/hifive1-board/"><img src="https://img.shields.io/npm/dt/@sifive/hifive1-board.svg" alt="npm" /></a></li>
-  <li><a href="https://github.com/micro-os-plus/sifive-arty-boards-xpack/">@sifive/arty-boards</a> <a href="https://www.npmjs.com/package/@sifive/arty-boards/"><img src="https://img.shields.io/npm/v/@sifive/arty-boards.svg" alt="npm (scoped)" /></a> <a href="https://www.npmjs.com/package/@sifive/arty-boards/"><img src="https://img.shields.io/npm/dw/@sifive/arty-boards.svg" alt="npm" /></a> <a href="https://www.npmjs.com/package/@sifive/arty-boards/"><img src="https://img.shields.io/npm/dt/@sifive/arty-boards.svg" alt="npm" /></a></li>
-</ul>
-
-<h2 id="links">Links</h2>
-
-<ul>
-  <li><a href="https://xpack.github.io/web-preview/">web preview</a></li>
-</ul>
-
-<h2 id="deprecated-pages">Deprecated pages</h2>
-
-<ul>
-  <li><a href="/web-preview/xcdl/">xcdl</a></li>
-  <li><a href="/web-preview/xmake/">xmake</a></li>
-  <li><a href="/web-preview/xsvd/">xsvd</a></li>
-</ul>
-
+    <div class="post-content" itemprop="articleBody">
 
         
-
-
-    <div class="tags">
+        <div class="summary">Version <strong>0.9.0</strong> is a new release of <strong>xpm</strong>; it adds support for configurations and configuration specific dependencies.
+</div>
         
+
+        <p><strong>xpm</strong> is a
+<a href="https://nodejs.org/en/">Node.js</a> CLI
+application to manage
+<a href="https://xpack.github.io/intro/#but-what-are-xpacks">xPacks</a> dependencies.</p>
+
+<h2 id="install">Install</h2>
+
+<p><strong>xpm</strong> is a Node.js module that can be installed with <code class="language-plaintext highlighter-rouge">npm</code>.</p>
+
+<p>For the prerequisites, since it is recommended
+to use a version manager or to customize the <strong>npm</strong> install location,
+please read the
+<a href="https://xpack.github.io/xpm/install/">Install</a> page for more details.</p>
+
+<p>To install the <strong>latest stable</strong> version available, use:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>npm <span class="nb">install</span> <span class="nt">--global</span> xpm@latest
+</code></pre></div></div>
+
+<p>To install this specific version, use:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">install</span> <span class="nt">--global</span> xpm@0.9.0
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In the current configuration,
+<strong>npm</strong> complains about several deprecated
+packages; these packages are used by some third party packages, and until
+those packages will update their dependencies, there is not much we can
+do to prevent these warnings.</div>
+
+<h2 id="changes">Changes</h2>
+
+<p>The 0.9.0 release
+is generally compatible with previous releases.</p>
+
+<p>The main change over the previous release is support for multiple
+<em>configurations</em>, usually <em>build configurations</em>,
+which are intended to support development for applications using multiple
+build folders (like debug/release, but also multi-platform builds).</p>
+
+<h3 id="bug-fixes">Bug fixes</h3>
+
+<ul>
+  <li>none</li>
+</ul>
+
+<h3 id="enhancements">Enhancements</h3>
+
+<p>The main enhancement is the addition of <code class="language-plaintext highlighter-rouge">xpack.configurations</code> in
+<code class="language-plaintext highlighter-rouge">package.json</code>, and <code class="language-plaintext highlighter-rouge">--config</code> for most commands.</p>
+
+<ul>
+  <li>[#94] - add <code class="language-plaintext highlighter-rouge">--config</code> to <code class="language-plaintext highlighter-rouge">xpm link</code></li>
+  <li>[#95] - add <code class="language-plaintext highlighter-rouge">--config</code> to <code class="language-plaintext highlighter-rouge">xpm uninstall</code></li>
+  <li>[#96] - update <code class="language-plaintext highlighter-rouge">xpm list</code> to show configurations dependencies</li>
+  <li>[#90] - iterate all configurations on <code class="language-plaintext highlighter-rouge">xpm install</code></li>
+  <li>[#88] - add support for configurations &amp; actions</li>
+</ul>
+
+<p>Another important enhancement is the addition of <code class="language-plaintext highlighter-rouge">properties</code> and of a
+template engine to process substitutions in actions/scripts.</p>
+
+<ul>
+  <li>[#91] - fix use of properties in substitutions</li>
+  <li>[#92] - Add <code class="language-plaintext highlighter-rouge">os.platform</code> and <code class="language-plaintext highlighter-rouge">os.arch</code> to substitution map</li>
+  <li>[#91] - add template <code class="language-plaintext highlighter-rouge">properties</code>; if <code class="language-plaintext highlighter-rouge">--config</code> is used, the
+configuration properties take precedence over package properties.</li>
+</ul>
+
+<p>Other enhancements:</p>
+
+<ul>
+  <li>[#35] - to better accomodate future enhancements, and spot cases
+when an old xpm is used to process a <code class="language-plaintext highlighter-rouge">package.json</code> which includes
+new content, the <code class="language-plaintext highlighter-rouge">xpack.checkMinimumXpmRequired</code> property was added</li>
+  <li>[#93] - processing for <code class="language-plaintext highlighter-rouge">--dry-run</code> was implemented for <code class="language-plaintext highlighter-rouge">xpm install</code></li>
+  <li>[#89] - prefer run &amp; run-action</li>
+</ul>
+
+<h3 id="other-changes">Other changes</h3>
+
+<ul>
+  <li>the <code class="language-plaintext highlighter-rouge">xpm install</code> command now sets all installed packages as read-only</li>
+  <li>the validation code returns CliExitCodes.ERROR.INPUT for errors
+related to the content of <code class="language-plaintext highlighter-rouge">package.json</code></li>
+</ul>
+
+<h3 id="known-problems">Known problems</h3>
+
+<ul>
+  <li>[#57] when multiple versions of the same package are referenced
+via different dependencies paths, the program fails; version
+mitigation will be implemented in a future release.</li>
+</ul>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>The program interprets <code class="language-plaintext highlighter-rouge">--help</code> and displays a top help page:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nt">--help</span>
+<span class="go">
+The xPack package manager command line tool
+</span><span class="gp">Usage: xpm &lt;command&gt;</span><span class="w"> </span><span class="o">[</span>&lt;subcommand&gt;...] <span class="o">[</span>&lt;options&gt; ...] <span class="o">[</span>&lt;args&gt;...]
+<span class="go">
+</span><span class="gp">where &lt;command&gt;</span><span class="w"> </span>is one of:
+<span class="go">  init, install, link, list, run, uninstall
+
+Common options:
+</span><span class="gp">  --loglevel &lt;level&gt;</span><span class="w">     </span>Set log level <span class="o">(</span>silent|warn|info|verbose|debug|trace<span class="o">)</span> 
+<span class="go">  -s|--silent            Disable all messages (--loglevel silent) 
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
+  --informative          Informative (--loglevel info) 
+  -v|--verbose           Verbose (--loglevel verbose) 
+  -d|--debug             Debug messages (--loglevel debug) 
+  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
+  --no-update-notifier   Skip check for a more recent version 
+</span><span class="gp">  -C &lt;folder&gt;</span><span class="w">            </span>Set current folder 
+<span class="go">
+xpm -h|--help            Quick help 
+</span><span class="gp">xpm &lt;command&gt;</span><span class="w"> </span><span class="nt">-h</span>|--help  Quick <span class="nb">help </span>on <span class="nb">command</span> 
+<span class="go">xpm --version            Show version 
+xpm -i|--interactive     Enter interactive mode 
+
+npm xpm@0.9.0 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
+</span><span class="gp">Home page: &lt;https://xpack.github.io/xpm/&gt;</span><span class="w">
+</span><span class="gp">Bug reports: &lt;https://github.com/xpack/xpm-js/issues/&gt;</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Similar pages are available for each command.</p>
+
+<p>For more detials, the project documentation is available online from the
+<a href="https://xpack.github.io/xpm/">web site</a>.</p>
+
+<h2 id="supported-platforms">Supported platforms</h2>
+
+<p><strong>npm</strong> is a portable application that can run on
+<strong>Windows</strong>, <strong>macOS</strong> and <strong>GNU/Linux</strong> (Intel and Arm).</p>
+
+<h2 id="ci-tests">CI tests</h2>
+
+<p>Continuous integration tests are done via GitHub
+<a href="https://github.com/xpack/xpm-js/actions">actions</a>.</p>
+
+<h2 id="download-analytics">Download analytics</h2>
+
+<ul>
+  <li>npmjs.com <a href="https://www.npmjs.com/package/xpm">xpm</a>
+    <ul>
+      <li>last week <a href="https://www.npmjs.com/package/xpm/"><img src="https://img.shields.io/npm/dw/xpm.svg" alt="npm" /></a></li>
+      <li>all time <a href="https://www.npmjs.com/package/xpm/"><img src="https://img.shields.io/npm/dt/xpm.svg" alt="npm" /></a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Credit to <a href="https://shields.io">Shields IO</a> for the badges.</p>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> The <strong>xpm</strong> tool is currently <em>work in
+progress</em> and should be used with caution.</div>
+
     </div>
 
+
+
+</article>
+
+    
+    <a target="_blank" rel="noopener" href="https://github.com/xpack/web-jekyll/blob/master/_posts/releases/xpm/2021-03-27-xpm-v0-9-0-released.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit</a>
+
     
 
 
-</div>
+
+
+    <hr/>
+    <p>Comments on the content of this page that might be useful
+    for other readers are welcomed here. For question and general
+    support, please use the
+    <a href="https://www.tapatalk.com/groups/xpack/">project forums</a>.
+    </p>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_config = function () {
+            this.page.url = '/web-preview';  // Your page's canonical URL variable
+            this.page.identifier = '/blog/2021/01/30/xpm-v0-9-0-released/'; // Your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://xpack.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
 
 <hr class="shaded"/>
 
