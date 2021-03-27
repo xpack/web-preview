@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xpm folders" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/folders/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/xpm/folders/","headline":"xpm folders","dateModified":"2021-03-27T11:30:08+00:00","datePublished":"2017-10-09T11:14:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/folders/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/xpm/folders/","headline":"xpm folders","dateModified":"2021-03-27T15:31:06+00:00","datePublished":"2017-10-09T11:14:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -418,7 +418,7 @@ $('#toc').on('click', 'a', function() {
     
 
 
-   <p>The locations of folders used by xmp can be controlled by several environment
+   <p>The locations of folders used by xpm can be controlled by several environment
 variables.</p>
 
 <p>Please note that when the variables must be available in GUI applications,
@@ -455,7 +455,7 @@ its own configuration files.</p>
 <p>Global (home) install:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">${HOME}/opt/xPacks</code></li>
+  <li><code class="language-plaintext highlighter-rouge">${HOME}/.local/xPacks</code> (was <code class="language-plaintext highlighter-rouge">${HOME}/opt/xPacks</code> in earlier versions)</li>
   <li><code class="language-plaintext highlighter-rouge">${HOME}/.cache/xPacks</code></li>
 </ul>
 
@@ -494,7 +494,7 @@ its own configuration files.</p>
 the local package folder to something like:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">[@&lt;scope&gt;/]&lt;name&gt;/link</code></li>
+  <li><code class="language-plaintext highlighter-rouge">[@&lt;scope&gt;/]&lt;name&gt;/.link</code></li>
 </ul>
 
 <h2 id="the-cache-folder">The cache folder</h2>

@@ -288,6 +288,28 @@
 
 
 {
+"title": "xpm files",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/files/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "xpm - common options",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/cli/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "The xPack Package Manager",
 "tags": "",
 "keywords": "xPackpackagemanager",
@@ -637,6 +659,17 @@
 
 
 {
+"title": "xpm link",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/cli/link/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "Links",
 "tags": "",
 "keywords": "",
@@ -705,28 +738,6 @@
 "keywords": "",
 "url": "/web-preview/qemu-arm/options/",
 "summary": "<p>The QEMU Arm command line options allow to start standalone graphical or non-graphical emulation sessions, or to run as a GBD server in connection to a GDB client.</p>"
-}
-,
-
-
-
-{
-"title": "xpm files",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/xpm/files/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "xpm - common options",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/xpm/cli/",
-"summary": ""
 }
 ,
 
@@ -837,7 +848,7 @@
 "title": "xpm run-script",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/xpm/cli/run-script/",
+"url": "/web-preview/xpm/cli/run/",
 "summary": ""
 }
 ,
@@ -1056,6 +1067,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/xpm/files/folders/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/cli/run-script/",
 "summary": ""
 }
 ,
