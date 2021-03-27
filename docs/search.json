@@ -1076,6 +1076,16 @@
 
 
 {
+"title": "xPack xpm v0.9.0 released",
+"tags": "releasesxpmpackagemanager",
+"keywords": "",
+"url": "/web-preview/blog/2021/03/27/xpm-v0-9-0-released/",
+"summary": "<p>Version <strong>0.9.0</strong> is a new release of <strong>xpm</strong>; it adds support for configurations and configuration specific dependencies.</p>"
+}
+,
+
+
+{
 "title": "xPack CMake v3.19.2-2 released",
 "tags": "releasescmakebuild",
 "keywords": "",
@@ -1131,16 +1141,6 @@
 "keywords": "",
 "url": "/web-preview/blog/2021/02/02/qemu-arm-v2-8-0-12-released/",
 "summary": "<p>Version 2.8.0-12 is a maintenance release; it fixes the macOS startup via links and enables Thumb2 for Arm v6.</p>"
-}
-,
-
-
-{
-"title": "xPack xpm v0.9.0 released",
-"tags": "releasesxpmpackagemanager",
-"keywords": "",
-"url": "/web-preview/blog/2021/01/30/xpm-v0-9-0-released/",
-"summary": "<p>Version <strong>0.9.0</strong> is a new release of <strong>xpm</strong>; it adds support for configurations and configuration specific dependencies.</p>"
 }
 ,
 
