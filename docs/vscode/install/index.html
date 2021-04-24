@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the VS Code xPack Extension" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/vscode/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/vscode/install/","headline":"How to install the VS Code xPack Extension","dateModified":"2021-04-24T16:58:28+00:00","datePublished":"2021-04-22T20:04:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/vscode/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/vscode/install/","headline":"How to install the VS Code xPack Extension","dateModified":"2021-04-24T17:31:30+00:00","datePublished":"2021-04-22T20:04:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -365,9 +365,9 @@
 
    <h2 id="overview">Overview</h2>
 
-<p><strong>ilg-vscode.xpack</strong> is a <strong>Visual Studio Code</strong> extension,
-available from the
-<a href="https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack">Visual Studio Code Marketplace</a></p>
+<p>The <strong>VS Code xPack C/C++ Managed Build Extension</strong> is
+available as <strong>ilg-vscode.xpack</strong> from the
+<a href="https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack">Visual Studio Code Marketplace</a>.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -381,9 +381,12 @@ available from the
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--global</span> xpm@latest
 </code></pre></div></div>
 
-<p>If this command fails and requires <code class="language-plaintext highlighter-rouge">sudo</code>, it means <code class="language-plaintext highlighter-rouge">npm</code> is not
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Version 0.9.x or later is required.</div>
+
+<p>If this command fails and requires <code class="language-plaintext highlighter-rouge">sudo</code>,
+it means <code class="language-plaintext highlighter-rouge">npm</code> is not
 installed correctly;
-it is recommended to node/npm reinstall it using nvm, the npm version manager,
+it is recommended to reinstall node/npm via <code class="language-plaintext highlighter-rouge">nvm</code>, the npm version manager,
 as documented in the
 <a href="/web-preview/install/">prerequisites</a> page.</p>
 
@@ -397,12 +400,12 @@ search field:</p>
 
 <p><img src="/web-preview/assets/images/2021/install-vscode-xpack.png" alt="Install VS code xPack" /></p>
 
-<p>Install as usual; the extension should also bring in some dependencies:</p>
+<p>Install as usual; the xPack extension should also bring in some dependencies:</p>
 
 <p><img src="/web-preview/assets/images/2021/vscode-xpack-dependencies.png" alt="VS code xPack dependencies" /></p>
 
-<p>For those who prefer command line, the xPack extension can also be installed
-in a terminal:</p>
+<p>For those who prefer a command line approach, the xPack extension can also
+be installed in a terminal:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code <span class="nt">--install-extension</span> ilg-vscode.xpack
 </code></pre></div></div>
