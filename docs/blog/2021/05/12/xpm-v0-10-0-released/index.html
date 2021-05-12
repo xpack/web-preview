@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Version 0.10.0 is a new release of xpm; it fixes some bugs and adds new features.">
+<meta name="description" content="Version 0.10.0 is a new release of xpm; it fixes some bugs and adds several enhancements.">
 <meta name="keywords" content="releasesxpmpackagemanager,  ">
 <title>xPack xpm v0.10.0 released | The xPack Build Framework</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack xpm v0.10.0 released" />
 <script type="application/ld+json">
-{"headline":"xPack xpm v0.10.0 released","description":"xpm is a Node.js CLI application to manage xPacks dependencies.","datePublished":"2021-05-12T12:39:00+00:00","dateModified":"2021-05-12T12:54:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-0-released/"},"url":"https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-0-released/","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"headline":"xPack xpm v0.10.0 released","description":"xpm is a Node.js CLI application to manage xPacks dependencies.","datePublished":"2021-05-12T12:39:00+00:00","dateModified":"2021-05-12T12:59:14+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-0-released/"},"url":"https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-0-released/","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -573,7 +573,7 @@
     <div class="post-content" itemprop="articleBody">
 
         
-        <div class="summary">Version <strong>0.10.0</strong> is a new release of <strong>xpm</strong>; it fixes some bugs and adds new features.
+        <div class="summary">Version <strong>0.10.0</strong> is a new release of <strong>xpm</strong>; it fixes some bugs and adds several enhancements.
 </div>
         
 
@@ -612,11 +612,6 @@ do to prevent these warnings.</div>
 <p>The 0.10.0 release
 is generally compatible with previous releases.</p>
 
-<p>The main change over the previous release is support for multiple
-<em>configurations</em>, usually <em>build configurations</em>,
-which are intended to support development for applications using multiple
-build folders (like debug/release, but also multi-platform builds).</p>
-
 <h3 id="bug-fixes">Bug fixes</h3>
 
 <ul>
@@ -651,7 +646,7 @@ to be used by templates</li>
 <h3 id="known-problems">Known problems</h3>
 
 <ul>
-  <li>[#57] when multiple versions of the same package are referenced
+  <li>[#57] - when multiple versions of the same package are referenced
 via different dependencies paths, the program fails; version
 mitigation will be implemented in a future release.</li>
 </ul>
