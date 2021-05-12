@@ -5,16 +5,16 @@
         <description>Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.</description>
         <link>https://xpack.github.io/web-preview/</link>
         <atom:link href="https://xpack.github.io/web-preview/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 12 May 2021 12:59:55 +0000</pubDate>
-        <lastBuildDate>Wed, 12 May 2021 12:59:55 +0000</lastBuildDate>
+        <pubDate>Wed, 12 May 2021 15:23:28 +0000</pubDate>
+        <lastBuildDate>Wed, 12 May 2021 15:23:28 +0000</lastBuildDate>
         <generator>Jekyll v3.9.0</generator>
         
         <item>
-            <title>xPack xpm v0.10.0 released</title>
+            <title>xPack xpm v0.10.1 released</title>
             <description>&lt;p&gt;&lt;strong&gt;xpm&lt;/strong&gt; is a&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; CLIapplication to manage&lt;a href=&quot;https://xpack.github.io/intro/#but-what-are-xpacks&quot;&gt;xPacks&lt;/a&gt; dependencies.&lt;/p&gt;</description>
             <pubDate>Wed, 12 May 2021 12:39:00 +0000</pubDate>
-            <link>https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-0-released/</link>
-            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-0-released/</guid>
+            <link>https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-1-released/</link>
+            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2021/05/12/xpm-v0-10-1-released/</guid>
             
             <category>releases</category>
             
