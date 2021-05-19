@@ -1188,6 +1188,16 @@
 
 
 {
+"title": "xPack CMake v3.19.8-1 released",
+"tags": "releasescmakebuild",
+"keywords": "",
+"url": "/web-preview/blog/2021/05/19/cmake-v3-19-8-1-released/",
+"summary": "<p>Version 3.19.8-1 is a new release of the <strong>xPack CMake</strong> package, following the CMake release.</p>"
+}
+,
+
+
+{
 "title": "VS Code xPack extension v0.4.13 released",
 "tags": "releasesvscodevscode-xpackextension",
 "keywords": "",
