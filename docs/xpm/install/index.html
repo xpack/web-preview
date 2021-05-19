@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install xpm" />
 <script type="application/ld+json">
-{"headline":"How to install xpm","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","datePublished":"2017-10-09T11:14:00+00:00","dateModified":"2021-05-19T16:48:23+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/install/"},"url":"https://xpack.github.io/web-preview/xpm/install/","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"headline":"How to install xpm","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","datePublished":"2017-10-09T11:14:00+00:00","dateModified":"2021-05-19T19:07:55+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/install/"},"url":"https://xpack.github.io/web-preview/xpm/install/","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -425,7 +425,7 @@ npm package <a href="https://www.npmjs.com/package/xpm">xpm</a> from the
 <h2 id="prerequisites">Prerequisites</h2>
 
 <ul>
-  <li>a recent <a href="https://nodejs.org">Node.js</a> (&gt;=<strong>10.x</strong>), since the ECMAScript 6 
+  <li>a recent <a href="https://nodejs.org">Node.js</a> (&gt;=<strong>10.x</strong>), since the ECMAScript 6
 class syntax is used and some dependencies also require new features</li>
   <li>a recent <a href="https://docs.npmjs.com/cli/npm">npm</a>.</li>
 </ul>
@@ -664,14 +664,14 @@ is hidden for regular browsing in Finder.</p>
 
 <p>To make it back visible, use:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>/usr/bin/chflags nohidden ~/Library
-<span class="gp">$</span><span class="w"> </span>xattr <span class="nt">-d</span> com.apple.FinderInfo ~/Library
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/chflags nohidden ~/Library
+xattr <span class="nt">-d</span> com.apple.FinderInfo ~/Library
 </code></pre></div></div>
 
 <p>A more general solution is to make all hidden files:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>defaults write com.apple.Finder AppleShowAllFiles <span class="nb">true</span>
-<span class="gp">$</span><span class="w"> </span>killall Finder
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.Finder AppleShowAllFiles <span class="nb">true
+</span>killall Finder
 </code></pre></div></div>
 
 <p>Another anoying behaviour of the file browser is to hide names starting
@@ -680,8 +680,8 @@ extracted in a folder named <code class="language-plaintext highlighter-rouge">.
 
 <p>Fortunately there is a workaround for this too:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmd+shift+'.'
-</code></pre></div></div>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">cmd+shift+'.'
+</span></code></pre></div></div>
 
 <p>This keyboard shortcut works like a toggle, using it once makes files
 starting with dot visible,
@@ -691,13 +691,13 @@ using it again reverts to hiding them.</p>
 
 <p>To get an initial glimpse on the program, ask for help:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nt">--help</span>
-<span class="go">
-The xPack package manager command line tool
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">% xpm --help
+
+The xPack project manager command line tool
 </span><span class="gp">Usage: xpm &lt;command&gt;</span><span class="w"> </span><span class="o">[</span>&lt;subcommand&gt;...] <span class="o">[</span>&lt;options&gt; ...] <span class="o">[</span>&lt;args&gt;...]
 <span class="go">
 </span><span class="gp">where &lt;command&gt;</span><span class="w"> </span>is one of:
-<span class="go">  build, init, install, run-script
+<span class="go">  init, install, link, list, run, uninstall
 
 Common options:
 </span><span class="gp">  --loglevel &lt;level&gt;</span><span class="w">     </span>Set log level <span class="o">(</span>silent|warn|info|verbose|debug|trace<span class="o">)</span>
@@ -707,6 +707,7 @@ Common options:
   -v|--verbose           Verbose (--loglevel verbose)
   -d|--debug             Debug messages (--loglevel debug)
   -dd|--trace            Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier   Skip check for a more recent version
 </span><span class="gp">  -C &lt;folder&gt;</span><span class="w">            </span>Set current folder
 <span class="go">
 xpm -h|--help            Quick help
@@ -714,10 +715,10 @@ xpm -h|--help            Quick help
 <span class="go">xpm --version            Show version
 xpm -i|--interactive     Enter interactive mode
 
-npm xpm@0.2.10 '/Users/ilg/My Files/MacBookPro Projects/xPack/npm-modules/xpm-js.git'
-</span><span class="gp">Home page: &lt;https://github.com/xpack/xpm-js&gt;</span><span class="w">
-</span><span class="gp">Bug reports: &lt;https://github.com/xpack/xpm-js/issues&gt;</span><span class="w">
-</span><span class="gp">$</span><span class="w">
+npm xpm@0.10.2 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
+</span><span class="gp">Home page: &lt;https://xpack.github.io/xpm/&gt;</span><span class="w">
+</span><span class="gp">Bug reports: &lt;https://github.com/xpack/xpm-js/issues/&gt;</span><span class="w">
+</span><span class="go">%
 </span></code></pre></div></div>
 
 
