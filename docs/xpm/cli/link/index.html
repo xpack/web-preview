@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xpm link" />
 <script type="application/ld+json">
-{"headline":"xpm link","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","datePublished":"2021-03-27T14:16:00+00:00","dateModified":"2021-09-09T21:43:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/cli/link/"},"url":"https://xpack.github.io/web-preview/xpm/cli/link/","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"headline":"xpm link","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","datePublished":"2021-03-27T14:16:00+00:00","dateModified":"2021-09-17T06:58:42+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/cli/link/"},"url":"https://xpack.github.io/web-preview/xpm/cli/link/","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -467,12 +467,12 @@ development of source xPacks while being used as dependencies in
 an application.</p>
 
 <p>It does this by replacing the links to the read-only folders in the
-central repository by links to writable folders.</p>
+central storage by links to writable folders.</p>
 
 <p>This is done in two steps:</p>
 
 <ul>
-  <li>create a special link (called <code class="language-plaintext highlighter-rouge">.link</code>) from the central repository
+  <li>create a special link (called <code class="language-plaintext highlighter-rouge">.link</code>) from the central storage
 to the writable folder; this is done by invoking <code class="language-plaintext highlighter-rouge">xpm link</code> in the
 writable folder</li>
   <li>replace the link in the application with a link to the above <code class="language-plaintext highlighter-rouge">.link</code>;
@@ -488,7 +488,7 @@ this is done by invoking <code class="language-plaintext highlighter-rouge">xpm 
 
 <h3 id="help---help">Help (<code class="language-plaintext highlighter-rouge">--help</code>)</h3>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">link</span> <span class="nt">--help</span>     
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpm <span class="nb">link</span> <span class="nt">--help</span>
 <span class="go">
 xPack manager - create links to packages under development
 </span><span class="gp">Usage: xpm link [options...] [--config &lt;config_name&gt;</span><span class="o">]</span> <span class="o">[[</span>@&lt;scope&gt;/]&lt;name&gt;]
@@ -497,19 +497,19 @@ Link options:
 </span><span class="gp">  -c|--config &lt;config_name&gt;</span><span class="w">  </span>Link to the configuration build folder <span class="o">(</span>optional<span class="o">)</span>
 <span class="go">
 Common options:
-</span><span class="gp">  --loglevel &lt;level&gt;</span><span class="w">         </span>Set log level <span class="o">(</span>silent|warn|info|verbose|debug|trace<span class="o">)</span> 
-<span class="go">  -s|--silent                Disable all messages (--loglevel silent) 
-  -q|--quiet                 Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative              Informative (--loglevel info) 
-  -v|--verbose               Verbose (--loglevel verbose) 
-  -d|--debug                 Debug messages (--loglevel debug) 
-  -dd|--trace                Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier       Skip check for a more recent version 
-</span><span class="gp">  -C &lt;folder&gt;</span><span class="w">                </span>Set current folder 
+</span><span class="gp">  --loglevel &lt;level&gt;</span><span class="w">         </span>Set log level <span class="o">(</span>silent|warn|info|verbose|debug|trace<span class="o">)</span>
+<span class="go">  -s|--silent                Disable all messages (--loglevel silent)
+  -q|--quiet                 Mostly quiet, warnings and errors (--loglevel warn)
+  --informative              Informative (--loglevel info)
+  -v|--verbose               Verbose (--loglevel verbose)
+  -d|--debug                 Debug messages (--loglevel debug)
+  -dd|--trace                Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier       Skip check for a more recent version
+</span><span class="gp">  -C &lt;folder&gt;</span><span class="w">                </span>Set current folder
 <span class="go">
-xpm -h|--help                Quick help 
-xpm --version                Show version 
-xpm -i|--interactive         Enter interactive mode 
+xpm -h|--help                Quick help
+xpm --version                Show version
+xpm -i|--interactive         Enter interactive mode
 
 npm xpm@0.9.0 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
 </span><span class="gp">Home page: &lt;https://xpack.github.io/xpm/&gt;</span><span class="w">
@@ -568,7 +568,7 @@ instead of the top project folder.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Sep 9, 2021<br/> Site last generated: Sep 9, 2021 <br />
+<span>Page last updated:</span> Sep 17, 2021<br/> Site last generated: Sep 17, 2021 <br />
                 </div>
             </div>
 </footer>
