@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack Build Box v3.3 released" />
 <script type="application/ld+json">
-{"description":"The xPack Build Box (XBB) is a build environment intended for reproducible builds.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2021/10/13/xbb-v3.3-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2021/10/13/xbb-v3.3-released/","headline":"xPack Build Box v3.3 released","dateModified":"2021-10-13T13:17:07+00:00","datePublished":"2021-10-13T09:00:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"The xPack Build Box (XBB) is a build environment intended for reproducible builds.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2021/10/13/xbb-v3.3-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2021/10/13/xbb-v3.3-released/","headline":"xPack Build Box v3.3 released","dateModified":"2021-10-13T18:15:47+00:00","datePublished":"2021-10-13T09:00:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -593,8 +593,8 @@
 <p>XBB supports building binaries for the following platforms:</p>
 
 <ul>
-  <li>Intel Linux 64/32-bit</li>
-  <li>Arm Linux 64/32-bit</li>
+  <li>Intel GNU/Linux 64/32-bit</li>
+  <li>Arm GNU/Linux 64/32-bit</li>
   <li>Intel macOS 64-bit</li>
   <li>Intel Windows 64/32-bit</li>
 </ul>
@@ -605,26 +605,29 @@
 
 <p>To allow the resulting binaries to run on as many existing systems
 as possible, the XBB build environments are on purpose based on older
-Linux and macOS systems:</p>
+GNU/Linux and macOS releases:</p>
 
 <ul>
-  <li>Intel Linux: Ubuntu 12.04 with <strong>GLIBC 2.15</strong>; this should provide compatibility with:
+  <li>Intel GNU/Linux: Ubuntu 12.04 with <strong>GLIBC 2.15</strong>; this should provide compatibility with:
     <ul>
       <li>Ubuntu 12 or later</li>
       <li>Debian 8 or later</li>
       <li>RedHat/CentOS 7 later</li>
       <li>Fedora 20 or later</li>
+      <li>any other distributions using GLIBC 2.15 or higher</li>
     </ul>
   </li>
-  <li>Arm Linux: Ubuntu 16.04 with <strong>GLIBC 2.23</strong>; this should provide compatibility with:
+  <li>Arm GNU/Linux: Ubuntu 16.04 with <strong>GLIBC 2.23</strong>; this should provide compatibility with:
     <ul>
       <li>Ubuntu 16 or later</li>
       <li>Debian 9 or later</li>
       <li>RedHat/CentOS 8 or later</li>
       <li>Fedora 24 or later</li>
+      <li>any other distributions using GLIBC 2.23 or higher</li>
     </ul>
   </li>
-  <li>Intel Windows: Windows 7 with UCRT</li>
+  <li>Intel Windows: Windows 7 with the new Universal C Runtime
+(<a href="https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c">UCRT</a>)</li>
   <li>Intel macOS: 10.13; this should provide compatibility with:
     <ul>
       <li>macOS 10.13 or later</li>
@@ -636,8 +639,11 @@ Linux and macOS systems:</p>
 use <code class="language-plaintext highlighter-rouge">-mmacosx-version-min=10.10</code>, which configures the resulting
 binaries to run on macOS 10.10 or later; however the toolchain packages
 (like GCC and clang) require the Command Line Tools to be present in
-<code class="language-plaintext highlighter-rouge">/Library/Developer/CommandLineTools</code>, and this is available since
-macOS 10.13.</div>
+<code class="language-plaintext highlighter-rouge">/Library/Developer/CommandLineTools</code>, and this is available only since
+macOS 10.13; so, except the toolchains, the other binaries may also
+run on macOS 10.10 or later.</div>
+
+<h3 id="glibc-version">GLIBC version</h3>
 
 <p>To find out the GLIBC version on a given GNU/Linux distribution, use:</p>
 
@@ -646,7 +652,7 @@ macOS 10.13.</div>
 
 <h2 id="tools-versions">Tools versions</h2>
 
-<p>In version 3.3, the main XBB tools were updated to:</p>
+<p>In version 3.3, the main tools provided by XBB were updated to:</p>
 
 <ul>
   <li>GCC 11.2.0</li>
@@ -667,14 +673,14 @@ macOS 10.13.</div>
 
 <h2 id="linux-docker-images">Linux Docker images</h2>
 
-<p>On Linux, the production XBB consists of multiple Docker images,
+<p>On GNU/Linux, the production XBB consists of multiple Docker images,
 in pairs of 32/64-bit, for each platform and version.</p>
 
 <p>The images are published on
 <a href="https://hub.docker.com/repository/docker/ilegeul/ubuntu">Docker Hub</a>
 (pulling can be done anonymously, pushing requires login).</p>
 
-<p>Intel Linux:</p>
+<p>Intel GNU/Linux:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">ilegeul/ubuntu:amd64-12.04-xbb-v3.3</code></li>
@@ -698,7 +704,7 @@ images based on Ubuntu 18 are also available:</p>
 <p>The images were created on a Debian 10
 running on an Intel NUC.</p>
 
-<p>Arm Linux:</p>
+<p>Arm GNU/Linux:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">ilegeul/ubuntu:arm64v8-16.04-xbb-v3.3</code></li>
@@ -748,7 +754,8 @@ fixed location, which is:</p>
 <h2 id="links">Links</h2>
 
 <ul>
-  <li><a href="https://github.com/xpack/xpack-build-box">https://github.com/xpack/xpack-build-box</a></li>
+  <li><a href="/web-preview/xbb/">Home page</a></li>
+  <li><a href="https://github.com/xpack/xpack-build-box">GitHub</a></li>
 </ul>
 
     </div>
