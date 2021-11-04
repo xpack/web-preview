@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack GNU RISC-V Embedded GCC 10.1.0-1.2 released" />
 <script type="application/ld+json">
-{"description":"The xPack GNU RISC-V Embedded GCC is a standalone cross-platform binary distribution of the SiFive RISC-V GCC.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2021/11/04/riscv-none-embed-gcc-v10-1-0-1-2-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2021/11/04/riscv-none-embed-gcc-v10-1-0-1-2-released/","headline":"xPack GNU RISC-V Embedded GCC 10.1.0-1.2 released","dateModified":"2021-11-04T12:01:44+00:00","datePublished":"2021-11-04T11:50:38+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"The xPack GNU RISC-V Embedded GCC is a standalone cross-platform binary distribution of the SiFive RISC-V GCC.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2021/11/04/riscv-none-embed-gcc-v10-1-0-1-2-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2021/11/04/riscv-none-embed-gcc-v10-1-0-1-2-released/","headline":"xPack GNU RISC-V Embedded GCC 10.1.0-1.2 released","dateModified":"2021-11-04T12:12:21+00:00","datePublished":"2021-11-04T11:50:38+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -603,7 +603,7 @@ is a standalone cross-platform binary distribution of the
 <a href="https://github.com/sifive/freedom-tools/releases">SiFive RISC-V GCC</a>.</p>
 
 <p>There are separate binaries for <strong>Windows</strong> (Intel 32/64-bit),
-<strong>macOS</strong> (Intel 64-bit) and <strong>GNU/Linux</strong> (Intel 32/64-bit, Arm 32/64-bit).</p>
+<strong>macOS</strong> (Intel 64-bit) and <strong>GNU/Linux</strong> (Intel 32/64-bit, Arm 64-bit).</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The main targets for the Arm binaries
 are the <strong>Raspberry Pi</strong> class devices.</div>
@@ -687,14 +687,14 @@ xpm uninstall @xpack-dev-tools/riscv-none-embed-gcc
 <h2 id="compliance">Compliance</h2>
 
 <p>The xPack GNU RISC-V Embedded GCC generally follows the official
-SiFive RISC-V GCC <a href="https://github.com/sifive/freedom-tools/releases">releases</a>),
+SiFive RISC-V GCC <a href="https://github.com/sifive/freedom-tools/releases">Releases</a>,
 with as little differences as possible.</p>
 
 <p>The current version is based on:</p>
 
 <ul>
   <li>SiFive RISC-V GCC release <strong>v2020.12.0</strong> from April 7, 2021,
-and includes the SiFive extensions, including the vector support.</li>
+and includes the SiFive extensions, including the RVV vector support.</li>
 </ul>
 
 <h2 id="changes">Changes</h2>
@@ -888,7 +888,7 @@ with Ubuntu 18 and RedHat 8.</p>
     <ul>
       <li>this release <a href="https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/v10.1.0-1.2/"><img src="https://img.shields.io/github/downloads/xpack-dev-tools/riscv-none-embed-gcc-xpack/v10.1.0-1.2/total.svg" alt="Github All Releases" /></a></li>
       <li>all xPack releases <a href="https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/"><img src="https://img.shields.io/github/downloads/xpack-dev-tools/riscv-none-embed-gcc-xpack/total.svg" alt="Github All Releases" /></a></li>
-      <li>all GNU MCU Eclipse releases <a href="https://github.com/gnu-mcu-eclipse/riscv-none-embed-gcc/releases/"><img src="https://img.shields.io/github/downloads/gnu-mcu-eclipse/riscv-none-embed-gcc/total.svg" alt="Github All Releases" /></a></li>
+      <li>all GNU MCU Eclipse releases <a href="https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/"><img src="https://img.shields.io/github/downloads/gnu-mcu-eclipse/riscv-none-gcc/total.svg" alt="Github All Releases" /></a></li>
       <li><a href="https://somsubhra.github.io/github-release-stats/?username=xpack-dev-tools&amp;repository=riscv-none-embed-gcc-xpack">individual file counters</a> (grouped per release)</li>
     </ul>
   </li>
@@ -896,7 +896,7 @@ with Ubuntu 18 and RedHat 8.</p>
     <ul>
       <li>latest releases <a href="https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc/"><img src="https://img.shields.io/npm/dw/@xpack-dev-tools/riscv-none-embed-gcc.svg" alt="npm" /></a></li>
       <li>all @xpack-dev-tools releases <a href="https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc/"><img src="https://img.shields.io/npm/dt/@xpack-dev-tools/riscv-none-embed-gcc.svg" alt="npm" /></a></li>
-      <li>all @gnu-mcu-eclipse releases <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-embed-gcc/"><img src="https://img.shields.io/npm/dt/@gnu-mcu-eclipse/riscv-none-embed-gcc.svg" alt="npm" /></a></li>
+      <li>all @gnu-mcu-eclipse releases <a href="https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc/"><img src="https://img.shields.io/npm/dt/@gnu-mcu-eclipse/riscv-none-gcc.svg" alt="npm" /></a></li>
     </ul>
   </li>
 </ul>
