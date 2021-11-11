@@ -1280,7 +1280,7 @@
 "tags": "releasesriscvriscv-none-embed-gccgccbinariesc++",
 "keywords": "",
 "url": "/web-preview/blog/2021/11/11/riscv-none-embed-gcc-v10-2-0-1-2-released/",
-"summary": "<p>Version <strong>10.2.0-1.2</strong> is a maintenance release; it expands the multi-libs with non-C (compressed) configurations..</p>"
+"summary": "<p>Version <strong>10.2.0-1.2</strong> is a maintenance release; it expands the multi-libs with non-C (compressed) configurations.</p>"
 }
 ,
 
