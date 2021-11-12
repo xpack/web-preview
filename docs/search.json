@@ -1280,7 +1280,7 @@
 "tags": "releasesarmarm-none-eabi-gccgccbinariesc++exceptions",
 "keywords": "",
 "url": "/web-preview/blog/2021/11/12/arm-none-eabi-gcc-v10-3-1-2-2-released/",
-"summary": "<p>Version <strong>10.3.1-2.2</strong> is a maintenance release; it lightly reduces the size of the archives.</p>"
+"summary": "<p>Version <strong>10.3.1-2.2</strong> is a maintenance release; it slightly reduces the size of the archives.</p>"
 }
 ,
 
