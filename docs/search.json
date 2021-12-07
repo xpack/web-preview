@@ -1280,7 +1280,7 @@
 "tags": "releasesopenocd",
 "keywords": "",
 "url": "/web-preview/blog/2021/12/07/openocd-v0-11-0-3-released/",
-"summary": "<p>Version <strong>0.11.0-3</strong> is a maintenance release; it updates to the latest upstream master, <strong>adds support for Apple Silicon</strong> and uses the latest build scripts</p>"
+"summary": "<p>Version <strong>0.11.0-3</strong> is a maintenance release; it updates to the latest upstream master, <strong>adds support for Apple Silicon</strong> and uses the latest build scripts.</p>"
 }
 ,
 
