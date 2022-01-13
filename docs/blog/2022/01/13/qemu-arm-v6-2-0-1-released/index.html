@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack QEMU Arm v6.2.0-1 released" />
 <script type="application/ld+json">
-{"description":"The xPack QEMU Arm is a standalone cross-platform binary distribution of QEMU, with several extensions for Arm Cortex-M devices.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/01/13/qemu-arm-v6-2-0-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/01/13/qemu-arm-v6-2-0-1-released/","headline":"xPack QEMU Arm v6.2.0-1 released","dateModified":"2022-01-13T17:38:02+00:00","datePublished":"2022-01-13T17:10:40+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"The xPack QEMU Arm is a standalone cross-platform binary distribution of QEMU, with several extensions for Arm Cortex-M devices.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/01/13/qemu-arm-v6-2-0-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/01/13/qemu-arm-v6-2-0-1-released/","headline":"xPack QEMU Arm v6.2.0-1 released","dateModified":"2022-01-13T17:52:55+00:00","datePublished":"2022-01-13T17:10:40+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -625,7 +625,7 @@ Fedora 29 or later, etc)</li>
 (<a href="https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c">UCRT</a>),
 Windows 8, Windows 10</li>
   <li>macOS Intel 64-bit: 10.13 or later</li>
-  <li>macOS Apple Silicon: 11.6 or later</li>
+  <li>macOS Apple Silicon 64-bit: 11.6 or later</li>
 </ul>
 
 <p>On GNU/Linux, QEMU requires the X11 libraries to be present. On Debian derived
@@ -673,6 +673,10 @@ it is also possible to install QEMU Arm globally, in the user home folder.</p>
 identify binaries installed with
 <code class="language-plaintext highlighter-rouge">xpm</code> and provide a convenient method to manage paths.</p>
 
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Eclipse has integrated support only for
+<code class="language-plaintext highlighter-rouge">qemu-system-gnuarmeclipse</code>. <code class="language-plaintext highlighter-rouge">qemu-system-arm</code> can be used in debug
+sessions only when started outside Eclipse.</div>
+
 <h3 id="uninstall">Uninstall</h3>
 
 <p>To remove the links from the current project:</p>
@@ -697,11 +701,14 @@ with some changes.</p>
 <ul>
   <li>
     <p><code class="language-plaintext highlighter-rouge">qemu-system-arm</code> and <code class="language-plaintext highlighter-rouge">qemu-system-aarch64</code>, based on QEMU version 6.2.0,
-commit <a href="https://github.com/xpack-dev-tools/qemu/commit/44f28df24767cf9dca1ddc9b23157737c4cbb645">44f28df2</a> from Dec 14th, 2021;</p>
+commit <a href="https://github.com/xpack-dev-tools/qemu/commit/44f28df24767cf9dca1ddc9b23157737c4cbb645">44f28df2</a>
+from Dec 14th, 2021;</p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">qemu-system-gnuarmeclipse</code>, based on QEMU version 2.8.0,
-commit <a href="https://github.com/xpack-dev-tools/qemu/commit/0737f32daf35f3730ed2461ddfaaf034c2ec7ff0">0737f32</a> from Dec 20th, 2016.</p>
+commit <a href="https://github.com/xpack-dev-tools/qemu/commit/0737f32daf35f3730ed2461ddfaaf034c2ec7ff0">0737f32</a>
+from Dec 20th, 2016; this is end-of-life and will be preserved only for
+compatibility reasons.</p>
   </li>
 </ul>
 
@@ -851,7 +858,7 @@ z2                   Zipit Z2 (PXA27x)
 
 <h3 id="legacy">Legacy</h3>
 
-<p>The <code class="language-plaintext highlighter-rouge">qemu-system-gnuarmeclipse</code> is now deprecated, and kept only for
+<p>The <code class="language-plaintext highlighter-rouge">qemu-system-gnuarmeclipse</code> binary is now deprecated, and is kept only for
 compatibility reasons.</p>
 
 <p>Compared to the master <code class="language-plaintext highlighter-rouge">qemu-system-arm</code>, the changes are major, all
