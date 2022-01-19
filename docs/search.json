@@ -1211,17 +1211,6 @@
 "title": "",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/blog/2021/12/30/xpm-v0-12-1-released/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "",
-"tags": "",
-"keywords": "",
 "url": "/web-preview/blog/2021/01/27/xpm-v0-8-0-released/",
 "summary": ""
 }
@@ -1245,6 +1234,28 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/blog/2021/05/05/vscode-xpack-v0-4-11-released/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/blog/2021/12/30/xpm-v0-12-1-released/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/blog/2021/12/28/xpm-v0-12-2-released/",
 "summary": ""
 }
 ,
@@ -1297,21 +1308,21 @@
 
 
 {
-"title": "xPack QEMU Arm v6.2.0-1 released",
-"tags": "releasesqemuemulatorarmaarch64cortex-m",
+"title": "xPack xpm v0.12.9 released",
+"tags": "releasesxpmpackagemanager",
 "keywords": "",
-"url": "/web-preview/blog/2022/01/13/qemu-arm-v6-2-0-1-released/",
-"summary": "<p>Version <strong>6.2.0-1</strong> is a new release; it follows the upstream QEMU release.</p>"
+"url": "/web-preview/blog/2022/01/14/xpm-v0-12-9-released/",
+"summary": "<p>Version <strong>0.12.9</strong> is a new release; it adds support for PowerShell shims on Windows.</p>"
 }
 ,
 
 
 {
-"title": "xPack xpm v0.11.2 released",
-"tags": "releasesxpmpackagemanager",
+"title": "xPack QEMU Arm v6.2.0-1 released",
+"tags": "releasesqemuemulatorarmaarch64cortex-m",
 "keywords": "",
-"url": "/web-preview/blog/2021/12/28/xpm-v0-11-2-released/",
-"summary": "<p>Version <strong>0.11.2</strong> is a maintenance release; it fixes a recursion and improves error reporting.</p>"
+"url": "/web-preview/blog/2022/01/13/qemu-arm-v6-2-0-1-released/",
+"summary": "<p>Version <strong>6.2.0-1</strong> is a new release; it follows the upstream QEMU release.</p>"
 }
 ,
 
@@ -1852,16 +1863,6 @@
 "keywords": "",
 "url": "/web-preview/blog/2021/01/30/xpm-v0-8-1-released/",
 "summary": "<p>Version <strong>0.8.1</strong> is a new release of <strong>xpm</strong>; it allows to install xPacks from Git repositories and adds new commands (list, uninstall); it also changes the default global xPacks store location on Linux.</p>"
-}
-,
-
-
-{
-"title": "xPack xpm v0.12.9 released",
-"tags": "releasesxpmpackagemanager",
-"keywords": "",
-"url": "/web-preview/blog/2021/01/14/xpm-v0-12-9-released/",
-"summary": "<p>Version <strong>0.12.9</strong> is a new release; it adds support for PowerShell shims on Windows.</p>"
 }
 ,
 
