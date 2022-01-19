@@ -1857,21 +1857,21 @@
 
 
 {
-"title": "xPack CMake v3.19.2-1 released",
-"tags": "releasescmakebuild",
+"title": "xPack xpm v0.12.9 released",
+"tags": "releasesxpmpackagemanager",
 "keywords": "",
-"url": "/web-preview/blog/2021/01/06/cmake-v3-19-2-1-released/",
-"summary": "<p>Version 3.19.2-1 is a new release of the <strong>xPack CMake</strong> package, following the CMake release.</p>"
+"url": "/web-preview/blog/2021/01/14/xpm-v0-12-9-released/",
+"summary": "<p>Version <strong>0.12.9</strong> is a new release; it adds support for PowerShell shims on Windows.</p>"
 }
 ,
 
 
 {
-"title": "xPack xpm v0.12.6 released",
-"tags": "releasesxpmpackagemanager",
+"title": "xPack CMake v3.19.2-1 released",
+"tags": "releasescmakebuild",
 "keywords": "",
-"url": "/web-preview/blog/2021/01/06/xpm-v0-12-6-released/",
-"summary": "<p>Version <strong>0.12.6</strong> is a new release; it adds support for PowerShell shims on Windows.</p>"
+"url": "/web-preview/blog/2021/01/06/cmake-v3-19-2-1-released/",
+"summary": "<p>Version 3.19.2-1 is a new release of the <strong>xPack CMake</strong> package, following the CMake release.</p>"
 }
 ,
 
