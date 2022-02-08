@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack LLVM clang v12.0.1-2 released" />
 <script type="application/ld+json">
-{"description":"The xPack LLVM clang is a standalone cross-platform binary distribution of LLVM clang.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/02/08/clang-v12-0-1-2-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/02/08/clang-v12-0-1-2-released/","headline":"xPack LLVM clang v12.0.1-2 released","dateModified":"2022-02-08T16:59:27+00:00","datePublished":"2022-02-08T16:56:37+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"The xPack LLVM clang is a standalone cross-platform binary distribution of LLVM clang.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/02/08/clang-v12-0-1-2-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/02/08/clang-v12-0-1-2-released/","headline":"xPack LLVM clang v12.0.1-2 released","dateModified":"2022-02-08T17:12:57+00:00","datePublished":"2022-02-08T16:56:37+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -695,7 +695,11 @@ xpm uninstall @xpack-dev-tools/clang
 <h2 id="known-problems">Known problems</h2>
 
 <ul>
-  <li>none</li>
+  <li>on GNU/Linux, support for the clang run-time and C++ libraries is basic,
+the libraries are available, but using them is tricky, since it requires
+the compiled binaries to take care of the path to them, otherwise it is
+very likely that the system libraries will be used; thus it is
+recommended to avoid such use cases.</li>
 </ul>
 
 <h2 id="shared-libraries">Shared libraries</h2>
