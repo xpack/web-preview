@@ -1309,6 +1309,16 @@
 
 
 {
+"title": "xPack LLVM clang v12.0.1-2 released",
+"tags": "releasesclang",
+"keywords": "",
+"url": "/web-preview/blog/2022/02/08/clang-v12-0-1-2-released/",
+"summary": "<p>Version <strong>12.0.1-2</strong> is a maintenance release; it updates to the latest build scripts and adds support for Apple Silicon.</p>"
+}
+,
+
+
+{
 "title": "xPack QEMU Arm v6.2.0-2 released",
 "tags": "releasesqemuemulatorarmaarch64cortex-m",
 "keywords": "",
