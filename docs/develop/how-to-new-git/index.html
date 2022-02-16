@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to create a new xPack Git repository" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/develop/how-to-new-git/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/develop/how-to-new-git/","headline":"How to create a new xPack Git repository","dateModified":"2022-02-16T07:35:47+00:00","datePublished":"2019-07-09T14:48:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/develop/how-to-new-git/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/develop/how-to-new-git/","headline":"How to create a new xPack Git repository","dateModified":"2022-02-16T09:59:57+00:00","datePublished":"2019-07-09T14:48:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -651,17 +651,18 @@ it is necessary to create one.</p>
 
 <p>For projects distributed as archives, to simplify maintenance,
 it is recommended to reconstruct the history in a separate branch
-(like <code class="language-plaintext highlighter-rouge">originals</code>).</p>
+(like <code class="language-plaintext highlighter-rouge">originals</code>) by adding commits with the content of each released
+archive.</p>
 
 <h2 id="create-xpacks-repositories">Create xPacks repositories</h2>
 
 <p>If the project does not already have a forked repository, create a new
 Git project.</p>
 
-<p>!!!!
-For consistency reasons, it is recommended for the new xPacks, even if
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For consistency reasons, it is
+recommended for the new xPacks, even if
 they do not include 3rd party content, to use the <code class="language-plaintext highlighter-rouge">xpack</code> branch instead
-of the <code class="language-plaintext highlighter-rouge">master</code> branch.</p>
+of the <code class="language-plaintext highlighter-rouge">master</code> branch.</div>
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Do not use a GitHub Template project!
 The easiest way to create new projects would be to use an existing
@@ -706,10 +707,13 @@ choice for xPacks, but any other license of your choice is also ok</li>
     <ul>
       <li>in the <strong>Features</strong> section
         <ul>
-          <li>disable the <strong>Wikis</strong> and <strong>Projects</strong> options</li>
+          <li>disable <strong>Wikis</strong></li>
+          <li>enable <strong>Sponsorship</strong> (if needed)</li>
+          <li>disable <strong>Projects</strong></li>
           <li>enable <strong>Discussions</strong></li>
         </ul>
       </li>
+      <li>quit the <strong>Settings</strong> tab (there is no Save)</li>
     </ul>
   </li>
 </ul>
