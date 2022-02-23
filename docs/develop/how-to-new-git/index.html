@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to create a new xPack Git repository" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/develop/how-to-new-git/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/develop/how-to-new-git/","headline":"How to create a new xPack Git repository","dateModified":"2022-02-20T17:42:22+00:00","datePublished":"2019-07-09T14:48:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/develop/how-to-new-git/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/develop/how-to-new-git/","headline":"How to create a new xPack Git repository","dateModified":"2022-02-23T13:08:27+00:00","datePublished":"2019-07-09T14:48:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -612,7 +612,7 @@ will be used for new projects,
 with original content, so, in principle, these projects can be created
 to have any structure.</p>
 
-<p>In reality there are a lot of existing 3rd party
+<p>In reality there are lots of existing 3rd party
 software projects, each using its specific structure, and migrating them to
 xPacks may add some maintenance burden to keep them in sync with the
 originals.</p>
@@ -637,7 +637,7 @@ main branch can be merged into the <code class="language-plaintext highlighter-r
 do not enforce the use of a branch named <code class="language-plaintext highlighter-rouge">xpack</code>, this is only
 a recommendation.</div>
 
-<h2 id="create-xpacks-with-3rd-party-content">Create xPacks with 3rd party content</h2>
+<h2 id="create-source-library-xpacks-with-3rd-party-content">Create source library xPacks with 3rd party content</h2>
 
 <h3 id="existing-git">Existing Git</h3>
 
@@ -646,7 +646,13 @@ a recommendation.</div>
 <ul>
   <li>fork it, with its original <code class="language-plaintext highlighter-rouge">master</code> or <code class="language-plaintext highlighter-rouge">main</code> branch (for example in the
 <a href="https://github.com/xpack-3rd-party">3rd party xPacks</a> organization)</li>
-  <li>preferably rename it, to add a <code class="language-plaintext highlighter-rouge">-xpack</code> suffix</li>
+  <li>preferably rename it:
+    <ul>
+      <li>add a prefix with the name of the original organization</li>
+      <li>add the <code class="language-plaintext highlighter-rouge">-xpack</code> suffix</li>
+      <li>click the <strong>Rename</strong> button</li>
+    </ul>
+  </li>
   <li>select the <strong>Settings</strong> tab
     <ul>
       <li>in the <strong>Features</strong> section
@@ -668,17 +674,10 @@ a recommendation.</div>
 <ul>
   <li>select the GitHub project</li>
   <li>select the <strong>Code</strong> tab</li>
-  <li>click the <strong>Clone or download</strong> button; this will open a
-small <strong>Clone to HTTPS</strong> window</li>
-  <li>click the <strong>Copy</strong> icon, or explicitly copy the URL</li>
-  <li>in a terminal window, in a place of our choice, create a folder
-to store all xPacks (for example it can be named <code class="language-plaintext highlighter-rouge">xpack-3rd-party</code>)</li>
+  <li>click the <strong>Clone or download</strong> button</li>
+  <li>click Open with GitHub Desktop; save to a folder like
+<code class="language-plaintext highlighter-rouge">xpack-3rd-party/&lt;project&gt;.git</code></li>
 </ul>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> xpack-3rd-party
-<span class="nb">cd </span>xpack-3rd-party
-git clone https://github.com/xpack-3rd-party/&lt;project&gt;.git &lt;project&gt;.git
-</code></pre></div></div>
 
 <p>Continue from the <strong>Common steps</strong> section below.</p>
 
@@ -822,6 +821,16 @@ from release archives.
 
 <h2 id="common-steps">Common steps</h2>
 
+<h3 id="create-the-xpack-branch">Create the <code class="language-plaintext highlighter-rouge">xpack</code> branch</h3>
+
+<p>With VS Code, Fork or Git:</p>
+
+<ul>
+  <li>select the <code class="language-plaintext highlighter-rouge">master</code> branch</li>
+  <li>create new branch <code class="language-plaintext highlighter-rouge">xpack</code></li>
+  <li>switch to it</li>
+</ul>
+
 <h3 id="edit-the-gitignore-file">Edit the <code class="language-plaintext highlighter-rouge">.gitignore</code> file</h3>
 
 <p>With VS Code:</p>
@@ -831,6 +840,8 @@ from release archives.
 </ul>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# added for xPack
+
 .vscode/c_cpp_properties.json
 
 # xpm
@@ -866,15 +877,6 @@ Release/
 <ul>
   <li>stage the <code class="language-plaintext highlighter-rouge">.gitignore</code> file</li>
   <li>commit with the following message: <strong>.gitignore: add xPack specifics</strong></li>
-</ul>
-
-<h3 id="create-the-xpack-branch">Create the <code class="language-plaintext highlighter-rouge">xpack</code> branch</h3>
-
-<p>With VS Code, Fork or Git:</p>
-
-<ul>
-  <li>select the <code class="language-plaintext highlighter-rouge">master</code> branch</li>
-  <li>create new branch <code class="language-plaintext highlighter-rouge">xpack</code></li>
 </ul>
 
 <h3 id="publish-all-branches">Publish all branches</h3>
@@ -983,8 +985,9 @@ as the first contributor, for example:</li>
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGGER Microcontroller GmbH &amp; Co. KG"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"support@segger.com"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.segger.com/"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"license"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.segger.com/""..."</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"git"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://github.com/boost-ext/ut.git"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"license"</span><span class="p">:</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
@@ -1037,6 +1040,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 
 <ul>
   <li>stage the <code class="language-plaintext highlighter-rouge">LICENSE</code> file</li>
+  <li>for 3rd party content, rename it to LICENSE-XPACK</li>
   <li>commit with the following message: <strong>LICENSE: update copyright owner</strong></li>
 </ul>
 
@@ -1067,7 +1071,7 @@ The original content is released under the
   <li>commit with the following message: <strong>README: preliminary content</strong></li>
 </ul>
 
-<h3 id="add-a-changelogmd-file">Add a CHANGELOG.md file</h3>
+<h3 id="add-a-changelog-xpackmd-file">Add a CHANGELOG[-XPACK].md file</h3>
 
 <p>A possible content:</p>
 
@@ -1095,11 +1099,36 @@ and close existing issues and pull requests.
 
 <p>If the package uses 3rd party content, add a <code class="language-plaintext highlighter-rouge">.npmignore</code> file.</p>
 
-<p>Update the content until <code class="language-plaintext highlighter-rouge">npm pack</code> shows only the desired content.</p>
+<p>Start with something like:</p>
 
-<h3 id="add-readme-maintainermd">Add README-MAINTAINER.md</h3>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">.github/
+.vscode/
+build/
+ci/
+docs/
+tests*/
+example/
 
-<p>Create or copy/paste from a similar project.</p>
+.clang-*
+.cmake-format
+CONTRIBUTING**
+README-MAINTAINER*.md
+
+*.tgz
+
+</span></code></pre></div></div>
+
+<ul>
+  <li>update the content until <code class="language-plaintext highlighter-rouge">npm pack</code> shows only the desired content</li>
+  <li>commit with the following message: <strong>.npmignore preliminary content</strong></li>
+</ul>
+
+<h3 id="add-readme-maintainer-xpackmd">Add README-MAINTAINER[-XPACK].md</h3>
+
+<p>Create or copy/paste from a similar project, or from the template available
+in the <code class="language-plaintext highlighter-rouge">build-helper-xpack</code> project.</p>
+
+<p>For 3rd party projects, suffix the name with <code class="language-plaintext highlighter-rouge">-XPACK</code>.</p>
 
 <p>With VS Code, Fork or Git:</p>
 
@@ -1209,7 +1238,7 @@ npm version major
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Feb 20, 2022<br/> Site last generated: Feb 20, 2022 <br />
+<span>Page last updated:</span> Feb 23, 2022<br/> Site last generated: Feb 23, 2022 <br />
                 </div>
             </div>
 </footer>
