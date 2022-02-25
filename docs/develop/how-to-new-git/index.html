@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to create a new xPack Git repository" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/develop/how-to-new-git/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/develop/how-to-new-git/","headline":"How to create a new xPack Git repository","dateModified":"2022-02-25T08:51:20+00:00","datePublished":"2019-07-09T14:48:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/develop/how-to-new-git/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/develop/how-to-new-git/","headline":"How to create a new xPack Git repository","dateModified":"2022-02-25T16:15:21+00:00","datePublished":"2019-07-09T14:48:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -658,8 +658,10 @@ create the <code class="language-plaintext highlighter-rouge">originals</code> b
 
 <h4 id="fork">Fork</h4>
 
+<p>With the GitHub web interface:</p>
+
 <ul>
-  <li>select the upstream GitHub project</li>
+  <li>select the upstream project</li>
   <li>fork it, for example in the
 <a href="https://github.com/xpack-3rd-party">3rd party xPacks</a> organization)</li>
   <li>preferably rename it:
@@ -689,8 +691,10 @@ create the <code class="language-plaintext highlighter-rouge">originals</code> b
 
 <p>Clone the project locally on the development machine:</p>
 
+<p>With the GitHub web interface:</p>
+
 <ul>
-  <li>select the GitHub project</li>
+  <li>open the forked project</li>
   <li>select the <strong>Code</strong> tab</li>
   <li>click the <strong>Clone or download</strong> button</li>
   <li>click Open with GitHub Desktop; save to a folder like
@@ -785,8 +789,10 @@ choice for xPacks, but any other license of your choice is also ok</li>
 
 <h3 id="clone-the-repository-to-a-local-folder">Clone the repository to a local folder</h3>
 
+<p>With the GitHub web interface:</p>
+
 <ul>
-  <li>select the GitHub project</li>
+  <li>open the project</li>
   <li>select the <strong>Code</strong> tab</li>
   <li>click the <strong>Clone or download</strong> button; this will open a
 small <strong>Clone to HTTPS</strong> window</li>
@@ -920,6 +926,7 @@ Release/
 <p>With the GitHub web interface:</p>
 
 <ul>
+  <li>open the project</li>
   <li>select the <strong>Settings</strong> tab</li>
   <li>select the <strong>Branches</strong> grouping</li>
   <li>change the <strong>Default branch</strong> to <code class="language-plaintext highlighter-rouge">xpack</code></li>
@@ -1013,9 +1020,9 @@ as the first contributor, for example:</li>
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SEGGER Microcontroller GmbH &amp; Co. KG"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"support@segger.com"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.segger.com/""..."</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.segger.com/"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"git"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://github.com/boost-ext/ut.git"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"license"</span><span class="p">:</span><span class="w">
+      </span><span class="nl">"license"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">
@@ -1046,7 +1053,7 @@ as the first contributor, for example:</li>
   <li>commit with the following message: <strong>package.json: v0.1.0</strong></li>
 </ul>
 
-<h3 id="checkedit-the-license-file">Check/edit the <code class="language-plaintext highlighter-rouge">LICENSE</code> file</h3>
+<h3 id="checkedit-the-license-xpack-file">Check/edit the <code class="language-plaintext highlighter-rouge">LICENSE[-XPACK]</code> file</h3>
 
 <p>The automatically generated <code class="language-plaintext highlighter-rouge">LICENSE</code> file already includes the
 user name as the copyright owner. When the project is owned by
@@ -1067,8 +1074,8 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 <p>With VS Code, Fork or Git:</p>
 
 <ul>
-  <li>stage the <code class="language-plaintext highlighter-rouge">LICENSE</code> file</li>
-  <li>for 3rd party content, rename it to LICENSE-XPACK</li>
+  <li>for 3rd party content, rename it to <code class="language-plaintext highlighter-rouge">LICENSE-XPACK</code></li>
+  <li>stage the file</li>
   <li>commit with the following message: <strong>LICENSE: update copyright owner</strong></li>
 </ul>
 
@@ -1097,6 +1104,20 @@ The original content is released under the
 <ul>
   <li>stage the <code class="language-plaintext highlighter-rouge">README*.md</code> files</li>
   <li>commit with the following message: <strong>README: preliminary content</strong></li>
+</ul>
+
+<h3 id="add-readme-maintainer-xpackmd">Add README-MAINTAINER[-XPACK].md</h3>
+
+<p>Create or copy/paste from a similar project, or from the template available
+in the <code class="language-plaintext highlighter-rouge">build-helper-xpack</code> project.</p>
+
+<p>For 3rd party projects, suffix the name with <code class="language-plaintext highlighter-rouge">-XPACK</code>.</p>
+
+<p>With VS Code, Fork or Git:</p>
+
+<ul>
+  <li>stage the <code class="language-plaintext highlighter-rouge">README-MAINTAINER.md</code> files</li>
+  <li>commit with the following message: <strong>README-MAINTAINER: preliminary content</strong></li>
 </ul>
 
 <h3 id="add-a-changelog-xpackmd-file">Add a CHANGELOG[-XPACK].md file</h3>
@@ -1149,20 +1170,6 @@ README-MAINTAINER*.md
 <ul>
   <li>update the content until <code class="language-plaintext highlighter-rouge">npm pack</code> shows only the desired content</li>
   <li>commit with the following message: <strong>.npmignore preliminary content</strong></li>
-</ul>
-
-<h3 id="add-readme-maintainer-xpackmd">Add README-MAINTAINER[-XPACK].md</h3>
-
-<p>Create or copy/paste from a similar project, or from the template available
-in the <code class="language-plaintext highlighter-rouge">build-helper-xpack</code> project.</p>
-
-<p>For 3rd party projects, suffix the name with <code class="language-plaintext highlighter-rouge">-XPACK</code>.</p>
-
-<p>With VS Code, Fork or Git:</p>
-
-<ul>
-  <li>stage the <code class="language-plaintext highlighter-rouge">README-MAINTAINER.md</code> files</li>
-  <li>commit with the following message: <strong>README-MAINTAINER: preliminary content</strong></li>
 </ul>
 
 <h3 id="publish-the-initial-version-to-github">Publish the initial version to GitHub</h3>
