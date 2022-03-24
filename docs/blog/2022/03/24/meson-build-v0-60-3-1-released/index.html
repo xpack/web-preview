@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack Meson Build v0.60.3-1 released" />
 <script type="application/ld+json">
-{"description":"The xPack Meson Build is a standalone cross-platform binary distribution of Meson Build.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/03/24/meson-build-v0-60-3-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/03/24/meson-build-v0-60-3-1-released/","headline":"xPack Meson Build v0.60.3-1 released","dateModified":"2022-03-24T21:02:32+00:00","datePublished":"2022-03-24T20:56:39+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"The xPack Meson Build is a standalone cross-platform binary distribution of Meson Build.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/03/24/meson-build-v0-60-3-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/03/24/meson-build-v0-60-3-1-released/","headline":"xPack Meson Build v0.60.3-1 released","dateModified":"2022-03-24T21:05:34+00:00","datePublished":"2022-03-24T20:56:39+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -728,7 +728,7 @@ from Dec 22nd, 2021.</li>
 <h2 id="embedded-python">Embedded Python</h2>
 
 <p>To simplify dependency management, this release embeds a <strong>Python
-3.1.4</strong> instance.</p>
+3.10.4</strong> instance.</p>
 
 <p>The <code class="language-plaintext highlighter-rouge">meson</code> executable is a standard ELF/EXE which includes the Python
 run-time; the <code class="language-plaintext highlighter-rouge">main()</code> function prepares the Python environment and then
@@ -741,14 +741,14 @@ invokes the Meson main:</p>
 <p>The Python library is located in the standard location:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">lib/python3.1</code></li>
-  <li><code class="language-plaintext highlighter-rouge">lib/python3.1/lib-dynload</code> (the platform dependent files)</li>
+  <li><code class="language-plaintext highlighter-rouge">lib/python3.10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">lib/python3.10/lib-dynload</code> (the platform dependent files)</li>
 </ul>
 
 <p>The Meson files are located in:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">lib/python3.1/mesonbuild</code></li>
+  <li><code class="language-plaintext highlighter-rouge">lib/python3.10/mesonbuild</code></li>
 </ul>
 
 <p>To speed up execution, all Python files are compiled and are
