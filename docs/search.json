@@ -7,6 +7,8 @@
 
 
 
+
+
 {
 "title": "About",
 "tags": "",
@@ -1324,7 +1326,7 @@
 "tags": "releasesxpmpackagemanager",
 "keywords": "",
 "url": "/web-preview/blog/2022/04/03/xpm-v0-12-10-released/",
-"summary": "<p>Version <strong>0.12.10</strong> is a new release; it adds support for PowerShell shims on Windows.</p>"
+"summary": "<p>Version <strong>0.12.10</strong> is a maintenance release; it fixes a security issue.</p>"
 }
 ,
 
