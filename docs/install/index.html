@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack tools" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/install/","headline":"How to install the xPack tools","dateModified":"2022-04-08T16:06:50+00:00","datePublished":"2017-10-09T11:14:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/install/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/install/","headline":"How to install the xPack tools","dateModified":"2022-04-08T16:16:52+00:00","datePublished":"2017-10-09T11:14:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -910,7 +910,7 @@ use <code class="language-plaintext highlighter-rouge">nvm use &lt;version&gt;</
 
 <h2 id="command-line-tools">Command Line Tools</h2>
 
-<p>Although not a requirement for node/npm/xpm themselves, if the xPack
+<p>Although not a requirement for the node/npm/xpm tools themselves, if the xPack
 toolchains are used for software development, including running tests,
 the system C/C++ headers and most probably other tools, will be needed;
 they are provided by Apple as the separate Command Line Tools package.</p>
@@ -1100,11 +1100,12 @@ adjustments.</div>
 
 <h2 id="the-gcc-development-headers-and-libraries">The GCC development headers and libraries</h2>
 
-<p>Although not a requirement for node/npm/xpm themselves, if the xPack binaries
-are used for software development, the xPack toolchains will require the
-system C/C++ headers, provided by Apple as the Command Line Tools.</p>
+<p>Although not a requirement for the node/npm/xpm tools themselves, if the
+xPack toolchains
+are used for software development, including for running tests, the
+system C/C++ headers and libraries will be needed.</p>
 
-<p>Install the C++ libraries and headers according to the distribution specifics.</p>
+<p>Install them according to the distribution specifics.</p>
 
 
 	</div>
@@ -1115,7 +1116,8 @@ system C/C++ headers, provided by Apple as the Command Line Tools.</p>
 <p>The next step is to install the
 <a href="/web-preview/xpm/install/">xPack Project Manager</a>.</p>
 
-<p>If you already know what this is all about, issue the following command:</p>
+<p>If you followed the TL;DR steps, it was already installed. Otherwise,
+if you already know what this is all about, issue the following command:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--global</span> xpm@latest
 </code></pre></div></div>
