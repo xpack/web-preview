@@ -5,12 +5,12 @@
         <description>Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.</description>
         <link>https://xpack.github.io/web-preview/</link>
         <atom:link href="https://xpack.github.io/web-preview/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 17 Apr 2022 13:59:53 +0000</pubDate>
-        <lastBuildDate>Sun, 17 Apr 2022 13:59:53 +0000</lastBuildDate>
+        <pubDate>Sun, 17 Apr 2022 14:02:12 +0000</pubDate>
+        <lastBuildDate>Sun, 17 Apr 2022 14:02:12 +0000</lastBuildDate>
         <generator>Jekyll v4.2.1</generator>
         
         <item>
-            <title>VS Code xPack extension v0.4.16 released</title>
+            <title>VS Code xPack extension v0.4.17 released</title>
             <description>&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;</description>
             <pubDate>Sun, 17 Apr 2022 13:56:00 +0000</pubDate>
             <link>https://xpack.github.io/web-preview/blog/2022/04/17/vscode-xpack-v0-4-17-released/</link>
