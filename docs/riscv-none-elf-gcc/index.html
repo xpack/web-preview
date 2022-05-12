@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="The xPack GNU RISC-V Embedded GCC" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/","headline":"The xPack GNU RISC-V Embedded GCC","dateModified":"2022-05-12T14:26:07+00:00","datePublished":"2019-07-10T14:53:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/","headline":"The xPack GNU RISC-V Embedded GCC","dateModified":"2022-05-12T14:44:49+00:00","datePublished":"2019-07-10T14:53:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -384,8 +384,8 @@ $('#toc').on('click', 'a', function() {
 
    <h2 id="quicklinks">Quicklinks</h2>
 
-<p>If you already know the general facts about the xPack GNU RISC-V Embedded GCC, you can
-directly skip to the desired pages.</p>
+<p>If you already know the general facts about the xPack GNU RISC-V Embedded GCC,
+you can directly skip to the desired pages.</p>
 
 <p>User pages:</p>
 
@@ -406,8 +406,7 @@ directly skip to the desired pages.</p>
 <h2 id="overview">Overview</h2>
 
 <p>The <strong>xPack GNU RISC-V Embedded GCC</strong>
-is an alternate binary distribution that complements the official
-<a href="https://www.sifive.com/boards">SiFive</a> toolchain.</p>
+is a binary distribution of the GNU RISC-V Embedded GCC toolchain.</p>
 
 <h2 id="benefits">Benefits</h2>
 
@@ -443,7 +442,7 @@ platforms are presented in the separate
 <p>The original documentation is available
 <a href="https://gcc.gnu.org/onlinedocs/">online</a>.</p>
 
-<h2 id="riscv64-none-elf-gcc">riscv64-none-elf-gcc</h2>
+<h2 id="riscv-none-elf-gcc">riscv-none-elf-gcc</h2>
 
 <p>After installing the toolchain, you’ll end up with lots of programs
 prefixed by <code class="language-plaintext highlighter-rouge">riscv-none-elf-</code>. For those used to the RISC-V original
@@ -453,9 +452,11 @@ based on <code class="language-plaintext highlighter-rouge">-march</code> and <c
 
 <h2 id="-march-and--mabi"><code class="language-plaintext highlighter-rouge">-march</code> and <code class="language-plaintext highlighter-rouge">-mabi</code></h2>
 
-<p>The RISC-V design is not a single architecture, but a family of architectures, with optional components, identified by letters.</p>
+<p>The RISC-V design is not a single architecture, but a family of
+architectures, with optional components, identified by letters.</p>
 
-<p>RISC-V ISA strings begin with either RV32I, RV32E, RV64I, or RV128I indicating the supported address space size in bits for the base integer ISA.</p>
+<p>RISC-V ISA strings begin with either RV32I, RV32E, RV64I, or RV128I
+indicating the supported address space size in bits for the base integer ISA.</p>
 
 <ul>
   <li>RV32I: A load-store ISA with 32, 32-bit general-purpose integer registers.</li>
@@ -465,7 +466,8 @@ are 64-bit wide.</li>
 </ul>
 
 <p>In addition to these base ISAs, a handful of extensions have been
-specified. The extensions that have both been specified and are supported by the toolchain are:</p>
+specified. The extensions that have both been specified and are supported
+by the toolchain are:</p>
 
 <ul>
   <li>M - Integer Multiplication and Division</li>
