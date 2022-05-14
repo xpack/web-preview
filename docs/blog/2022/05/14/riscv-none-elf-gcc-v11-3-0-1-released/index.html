@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack GNU RISC-V Embedded GCC v11.3.0-1 released" />
 <script type="application/ld+json">
-{"description":"The xPack GNU RISC-V Embedded GCC is a standalone cross-platform binary distribution of the GNU GCC.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/05/14/riscv-none-elf-gcc-v11-3-0-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/05/14/riscv-none-elf-gcc-v11-3-0-1-released/","headline":"xPack GNU RISC-V Embedded GCC v11.3.0-1 released","dateModified":"2022-05-14T06:24:58+00:00","datePublished":"2022-05-14T05:47:10+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"The xPack GNU RISC-V Embedded GCC is a standalone cross-platform binary distribution of the GNU GCC.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/05/14/riscv-none-elf-gcc-v11-3-0-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/05/14/riscv-none-elf-gcc-v11-3-0-1-released/","headline":"xPack GNU RISC-V Embedded GCC v11.3.0-1 released","dateModified":"2022-05-14T07:22:48+00:00","datePublished":"2022-05-14T05:47:10+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -822,7 +822,10 @@ the distribution.</p>
 <h2 id="known-problems">Known problems</h2>
 
 <ul>
-  <li>due to the large number of libraries, the archive is &gt;400 MB.</li>
+  <li>due to the large number of libraries, the archive is &gt;400 MB</li>
+  <li>due to the large size, installing via xpm on 32-bit Arm fails with
+<em>error: RangeError: Array buffer allocation failed</em>; as a workaround,
+unpack the archive manually</li>
 </ul>
 
 <h2 id="shared-libraries">Shared libraries</h2>
