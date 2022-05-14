@@ -1388,6 +1388,16 @@
 
 
 {
+"title": "xPack GNU RISC-V Embedded GCC v11.3.0-1 released",
+"tags": "releasesriscvriscv-none-elf-gccgccbinariesc++",
+"keywords": "",
+"url": "/web-preview/blog/2022/05/14/riscv-none-elf-gcc-v11-3-0-1-released/",
+"summary": "<p>Version <strong>11.3.0-1</strong> is a new release; it follows the GNU release.</p>"
+}
+,
+
+
+{
 "title": "xPack QEMU Arm v7.0.0-1 released",
 "tags": "releasesqemuemulatorarmaarch64cortex-m",
 "keywords": "",
