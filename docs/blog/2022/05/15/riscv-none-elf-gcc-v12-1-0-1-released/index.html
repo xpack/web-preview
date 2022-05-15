@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack GNU RISC-V Embedded GCC v12.1.0-1 released" />
 <script type="application/ld+json">
-{"description":"The xPack GNU RISC-V Embedded GCC is a standalone cross-platform binary distribution of the GNU GCC.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/05/15/riscv-none-elf-gcc-v12-1-0-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/05/15/riscv-none-elf-gcc-v12-1-0-1-released/","headline":"xPack GNU RISC-V Embedded GCC v12.1.0-1 released","dateModified":"2022-05-15T03:55:11+00:00","datePublished":"2022-05-15T03:50:50+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"The xPack GNU RISC-V Embedded GCC is a standalone cross-platform binary distribution of the GNU GCC.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2022/05/15/riscv-none-elf-gcc-v12-1-0-1-released/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/blog/2022/05/15/riscv-none-elf-gcc-v12-1-0-1-released/","headline":"xPack GNU RISC-V Embedded GCC v12.1.0-1 released","dateModified":"2022-05-15T04:06:02+00:00","datePublished":"2022-05-15T03:50:50+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -703,24 +703,6 @@ with no functional changes:</p>
   <li>python 3.10.4</li>
 </ul>
 
-<h2 id="isa-updates">ISA updates</h2>
-
-<p>Compared to previous releases, starting from 12.x, the compiler
-implements the new RISC-V ISA, which introduces an incompatibility issue,
-and builds might throw error messages like <em>unrecognized opcode <code class="language-plaintext highlighter-rouge">csrr</code></em>.</p>
-
-<p>The reason is that csr read/write (<code class="language-plaintext highlighter-rouge">csrr*</code>/<code class="language-plaintext highlighter-rouge">csrw*</code>)
-instructions and <code class="language-plaintext highlighter-rouge">fence.i</code> instruction were separated from the <code class="language-plaintext highlighter-rouge">I</code>
-extension, becoming two standalone extensions: <code class="language-plaintext highlighter-rouge">Zicsr</code> and <code class="language-plaintext highlighter-rouge">Zifencei</code>.</p>
-
-<p>The solution is to add <code class="language-plaintext highlighter-rouge">_zicsr</code> and/or <code class="language-plaintext highlighter-rouge">_zifencei</code> to the
-<code class="language-plaintext highlighter-rouge">-march</code> option, e.g. <code class="language-plaintext highlighter-rouge">-march=rv32imac</code> becomes
-<code class="language-plaintext highlighter-rouge">-march=rv32imac_zicsr_zifencei</code>.</p>
-
-<p>In Eclipse, until the GUI will be updated, select the <em>Toolchain Default</em>
-for <em>Architecture</em> and
-enter the new string separately as <em>Other target flags</em>.</p>
-
 <h2 id="supported-libraries">Supported libraries</h2>
 
 <p>The default architecture/ABI pair is <code class="language-plaintext highlighter-rouge">rv32imac/ilp32</code>.</p>
@@ -789,6 +771,29 @@ enter the new string separately as <em>Other target flags</em>.</p>
 <h2 id="changes">Changes</h2>
 
 <p>Compared to the upstream GNU release, there are no functional changes.</p>
+
+<h3 id="risc-none-elf-gcc">risc-none-elf-gcc</h3>
+
+<p>For compliance reasons, starting with 11.x, the name of the toolchain
+was updated to <code class="language-plaintext highlighter-rouge">risc-none-elf-gcc</code>.</p>
+
+<h3 id="risc-v-isa-updates">RISC-V ISA updates</h3>
+
+<p>Compared to previous releases, starting from 12.x, the compiler
+implements the new RISC-V ISA, which introduces an incompatibility issue,
+and builds might throw error messages like <em>unrecognized opcode <code class="language-plaintext highlighter-rouge">csrr</code></em>.</p>
+
+<p>The reason is that csr read/write (<code class="language-plaintext highlighter-rouge">csrr*</code>/<code class="language-plaintext highlighter-rouge">csrw*</code>)
+instructions and <code class="language-plaintext highlighter-rouge">fence.i</code> instruction were separated from the <code class="language-plaintext highlighter-rouge">I</code>
+extension, becoming two standalone extensions: <code class="language-plaintext highlighter-rouge">Zicsr</code> and <code class="language-plaintext highlighter-rouge">Zifencei</code>.</p>
+
+<p>The solution is to add <code class="language-plaintext highlighter-rouge">_zicsr</code> and/or <code class="language-plaintext highlighter-rouge">_zifencei</code> to the
+<code class="language-plaintext highlighter-rouge">-march</code> option, e.g. <code class="language-plaintext highlighter-rouge">-march=rv32imac</code> becomes
+<code class="language-plaintext highlighter-rouge">-march=rv32imac_zicsr_zifencei</code>.</p>
+
+<p>In Eclipse, until the GUI will be updated, select the <em>Toolchain Default</em>
+for <em>Architecture</em> and
+enter the new string separately as <em>Other target flags</em>.</p>
 
 <h3 id="newlib-nano">newlib-nano</h3>
 
