@@ -126,10 +126,21 @@
 
 
 {
-"title": "The xPack GNU Arm Embedded GCC Frequently Asked Questions",
+"title": "The xPack Ninja Build Frequently Asked Questions",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/arm-none-eabi-gcc/faq/",
+"url": "/web-preview/ninja-build/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack Meson Build Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/meson-build/faq/",
 "summary": ""
 }
 ,
@@ -159,32 +170,21 @@
 
 
 {
+"title": "The xPack GNU RISC-V Embedded GCC Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/riscv-none-elf-gcc/faq/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "The xPack GNU Compiler Collection Frequently Asked Questions",
 "tags": "",
 "keywords": "",
 "url": "/web-preview/gcc/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack Meson Build Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/meson-build/faq/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack CMake Frequently Asked Questions",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/cmake/faq/",
 "summary": ""
 }
 ,
@@ -203,10 +203,10 @@
 
 
 {
-"title": "The xPack Ninja Build Frequently Asked Questions",
+"title": "The xPack GNU Arm Embedded GCC Frequently Asked Questions",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/ninja-build/faq/",
+"url": "/web-preview/arm-none-eabi-gcc/faq/",
 "summary": ""
 }
 ,
@@ -214,10 +214,10 @@
 
 
 {
-"title": "The xPack GNU RISC-V Embedded GCC Frequently Asked Questions",
+"title": "The xPack CMake Frequently Asked Questions",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/riscv-none-elf-gcc/faq/",
+"url": "/web-preview/cmake/faq/",
 "summary": ""
 }
 ,
@@ -294,17 +294,6 @@
 
 
 {
-"title": "xPack Developer info",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/develop/",
-"summary": "<p>Resources for xPack developers.</p>"
-}
-,
-
-
-
-{
 "title": "The xPack Build Box",
 "tags": "",
 "keywords": "",
@@ -312,8 +301,6 @@
 "summary": "<p>An elaborated environment for building binary xPacks.</p>"
 }
 ,
-
-
 
 
 
@@ -329,11 +316,33 @@
 
 
 {
-"title": "The xPack GNU Arm Embedded GCC",
+"title": "xPack Developer info",
 "tags": "",
-"keywords": "arm-none-eabi-gccarmgccembedded",
-"url": "/web-preview/arm-none-eabi-gcc/",
-"summary": "<p>A binary distribution of GNU Arm Embedded GCC.</p>"
+"keywords": "",
+"url": "/web-preview/develop/",
+"summary": "<p>Resources for xPack developers.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack Ninja Build",
+"tags": "",
+"keywords": "ninja-build",
+"url": "/web-preview/ninja-build/",
+"summary": "<p>A binary distribution of Ninja Build.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack Meson Build",
+"tags": "",
+"keywords": "meson-build",
+"url": "/web-preview/meson-build/",
+"summary": "<p>A binary distribution of Meson Build.</p>"
 }
 ,
 
@@ -362,33 +371,33 @@
 
 
 {
+"title": "The LLVM clang",
+"tags": "",
+"keywords": "LLVMclangc++",
+"url": "/web-preview/clang/",
+"summary": "<p>A binary distribution of the LLVM clang.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack GNU RISC-V Embedded GCC",
+"tags": "",
+"keywords": "riscv-none-elf-gccriscvgccembedded",
+"url": "/web-preview/riscv-none-elf-gcc/",
+"summary": "<p>A binary distribution of GNU RISC-V Embedded GCC.</p>"
+}
+,
+
+
+
+{
 "title": "The xPack GNU Compiler Collection (GCC)",
 "tags": "",
 "keywords": "gnugccc++",
 "url": "/web-preview/gcc/",
 "summary": "<p>A binary distribution of the GNU Compiler Collection.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack Meson Build",
-"tags": "",
-"keywords": "meson-build",
-"url": "/web-preview/meson-build/",
-"summary": "<p>A binary distribution of Meson Build.</p>"
-}
-,
-
-
-
-{
-"title": "The xPack CMake",
-"tags": "",
-"keywords": "cmake",
-"url": "/web-preview/cmake/",
-"summary": "<p>A binary distribution of CMake.</p>"
 }
 ,
 
@@ -406,72 +415,26 @@
 
 
 {
-"title": "The LLVM clang",
+"title": "The xPack GNU Arm Embedded GCC",
 "tags": "",
-"keywords": "LLVMclangc++",
-"url": "/web-preview/clang/",
-"summary": "<p>A binary distribution of the LLVM clang.</p>"
+"keywords": "arm-none-eabi-gccarmgccembedded",
+"url": "/web-preview/arm-none-eabi-gcc/",
+"summary": "<p>A binary distribution of GNU Arm Embedded GCC.</p>"
 }
 ,
 
 
 
 {
-"title": "The xPack Ninja Build",
+"title": "The xPack CMake",
 "tags": "",
-"keywords": "ninja-build",
-"url": "/web-preview/ninja-build/",
-"summary": "<p>A binary distribution of Ninja Build.</p>"
+"keywords": "cmake",
+"url": "/web-preview/cmake/",
+"summary": "<p>A binary distribution of CMake.</p>"
 }
 ,
 
 
-
-{
-"title": "The xPack GNU RISC-V Embedded GCC",
-"tags": "",
-"keywords": "riscv-none-elf-gccriscvgccembedded",
-"url": "/web-preview/riscv-none-elf-gcc/",
-"summary": "<p>A binary distribution of GNU RISC-V Embedded GCC.</p>"
-}
-,
-
-
-
-
-
-
-
-{
-"title": "xpm - common options",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/xpm/cli/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "xpm files",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/xpm/files/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "The xPack Project Manager",
-"tags": "",
-"keywords": "xPackpackagemanager",
-"url": "/web-preview/xpm/",
-"summary": "<p>A tool to manage dependencies for generic multi-version source and binary packages, inspired by npm.</p>"
-}
-,
 
 
 
@@ -492,6 +455,43 @@
 "keywords": "make",
 "url": "/web-preview/xpninja/",
 "summary": "<p>A light and fast tool to build generic projects, inspired by Ninja Build but with the configuration files in JSON (in design phase).</p>"
+}
+,
+
+
+
+
+
+
+
+{
+"title": "xpm files",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/files/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "xpm - common options",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/xpm/cli/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack Project Manager",
+"tags": "",
+"keywords": "xPackpackagemanager",
+"url": "/web-preview/xpm/",
+"summary": "<p>A tool to manage dependencies for generic multi-version source and binary packages, inspired by npm.</p>"
 }
 ,
 
@@ -588,10 +588,21 @@
 
 
 {
-"title": "How to install the xPack GNU Arm Embedded GCC binaries",
+"title": "How to install the xPack Ninja Build binaries",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/arm-none-eabi-gcc/install/",
+"url": "/web-preview/ninja-build/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack Meson Build binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/meson-build/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -621,32 +632,21 @@
 
 
 {
+"title": "How to install the xPack GNU RISC-V Embedded GCC binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/riscv-none-elf-gcc/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
 "title": "How to install the xPack GNU Compiler Collection binaries",
 "tags": "",
 "keywords": "",
 "url": "/web-preview/gcc/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack Meson Build binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/meson-build/install/",
-"summary": "<p>The recommended method is via xpm.</p>"
-}
-,
-
-
-
-{
-"title": "How to install the xPack CMake binaries",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/cmake/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -665,10 +665,10 @@
 
 
 {
-"title": "How to install the xPack Ninja Build binaries",
+"title": "How to install the xPack GNU Arm Embedded GCC binaries",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/ninja-build/install/",
+"url": "/web-preview/arm-none-eabi-gcc/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -676,10 +676,10 @@
 
 
 {
-"title": "How to install the xPack GNU RISC-V Embedded GCC binaries",
+"title": "How to install the xPack CMake binaries",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/riscv-none-elf-gcc/install/",
+"url": "/web-preview/cmake/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -852,17 +852,6 @@
 
 
 
-{
-"title": "How to get support",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/support/",
-"summary": ""
-}
-,
-
-
-
 
 
 
@@ -872,6 +861,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/xpbuild/cli/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get support",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/support/",
 "summary": ""
 }
 ,
@@ -919,8 +919,6 @@
 
 
 
-
-
 {
 "title": "GDB with Python support",
 "tags": "",
@@ -929,6 +927,8 @@
 "summary": "<p>Support for Python 2 and 3 is available in GDB.</p>"
 }
 ,
+
+
 
 
 
@@ -1026,10 +1026,21 @@
 
 
 {
-"title": "How to get help for xPack GNU Arm Embedded GCC",
+"title": "How to get help for xPack Ninja Build",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/arm-none-eabi-gcc/support/",
+"url": "/web-preview/ninja-build/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack Meson Build",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/meson-build/support/",
 "summary": ""
 }
 ,
@@ -1059,32 +1070,21 @@
 
 
 {
+"title": "How to get help for xPack GNU RISC-V Embedded GCC",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/riscv-none-elf-gcc/support/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "How to get help for xPack GNU Compiler Collection",
 "tags": "",
 "keywords": "",
 "url": "/web-preview/gcc/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack Meson Build",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/meson-build/support/",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "How to get help for xPack CMake",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/cmake/support/",
 "summary": ""
 }
 ,
@@ -1103,10 +1103,10 @@
 
 
 {
-"title": "How to get help for xPack Ninja Build",
+"title": "How to get help for xPack GNU Arm Embedded GCC",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/ninja-build/support/",
+"url": "/web-preview/arm-none-eabi-gcc/support/",
 "summary": ""
 }
 ,
@@ -1114,10 +1114,10 @@
 
 
 {
-"title": "How to get help for xPack GNU RISC-V Embedded GCC",
+"title": "How to get help for xPack CMake",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/riscv-none-elf-gcc/support/",
+"url": "/web-preview/cmake/support/",
 "summary": ""
 }
 ,
@@ -1399,6 +1399,16 @@
 
 
 {
+"title": "xPack xpm v0.13.6 released",
+"tags": "releasesxpmpackagemanager",
+"keywords": "",
+"url": "/web-preview/blog/2022/06/15/xpm-v0-13-6-released/",
+"summary": "<p>Version <strong>0.13.6</strong> is a maintenance release; it fixes passing args to single command actions.</p>"
+}
+,
+
+
+{
 "title": "xPack GCC v11.3.0-1 released",
 "tags": "releasesgcc",
 "keywords": "",
@@ -1433,7 +1443,7 @@
 "tags": "releasesxpmpackagemanager",
 "keywords": "",
 "url": "/web-preview/blog/2022/05/26/xpm-v0-13-5-released/",
-"summary": "<p>Version <strong>0.13.5</strong> is a maintenance release; it filter out hidden configurations in <code class="language-plaintext highlighter-rouge">install --all-configs</code>.</p>"
+"summary": "<p>Version <strong>0.13.5</strong> is a maintenance release; it filters out hidden configurations in <code class="language-plaintext highlighter-rouge">install --all-configs</code>.</p>"
 }
 ,
 
