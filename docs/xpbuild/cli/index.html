@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xpbuild - common options" />
 <script type="application/ld+json">
-{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpbuild/cli/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/xpbuild/cli/","headline":"xpbuild - common options","dateModified":"2022-06-16T20:24:29+00:00","datePublished":"2017-10-09T09:50:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
+{"description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpbuild/cli/"},"@type":"BlogPosting","url":"https://xpack.github.io/web-preview/xpbuild/cli/","headline":"xpbuild - common options","dateModified":"2022-07-03T19:48:06+00:00","datePublished":"2017-10-09T09:50:00+00:00","author":{"@type":"Person","name":"Liviu Ionescu"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -406,7 +406,7 @@ $('#toc').on('click', 'a', function() {
 
    <h2 id="synopsis">Synopsis</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xpbuild [&lt;command&gt;] [&lt;options&gt; ...] [&lt;args&gt;...]
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xpbuild <span class="o">[</span>&lt;<span class="nb">command</span><span class="o">&gt;]</span> <span class="o">[</span>&lt;options&gt; ...] <span class="o">[</span>&lt;args&gt;...]
 </code></pre></div></div>
 
 <h2 id="description">Description</h2>
@@ -424,10 +424,10 @@ command, or set of command and subcommands.</p>
 
 <p>To get an initial glimpse on the program, ask for help:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ xpbuild --help
-
-...
-</code></pre></div></div>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>xpbuild <span class="nt">--help</span>
+<span class="go">
+</span><span class="c">...
+</span></code></pre></div></div>
 
 <p>This works both at top level and with commands/subcommands.</p>
 
@@ -439,14 +439,14 @@ amount of messages.</p>
 <p>This can be changed, from not displaying any messages at all (<code class="language-plaintext highlighter-rouge">--silent</code>)
 to displaying lots of debugging trace messages (<code class="language-plaintext highlighter-rouge">--trace</code>).</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  --loglevel &lt;level&gt;     Set log level (silent|warn|info|verbose|debug|trace)
-  -s|--silent            Disable all messages (--loglevel silent)
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  --loglevel &lt;level&gt;</span><span class="w">     </span>Set log level <span class="o">(</span>silent|warn|info|verbose|debug|trace<span class="o">)</span>
+<span class="go">  -s|--silent            Disable all messages (--loglevel silent)
   -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
   --informative          Informative (--loglevel info)
   -v|--verbose           Verbose (--loglevel verbose)
   -d|--debug             Debug messages (--loglevel debug)
   -dd|--trace            Trace messages (--loglevel trace, -d -d)
-</code></pre></div></div>
+</span></code></pre></div></div>
 
 <h3 id="current-folder--c">Current folder (<code class="language-plaintext highlighter-rouge">-C</code>)</h3>
 
@@ -526,7 +526,7 @@ new version of the program available.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Jun 16, 2022<br/> Site last generated: Jun 16, 2022 <br />
+<span>Page last updated:</span> Jul 3, 2022<br/> Site last generated: Jul 3, 2022 <br />
                 </div>
             </div>
 </footer>
