@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install xpbuild" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-04T10:33:59+00:00","datePublished":"2019-07-04T13:49:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install xpbuild","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpbuild/install/"},"url":"https://xpack.github.io/web-preview/xpbuild/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-04T19:32:22+00:00","datePublished":"2019-07-04T13:49:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install xpbuild","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpbuild/install/"},"url":"https://xpack.github.io/web-preview/xpbuild/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -412,12 +412,12 @@ user home folder, in <code class="language-plaintext highlighter-rouge">%APPDATA
 (like <code class="language-plaintext highlighter-rouge">C:\Users\ilg\AppData\Roaming\npm</code>), and managing packages
 does not require administrative rights.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\&gt;npm install --global xpbuild@latest
-</code></pre></div></div>
+<pre><code class="language-doscon">C:\&gt;npm install --global xpbuild@latest
+</code></pre>
 
 <p>The result is a pair of files in the <code class="language-plaintext highlighter-rouge">%APPDATA%\npm</code> folder:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\&gt;dir "%APPDATA%"\npm\xpbuild*
+<pre><code class="language-doscon">C:\&gt;dir "%APPDATA%"\npm\xpbuild*
  Volume in drive C has no label.
  Volume Serial Number is 28CE-1C06
 
@@ -427,15 +427,15 @@ does not require administrative rights.</p>
 18/04/2018  10:40               196 xpbuild.cmd
                2 File(s)            515 bytes
                0 Dir(s)  51,207,155,712 bytes free
-</code></pre></div></div>
+</code></pre>
 
 <p>If you followed the instructions in the
 <a href="/web-preview/install/">Prerequisites</a> page, you should
 already have this path configured and the program should start normally:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\&gt;xpbuild --version
+<pre><code class="language-doscon">C:\&gt;xpbuild --version
 0.5.0
-</code></pre></div></div>
+</code></pre>
 
 	</div>
 	<div role="tabpanel" class="tab-pane" id="macos_1">

@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack GNU AArch64 Embedded GCC binaries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-04T10:33:59+00:00","datePublished":"2019-07-10T14:53:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU AArch64 Embedded GCC binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/aarch64-none-elf-gcc/install/"},"url":"https://xpack.github.io/web-preview/aarch64-none-elf-gcc/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-04T19:32:22+00:00","datePublished":"2019-07-10T14:53:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU AArch64 Embedded GCC binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/aarch64-none-elf-gcc/install/"},"url":"https://xpack.github.io/web-preview/aarch64-none-elf-gcc/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -843,8 +843,8 @@ for the executables in this location.</div>
 
 <p>The result is a structure like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /Users/ilg/Library/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-11.2.1-1.1
-<span class="go">/Users/ilg/Library/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-11.2.1-1.1
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-11.2.1-1.1
+<span class="go">/Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-11.2.1-1.1
 ├── README.md
 ├── aarch64-none-elf
 │   ├── bin
@@ -1042,11 +1042,11 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.</p>
 unpack the archive and copy it to
 <code class="language-plaintext highlighter-rouge">~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-&lt;version&gt;</code>:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/xPacks/aarch64-none-elf-gcc
-<span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/.local/xPacks/aarch64-none-elf-gcc
-<span class="go">
-</span><span class="gp">$</span><span class="w"> </span><span class="nb">tar </span>xvf ~/Downloads/xpack-aarch64-none-elf-gcc-11.2.1-1.1-linux-x64.tar.gz
-<span class="gp">$</span><span class="w"> </span><span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-aarch64-none-elf-gcc-11.2.1-1.1
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/xPacks/aarch64-none-elf-gcc
+<span class="nb">cd</span> ~/.local/xPacks/aarch64-none-elf-gcc
+
+<span class="nb">tar </span>xvf ~/Downloads/xpack-aarch64-none-elf-gcc-11.2.1-1.1-linux-x64.tar.gz
+<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-aarch64-none-elf-gcc-11.2.1-1.1
 </code></pre></div></div>
 
 <p>You may shorten the last folder name and keep only the version.</p>

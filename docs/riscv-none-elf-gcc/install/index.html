@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack GNU RISC-V Embedded GCC binaries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-04T10:33:59+00:00","datePublished":"2019-07-10T14:53:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU RISC-V Embedded GCC binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"},"url":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-04T19:32:22+00:00","datePublished":"2019-07-10T14:53:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU RISC-V Embedded GCC binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"},"url":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -438,7 +438,7 @@ older versions or configure the path manually.</div>
 
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
-<pre><code class="language-dos">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\11.3.0-1.1.1\.content\bin\riscv-none-elf-gcc.exe" --version
+<pre><code class="language-doscon">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\11.3.0-1.1.1\.content\bin\riscv-none-elf-gcc.exe" --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
 </code></pre>
 
@@ -563,7 +563,7 @@ older versions or configure the path manually.</div>
 
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/11.3.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/11.3.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
 <span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
 </span></code></pre></div></div>
 
@@ -587,12 +587,13 @@ Download the latest version named like:</p>
 
 <p>To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and copy it to
-<code class="language-plaintext highlighter-rouge">~/opt/xPacks/riscv-none-elf-gcc/&lt;version&gt;</code>:</p>
+<code class="language-plaintext highlighter-rouge">~/.local/xPacks/riscv-none-elf-gcc/&lt;version&gt;</code>:</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/opt <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/opt
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/xPacks/riscv-none-elf-gcc
+<span class="nb">cd</span> ~/.local/xPacks/riscv-none-elf-gcc
 
 <span class="nb">tar </span>xvf ~/Downloads/xpack-riscv-none-elf-gcc-11.3.0-1.1-darwin-x64.tgz
-<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1
+<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-riscv-none-elf-gcc-11.3.0-1.1
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For manual installs, the recommended
@@ -605,8 +606,8 @@ for the executable in this location.</div>
 
 <p>The result is a structure like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /Users/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1
-<span class="go">/Users/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1
+<span class="go">/Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
 ├── README.md
 ├── bin
 │   ├── libexpat.1.6.7.dylib
@@ -679,7 +680,7 @@ for the executable in this location.</div>
 
 <p>To check if the manually installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
 <span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
 </span></code></pre></div></div>
 
@@ -752,7 +753,7 @@ older versions or configure the path manually.</div>
 
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/11.3.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/11.3.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
 <span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
 </span></code></pre></div></div>
 
@@ -781,12 +782,13 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.</p>
 
 <p>To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and move it to
-<code class="language-plaintext highlighter-rouge">~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1</code>:</p>
+<code class="language-plaintext highlighter-rouge">~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1</code>:</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/opt <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/opt
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/xPacks/riscv-none-elf-gcc
+<span class="nb">cd</span> ~/.local/xPacks/riscv-none-elf-gcc
 
 <span class="nb">tar </span>xvf ~/Downloads/xpack-riscv-none-elf-gcc-11.3.0-1.1-linux-x64.tgz
-<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1
+<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-riscv-none-elf-gcc-11.3.0-1.1
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For manual installs, the recommended
@@ -801,8 +803,8 @@ for the executable in this location.</div>
 
 <p>The result is a structure like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /home/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
-<span class="go">/home/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
+<span class="go">/home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
 ├── bin
 </span><span class="gp">│   ├── libexpat.so.1 -&gt;</span><span class="w"> </span>libexpat.so.1.6.7
 <span class="go">│   ├── libexpat.so.1.6.7
@@ -886,7 +888,7 @@ for the executable in this location.</div>
 
 <p>To check if the manually installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
 <span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
 </span></code></pre></div></div>
 
