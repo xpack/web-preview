@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack GNU RISC-V Embedded GCC binaries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-05T13:07:39+00:00","datePublished":"2019-07-10T14:53:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU RISC-V Embedded GCC binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"},"url":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-05T15:06:28+00:00","datePublished":"2019-07-10T14:53:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU RISC-V Embedded GCC binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"},"url":"https://xpack.github.io/web-preview/riscv-none-elf-gcc/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -438,8 +438,8 @@ older versions or configure the path manually.</div>
 
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
-<pre><code class="language-doscon">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\11.3.0-1.1.1\.content\bin\riscv-none-elf-gcc.exe" --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
+<pre><code class="language-doscon">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\12.1.0-1.1.1\.content\bin\riscv-none-elf-gcc.exe" --version
+riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 12.1.0
 </code></pre>
 
 <h2 id="manual-install">Manual install</h2>
@@ -457,7 +457,7 @@ GitHub <a href="https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/rele
 Download the latest version named like:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">xpack-riscv-none-elf-gcc-11.3.0-1.1-win32-x64.zip</code></li>
+  <li><code class="language-plaintext highlighter-rouge">xpack-riscv-none-elf-gcc-12.1.0-1.1-win32-x64.zip</code></li>
 </ul>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In case you wonder where the suffix comes
@@ -487,8 +487,8 @@ for the executable in this location.</div>
 
 <p>To check if the manually installed GCC starts, use something like:</p>
 
-<pre><code class="language-dos">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-elf-gcc\xpack-riscv-none-elf-gcc-11.3.0-1.1\bin\riscv-none-elf-gcc.exe" --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
+<pre><code class="language-dos">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-elf-gcc\xpack-riscv-none-elf-gcc-12.1.0-1.1\bin\riscv-none-elf-gcc.exe" --version
+riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 12.1.0
 </code></pre>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Since Windows does not provide the GNU make
@@ -563,8 +563,8 @@ older versions or configure the path manually.</div>
 
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/11.3.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
-<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/12.1.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 12.1.0
 </span></code></pre></div></div>
 
 <h2 id="manual-install">Manual install</h2>
@@ -581,7 +581,7 @@ GitHub <a href="https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/rele
 <p>The macOS version of <strong>xPack GNU RISC-V Embedded GCC</strong> is packed as a .tar.gz archive.
 Download the latest version named like:</p>
 
-<p>- <code class="language-plaintext highlighter-rouge">xpack-riscv-none-elf-gcc-11.3.0-1.1-darwin-x64.tgz</code></p>
+<p>- <code class="language-plaintext highlighter-rouge">xpack-riscv-none-elf-gcc-12.1.0-1.1-darwin-x64.tgz</code></p>
 
 <h3 id="unpack">Unpack</h3>
 
@@ -592,8 +592,8 @@ unpack the archive and copy it to
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/xPacks/riscv-none-elf-gcc
 <span class="nb">cd</span> ~/.local/xPacks/riscv-none-elf-gcc
 
-<span class="nb">tar </span>xvf ~/Downloads/xpack-riscv-none-elf-gcc-11.3.0-1.1-darwin-x64.tgz
-<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-riscv-none-elf-gcc-11.3.0-1.1
+<span class="nb">tar </span>xvf ~/Downloads/xpack-riscv-none-elf-gcc-12.1.0-1.1-darwin-x64.tgz
+<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-riscv-none-elf-gcc-12.1.0-1.1
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For manual installs, the recommended
@@ -606,50 +606,43 @@ for the executable in this location.</div>
 
 <p>The result is a structure like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1
-<span class="go">/Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-12.1.0-1.1
+<span class="go">/Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-12.1.0-1.1/
 ├── README.md
 ├── bin
-│   ├── libexpat.1.6.7.dylib
-</span><span class="gp">│   ├── libexpat.1.dylib -&gt;</span><span class="w"> </span>libexpat.1.6.7.dylib
-<span class="go">│   ├── libgcc_s.1.dylib
-│   ├── libgmp.10.dylib
-│   ├── libiconv.2.dylib
-│   ├── liblzma.5.dylib
-│   ├── libmpfr.4.dylib
-│   ├── libz.1.2.8.dylib
-</span><span class="gp">│   ├── libz.1.dylib -&gt;</span><span class="w"> </span>libz.1.2.8.dylib
-<span class="go">│   ├── riscv-none-embed-addr2line
-│   ├── riscv-none-embed-ar
-│   ├── riscv-none-embed-as
-│   ├── riscv-none-embed-c++
-│   ├── riscv-none-embed-c++filt
-│   ├── riscv-none-embed-cpp
-│   ├── riscv-none-embed-elfedit
-│   ├── riscv-none-embed-g++
+│   ├── riscv-none-elf-addr2line
+│   ├── riscv-none-elf-ar
+│   ├── riscv-none-elf-as
+│   ├── riscv-none-elf-c++
+│   ├── riscv-none-elf-c++filt
+│   ├── riscv-none-elf-cpp
+│   ├── riscv-none-elf-elfedit
+│   ├── riscv-none-elf-g++
 │   ├── riscv-none-elf-gcc
-│   ├── riscv-none-elf-gcc-11.3.0
+│   ├── riscv-none-elf-gcc-12.1.0
 │   ├── riscv-none-elf-gcc-ar
 │   ├── riscv-none-elf-gcc-nm
 │   ├── riscv-none-elf-gcc-ranlib
-│   ├── riscv-none-embed-gcov
-│   ├── riscv-none-embed-gcov-dump
-│   ├── riscv-none-embed-gcov-tool
-│   ├── riscv-none-embed-gdb
-│   ├── riscv-none-embed-gdb-add-index
-│   ├── riscv-none-embed-gdb-add-index-py
-│   ├── riscv-none-embed-gdb-py
-│   ├── riscv-none-embed-gprof
-│   ├── riscv-none-embed-ld
-│   ├── riscv-none-embed-ld.bfd
-│   ├── riscv-none-embed-nm
-│   ├── riscv-none-embed-objcopy
-│   ├── riscv-none-embed-objdump
-│   ├── riscv-none-embed-ranlib
-│   ├── riscv-none-embed-readelf
-│   ├── riscv-none-embed-size
-│   ├── riscv-none-embed-strings
-│   └── riscv-none-embed-strip
+│   ├── riscv-none-elf-gcov
+│   ├── riscv-none-elf-gcov-dump
+│   ├── riscv-none-elf-gcov-tool
+│   ├── riscv-none-elf-gdb
+│   ├── riscv-none-elf-gdb-add-index
+│   ├── riscv-none-elf-gdb-add-index-py3
+│   ├── riscv-none-elf-gdb-py3
+│   ├── riscv-none-elf-gfortran
+│   ├── riscv-none-elf-gprof
+│   ├── riscv-none-elf-ld
+│   ├── riscv-none-elf-ld.bfd
+│   ├── riscv-none-elf-lto-dump
+│   ├── riscv-none-elf-nm
+│   ├── riscv-none-elf-objcopy
+│   ├── riscv-none-elf-objdump
+│   ├── riscv-none-elf-ranlib
+│   ├── riscv-none-elf-readelf
+│   ├── riscv-none-elf-size
+│   ├── riscv-none-elf-strings
+│   └── riscv-none-elf-strip
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
@@ -661,27 +654,48 @@ for the executable in this location.</div>
 │   ├── bfd-plugins
 │   ├── gcc
 │   ├── libcc1.0.so
-</span><span class="gp">│   └── libcc1.so -&gt;</span><span class="w"> </span>libcc1.0.so
-<span class="go">├── libexec
-│   └── gcc
-├── riscv-none-embed
+</span><span class="gp">│   ├── libcc1.so -&gt;</span><span class="w"> </span>libcc1.0.so
+<span class="go">│   └── python3.10
+├── libexec
+│   ├── gcc
+│   ├── libcrypt.2.dylib
+│   ├── libcrypto.1.1.dylib
+│   ├── libffi.8.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── libisl.23.dylib
+│   ├── liblzma.5.dylib
+│   ├── libmpc.3.dylib
+│   ├── libmpfr.6.dylib
+│   ├── libncurses.6.dylib
+│   ├── libpanel.6.dylib
+│   ├── libpython3.10.dylib
+│   ├── libreadline.8.1.dylib
+</span><span class="gp">│   ├── libreadline.8.dylib -&gt;</span><span class="w"> </span>libreadline.8.1.dylib
+<span class="go">│   ├── libsqlite3.0.dylib
+│   ├── libssl.1.1.dylib
+│   ├── libstdc++.6.dylib
+│   ├── libz.1.2.12.dylib
+</span><span class="gp">│   └── libz.1.dylib -&gt;</span><span class="w"> </span>libz.1.2.12.dylib
+<span class="go">├── riscv-none-elf
 │   ├── bin
 │   ├── include
 │   ├── lib
 │   └── share
 └── share
     ├── doc
-    └── gcc-riscv-none-embed
+    └── gcc-12.1.0
 
-20 directories, 44 files
+21 directories, 57 files
 </span></code></pre></div></div>
 
 <h3 id="test-1">Test</h3>
 
 <p>To check if the manually installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
-<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-12.1.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 12.1.0
 </span></code></pre></div></div>
 
 
@@ -753,8 +767,8 @@ older versions or configure the path manually.</div>
 
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/11.3.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
-<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/12.1.0-1.1.1/.content/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 12.1.0
 </span></code></pre></div></div>
 
 <h2 id="manual-install">Manual install</h2>
@@ -772,7 +786,7 @@ GitHub <a href="https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/rele
 .tar.gz archives. Download the latest version named like:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">xpack-riscv-none-elf-gcc-11.3.0-1.1-linux-x64.tgz</code></li>
+  <li><code class="language-plaintext highlighter-rouge">xpack-riscv-none-elf-gcc-12.1.0-1.1-linux-x64.tgz</code></li>
 </ul>
 
 <p>As the name implies, these are GNU/Linux <code class="language-plaintext highlighter-rouge">tar.gz</code> archives; they were build on
@@ -782,13 +796,13 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.</p>
 
 <p>To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and move it to
-<code class="language-plaintext highlighter-rouge">~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1</code>:</p>
+<code class="language-plaintext highlighter-rouge">~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-12.1.0-1.1</code>:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/xPacks/riscv-none-elf-gcc
 <span class="nb">cd</span> ~/.local/xPacks/riscv-none-elf-gcc
 
-<span class="nb">tar </span>xvf ~/Downloads/xpack-riscv-none-elf-gcc-11.3.0-1.1-linux-x64.tgz
-<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-riscv-none-elf-gcc-11.3.0-1.1
+<span class="nb">tar </span>xvf ~/Downloads/xpack-riscv-none-elf-gcc-12.1.0-1.1-linux-x64.tgz
+<span class="nb">chmod</span> <span class="nt">-R</span> <span class="nt">-w</span> xpack-riscv-none-elf-gcc-12.1.0-1.1
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For manual installs, the recommended
@@ -803,55 +817,44 @@ for the executable in this location.</div>
 
 <p>The result is a structure like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
-<span class="go">/home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-12.1.0-1.1/
+<span class="go">/home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-12.1.0-1.1/
 ├── bin
-</span><span class="gp">│   ├── libexpat.so.1 -&gt;</span><span class="w"> </span>libexpat.so.1.6.7
-<span class="go">│   ├── libexpat.so.1.6.7
-</span><span class="gp">│   ├── libfl.so.2 -&gt;</span><span class="w"> </span>libfl.so.2.0.0
-<span class="go">│   ├── libfl.so.2.0.0
-</span><span class="gp">│   ├── libgmp.so.10 -&gt;</span><span class="w"> </span>libgmp.so.10.3.2
-<span class="go">│   ├── libgmp.so.10.3.2
-</span><span class="gp">│   ├── libiconv.so.2 -&gt;</span><span class="w"> </span>libiconv.so.2.6.0
-<span class="go">│   ├── libiconv.so.2.6.0
-</span><span class="gp">│   ├── liblzma.so.5 -&gt;</span><span class="w"> </span>liblzma.so.5.2.3
-<span class="go">│   ├── liblzma.so.5.2.3
-</span><span class="gp">│   ├── libmpfr.so.4 -&gt;</span><span class="w"> </span>libmpfr.so.4.1.6
-<span class="go">│   ├── libmpfr.so.4.1.6
-│   ├── libpython2.7.so.1.0
-</span><span class="gp">│   ├── libz.so.1 -&gt;</span><span class="w"> </span>libz.so.1.2.8
-<span class="go">│   ├── libz.so.1.2.8
-│   ├── riscv-none-embed-addr2line
-│   ├── riscv-none-embed-ar
-│   ├── riscv-none-embed-as
-│   ├── riscv-none-embed-c++
-│   ├── riscv-none-embed-c++filt
-│   ├── riscv-none-embed-cpp
-│   ├── riscv-none-embed-elfedit
-│   ├── riscv-none-embed-g++
+</span><span class="gp">│   ├── libgpm.so.2 -&gt;</span><span class="w"> </span>libgpm.so.2.1.0
+<span class="go">│   ├── libgpm.so.2.1.0
+│   ├── riscv-none-elf-addr2line
+│   ├── riscv-none-elf-ar
+│   ├── riscv-none-elf-as
+│   ├── riscv-none-elf-c++
+│   ├── riscv-none-elf-c++filt
+│   ├── riscv-none-elf-cpp
+│   ├── riscv-none-elf-elfedit
+│   ├── riscv-none-elf-g++
 │   ├── riscv-none-elf-gcc
-│   ├── riscv-none-elf-gcc-11.3.0
+│   ├── riscv-none-elf-gcc-12.1.0
 │   ├── riscv-none-elf-gcc-ar
 │   ├── riscv-none-elf-gcc-nm
 │   ├── riscv-none-elf-gcc-ranlib
-│   ├── riscv-none-embed-gcov
-│   ├── riscv-none-embed-gcov-dump
-│   ├── riscv-none-embed-gcov-tool
-│   ├── riscv-none-embed-gdb
-│   ├── riscv-none-embed-gdb-add-index
-│   ├── riscv-none-embed-gdb-add-index-py
-│   ├── riscv-none-embed-gdb-py
-│   ├── riscv-none-embed-gprof
-│   ├── riscv-none-embed-ld
-│   ├── riscv-none-embed-ld.bfd
-│   ├── riscv-none-embed-nm
-│   ├── riscv-none-embed-objcopy
-│   ├── riscv-none-embed-objdump
-│   ├── riscv-none-embed-ranlib
-│   ├── riscv-none-embed-readelf
-│   ├── riscv-none-embed-size
-│   ├── riscv-none-embed-strings
-│   └── riscv-none-embed-strip
+│   ├── riscv-none-elf-gcov
+│   ├── riscv-none-elf-gcov-dump
+│   ├── riscv-none-elf-gcov-tool
+│   ├── riscv-none-elf-gdb
+│   ├── riscv-none-elf-gdb-add-index
+│   ├── riscv-none-elf-gdb-add-index-py3
+│   ├── riscv-none-elf-gdb-py3
+│   ├── riscv-none-elf-gfortran
+│   ├── riscv-none-elf-gprof
+│   ├── riscv-none-elf-ld
+│   ├── riscv-none-elf-ld.bfd
+│   ├── riscv-none-elf-lto-dump
+│   ├── riscv-none-elf-nm
+│   ├── riscv-none-elf-objcopy
+│   ├── riscv-none-elf-objdump
+│   ├── riscv-none-elf-ranlib
+│   ├── riscv-none-elf-readelf
+│   ├── riscv-none-elf-size
+│   ├── riscv-none-elf-strings
+│   └── riscv-none-elf-strip
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
@@ -861,35 +864,67 @@ for the executable in this location.</div>
 │   └── gdb
 ├── lib
 │   ├── bfd-plugins
-│   └── gcc
+│   ├── gcc
+│   └── python3.10
 ├── lib64
 </span><span class="gp">│   ├── libcc1.so -&gt;</span><span class="w"> </span>libcc1.so.0.0.0
 <span class="gp">│   ├── libcc1.so.0 -&gt;</span><span class="w"> </span>libcc1.so.0.0.0
-<span class="go">│   ├── libcc1.so.0.0.0
-│   ├── libgcc_s.so.1
-</span><span class="gp">│   ├── libstdc++.so.6 -&gt;</span><span class="w"> </span>libstdc++.so.6.0.24
-<span class="go">│   └── libstdc++.so.6.0.24
+<span class="go">│   └── libcc1.so.0.0.0
 ├── libexec
-│   └── gcc
+│   ├── gcc
+│   ├── libcrypto.so.1.1
+</span><span class="gp">│   ├── libcrypt.so.1 -&gt;</span><span class="w"> </span>libcrypt.so.1.1.0
+<span class="go">│   ├── libcrypt.so.1.1.0
+</span><span class="gp">│   ├── libffi.so.8 -&gt;</span><span class="w"> </span>libffi.so.8.1.0
+<span class="go">│   ├── libffi.so.8.1.0
+</span><span class="gp">│   ├── libfl.so.2 -&gt;</span><span class="w"> </span>libfl.so.2.0.0
+<span class="go">│   ├── libfl.so.2.0.0
+│   ├── libgcc_s.so.1
+</span><span class="gp">│   ├── libgmp.so.10 -&gt;</span><span class="w"> </span>libgmp.so.10.4.1
+<span class="go">│   ├── libgmp.so.10.4.1
+</span><span class="gp">│   ├── libiconv.so.2 -&gt;</span><span class="w"> </span>libiconv.so.2.6.1
+<span class="go">│   ├── libiconv.so.2.6.1
+</span><span class="gp">│   ├── libisl.so.23 -&gt;</span><span class="w"> </span>libisl.so.23.1.0
+<span class="go">│   ├── libisl.so.23.1.0
+</span><span class="gp">│   ├── liblzma.so.5 -&gt;</span><span class="w"> </span>liblzma.so.5.2.5
+<span class="go">│   ├── liblzma.so.5.2.5
+</span><span class="gp">│   ├── libmpc.so.3 -&gt;</span><span class="w"> </span>libmpc.so.3.2.1
+<span class="go">│   ├── libmpc.so.3.2.1
+</span><span class="gp">│   ├── libmpfr.so.6 -&gt;</span><span class="w"> </span>libmpfr.so.6.1.0
+<span class="go">│   ├── libmpfr.so.6.1.0
+</span><span class="gp">│   ├── libncurses.so.6 -&gt;</span><span class="w"> </span>libncurses.so.6.3
+<span class="go">│   ├── libncurses.so.6.3
+</span><span class="gp">│   ├── libpanel.so.6 -&gt;</span><span class="w"> </span>libpanel.so.6.3
+<span class="go">│   ├── libpanel.so.6.3
+│   ├── libpython3.10.so.1.0
+</span><span class="gp">│   ├── libreadline.so.8 -&gt;</span><span class="w"> </span>libreadline.so.8.1
+<span class="go">│   ├── libreadline.so.8.1
+</span><span class="gp">│   ├── libsqlite3.so.0 -&gt;</span><span class="w"> </span>libsqlite3.so.0.8.6
+<span class="go">│   ├── libsqlite3.so.0.8.6
+│   ├── libssl.so.1.1
+</span><span class="gp">│   ├── libstdc++.so.6 -&gt;</span><span class="w"> </span>libstdc++.so.6.0.29
+<span class="go">│   ├── libstdc++.so.6.0.29
+</span><span class="gp">│   ├── libz.so.1 -&gt;</span><span class="w"> </span>libz.so.1.2.12
+<span class="go">│   └── libz.so.1.2.12
 ├── README.md
-├── riscv-none-embed
+├── riscv-none-elf
 │   ├── bin
 │   ├── include
 │   ├── lib
 │   └── share
 └── share
     ├── doc
-    └── gcc-riscv-none-embed
+    └── gcc-12.1.0
 
-21 directories, 54 files
+22 directories, 74 files
 </span></code></pre></div></div>
 
 <h3 id="test-1">Test</h3>
 
 <p>To check if the manually installed GCC starts, use something like:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-11.3.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
-<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 11.3.0
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-12.1.0-1.1/bin/riscv-none-elf-gcc <span class="nt">--version</span>
+<span class="go">riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) 12.1.0
 </span></code></pre></div></div>
 
 
@@ -915,8 +950,7 @@ the user or system path!</div>
     <hr/>
     <p>Comments on the content of this page that might be useful
     for other readers are welcomed here. For question and general
-    support, please use the
-    <a href="https://www.tapatalk.com/groups/xpack/">project forums</a>.
+    support, please use GitHub Discussions.
     </p>
 
     <div id="disqus_thread"></div>

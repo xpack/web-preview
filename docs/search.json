@@ -998,17 +998,6 @@
 
 
 
-{
-"title": "GDB with Python support",
-"tags": "",
-"keywords": "",
-"url": "/web-preview/aarch64-none-elf-gcc/python/",
-"summary": "<p>Support for Python 2 and 3 is available in GDB.</p>"
-}
-,
-
-
-
 
 
 {

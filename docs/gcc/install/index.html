@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack GNU Compiler Collection binaries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-05T13:07:39+00:00","datePublished":"2021-05-21T21:27:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU Compiler Collection binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/gcc/install/"},"url":"https://xpack.github.io/web-preview/gcc/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-07-05T15:06:28+00:00","datePublished":"2021-05-21T21:27:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack GNU Compiler Collection binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/gcc/install/"},"url":"https://xpack.github.io/web-preview/gcc/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -444,7 +444,7 @@ xpm uninstall @xpack-dev-tools/gcc
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
 <pre><code class="language-doscon">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\gcc\12.1.0-1.1\.content\bin\gcc.exe" --version
-gcc version 12.1.0 (xPack GCC 64-bit)
+gcc (xPack GCC x86_64) -12.1.0
 </code></pre>
 
 <h2 id="manual-install">Manual install</h2>
@@ -490,7 +490,7 @@ and <code class="language-plaintext highlighter-rouge">.content</code> to store 
 <p>To check if the manually installed GCC starts, use something like:</p>
 
 <pre><code class="language-doscon">C:\&gt;%USERPROFILE%\AppData\Roaming\xPacks\gcc\xpack-gcc-12.1.0-1\bin\gcc.exe" --version
-gcc version 12.1.0 (xPack GCC x86_64)
+gcc (xPack GCC x86_64) -12.1.0
 </code></pre>
 
 
@@ -568,7 +568,7 @@ xpm uninstall @xpack-dev-tools/gcc
 <p>To check if the xpm installed GCC starts, use something like:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/Library/xPacks/@xpack-dev-tools/gcc/12.1.0-1.1/.content/bin/gcc <span class="nt">--version</span>
-<span class="go">gcc version 12.1.0 (xPack GCC x86_64)
+<span class="go">gcc (xPack GCC x86_64) -12.1.0
 </span></code></pre></div></div>
 
 <h2 id="manual-install">Manual install</h2>
@@ -714,7 +714,7 @@ install location is different from the xpm install folders.</div>
 <p>To check if the manually installed GCC starts, use something like:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>~/.local/xPacks/gcc/xpack-gcc-12.1.0-1.1/bin/gcc <span class="nt">--version</span>
-<span class="go">gcc version 12.1.0 (xPack GCC x86_64)
+<span class="go">gcc (xPack GCC x86_64) -12.1.0
 </span></code></pre></div></div>
 
 
@@ -1043,8 +1043,7 @@ the user or system path!</div>
     <hr/>
     <p>Comments on the content of this page that might be useful
     for other readers are welcomed here. For question and general
-    support, please use the
-    <a href="https://www.tapatalk.com/groups/xpack/">project forums</a>.
+    support, please use GitHub Discussions.
     </p>
 
     <div id="disqus_thread"></div>
