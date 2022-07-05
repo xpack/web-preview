@@ -299,11 +299,11 @@
 
 
 {
-"title": "The GNU MCU Eclipse QEMU",
+"title": "DEPRECATED: The GNU MCU Eclipse QEMU",
 "tags": "",
 "keywords": "qemuarmcortex-mgraphic",
 "url": "/web-preview/qemu-arm/gnuarmeclipse/",
-"summary": "<p>DEPRECATED: The initial custom QEMU used with Eclipse.</p>"
+"summary": "<p>The initial custom QEMU used with Eclipse.</p>"
 }
 ,
 
