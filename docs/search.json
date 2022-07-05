@@ -181,6 +181,17 @@
 
 
 {
+"title": "The LLVM clang Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/clang/faq/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "The xPack GNU Arm Embedded GCC Frequently Asked Questions",
 "tags": "",
 "keywords": "",
@@ -676,6 +687,17 @@
 
 
 {
+"title": "How to install the xPack LLVM clang binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/clang/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
 "title": "How to install the xPack GNU Arm Embedded GCC binaries",
 "tags": "",
 "keywords": "",
@@ -929,6 +951,17 @@
 {
 "title": "GNU predefined macros",
 "tags": "",
+"keywords": "clangc++preprocessormacros",
+"url": "/web-preview/clang/predefined-macros/",
+"summary": "<p>The preprocessosr built-in macros.</p>"
+}
+,
+
+
+
+{
+"title": "GNU predefined macros",
+"tags": "",
 "keywords": "gnugccc++preprocessormacros",
 "url": "/web-preview/gcc/predefined-macros/",
 "summary": "<p>The preprocessosr built-in macros.</p>"
@@ -986,6 +1019,8 @@
 "summary": "<p>Create a simple Hello World project.</p>"
 }
 ,
+
+
 
 
 
@@ -1120,6 +1155,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/cmake/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack LLVM clang",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/clang/support/",
 "summary": ""
 }
 ,
