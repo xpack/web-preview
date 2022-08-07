@@ -1116,6 +1116,17 @@
 
 
 
+{
+"title": "xPack Schemas",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/develop/schemas/",
+"summary": "<p>JSON Schemas.</p>"
+}
+,
+
+
+
 
 
 
@@ -1339,6 +1350,17 @@
 "keywords": "",
 "url": "/web-preview/xpm/cli/uninstall/",
 "summary": ""
+}
+,
+
+
+
+{
+"title": "VS Code Settings",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/develop/vs-code-settings/",
+"summary": "<p>Custom settings to silence some VS Code extensions.</p>"
 }
 ,
 
