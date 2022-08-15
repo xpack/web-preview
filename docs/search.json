@@ -1,6 +1,17 @@
 [
 
 
+{
+"title": "0001-share-npm-dependencies",
+"tags": "",
+"keywords": "xPackpackagemanagerpolicy",
+"url": "/web-preview/xpm/policies/0001-share-npm-dependencies/",
+"summary": "<p>Share npm dependencies.</p>"
+}
+,
+
+
+
 
 
 
@@ -991,6 +1002,17 @@
 
 
 
+
+
+
+{
+"title": "xpm Policies",
+"tags": "",
+"keywords": "xPackpackagemanagercompatibilitypolicy",
+"url": "/web-preview/xpm/policies/",
+"summary": "<p>Compatibility policies.</p>"
+}
+,
 
 
 
