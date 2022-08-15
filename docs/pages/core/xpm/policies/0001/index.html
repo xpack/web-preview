@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Share npm dependencies.">
-<meta name="keywords" content=" xPackpackagemanagerpolicy">
-<title>0001-share-npm-dependencies | The xPack Build Framework</title>
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title> | The xPack Build Framework</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
 
@@ -14,21 +14,17 @@
 <link type="application/rss+xml" rel="alternate" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>0001-share-npm-dependencies</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="0001-share-npm-dependencies" />
 <meta name="author" content="Liviu Ionescu" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
 <meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
-<link rel="canonical" href="https://xpack.github.io/web-preview/xpm/policies/0001-share-npm-dependencies/" />
-<meta property="og:url" content="https://xpack.github.io/web-preview/xpm/policies/0001-share-npm-dependencies/" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-15T07:12:00+00:00" />
+<link rel="canonical" href="https://xpack.github.io/web-preview/pages/core/xpm/policies/0001/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/pages/core/xpm/policies/0001/" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="0001-share-npm-dependencies" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-15T07:49:01+00:00","datePublished":"2022-08-15T07:12:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"0001-share-npm-dependencies","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/policies/0001-share-npm-dependencies/"},"url":"https://xpack.github.io/web-preview/xpm/policies/0001-share-npm-dependencies/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-15T11:49:52+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","url":"https://xpack.github.io/web-preview/pages/core/xpm/policies/0001/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -238,7 +234,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '/web-preview/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="0001-share-npm-dependencies">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -393,7 +389,7 @@ and the class never gets inserted.-->
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">0001-share-npm-dependencies</h1>
+   <h1 class="post-title-main"></h1>
 </div>
 
 
@@ -401,17 +397,37 @@ and the class never gets inserted.-->
 <div class="post-content">
 
    
-    <div class="summary">Share npm dependencies.
-</div>
-   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
 
     
 
 
    <h2 id="overview">Overview</h2>
 
-<p>Initial versions of <strong>xpm</strong> shared dependencies with <strong>npm</strong>, in the same top
-<code class="language-plaintext highlighter-rouge">dependencies</code> and <code class="language-plaintext highlighter-rouge">devDependencies</code> objects.</p>
+<p>Initially <strong>xpm</strong> shared dependencies with <strong>npm</strong>, in the same top
+<code class="language-plaintext highlighter-rouge">dependencies</code> and <code class="language-plaintext highlighter-rouge">devDependencies</code> properties.</p>
 
 <p>The advantage was that <strong>npm</strong> aware tools and sites were able to list
 these dependencies.</p>
@@ -419,11 +435,11 @@ these dependencies.</p>
 <p>However, this required <code class="language-plaintext highlighter-rouge">xpm install</code> to also handle the <strong>npm</strong> dependencies,
 which made things more complicated than they should have been.</p>
 
-<h2 id="change">Change</h2>
+<h2 id="changes">Changes</h2>
 
 <p>To simplify things, given that the xPack dependencies have a different
 nature than node modules and require a different logic, it was decided
-that it would be bettter to completely separate the definitions in
+that it would be better to completely separate the definitions in
 <code class="language-plaintext highlighter-rouge">package.json</code>, and move them below the <code class="language-plaintext highlighter-rouge">xpack</code> object.</p>
 
 <p>Thus, for source and binary xPacks, starting with xpm v0.14.0,
@@ -453,7 +469,7 @@ but it is recommended to update the packages.</p>
 
 <h2 id="end-of-life">End-of-life</h2>
 
-<p>This policy is expected to be available until the major rewrite of xpm
+<p>This policy is expected to remain available until the major rewrite of xpm,
 planned for v1.0.0.</p>
 
 
@@ -468,30 +484,6 @@ planned for v1.0.0.</p>
     </div>
 
     
-
-    <hr/>
-    <p>Comments on the content of this page that might be useful
-    for other readers are welcomed here. For question and general
-    support, please use GitHub Discussions.
-    </p>
-
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_config = function () {
-            this.page.url = '/web-preview';  // Your page's canonical URL variable
-            this.page.identifier = '/xpm/policies/0001-share-npm-dependencies/'; // Your page's unique identifier variable
-        };
-
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://xpack.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
 
 
 </div>

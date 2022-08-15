@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xpm Policies" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-15T07:49:01+00:00","datePublished":"2022-08-15T07:38:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xpm Policies","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/policies/"},"url":"https://xpack.github.io/web-preview/xpm/policies/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-15T11:49:52+00:00","datePublished":"2022-08-15T07:38:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xpm Policies","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/policies/"},"url":"https://xpack.github.io/web-preview/xpm/policies/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -410,20 +410,25 @@ and the class never gets inserted.-->
 
    <h2 id="overview">Overview</h2>
 
-<p>Similarly to CMake, xpm has a mechanism to preserve some deprecated
-functionality, to allow the projects to update their configurations.</p>
+<p>Similarly to CMake, <strong>xpm</strong> policies are used to preserve backward compatible
+behaviour across multiple releases.</p>
 
-<p>Newer <strong>xpm</strong> versions are able to adjust some
-functionality to match that of the required version, based on the
+<p>Newer <strong>xpm</strong> releases are able to adjust some
+functionality to match that of an older release, based on the
 value of the <code class="language-plaintext highlighter-rouge">xpack.minimumXpmRequired</code> property in <code class="language-plaintext highlighter-rouge">package.json</code>.</p>
+
+<p>When such policies are used, warnings are issued to inform the
+developers about the deprecated features, and give them time to update
+the packages.</p>
+
+<p>The following policies are available (in reverse chronological order):</p>
 
 <h2 id="policies-introduced-by-xpm-014">Policies introduced by xpm 0.14</h2>
 
 <ul>
-  <li><a href="/web-preview/xpm/policies/0001-share-npm-dependencies/">0001</a> -
+  <li><a href="/web-preview/xpm/policies/0001/">0001</a> -
 share npm dependencies</li>
 </ul>
-
 
 
         
