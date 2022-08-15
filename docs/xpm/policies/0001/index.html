@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Share npm dependencies.">
+<meta name="description" content="">
 <meta name="keywords" content=" xPackpackagemanagerpolicy">
 <title>0001: Share npm dependencies | The xPack Build Framework</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="0001: Share npm dependencies" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-15T12:01:24+00:00","datePublished":"2022-08-15T07:12:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"0001: Share npm dependencies","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/policies/0001/"},"url":"https://xpack.github.io/web-preview/xpm/policies/0001/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-15T12:08:19+00:00","datePublished":"2022-08-15T07:12:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"0001: Share npm dependencies","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/policies/0001/"},"url":"https://xpack.github.io/web-preview/xpm/policies/0001/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -401,9 +401,6 @@ and the class never gets inserted.-->
 <div class="post-content">
 
    
-    <div class="summary">Share npm dependencies.
-</div>
-   
 
     
 
@@ -422,7 +419,7 @@ which made things more complicated than they should have been.</p>
 <h2 id="changes">Changes</h2>
 
 <p>To simplify things, given that the xPack dependencies have a different
-nature than node modules and require a different logic, it was decided
+nature than node modules and require a different logic, it was considered
 that it would be better to completely separate the definitions in
 <code class="language-plaintext highlighter-rouge">package.json</code>, and move them below the <code class="language-plaintext highlighter-rouge">xpack</code> object.</p>
 
@@ -437,7 +434,7 @@ the definitions are:</p>
 <h2 id="action-points">Action points</h2>
 
 <p>For a while, packages that have a <code class="language-plaintext highlighter-rouge">xpack.minimumXpmRequired</code> less than 0.14.0,
-will still able to use the shared definitions,
+will still be able to use the shared definitions with npm,
 but it is recommended to update the packages.</p>
 
 <p>To do this, it is required to:</p>
