@@ -2,11 +2,11 @@
 
 
 {
-"title": "",
+"title": "0001: Share npm dependencies",
 "tags": "",
-"keywords": "",
-"url": "/web-preview/pages/core/xpm/policies/0001/",
-"summary": ""
+"keywords": "xPackpackagemanagerpolicy",
+"url": "/web-preview/xpm/policies/0001/",
+"summary": "<p>Share npm dependencies.</p>"
 }
 ,
 
@@ -390,7 +390,7 @@
 "tags": "",
 "keywords": "xPackpackagemanager",
 "url": "/web-preview/xpm/",
-"summary": "<p>A tool to orchestrate builds and manage dependencies for language neutral, multi-version, projects, inspired by npm.</p>"
+"summary": "<p>A tool to orchestrate builds and manage dependencies for language neutral, multi-version projects, inspired by npm.</p>"
 }
 ,
 
