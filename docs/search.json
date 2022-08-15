@@ -1679,7 +1679,7 @@
 "tags": "releasesxpmpackagemanager",
 "keywords": "",
 "url": "/web-preview/blog/2022/08/15/xpm-v0-14-0-released/",
-"summary": "<p>Version <strong>0.14.0</strong> is a new release; it purges the node_modules folder of unnecessary packages.</p>"
+"summary": "<p>Version <strong>0.14.0</strong> is a new major release; it separates xPack from npm dependencies.</p>"
 }
 ,
 
