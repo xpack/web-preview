@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xpm folders" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-17T15:46:46+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xpm folders","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/folders/"},"url":"https://xpack.github.io/web-preview/xpm/folders/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-08-17T15:53:06+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xpm folders","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/folders/"},"url":"https://xpack.github.io/web-preview/xpm/folders/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -498,6 +498,17 @@ its own configuration files.</p>
   <li><code class="language-plaintext highlighter-rouge">%ProgramFiles%\xPacks\.cache</code></li>
   <li><code class="language-plaintext highlighter-rouge">%ProgramFiles%\xPacks\.bin</code> (not in <code class="language-plaintext highlighter-rouge">Path</code>)</li>
 </ul>
+
+<h2 id="links-not-created-by-default">Links not created by default</h2>
+
+<p>Please note that since installing binaries globally is strongly
+discouraged in favour of installing links in each project, the global
+or system links are not installed by default, and require the user to
+explicitly specify the desired folder.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">.bin</code> folders mentioned before are only recommendations and
+intentionally are not in the PATH. However, in special setups,
+users can add links to binaries in any folder.</p>
 
 <h2 id="the-xpacks-folder">The xPacks folder</h2>
 
