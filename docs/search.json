@@ -938,6 +938,10 @@
 
 
 
+
+
+
+
 {
 "title": "Node.js Tips &amp; ricks",
 "tags": "",
@@ -1408,6 +1412,8 @@
 
 
 
+
+
 {
 "title": "The xPack SVD Definitions",
 "tags": "",
@@ -1676,7 +1682,7 @@
 
 {
 "title": "xPack XBB Bootstrap v4.0 released",
-"tags": "releasesxbb-bootstrap",
+"tags": "releasesxbb",
 "keywords": "",
 "url": "/web-preview/blog/2022/10/03/xbb-bootstrap-v4-0-released/",
 "summary": "<p>Version <strong>4.0</strong> is a new release; it is intended to replace the functionality provided by the XBB v3.4 Docker images.</p>"
