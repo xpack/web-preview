@@ -172,6 +172,17 @@
 
 
 {
+"title": "The xPack WineHQ Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/wine/faq/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "The xPack QEMU Arm Frequently Asked Questions",
 "tags": "",
 "keywords": "",
@@ -502,6 +513,17 @@
 
 
 {
+"title": "The xPack WineHQ",
+"tags": "",
+"keywords": "wine",
+"url": "/web-preview/wine/",
+"summary": "<p>A binary distribution of WineHQ.</p>"
+}
+,
+
+
+
+{
 "title": "The xPack QEMU Arm",
 "tags": "",
 "keywords": "qemuarmcortex-mgraphic",
@@ -704,6 +726,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/arm-none-eabi-gcc/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack WineHQ binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/wine/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -1131,6 +1164,8 @@
 
 
 
+
+
 {
 "title": "xpm run",
 "tags": "",
@@ -1211,6 +1246,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/arm-none-eabi-gcc/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack WineHQ",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/wine/support/",
 "summary": ""
 }
 ,
