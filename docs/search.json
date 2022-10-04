@@ -175,7 +175,7 @@
 "title": "The xPack WineHQ Frequently Asked Questions",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/wine/faq/",
+"url": "/web-preview/dev-tools/wine/faq/",
 "summary": ""
 }
 ,
@@ -242,6 +242,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/gcc/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack GNU AArch64 Embedded GCC Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/aarch64-none-elf-gcc/faq/",
 "summary": ""
 }
 ,
@@ -516,7 +527,7 @@
 "title": "The xPack WineHQ",
 "tags": "",
 "keywords": "wine",
-"url": "/web-preview/wine/",
+"url": "/web-preview/dev-tools/wine/",
 "summary": "<p>A binary distribution of WineHQ.</p>"
 }
 ,
@@ -584,6 +595,17 @@
 "keywords": "gnugccc++",
 "url": "/web-preview/gcc/",
 "summary": "<p>A binary distribution of the GNU Compiler Collection.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack GNU AArch64 Embedded GCC",
+"tags": "",
+"keywords": "aarch64-none-elf-gccarmgccembedded",
+"url": "/web-preview/aarch64-none-elf-gcc/",
+"summary": "<p>A binary distribution of GNU AArch64 Embedded GCC.</p>"
 }
 ,
 
@@ -736,7 +758,7 @@
 "title": "How to install the xPack WineHQ binaries",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/wine/install/",
+"url": "/web-preview/dev-tools/wine/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -803,6 +825,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/gcc/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack GNU AArch64 Embedded GCC binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/aarch64-none-elf-gcc/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -1166,6 +1199,8 @@
 
 
 
+
+
 {
 "title": "xpm run",
 "tags": "",
@@ -1256,7 +1291,7 @@
 "title": "How to get help for xPack WineHQ",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/wine/support/",
+"url": "/web-preview/dev-tools/wine/support/",
 "summary": ""
 }
 ,
@@ -1323,6 +1358,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/gcc/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack GNU AArch64 Embedded GCC",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/aarch64-none-elf-gcc/support/",
 "summary": ""
 }
 ,

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content=" ">
-<title>The xPack WineHQ Frequently Asked Questions | The xPack Build Framework</title>
+<meta name="description" content="A binary distribution of WineHQ.">
+<meta name="keywords" content=" wine">
+<title>The xPack WineHQ | The xPack Build Framework</title>
 <link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
 
 
@@ -14,21 +14,21 @@
 <link type="application/rss+xml" rel="alternate" title="" href="https://xpack.github.io/web-preview/feed.xml">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>The xPack WineHQ Frequently Asked Questions</title>
+<title>The xPack WineHQ</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="The xPack WineHQ Frequently Asked Questions" />
+<meta property="og:title" content="The xPack WineHQ" />
 <meta name="author" content="Liviu Ionescu" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
 <meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
-<link rel="canonical" href="https://xpack.github.io/web-preview/wine/faq/" />
-<meta property="og:url" content="https://xpack.github.io/web-preview/wine/faq/" />
+<link rel="canonical" href="https://xpack.github.io/web-preview/dev-tools/wine/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/dev-tools/wine/" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-10-04T07:32:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="The xPack WineHQ Frequently Asked Questions" />
+<meta property="twitter:title" content="The xPack WineHQ" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-10-04T07:47:02+00:00","datePublished":"2022-10-04T07:32:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"The xPack WineHQ Frequently Asked Questions","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/wine/faq/"},"url":"https://xpack.github.io/web-preview/wine/faq/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2022-10-04T07:58:45+00:00","datePublished":"2022-10-04T07:32:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"The xPack WineHQ","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/dev-tools/wine/"},"url":"https://xpack.github.io/web-preview/dev-tools/wine/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -238,7 +238,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '/web-preview/search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="The xPack WineHQ Frequently Asked Questions">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="The xPack WineHQ">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -274,35 +274,35 @@
           
           
           
-          <li><a title="Overview" href="/web-preview/wine/">Overview</a></li>
+          <li class="active"><a title="Overview" href="/web-preview/dev-tools/wine/">Overview</a></li>
           
           
           
           
           
           
-          <li><a title="Install" href="/web-preview/wine/install/">Install</a></li>
+          <li><a title="Install" href="/web-preview/dev-tools/wine/install/">Install</a></li>
           
           
           
           
           
           
-          <li><a title="Support" href="/web-preview/wine/support/">Support</a></li>
+          <li><a title="Support" href="/web-preview/dev-tools/wine/support/">Support</a></li>
           
           
           
           
           
           
-          <li class="active"><a title="FAQ" href="/web-preview/wine/faq/">FAQ</a></li>
+          <li><a title="FAQ" href="/web-preview/dev-tools/wine/faq/">FAQ</a></li>
           
           
           
           
           
           
-          <li><a title="Releases" href="/web-preview/wine/releases/">Releases</a></li>
+          <li><a title="Releases" href="/web-preview/dev-tools/wine/releases/">Releases</a></li>
           
           
           
@@ -333,7 +333,7 @@ and the class never gets inserted.-->
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">The xPack WineHQ Frequently Asked Questions</h1>
+   <h1 class="post-title-main">The xPack WineHQ</h1>
 </div>
 
 
@@ -341,33 +341,123 @@ and the class never gets inserted.-->
 <div class="post-content">
 
    
+    <div class="summary">A binary distribution of WineHQ.
+</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
 
     
 
 
-   <p><br /></p>
+   <h2 id="quicklinks">Quicklinks</h2>
 
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-      <div class="panel-heading">
-          <h4 class="panel-title">
-              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-1">Warum?</a>
-          </h4>
-      </div>
-      <div id="collapse-1" class="panel-collapse collapse noCrossRef">
-          <div class="panel-body">
-              
-<p>Darum! ;-) (to be added)</p>
+<p>If you already know the general facts about the xPack WineHQ, you can
+directly skip to the desired pages.</p>
 
-          </div>
-      </div>
-  </div>
+<p>User pages:</p>
 
-</div>
+<ul>
+  <li><a href="/web-preview/dev-tools/wine/install/">install</a></li>
+  <li><a href="/web-preview/dev-tools/wine/support/">support</a></li>
+  <li><a href="/web-preview/dev-tools/wine/releases/">releases</a></li>
+</ul>
+
+<p>Developer &amp; maintainer pages:</p>
+
+<ul>
+  <li><a href="https://github.com/xpack-dev-tools/wine-xpack/">GitHub</a></li>
+  <li><a href="https://github.com/xpack-dev-tools/wine-xpack/blob/xpack/README-BUILD.md">How to build</a></li>
+  <li><a href="https://github.com/xpack-dev-tools/wine-xpack/blob/xpack/README-RELEASE.md">How to publish</a></li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>The <strong>xPack WineHQ</strong> is a cross-platform binary distribution of the
+<a href="https://www.winehq.org">WineHQ</a> build system,
+an open source project hosted on
+<a href="https://gitlab.winehq.org/">GitLab</a>.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<p>The main advantages of using the <strong>xPack WineHQ</strong> are:</p>
+
+<ul>
+  <li>a convenient, uniform and portable install/uninstall/upgrade procedure</li>
+  <li>a better integration with development environments</li>
+  <li>a more convenient integration with CI environment</li>
+</ul>
+
+<p>All binaries are self-contained, they include all required libraries,
+and can be installed in any location.</p>
+
+<h2 id="compatibility">Compatibility</h2>
+
+<p>The <strong>xPack WineHQ</strong> is fully compatible with the original <strong>WineHQ</strong>
+distribution.</p>
+
+<h2 id="install">Install</h2>
+
+<p>The details of installing the <strong>xPack WineHQ</strong> on various platforms are
+presented in the separate
+<a href="/web-preview/dev-tools/wine/install/">install</a> page.</p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>The current version specific WineHQ documentation is available online from:</p>
+
+<ul>
+  <li><a href="https://www.winehq.org/">https://www.winehq.org/</a></li>
+</ul>
+
+<h2 id="support">Support</h2>
+
+<p>For the various support options, please read the separate
+<a href="/web-preview/dev-tools/wine/support/">support</a> page.</p>
+
+<h2 id="change-log">Change log</h2>
+
+<p>The release and change log is available in the repository
+<a href="https://github.com/xpack-dev-tools/wine-xpack/blob/xpack/CHANGELOG.md"><code class="language-plaintext highlighter-rouge">CHANGELOG.md</code></a> file.</p>
+
+<h2 id="build-details">Build details</h2>
+
+<p>For those interested in building the binaries, please read the
+<a href="https://github.com/xpack-dev-tools/wine-xpack/blob/xpack/README-BUILD.md">How to build</a>
+page.
+However, the ultimate source for details are the build scripts themselves,
+all available from the
+<a href="https://github.com/xpack-dev-tools/wine-xpack/tree/xpack/scripts/"><code class="language-plaintext highlighter-rouge">wine-xpack.git/scripts</code></a>
+folder.</p>
+
+<h2 id="releases">Releases</h2>
+
+<p>See the <a href="/web-preview/dev-tools/wine/releases/">releases</a> pages.</p>
 
 
         
-    <a target="_blank" rel="noopener" href="https://github.com/xpack/web-jekyll/blob/master/pages/dev-tools/wine/faq.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit</a>
+    <a target="_blank" rel="noopener" href="https://github.com/xpack/web-jekyll/blob/master/pages/dev-tools/wine/index.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit</a>
 
     
 
@@ -388,7 +478,7 @@ and the class never gets inserted.-->
     <script type="text/javascript">
         var disqus_config = function () {
             this.page.url = '/web-preview';  // Your page's canonical URL variable
-            this.page.identifier = '/wine/faq/'; // Your page's unique identifier variable
+            this.page.identifier = '/dev-tools/wine/'; // Your page's unique identifier variable
         };
 
         (function() { // DON'T EDIT BELOW THIS LINE
