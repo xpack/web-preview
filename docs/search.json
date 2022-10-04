@@ -249,10 +249,10 @@
 
 
 {
-"title": "The xPack GNU AArch64 Embedded GCC Frequently Asked Questions",
+"title": "The xPack MinGW-w64 GCC Frequently Asked Questions",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/aarch64-none-elf-gcc/faq/",
+"url": "/web-preview/mingw-w64-gcc/faq/",
 "summary": ""
 }
 ,
@@ -601,11 +601,11 @@
 
 
 {
-"title": "The xPack GNU AArch64 Embedded GCC",
+"title": "The xPack MinGW-w64 GCC",
 "tags": "",
-"keywords": "aarch64-none-elf-gccarmgccembedded",
-"url": "/web-preview/aarch64-none-elf-gcc/",
-"summary": "<p>A binary distribution of GNU AArch64 Embedded GCC.</p>"
+"keywords": "mingw-w64-gccmingw-w64mingwgcc",
+"url": "/web-preview/mingw-w64-gcc/",
+"summary": "<p>A binary distribution of MinGW-w64 GCC.</p>"
 }
 ,
 
@@ -832,10 +832,10 @@
 
 
 {
-"title": "How to install the xPack GNU AArch64 Embedded GCC binaries",
+"title": "How to install the xPack MinGW-w64 GCC binaries",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/aarch64-none-elf-gcc/install/",
+"url": "/web-preview/mingw-w64-gcc/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -1365,10 +1365,10 @@
 
 
 {
-"title": "How to get help for xPack GNU AArch64 Embedded GCC",
+"title": "How to get help for xPack MinGW-w64 GCC",
 "tags": "",
 "keywords": "",
-"url": "/web-preview/aarch64-none-elf-gcc/support/",
+"url": "/web-preview/mingw-w64-gcc/support/",
 "summary": ""
 }
 ,
