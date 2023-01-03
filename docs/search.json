@@ -1819,6 +1819,16 @@
 
 
 {
+"title": "xPack xpm v0.14.3 released",
+"tags": "releasesxpmpackagemanager",
+"keywords": "",
+"url": "/web-preview/blog/2023/01/03/xpm-v0-14-3-released/",
+"summary": "<p>Version <strong>0.14.3</strong> is a maintenance release; it adds some more trace messages to help diagnose a bug.</p>"
+}
+,
+
+
+{
 "title": "xPack GCC v12.2.0-2 released",
 "tags": "releasesgcc",
 "keywords": "",

@@ -5,9 +5,27 @@
         <description>Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.</description>
         <link>https://xpack.github.io/web-preview/</link>
         <atom:link href="https://xpack.github.io/web-preview/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 27 Dec 2022 22:05:38 +0000</pubDate>
-        <lastBuildDate>Tue, 27 Dec 2022 22:05:38 +0000</lastBuildDate>
+        <pubDate>Tue, 03 Jan 2023 09:05:18 +0000</pubDate>
+        <lastBuildDate>Tue, 03 Jan 2023 09:05:18 +0000</lastBuildDate>
         <generator>Jekyll v4.2.2</generator>
+        
+        <item>
+            <title>xPack xpm v0.14.3 released</title>
+            <description>&lt;p&gt;&lt;strong&gt;xpm&lt;/strong&gt; is a&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; CLIapplication to orchestrate builds and to manage&lt;a href=&quot;https://xpack.github.io/intro/#but-what-are-xpacks&quot;&gt;xPacks&lt;/a&gt; dependencies.&lt;/p&gt;</description>
+            <pubDate>Tue, 03 Jan 2023 08:57:00 +0000</pubDate>
+            <link>https://xpack.github.io/web-preview/blog/2023/01/03/xpm-v0-14-3-released/</link>
+            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2023/01/03/xpm-v0-14-3-released/</guid>
+            
+            <category>releases</category>
+            
+            <category>xpm</category>
+            
+            <category>package</category>
+            
+            <category>manager</category>
+            
+            
+        </item>
         
         <item>
             <title>xPack GCC v12.2.0-2 released</title>
@@ -139,24 +157,6 @@
             <category>extension</category>
             
             <category>c++</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>xPack xpm v0.14.2 released</title>
-            <description>&lt;p&gt;&lt;strong&gt;xpm&lt;/strong&gt; is a&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; CLIapplication to orchestrate builds and to manage&lt;a href=&quot;https://xpack.github.io/intro/#but-what-are-xpacks&quot;&gt;xPacks&lt;/a&gt; dependencies.&lt;/p&gt;</description>
-            <pubDate>Sun, 16 Oct 2022 19:09:00 +0000</pubDate>
-            <link>https://xpack.github.io/web-preview/blog/2022/10/16/xpm-v0-14-2-released/</link>
-            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2022/10/16/xpm-v0-14-2-released/</guid>
-            
-            <category>releases</category>
-            
-            <category>xpm</category>
-            
-            <category>package</category>
-            
-            <category>manager</category>
             
             
         </item>
