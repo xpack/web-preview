@@ -5,9 +5,27 @@
         <description>Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.</description>
         <link>https://xpack.github.io/web-preview/</link>
         <atom:link href="https://xpack.github.io/web-preview/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 03 Jan 2023 09:05:18 +0000</pubDate>
-        <lastBuildDate>Tue, 03 Jan 2023 09:05:18 +0000</lastBuildDate>
+        <pubDate>Tue, 03 Jan 2023 10:48:07 +0000</pubDate>
+        <lastBuildDate>Tue, 03 Jan 2023 10:48:07 +0000</lastBuildDate>
         <generator>Jekyll v4.2.2</generator>
+        
+        <item>
+            <title>xPack MinGW-w64 GCC v12.2.0-1 released</title>
+            <description>&lt;p&gt;&lt;a href=&quot;https://xpack.github.io/mingw-w64-gcc/&quot;&gt;The xPack MinGW-w64 GCC&lt;/a&gt;is a standalone cross-platform binary distribution of&lt;a href=&quot;https://www.mingw-w64.org&quot;&gt;Mingw-w64&lt;/a&gt;&lt;a href=&quot;http://gcc.org&quot;&gt;GCC&lt;/a&gt;.&lt;/p&gt;</description>
+            <pubDate>Tue, 03 Jan 2023 10:45:35 +0000</pubDate>
+            <link>https://xpack.github.io/web-preview/blog/2023/01/03/mingw-w64-gcc-v12-2-0-1-released/</link>
+            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2023/01/03/mingw-w64-gcc-v12-2-0-1-released/</guid>
+            
+            <category>releases</category>
+            
+            <category>gcc</category>
+            
+            <category>mingw</category>
+            
+            <category>mingw-w64</category>
+            
+            
+        </item>
         
         <item>
             <title>xPack xpm v0.14.3 released</title>
@@ -137,26 +155,6 @@
             <category>realpath</category>
             
             <category>readlink</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>VS Code xPack extension v0.4.20 released</title>
-            <description>&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;</description>
-            <pubDate>Thu, 20 Oct 2022 07:48:00 +0000</pubDate>
-            <link>https://xpack.github.io/web-preview/blog/2022/10/20/vscode-xpack-v0-4-20-released/</link>
-            <guid isPermaLink="true">https://xpack.github.io/web-preview/blog/2022/10/20/vscode-xpack-v0-4-20-released/</guid>
-            
-            <category>releases</category>
-            
-            <category>vscode</category>
-            
-            <category>vscode-xpack</category>
-            
-            <category>extension</category>
-            
-            <category>c++</category>
             
             
         </item>
