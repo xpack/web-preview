@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack LLVM clang v15.0.7-1 released" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-01-22T16:46:30+00:00","datePublished":"2023-01-22T16:41:30+00:00","description":"The xPack LLVM clang is a standalone cross-platform binary distribution of LLVM clang.","headline":"xPack LLVM clang v15.0.7-1 released","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2023/01/22/clang-v15-0-7-1-released/"},"url":"https://xpack.github.io/web-preview/blog/2023/01/22/clang-v15-0-7-1-released/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-01-22T17:40:26+00:00","datePublished":"2023-01-22T16:41:30+00:00","description":"The xPack LLVM clang is a standalone cross-platform binary distribution of LLVM clang.","headline":"xPack LLVM clang v15.0.7-1 released","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2023/01/22/clang-v15-0-7-1-released/"},"url":"https://xpack.github.io/web-preview/blog/2023/01/22/clang-v15-0-7-1-released/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -689,9 +689,33 @@ xpm uninstall @xpack-dev-tools/clang
   <li>LLVM clang version <a href="https://releases.llvm.org/download.html#15.0.7">15.0.7</a>, from 12 Jan 2023.</li>
 </ul>
 
-<p>The defaults are set to <code class="language-plaintext highlighter-rouge">libc++</code> and <code class="language-plaintext highlighter-rouge">compiler-rt</code>.</p>
+<h2 id="llvm-libraries">LLVM libraries</h2>
 
-<p>For Intel Linux and Windows, multilib (32/64-bit) libraries are provided.</p>
+<p>The compiler defaults are set to  use the LLVM libraries
+(<code class="language-plaintext highlighter-rouge">libc++</code> and <code class="language-plaintext highlighter-rouge">compiler-rt</code>).</p>
+
+<h2 id="-m32---m64"><code class="language-plaintext highlighter-rouge">-m32</code> / <code class="language-plaintext highlighter-rouge">-m64</code></h2>
+
+<p>For Intel Linux and Windows, multilib libraries are provided
+and can be selected using the <code class="language-plaintext highlighter-rouge">-m32</code> / <code class="language-plaintext highlighter-rouge">-m64</code> options.</p>
+
+<h2 id="-print-search-dirs"><code class="language-plaintext highlighter-rouge">-print-search-dirs</code></h2>
+
+<p>Since the toolchain can be installed in any location, and the binaries
+compiled with it need to access the libraries, it is necessary to
+get the actual path and pass it via <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code> and/or
+set the <code class="language-plaintext highlighter-rouge">-rpath</code>.</p>
+
+<p>This can be achieved by querying the compiler
+for <code class="language-plaintext highlighter-rouge">-print-search-dirs</code> and processing the output.</p>
+
+<p>For example, for the 32-bit libraries:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">${</span><span class="nv">CXX</span><span class="k">}</span> <span class="nt">-m32</span> <span class="nt">-print-search-dirs</span> | <span class="nb">grep</span> <span class="s1">'libraries: ='</span> | <span class="nb">sed</span> <span class="nt">-e</span> <span class="s1">'s|libraries: =||'</span>
+</code></pre></div></div>
+
+<p>On Windows this might be slightly more complicated, to get rid of the
+letter part of the paths.</p>
 
 <h2 id="changes">Changes</h2>
 
@@ -712,11 +736,7 @@ xpm uninstall @xpack-dev-tools/clang
 <h2 id="known-problems">Known problems</h2>
 
 <ul>
-  <li>on GNU/Linux, support for the clang run-time and C++ libraries is basic,
-the libraries are available, but using them is tricky, since it requires
-the compiled binaries to take care of the path to them, otherwise it is
-very likely that the system libraries will be used; thus it is
-recommended to avoid such use cases.</li>
+  <li>in certain conditions, the binaries compiled with <code class="language-plaintext highlighter-rouge">-flto</code> fail.</li>
 </ul>
 
 <h2 id="shared-libraries">Shared libraries</h2>
