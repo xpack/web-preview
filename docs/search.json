@@ -161,6 +161,17 @@
 
 
 {
+"title": "The xPack GNU M4 Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/m4/faq/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "The xPack QEMU RISC-V Frequently Asked Questions",
 "tags": "",
 "keywords": "",
@@ -446,6 +457,17 @@
 "keywords": "xbb-bootstrap",
 "url": "/web-preview/dev-tools/xbb-bootstrap/",
 "summary": "<p>A binary distribution of XBB Bootstrap.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack GNU M4",
+"tags": "",
+"keywords": "m4",
+"url": "/web-preview/dev-tools/m4/",
+"summary": "<p>A binary distribution of GNU M4.</p>"
 }
 ,
 
@@ -748,6 +770,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/dev-tools/xbb-bootstrap/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack GNU M4 binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/m4/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -1236,6 +1269,8 @@
 
 
 
+
+
 {
 "title": "xpm run",
 "tags": "",
@@ -1305,6 +1340,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/dev-tools/xbb-bootstrap/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack GNU M4",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/m4/support/",
 "summary": ""
 }
 ,
