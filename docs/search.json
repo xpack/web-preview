@@ -161,6 +161,17 @@
 
 
 {
+"title": "The xPack NixOS PatchELF Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/patchelf/faq/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "The xPack GNU M4 Frequently Asked Questions",
 "tags": "",
 "keywords": "",
@@ -205,6 +216,28 @@
 
 
 {
+"title": "The xPack pkg-config Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/pkg-config/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack GNU sed Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/sed/faq/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "The xPack WineHQ Frequently Asked Questions",
 "tags": "",
 "keywords": "",
@@ -242,6 +275,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/openocd/faq/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "The xPack GNU realpath Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/realpath/faq/",
 "summary": ""
 }
 ,
@@ -463,6 +507,17 @@
 
 
 {
+"title": "The xPack NixOS PatchELF",
+"tags": "",
+"keywords": "patchelf",
+"url": "/web-preview/dev-tools/patchelf/",
+"summary": "<p>A binary distribution of NixOS PatchELF.</p>"
+}
+,
+
+
+
+{
 "title": "The xPack GNU M4",
 "tags": "",
 "keywords": "m4",
@@ -507,6 +562,28 @@
 
 
 {
+"title": "The xPack pkg-config",
+"tags": "",
+"keywords": "pkg-config",
+"url": "/web-preview/dev-tools/pkg-config/",
+"summary": "<p>A binary distribution of pkg-config.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack GNU sed",
+"tags": "",
+"keywords": "sed",
+"url": "/web-preview/dev-tools/sed/",
+"summary": "<p>A binary distribution of GNU sed.</p>"
+}
+,
+
+
+
+{
 "title": "The xPack WineHQ",
 "tags": "",
 "keywords": "wine",
@@ -545,6 +622,17 @@
 "keywords": "openocd",
 "url": "/web-preview/openocd/",
 "summary": "<p>A binary distribution of OpenOCD.</p>"
+}
+,
+
+
+
+{
+"title": "The xPack GNU realpath",
+"tags": "",
+"keywords": "realpath",
+"url": "/web-preview/dev-tools/realpath/",
+"summary": "<p>A binary distribution of GNU realpath.</p>"
 }
 ,
 
@@ -777,6 +865,17 @@
 
 
 {
+"title": "How to install the xPack NixOS PatchELF binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/patchelf/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
 "title": "How to install the xPack GNU M4 binaries",
 "tags": "",
 "keywords": "",
@@ -821,6 +920,28 @@
 
 
 {
+"title": "How to install the xPack pkg-config binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/pkg-config/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack GNU sed binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/sed/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
 "title": "How to install the xPack WineHQ binaries",
 "tags": "",
 "keywords": "",
@@ -858,6 +979,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/openocd/install/",
+"summary": "<p>The recommended method is via xpm.</p>"
+}
+,
+
+
+
+{
+"title": "How to install the xPack GNU realpath binaries",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/realpath/install/",
 "summary": "<p>The recommended method is via xpm.</p>"
 }
 ,
@@ -1271,6 +1403,14 @@
 
 
 
+
+
+
+
+
+
+
+
 {
 "title": "xpm run",
 "tags": "",
@@ -1347,6 +1487,17 @@
 
 
 {
+"title": "How to get help for xPack NixOS PatchELF",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/patchelf/support/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "How to get help for xPack GNU M4",
 "tags": "",
 "keywords": "",
@@ -1391,6 +1542,28 @@
 
 
 {
+"title": "How to get help for xPack pkg-config",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/pkg-config/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack GNU sed",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/sed/support/",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "How to get help for xPack WineHQ",
 "tags": "",
 "keywords": "",
@@ -1428,6 +1601,17 @@
 "tags": "",
 "keywords": "",
 "url": "/web-preview/openocd/support/",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "How to get help for xPack GNU realpath",
+"tags": "",
+"keywords": "",
+"url": "/web-preview/dev-tools/realpath/support/",
 "summary": ""
 }
 ,
