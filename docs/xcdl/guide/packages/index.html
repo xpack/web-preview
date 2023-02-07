@@ -11,11 +11,11 @@
 
 
 <link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
-<link type="application/rss+xml" rel="alternate" title="" href="https://xpack.github.io/web-preview/feed.xml">
+<link type="application/rss+xml" rel="alternate" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>XCDL packages (outdated)</title>
-<meta name="generator" content="Jekyll v4.2.2" />
+<title>XCDL packages (outdated) | xpack.github.io</title>
+<meta name="generator" content="Jekyll v3.9.3" />
 <meta property="og:title" content="XCDL packages (outdated)" />
 <meta name="author" content="Liviu Ionescu" />
 <meta property="og:locale" content="en_US" />
@@ -23,12 +23,13 @@
 <meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
 <link rel="canonical" href="https://xpack.github.io/web-preview/xcdl/guide/packages/" />
 <meta property="og:url" content="https://xpack.github.io/web-preview/xcdl/guide/packages/" />
+<meta property="og:site_name" content="xpack.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2015-10-25T10:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="XCDL packages (outdated)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-02-06T19:19:44+00:00","datePublished":"2015-10-25T10:00:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"XCDL packages (outdated)","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xcdl/guide/packages/"},"url":"https://xpack.github.io/web-preview/xcdl/guide/packages/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-02-07T13:43:57+00:00","datePublished":"2015-10-25T10:00:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"XCDL packages (outdated)","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xcdl/guide/packages/"},"url":"https://xpack.github.io/web-preview/xcdl/guide/packages/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -190,7 +191,7 @@
                         
                         
                         
-                        <li><a class="extern" href="http://micro-os-plus.github.io" target="_blank" rel="noopener">µOS++ IIIe</a></li>
+                        <li><a class="extern" href="https://micro-os-plus.github.io" target="_blank" rel="noopener">µOS++ IIIe</a></li>
                         
                         
                     </ul>
@@ -348,6 +349,11 @@ $('#toc').on('click', 'a', function() {
 
     
 
+        
+    <a target="_blank" rel="noopener" href="https://github.com/xpack/web-jekyll/blob/master/pages/core/xcdl/guide/packages.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit</a>
+
+    
+
 
    <p>For a package to be usable in the XCDL component framework it must conform to certain rules imposed by the framework. Packages must be distributed in a form that is understood by the component repository administration tool. For each package there must be a top-level XCDL metadata file which describes the package to the component framework. There are certain portability requirements related to how a package gets built, so that the package can be used in a variety of host environments. In addition to these rules, the component framework provides a number of guidelines. It is not mandatory for the packages to strictly conform to all guidelines, but sticking to them can simplify certain operations.</p>
 
@@ -413,10 +419,10 @@ $('#toc').on('click', 'a', function() {
 
 <p>The current schema for the <code class="language-plaintext highlighter-rouge">.xpack.json</code> file is:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"$schema": "http://xcdl.github.io/schemas/xpack-1-1.json",
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"$schema": "https://xcdl.github.io/schemas/xpack-1-1.json",
 </code></pre></div></div>
 
-<p>The full and up-to-date definition of this schema is available from the separate <a href="http://xcdl.github.io/schemas/">Schemas</a> repository.</p>
+<p>The full and up-to-date definition of this schema is available from the separate <a href="https://xcdl.github.io/schemas/">Schemas</a> repository.</p>
 
 <h3 id="name"><code class="language-plaintext highlighter-rouge">name</code></h3>
 
@@ -594,9 +600,9 @@ $('#toc').on('click', 'a', function() {
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"license": "string"
 </code></pre></div></div>
 
-<p>The license is identified by a short ID, selected from the list of <a href="https://spdx.org/licenses/">SPDX license IDs</a>, ideally one that is <a href="http://opensource.org/licenses/alphabetical">OSI</a> approved.</p>
+<p>The license is identified by a short ID, selected from the list of <a href="https://spdx.org/licenses/">SPDX license IDs</a>, ideally one that is <a href="https://opensource.org/licenses/alphabetical">OSI</a> approved.</p>
 
-<p>If the package is licensed under multiple common licenses, use an <a href="http://npmjs.com/package/spdx">SPDX license expression syntax version 2.0</a> string, like this:</p>
+<p>If the package is licensed under multiple common licenses, use an <a href="https://npmjs.com/package/spdx">SPDX license expression syntax version 2.0</a> string, like this:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"license": "(ISC OR GPL-3.0)"
 </code></pre></div></div>
@@ -634,7 +640,7 @@ $('#toc').on('click', 'a', function() {
     {
         "name": "Liviu Ionescu",
         "email": "ilg@livius.net",
-        "url": "http://liviusdotnet.worldpress.com"
+        "url": "https://github.com/ilg-ul/"
     }
 ],
 </code></pre></div></div>
@@ -664,7 +670,7 @@ $('#toc').on('click', 'a', function() {
     {
         "name": "Liviu Ionescu",
         "email": "ilg@livius.net",
-        "url": "http://liviusdotnet.worldpress.com"
+        "url": "https://github.com/ilg-ul/"
     }
 ],
 </code></pre></div></div>
@@ -684,7 +690,7 @@ $('#toc').on('click', 'a', function() {
 ]
 </code></pre></div></div>
 
-<p>The syntax for the version string is based on <a href="http://semver.org/">semver</a>, with the following expressions (inspired from NPM):</p>
+<p>The syntax for the version string is based on <a href="https://semver.org/">semver</a>, with the following expressions (inspired from NPM):</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">version</code> Must match version exactly</li>
@@ -704,7 +710,7 @@ $('#toc').on('click', 'a', function() {
 <p>Future versions may also support:</p>
 
 <ul>
-  <li>http://…/file.tgz</li>
+  <li>https://…/file.tgz</li>
   <li>git://…</li>
   <li>github://user/repo</li>
   <li>tag</li>
@@ -764,12 +770,6 @@ $('#toc').on('click', 'a', function() {
 <p>The initial content of this page was based on <em>Chapter 2. Package Organization</em> of <em>The eCos Component Writer’s Guide</em>, by Bart Veer and John Dallaway, published in 2001.</p>
 
 
-        
-    <a target="_blank" rel="noopener" href="https://github.com/xpack/web-jekyll/blob/master/pages/core/xcdl/guide/packages.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit</a>
-
-    
-
-
     <div class="tags">
         
     </div>
@@ -785,7 +785,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2023 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Feb 6, 2023<br/> Site last generated: Feb 6, 2023 <br />
+<span>Page last updated:</span> Feb 7, 2023<br/> Site last generated: Feb 7, 2023 <br />
                 </div>
             </div>
 </footer>
