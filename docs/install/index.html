@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack prerequisites" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-24T14:39:00+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack prerequisites","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/install/"},"url":"https://xpack.github.io/web-preview/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-24T15:11:03+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack prerequisites","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/install/"},"url":"https://xpack.github.io/web-preview/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -662,9 +662,9 @@ and install it as usual (see below for details).</p>
 
 <p>The result is a binary program named <code class="language-plaintext highlighter-rouge">node.exe</code>,
 that can be used to execute
-JavaScript code from the terminal, and a stub named <code class="language-plaintext highlighter-rouge">npm.cmd</code>, executing to
+JavaScript code from the terminal, and a stub named <code class="language-plaintext highlighter-rouge">npm.cmd</code>, executing
 the <code class="language-plaintext highlighter-rouge">npm-cli.js</code> script, which is part of the Node.js module that implements
-the npm functionality.</p>
+the <code class="language-plaintext highlighter-rouge">npm</code> functionality.</p>
 
 <h2 id="manual-install">Manual install</h2>
 
@@ -801,7 +801,7 @@ The terminal process "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe 
 that can be used to execute
 JavaScript code from the terminal, and a symbolic link named <code class="language-plaintext highlighter-rouge">npm</code>, pointing to
 the <code class="language-plaintext highlighter-rouge">npm-cli.js</code> script, which is part of the Node.js module that implements
-the npm functionality.</p>
+the <code class="language-plaintext highlighter-rouge">npm</code> functionality.</p>
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Due to a misconception, some
 tutorials suggest to install Node.js with administrative rights;
@@ -843,8 +843,9 @@ are also part of Xcode, their location is not fixed, hence the Command
 Line Tools package must still be installed, for the xPack toolchains to
 find them in the expected location.</div>
 
-<p>If the <code class="language-plaintext highlighter-rouge">install-nvm-node-npm-xpm.sh</code> script was successful,
-the rest of this page is only informative and can be skipped.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If the <code class="language-plaintext highlighter-rouge">install-nvm-node-npm-xpm.sh</code>
+script was successful,
+the rest of this page is only informative and can be skipped.</div>
 
 <h2 id="install-nvm-node-version-manager">Install <code class="language-plaintext highlighter-rouge">nvm</code> (node version manager)</h2>
 
@@ -1016,7 +1017,7 @@ if you already know what this is all about, issue the following command:</p>
 that can be used to execute
 JavaScript code from the terminal, and a symbolic link named <code class="language-plaintext highlighter-rouge">npm</code>, pointing to
 the <code class="language-plaintext highlighter-rouge">npm-cli.js</code> script, which is part of the Node.js module that implements
-the npm functionality.</p>
+the <code class="language-plaintext highlighter-rouge">npm</code> functionality.</p>
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Due to a misconception, some
 tutorials suggest to install Node.js with administrative rights;
@@ -1037,11 +1038,12 @@ Node.js/npm in the home folder, using a version manager.</div>
 <span class="nb">exit</span>
 </code></pre></div></div>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Arm platforms, like the Raspberry Pi,
+<div class="bs-callout bs-callout-">Arm platforms, like the Raspberry Pi,
 are supported, currently in both 32/64-bit variants.</div>
 
-<p>If the <code class="language-plaintext highlighter-rouge">install-nvm-node-npm-xpm.sh</code> script was successful,
-the rest of this page is only informative and can be skipped.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If the <code class="language-plaintext highlighter-rouge">install-nvm-node-npm-xpm.sh</code>
+script was successful,
+the rest of this page is only informative and can be skipped.</div>
 
 <h2 id="install-nvm-node-version-manager">Install <code class="language-plaintext highlighter-rouge">nvm</code> (node version manager)</h2>
 
@@ -1175,7 +1177,7 @@ added 3 packages from 2 contributors, removed 3 packages and updated 20 packages
 <p>At any time, to switch between any of the installed versions,
 use <code class="language-plaintext highlighter-rouge">nvm use &lt;version&gt;</code>.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> These commands were tested with <code class="language-plaintext highlighter-rouge">bash</code> on
+<div class="bs-callout bs-callout-">These commands were tested with <code class="language-plaintext highlighter-rouge">bash</code> on
 Ubuntu 18 LTS and Manjaro 18; for other shells they may need small
 adjustments.</div>
 
