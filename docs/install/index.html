@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack prerequisites" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-24T14:15:58+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack prerequisites","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/install/"},"url":"https://xpack.github.io/web-preview/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-24T14:39:00+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack prerequisites","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/install/"},"url":"https://xpack.github.io/web-preview/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -642,25 +642,12 @@ for each supported platform are available in the next section.</p>
 </span></code></pre></div></div>
 
 <p>If this is your first encounter with <strong>npm</strong>, you need to install the
-<a href="https://nodejs.org">Node.js</a> JavaScript run-time. The process is
+<a href="https://nodejs.org">Node.js</a> ECMAScript (JavaScript) run-time. The process is
 straightforward and does not pollute the system locations significantly;
 there are two Node versions, <strong>LTS</strong> (<strong>Long Term Service</strong>) and
-<strong>Current</strong>; generally it is safer to use LTS, especially on Windows.</p>
+<strong>Current</strong>; generally it is safer to use <strong>LTS</strong>, especially on Windows.</p>
 
 <p><img src="/web-preview/assets/images/2019/nodejs-org.png" alt="The Node Download page" /></p>
-
-<p>For Windows, the general procedure is to download the package
-and install it as usual (see below for details).</p>
-
-<p>For GNU/Linux and macOS, it is
-<strong>highly recommended</strong> to <strong>use a version manager</strong> (see below).</p>
-
-<p>The result is a binary program named <code class="language-plaintext highlighter-rouge">node</code> (or <code class="language-plaintext highlighter-rouge">node.exe</code> on Windows),
-that can be used to execute
-JavaScript code from the terminal, and a symbolic link named <code class="language-plaintext highlighter-rouge">npm</code>, pointing to
-the <code class="language-plaintext highlighter-rouge">npm-cli.js</code> script, which is part of the Node.js module that implements
-the npm functionality (on Windows, where symbolic links are problematic,
-<code class="language-plaintext highlighter-rouge">.cmd</code> stubs are used).</p>
 
 <ul id="profileTabs_1" class="nav nav-tabs">
     <li class="active"><a href="#windows_1" data-toggle="tab">Windows</a></li>
@@ -670,6 +657,15 @@ the npm functionality (on Windows, where symbolic links are problematic,
 <div class="tab-content">
 	<div role="tabpanel" class="tab-pane active" id="windows_1">
 		
+<p>For Windows, the general procedure is to download the package
+and install it as usual (see below for details).</p>
+
+<p>The result is a binary program named <code class="language-plaintext highlighter-rouge">node.exe</code>,
+that can be used to execute
+JavaScript code from the terminal, and a stub named <code class="language-plaintext highlighter-rouge">npm.cmd</code>, executing to
+the <code class="language-plaintext highlighter-rouge">npm-cli.js</code> script, which is part of the Node.js module that implements
+the npm functionality.</p>
+
 <h2 id="manual-install">Manual install</h2>
 
 <h3 id="node-install"><code class="language-plaintext highlighter-rouge">node</code> install</h3>
@@ -798,6 +794,15 @@ The terminal process "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe 
 	</div>
 	<div role="tabpanel" class="tab-pane" id="macos_1">
 		
+<p>For Unix-like systems, it is
+<strong>highly recommended</strong> to <strong>use a version manager</strong> (see below).</p>
+
+<p>The result is a binary program named <code class="language-plaintext highlighter-rouge">node</code>,
+that can be used to execute
+JavaScript code from the terminal, and a symbolic link named <code class="language-plaintext highlighter-rouge">npm</code>, pointing to
+the <code class="language-plaintext highlighter-rouge">npm-cli.js</code> script, which is part of the Node.js module that implements
+the npm functionality.</p>
+
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Due to a misconception, some
 tutorials suggest to install Node.js with administrative rights;
 this is not a problem
@@ -1004,6 +1009,15 @@ if you already know what this is all about, issue the following command:</p>
 	</div>
 	<div role="tabpanel" class="tab-pane" id="linux_1">
 		
+<p>For Unix-like systems, it is
+<strong>highly recommended</strong> to <strong>use a version manager</strong> (see below).</p>
+
+<p>The result is a binary program named <code class="language-plaintext highlighter-rouge">node</code>,
+that can be used to execute
+JavaScript code from the terminal, and a symbolic link named <code class="language-plaintext highlighter-rouge">npm</code>, pointing to
+the <code class="language-plaintext highlighter-rouge">npm-cli.js</code> script, which is part of the Node.js module that implements
+the npm functionality.</p>
+
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Due to a misconception, some
 tutorials suggest to install Node.js with administrative rights;
 this is not a problem
