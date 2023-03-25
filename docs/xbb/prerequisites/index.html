@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Prerequisites for building xPack binaries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-25T22:45:07+00:00","datePublished":"2017-07-06T17:55:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Prerequisites for building xPack binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xbb/prerequisites/"},"url":"https://xpack.github.io/web-preview/xbb/prerequisites/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-25T22:56:36+00:00","datePublished":"2017-07-06T17:55:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Prerequisites for building xPack binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xbb/prerequisites/"},"url":"https://xpack.github.io/web-preview/xbb/prerequisites/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -576,25 +576,19 @@ troubles caused by permissions.</div>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="se">\</span>
 <span class="se">\</span>
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>apt-transport-https ca-certificates  curl  software-properties-common <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>ca-certificates curl gnupg <span class="o">&amp;&amp;</span> <span class="se">\</span>
 <span class="se">\</span>
-curl <span class="nt">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg | <span class="nb">sudo </span>apt-key add - <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">sudo mkdir</span> <span class="nt">-m</span> 0755 <span class="nt">-p</span> /etc/apt/keyrings <span class="o">&amp;&amp;</span> <span class="se">\</span>
+curl <span class="nt">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg | <span class="nb">sudo </span>gpg <span class="nt">--dearmor</span> <span class="nt">-o</span> /etc/apt/keyrings/docker.gpg <span class="o">&amp;&amp;</span> <span class="se">\</span>
 <span class="se">\</span>
-<span class="nv">version_name</span><span class="o">=</span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-<span class="nb">sudo </span>add-apt-repository  <span class="s2">"deb [arch=amd64] https://download.docker.com/linux/ubuntu  </span><span class="k">${</span><span class="nv">version_name</span><span class="k">}</span><span class="s2"> stable"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">echo</span> <span class="se">\</span>
+  <span class="s2">"deb [arch="</span><span class="si">$(</span>dpkg <span class="nt">--print-architecture</span><span class="si">)</span><span class="s2">" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span class="se">\</span><span class="s2">
+  "</span><span class="si">$(</span><span class="nb">.</span> /etc/os-release <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$VERSION_CODENAME</span><span class="s2">"</span><span class="si">)</span><span class="s2">" stable"</span> | <span class="se">\</span>
+  <span class="nb">sudo tee</span> /etc/apt/sources.list.d/docker.list <span class="o">&gt;</span> /dev/null <span class="o">&amp;&amp;</span> <span class="se">\</span>
 <span class="se">\</span>
 <span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="se">\</span>
-<span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">--yes</span> docker-ce
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 </code></pre></div></div>
-
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Please note that the above lines get the
-current version name via <code class="language-plaintext highlighter-rouge">lsb_release</code> and assumes that a folder with that
-name is available at https://download.docker.com/linux/ubuntu/dists/.
-This is true for most versions, except the very latest one, which might not
-yet be made available by the Docker team. In this case set the
-<code class="language-plaintext highlighter-rouge">version_name</code> manually to the previous version.
-You can also do this by
-manually editing the <code class="language-plaintext highlighter-rouge">/etc/apt/sources.list</code> file.</div>
 
 <p>To check if the install is functional, run the <em>Hello World</em> image,
 for the moment as <code class="language-plaintext highlighter-rouge">sudo</code>:</p>
