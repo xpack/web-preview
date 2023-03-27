@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="The xPack Build Box" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-27T15:08:21+00:00","datePublished":"2016-03-09T09:04:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"The xPack Build Box","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xbb/"},"url":"https://xpack.github.io/web-preview/xbb/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-27T15:28:55+00:00","datePublished":"2016-03-09T09:04:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"The xPack Build Box","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xbb/"},"url":"https://xpack.github.io/web-preview/xbb/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -396,20 +396,6 @@ the actual builds run inside Docker containers
 custom tools, but expecting to be pristine, without additional tools
 installed via alternate package managers (like HomeBrew or MacPorts).</p>
 
-<h2 id="types-of-builds">Types of builds</h2>
-
-<p>From the point of view of the desired result, there are two types of builds:</p>
-
-<ul>
-  <li>local/native builds, intended for development and running on the local
-machine</li>
-  <li>distribution builds, intended for xPack binary distributions and running
-on most modern machines</li>
-</ul>
-
-<p>The main use cases of XBBs are distribution builds, but they can be used
-for native builds as well.</p>
-
 <h2 id="xbb-v500">XBB v5.0.0</h2>
 
 <p>The latest release, v5.0.0 from early 2023 represents a major milestone
@@ -417,7 +403,7 @@ for the xPack project, since it is the first self-sustained release,
 which allows to build new binary xPacks using previous xPacks,
 without requiring any custom Docker images, or other compiled tools.</p>
 
-<h3 id="xbb-run"><code class="language-plaintext highlighter-rouge">xbb run</code></h3>
+<h2 id="xpm-run"><code class="language-plaintext highlighter-rouge">xpm run</code></h2>
 
 <p>For convenience, the new build scripts are xPacks, with
 multiple build configurations, for all supported platforms,
@@ -454,14 +440,14 @@ in order when the action is invoked.</p>
 
 <p>To invoke these actions, the <code class="language-plaintext highlighter-rouge">xpm run</code> command is used.</p>
 
-<h3 id="the-helper-project">The helper project</h3>
+<h2 id="the-helper-project">The helper project</h2>
 
 <p>Since there are lots of common files between projects, they were collected
 into a helper project.</p>
 
 <p>The helper project is a
 source xPack (<code class="language-plaintext highlighter-rouge">@xpack-dev-tools/xbb-helper</code>), which can be installed
-as a dependency with</p>
+as a dependency with:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/Work/xpacks/&lt;project&gt;-xpack.git
 xpm <span class="nb">install</span> <span class="nt">--save-dev</span> @xpack-dev-tools/xbb-helper@latest
@@ -494,6 +480,20 @@ xpm <span class="nb">install</span> <span class="nt">--save-dev</span> @xpack-de
 
 <p>There are many files in the helper, for various use cases. The build scripts
 directly include files from the <code class="language-plaintext highlighter-rouge">scripts</code> and <code class="language-plaintext highlighter-rouge">dependencies</code> folders.</p>
+
+<h2 id="types-of-builds">Types of builds</h2>
+
+<p>From the point of view of the desired result, there are two types of builds:</p>
+
+<ul>
+  <li>local/native builds, intended for development and running on the local
+machine</li>
+  <li>distribution builds, intended for xPack binary distributions and running
+on most modern machines</li>
+</ul>
+
+<p>The main use cases of XBBs are distribution builds, but they can be used
+for native builds as well.</p>
 
 <h3 id="native-builds-with-all-tools-from-the-host-machine">Native builds with all tools from the host machine</h3>
 
