@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Prerequisites for building xPack binaries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-27T04:06:39+00:00","datePublished":"2017-07-06T17:55:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Prerequisites for building xPack binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xbb/prerequisites/"},"url":"https://xpack.github.io/web-preview/xbb/prerequisites/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-03-27T04:20:05+00:00","datePublished":"2017-07-06T17:55:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Prerequisites for building xPack binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xbb/prerequisites/"},"url":"https://xpack.github.io/web-preview/xbb/prerequisites/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -409,6 +409,7 @@ should first check the content of the file before executing it.</div>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-pv</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Downloads/"</span>
 curl <span class="nt">--output</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Downloads/install-nvm-node-npm-xpm.sh"</span> https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh
 <span class="nb">cat</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Downloads/install-nvm-node-npm-xpm.sh"</span>
+
 bash <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Download/install-nvm-node-npm-xpm.sh"</span>
 
 <span class="nb">exit</span>
@@ -518,8 +519,9 @@ by the differences between armv7 and armv8.</div>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">curl</code> (installed via the system package manager)</li>
   <li><code class="language-plaintext highlighter-rouge">git</code> (installed via the system package manager)</li>
-  <li><code class="language-plaintext highlighter-rouge">docker</code> (preferably a recent one, installed from docker.com)</li>
-  <li><code class="language-plaintext highlighter-rouge">npm</code> (shipped with Node.js; installed via nvm, not the system package manager)</li>
+  <li><code class="language-plaintext highlighter-rouge">docker</code> (preferably a recent one, installed from <strong>docker.com</strong>)</li>
+  <li><code class="language-plaintext highlighter-rouge">npm</code> (shipped with Node.js; installed via <strong>nvm</strong>,
+<strong>not</strong> the system package manager)</li>
   <li><code class="language-plaintext highlighter-rouge">xpm</code> (installed via <code class="language-plaintext highlighter-rouge">npm</code>)</li>
 </ul>
 
@@ -640,6 +642,7 @@ should first check the content of the file before executing it.</div>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-pv</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Downloads/"</span>
 curl <span class="nt">--output</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Downloads/install-nvm-node-npm-xpm.sh"</span> https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh
 <span class="nb">cat</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Downloads/install-nvm-node-npm-xpm.sh"</span>
+
 bash <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/Download/install-nvm-node-npm-xpm.sh"</span>
 
 <span class="nb">exit</span>
