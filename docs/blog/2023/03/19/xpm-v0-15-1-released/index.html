@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack xpm v0.15.1 released" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-19T20:24:52+00:00","datePublished":"2023-03-19T21:19:00+00:00","description":"xpm is a Node.js CLI application to orchestrate builds and to manage xPacks dependencies.","headline":"xPack xpm v0.15.1 released","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2023/03/19/xpm-v0-15-1-released/"},"url":"https://xpack.github.io/web-preview/blog/2023/03/19/xpm-v0-15-1-released/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-19T20:28:59+00:00","datePublished":"2023-03-19T21:19:00+00:00","description":"xpm is a Node.js CLI application to orchestrate builds and to manage xPacks dependencies.","headline":"xPack xpm v0.15.1 released","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2023/03/19/xpm-v0-15-1-released/"},"url":"https://xpack.github.io/web-preview/blog/2023/03/19/xpm-v0-15-1-released/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -471,12 +471,10 @@ but this is handled by the compatibility policies.</p>
 <h3 id="bug-fixes">Bug fixes</h3>
 
 <ul>
-  <li>
-    <p>root folder failed with a permission error; fixed</p>
-  </li>
-  <li>
-    <p>fixed.</p>
-  </li>
+  <li>[#165] on Windows, listing the global packages when running in the
+root folder failed with a permission error; fixed</li>
+  <li>[#164] on Windows, instantiating templates failed with a <code class="language-plaintext highlighter-rouge">file://</code> error;
+fixed.</li>
 </ul>
 
 <h3 id="enhancements">Enhancements</h3>
