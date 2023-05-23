@@ -502,7 +502,7 @@
 "tags": "",
 "keywords": "xPackpackagemanager",
 "url": "/web-preview/xpm/",
-"summary": "<p>A tool to orchestrate builds and manage dependencies for language neutral, multi-version projects, inspired by npm.</p>"
+"summary": "<p>A tool to automate builds and manage dependencies for language neutral, multi-version projects, inspired by npm.</p>"
 }
 ,
 
