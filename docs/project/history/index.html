@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Project History" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-24T07:06:51+00:00","datePublished":"2023-05-20T03:22:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Project History","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/project/history/"},"url":"https://xpack.github.io/web-preview/project/history/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-24T08:47:48+00:00","datePublished":"2023-05-20T03:22:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Project History","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/project/history/"},"url":"https://xpack.github.io/web-preview/project/history/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -671,35 +671,40 @@ $('#toc').on('click', 'a', function() {
 
    <h2 id="the-early-years-and-the-tight-relation-with-µos">The early years and the tight relation with µOS++</h2>
 
-<p>The history of the xPack project was deeply intertwined with
+<p>The history of the <strong>xPack</strong> project was deeply intertwined with
 <a href="http://micro-os-plus.github.io/project/history/">the history of µOS++</a>
 as it was initially intended to automate building and running
 multi-platform unit tests for <a href="http://micro-os-plus.github.io">µOS++</a>.
 Later it was also used to build the binary xPacks, which validated the
 concept once more.</p>
 
-<p>To avoid redundancy, the text will not be replicated here, so please
+<p>To avoid redundancy, the full story will not be replicated here, so please
 read <a href="http://micro-os-plus.github.io/project/history/">the history of µOS++</a>
-from there; here will be listed
-briefly only some of the important events:</p>
+before continuing; the important events are briefly listed here:</p>
 
 <ul>
-  <li>the <a href="http://ecos.sourceware.org/docs-1.3.1/cdl/language.html">eCos CDL</a>,
-encountered in the early 200s,
-was the inspiration for a component based design</li>
+  <li>in the early 200s, the
+<a href="http://ecos.sourceware.org/docs-1.3.1/cdl/language.html">eCos CDL</a>
+was encountered; it was the inspiration for a component based design</li>
   <li>in 2013, the <strong>GNU ARM Eclipse plug-ins</strong> (later rebranded as the
 <a href="https://eclipse-embed-cdt.github.io">Eclipse Embedded CDT</a>)
-was the first attempt to avoid generating make files
-by hand, but this prevented building and running unit tests in a
-scriptable environment</li>
+was the first attempt to find a solution that avoids generating <em>make</em>
+files by hand, but this prevented building and running unit tests in
+a scriptable environment</li>
   <li>in 2013, the experimental <a href="http://xcdl.github.io">XCDL</a>
 (eXtended Components Definition Language) project, inspired by
 eCos CDL, implemented in Python, validated the concept</li>
   <li>the major weakness of XCDL was the limitation introduced by
 having the build configuration metadata as a Python code:
-it could be edited only manually, and not via a GUI based
+<strong>it could be edited only manually</strong>, and not via a GUI based
 IDE (compared, for example, to the C/C++ settings in Eclipse CDT,
-which writes back the XML configuration file)</li>
+which writes back the XML configuration file)
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The major weakness of XCDL was the limitation introduced by
+having the build configuration metadata as a Python code:
+<strong>it could be edited only manually</strong>, and not via a GUI based
+IDE (compared, for example, to the C/C++ settings in Eclipse CDT,
+which writes back the XML configuration file)</div>
+  </li>
   <li>in 2014, the CMSIS Packs solution was evaluated, and an Eclipse plug-in was
 created to manage them, but the solution was later found to have
 too many design issues, and was abandoned</li>
