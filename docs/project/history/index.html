@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Project History" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-24T10:08:39+00:00","datePublished":"2023-05-20T03:22:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Project History","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/project/history/"},"url":"https://xpack.github.io/web-preview/project/history/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-24T10:14:18+00:00","datePublished":"2023-05-20T03:22:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Project History","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/project/history/"},"url":"https://xpack.github.io/web-preview/project/history/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -866,17 +866,18 @@ the multiple build configurations automated by <strong>xpm</strong>, and so
 have everything fully tested in µOS++.</p>
 
 <p>With the experience from this step, the next step is to finalise the
-specs for the tool that will perform the builds and project
-configurations.</p>
+specs for the <strong>xPack Project Builder</strong> that will perform the
+builds and manage the project configurations.</p>
 
-<p>The tool will probably be called <code class="language-plaintext highlighter-rouge">xpmake</code>, and it’ll us json files,
-like this one:</p>
+<p>The tool will probably be called <strong>xpmake</strong>,
+and it’ll use json files, like this one:</p>
 
 <ul>
-  <li><a href="https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/xpack.json">https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/xpack.json</a></li>
+  <li><a href="https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/xpack.json">xpack.json</a></li>
 </ul>
 
-<p>This file defines the include folders, the source files, and some
+<p>As it can be seen, this file defines the include folders,
+the source files, and some
 preprocessor definitions that might be enabled while building the project.</p>
 
 <p>This file, together with all other similar files from the packages
