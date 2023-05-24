@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Project History" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-24T10:14:18+00:00","datePublished":"2023-05-20T03:22:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Project History","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/project/history/"},"url":"https://xpack.github.io/web-preview/project/history/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-05-24T10:23:25+00:00","datePublished":"2023-05-20T03:22:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"Project History","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/project/history/"},"url":"https://xpack.github.io/web-preview/project/history/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -856,8 +856,8 @@ and run the tests.</p>
 
 <h2 id="future-plans">Future plans</h2>
 
-<p>At this moment (mid 2023), the project is pretty advanced, but
-it is not yet complete.</p>
+<p>At thw moment of writing this (mid 2023), the project is pretty advanced,
+but it is not yet complete.</p>
 
 <p>In the next period all the
 <a href="https://github.com/micro-os-plus">µOS++ projects</a>
@@ -870,37 +870,40 @@ specs for the <strong>xPack Project Builder</strong> that will perform the
 builds and manage the project configurations.</p>
 
 <p>The tool will probably be called <strong>xpmake</strong>,
-and it’ll use json files, like this one:</p>
+and will use json files, with a content similar to this one:</p>
 
 <ul>
   <li><a href="https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/xpack.json">xpack.json</a></li>
 </ul>
 
-<p>As it can be seen, this file defines the include folders,
-the source files, and some
-preprocessor definitions that might be enabled while building the project.</p>
+<p>As it can be seen, this file defines the <strong>include folders</strong>,
+the <strong>source files</strong>, and some
+<strong>preprocessor definitions</strong> that might be enabled while
+building the project.</p>
 
 <p>This file, together with all other similar files from the packages
 that are part of the project, will provide the input data for a tree
-of <strong>components</strong>, that can be rendered in a graphical tool like VS Code,
+of <strong>components</strong>, that can be rendered in a graphical tool like <strong>VS Code</strong>,
 thus allowing to configure a project in a way similar,
 possibly even more advanced, than
-the Eclipse CDT settings, since the hierarchical components reflect
+the <strong>Eclipse CDT</strong> settings, since the hierarchical components reflect
 the logical structure of the application, and allow to automatically
 manage dependencies between components, and between configuration
 options.</p>
 
-<p>A <strong>VS Code extension</strong> to edit the xpmake tree of components, and run
-the builds directly, without CMake/meson, is planned, and this will
+<p>Additions to the <strong>VS Code xPack extension</strong> are planned,
+to edit the xpmake tree of components, and run
+the builds directly, without CMake/meson; this will
 be a true xPack enabled tool, and will be an alternate solution to
 Eclipse Embedded CDT.</p>
 
-<p>But this tool should be optional, the whole functionality should also be
+<p>But the use of this tool should be <strong>optional</strong>, the whole functionality
+should also be
 available from a terminal and a plain text editor.</p>
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>As it can be seen, <strong>the xPack project started as a way to automate
+<p>As it can be seen, the xPack project started as <strong>a way to automate
 the workflow for existing open source projects</strong>,
 more specifically running multiple tests for embedded
 projects, which are usually more complicated than the projects themselves.</p>
