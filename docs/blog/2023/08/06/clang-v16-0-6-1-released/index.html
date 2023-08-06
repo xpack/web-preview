@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack LLVM clang v16.0.6-1 released" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-08-06T06:27:31+00:00","datePublished":"2023-08-06T06:25:40+00:00","description":"The xPack LLVM clang is a standalone cross-platform binary distribution of LLVM clang.","headline":"xPack LLVM clang v16.0.6-1 released","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2023/08/06/clang-v16-0-6-1-released/"},"url":"https://xpack.github.io/web-preview/blog/2023/08/06/clang-v16-0-6-1-released/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-08-06T06:47:18+00:00","datePublished":"2023-08-06T06:25:40+00:00","description":"The xPack LLVM clang is a standalone cross-platform binary distribution of LLVM clang.","headline":"xPack LLVM clang v16.0.6-1 released","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/blog/2023/08/06/clang-v16-0-6-1-released/"},"url":"https://xpack.github.io/web-preview/blog/2023/08/06/clang-v16-0-6-1-released/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -755,14 +755,25 @@ xpm uninstall @xpack-dev-tools/clang
   <li>LLVM clang version <a href="https://releases.llvm.org/download.html#16.0.6">16.0.6</a>, from 14 June 2023.</li>
 </ul>
 
-<p>The defaults are set to <code class="language-plaintext highlighter-rouge">libc++</code> and <code class="language-plaintext highlighter-rouge">compiler-rt</code>.</p>
-
 <p>For Intel Linux and Windows, multilib (32/64-bit) libraries are provided.</p>
 
 <h2 id="llvm-libraries">LLVM libraries</h2>
 
-<p>The compiler defaults are set to  use the LLVM libraries
+<p>On macOS and Windows the compiler defaults are set to the LLVM libraries
 (<code class="language-plaintext highlighter-rouge">libc++</code> and <code class="language-plaintext highlighter-rouge">compiler-rt</code>).</p>
+
+<p>For historical reasons, on GNU/Linux, the defaults are set to the host
+system (<code class="language-plaintext highlighter-rouge">libstdc++</code> and <code class="language-plaintext highlighter-rouge">glibc</code>).</p>
+
+<p>To use the LLVM libraries, add the following options:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">-stdlib</span><span class="o">=</span>libc++ <span class="nt">-rtlib</span><span class="o">=</span>compiler-rt <span class="nt">-lunwind</span>
+</code></pre></div></div>
+
+<p>For LTO builds, also use LLD:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">-flto</span> <span class="nt">-fuse-ld</span><span class="o">=</span>lld
+</code></pre></div></div>
 
 <h2 id="-m32---m64"><code class="language-plaintext highlighter-rouge">-m32</code> / <code class="language-plaintext highlighter-rouge">-m64</code></h2>
 
@@ -784,9 +795,9 @@ for <code class="language-plaintext highlighter-rouge">-print-search-dirs</code>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">${</span><span class="nv">CXX</span><span class="k">}</span> <span class="nt">-m32</span> <span class="nt">-print-search-dirs</span> | <span class="nb">grep</span> <span class="s1">'libraries: ='</span> | <span class="nb">sed</span> <span class="nt">-e</span> <span class="s1">'s|libraries: =||'</span>
 </code></pre></div></div>
 
-<p>On Windows the DLLs are usually in bin, but for consistency within GCC, they are
-also copied to lib; it is recommended to ask the compiler for the
-actual path.</p>
+<p>On Windows the DLLs are usually in <code class="language-plaintext highlighter-rouge">bin</code>, but for consistency within GCC,
+they are also copied to <code class="language-plaintext highlighter-rouge">lib</code>; it is recommended to ask the compiler for
+the actual path.</p>
 
 <p>For example, for the 32-bit libraries:</p>
 
