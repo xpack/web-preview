@@ -2989,7 +2989,7 @@
 "tags": "releasesopenocd",
 "keywords": "",
 "url": "/web-preview/blog/2023/09/04/openocd-v0-12-0-2-released/",
-"summary": "<p>Version <strong>0.12.0-2</strong> is a new release; it follows the upstream release.</p>"
+"summary": "<p>Version <strong>0.12.0-2</strong> is a maintenance release; it updates to the latest upstream master.</p>"
 }
 ,
 
