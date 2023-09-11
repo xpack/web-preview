@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack 101" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-09-11T16:01:07+00:00","datePublished":"2019-06-26T05:57:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xPack 101","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/intro/"},"url":"https://xpack.github.io/web-preview/intro/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-09-11T16:05:52+00:00","datePublished":"2019-06-26T05:57:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xPack 101","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/intro/"},"url":"https://xpack.github.io/web-preview/intro/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1249,7 +1249,7 @@ xpacks/@micro-os-plus/diag-trace
 <p>A real example is an embedded Cortex-M7 project that prints a <em>Hello World</em>
 message via semihosting:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">ilg@wksi tmp % mkdir -p my-project &amp;&amp; cd my-project
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ilg@wksi tmp % mkdir -p my-project &amp;&amp; cd my-project
 ilg@wksi my-project % xpm init --template @micro-os-plus/hello-world-qemu-template@latest --property target=cortex-m7f
 
 Checking package @micro-os-plus/hello-world-qemu-template@latest metadata...
@@ -1271,7 +1271,7 @@ File 'README.md' generated.
 File 'LICENSE' generated.
 File 'package.json' generated.
 ilg@wksi my-project %
-</span></code></pre></div></div>
+</code></pre></div></div>
 
 <p>The resulting project has the following <code class="language-plaintext highlighter-rouge">package.json</code>:</p>
 
@@ -1393,7 +1393,7 @@ ilg@wksi my-project %
 
 <p>The next step is to install dependencies:</p>
 
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">ilg@wksi my-project % xpm install
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ilg@wksi my-project % xpm install
 @my-scope/my-project...
 + @micro-os-plus/startup@5.2.0
 + @micro-os-plus/semihosting@8.0.0
@@ -1406,61 +1406,61 @@ ilg@wksi my-project %
 + @xpack-dev-tools/cmake@3.21.6-1.1
 + @xpack-dev-tools/arm-none-eabi-gcc@11.2.1-1.2.2
 + @xpack-dev-tools/qemu-arm@7.0.0-1.1
-</span><span class="gp">'xpacks/micro-os-plus-semihosting' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@micro-os-plus/semihosting/8.0.0'</span>
-<span class="gp">'xpacks/micro-os-plus-diag-trace' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.1.1'</span>
-<span class="gp">'xpacks/xpack-3rd-party-arm-cmsis-core' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@xpack-3rd-party/arm-cmsis-core/5.4.0-6'</span>
-<span class="gp">'xpacks/micro-os-plus-startup' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@micro-os-plus/startup/5.2.0'</span>
-<span class="gp">'xpacks/micro-os-plus-architecture-cortexm' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@micro-os-plus/architecture-cortexm/6.2.0'</span>
-<span class="gp">'xpacks/micro-os-plus-devices-qemu-cortexm' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@micro-os-plus/devices-qemu-cortexm/4.1.1'</span>
-<span class="gp">'xpacks/xpack-dev-tools-ninja-build' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.0-1.1'</span>
-<span class="gp">'xpacks/xpack-dev-tools-arm-none-eabi-gcc' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/11.2.1-1.2.2'</span>
-<span class="gp">'xpacks/micro-os-plus-build-helper' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@micro-os-plus/build-helper/2.11.0'</span>
-<span class="gp">'xpacks/xpack-dev-tools-cmake' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.21.6-1.1'</span>
-<span class="gp">'xpacks/xpack-dev-tools-qemu-arm' -&gt;</span><span class="w"> </span><span class="s1">'/Users/ilg/Library/xPacks/@xpack-dev-tools/qemu-arm/7.0.0-1.1'</span>
-<span class="gp">'xpacks/.bin/ninja' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-ninja-build/.content/bin/ninja'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-addr2line' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line'</span>
-<span class="gp">'xpacks/.bin/ccmake' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-cmake/.content/bin/ccmake'</span>
-<span class="gp">'xpacks/.bin/qemu-system-arm' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-arm'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-ar' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar'</span>
-<span class="gp">'xpacks/.bin/cmake' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-cmake/.content/bin/cmake'</span>
-<span class="gp">'xpacks/.bin/qemu-system-aarch64' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-aarch64'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-as' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-as'</span>
-<span class="gp">'xpacks/.bin/cpack' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-cmake/.content/bin/cpack'</span>
-<span class="gp">'xpacks/.bin/qemu-system-gnuarmeclipse' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-gnuarmeclipse'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-as-py3' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-as-py3'</span>
-<span class="gp">'xpacks/.bin/ctest' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-cmake/.content/bin/ctest'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-c++' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-c++filt' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-cpp' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-elfedit' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-g++' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gcc' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gcc-ar' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gcc-nm' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gcc-ranlib' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gcov' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gcov-dump' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gcov-tool' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gdb' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gdb-add-index' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gdb-add-index-py3' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gdb-py3' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gfortran' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gprof' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-gprof-py3' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof-py3'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-ld' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-ld.bfd' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-lto-dump' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-nm' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-objcopy' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-objdump' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-ranlib' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-readelf' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-size' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-size'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-strings' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings'</span>
-<span class="gp">'xpacks/.bin/arm-none-eabi-strip' -&gt;</span><span class="w"> </span><span class="s1">'../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip'</span>
-<span class="go">ilg@wksi my-project %
-</span></code></pre></div></div>
+'xpacks/micro-os-plus-semihosting' -&gt; '/Users/ilg/Library/xPacks/@micro-os-plus/semihosting/8.0.0'
+'xpacks/micro-os-plus-diag-trace' -&gt; '/Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.1.1'
+'xpacks/xpack-3rd-party-arm-cmsis-core' -&gt; '/Users/ilg/Library/xPacks/@xpack-3rd-party/arm-cmsis-core/5.4.0-6'
+'xpacks/micro-os-plus-startup' -&gt; '/Users/ilg/Library/xPacks/@micro-os-plus/startup/5.2.0'
+'xpacks/micro-os-plus-architecture-cortexm' -&gt; '/Users/ilg/Library/xPacks/@micro-os-plus/architecture-cortexm/6.2.0'
+'xpacks/micro-os-plus-devices-qemu-cortexm' -&gt; '/Users/ilg/Library/xPacks/@micro-os-plus/devices-qemu-cortexm/4.1.1'
+'xpacks/xpack-dev-tools-ninja-build' -&gt; '/Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.0-1.1'
+'xpacks/xpack-dev-tools-arm-none-eabi-gcc' -&gt; '/Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/11.2.1-1.2.2'
+'xpacks/micro-os-plus-build-helper' -&gt; '/Users/ilg/Library/xPacks/@micro-os-plus/build-helper/2.11.0'
+'xpacks/xpack-dev-tools-cmake' -&gt; '/Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.21.6-1.1'
+'xpacks/xpack-dev-tools-qemu-arm' -&gt; '/Users/ilg/Library/xPacks/@xpack-dev-tools/qemu-arm/7.0.0-1.1'
+'xpacks/.bin/ninja' -&gt; '../xpack-dev-tools-ninja-build/.content/bin/ninja'
+'xpacks/.bin/arm-none-eabi-addr2line' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line'
+'xpacks/.bin/ccmake' -&gt; '../xpack-dev-tools-cmake/.content/bin/ccmake'
+'xpacks/.bin/qemu-system-arm' -&gt; '../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-arm'
+'xpacks/.bin/arm-none-eabi-ar' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar'
+'xpacks/.bin/cmake' -&gt; '../xpack-dev-tools-cmake/.content/bin/cmake'
+'xpacks/.bin/qemu-system-aarch64' -&gt; '../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-aarch64'
+'xpacks/.bin/arm-none-eabi-as' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-as'
+'xpacks/.bin/cpack' -&gt; '../xpack-dev-tools-cmake/.content/bin/cpack'
+'xpacks/.bin/qemu-system-gnuarmeclipse' -&gt; '../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-gnuarmeclipse'
+'xpacks/.bin/arm-none-eabi-as-py3' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-as-py3'
+'xpacks/.bin/ctest' -&gt; '../xpack-dev-tools-cmake/.content/bin/ctest'
+'xpacks/.bin/arm-none-eabi-c++' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++'
+'xpacks/.bin/arm-none-eabi-c++filt' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt'
+'xpacks/.bin/arm-none-eabi-cpp' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp'
+'xpacks/.bin/arm-none-eabi-elfedit' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit'
+'xpacks/.bin/arm-none-eabi-g++' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++'
+'xpacks/.bin/arm-none-eabi-gcc' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc'
+'xpacks/.bin/arm-none-eabi-gcc-ar' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar'
+'xpacks/.bin/arm-none-eabi-gcc-nm' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm'
+'xpacks/.bin/arm-none-eabi-gcc-ranlib' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib'
+'xpacks/.bin/arm-none-eabi-gcov' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov'
+'xpacks/.bin/arm-none-eabi-gcov-dump' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump'
+'xpacks/.bin/arm-none-eabi-gcov-tool' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool'
+'xpacks/.bin/arm-none-eabi-gdb' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb'
+'xpacks/.bin/arm-none-eabi-gdb-add-index' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index'
+'xpacks/.bin/arm-none-eabi-gdb-add-index-py3' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3'
+'xpacks/.bin/arm-none-eabi-gdb-py3' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3'
+'xpacks/.bin/arm-none-eabi-gfortran' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran'
+'xpacks/.bin/arm-none-eabi-gprof' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof'
+'xpacks/.bin/arm-none-eabi-gprof-py3' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof-py3'
+'xpacks/.bin/arm-none-eabi-ld' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld'
+'xpacks/.bin/arm-none-eabi-ld.bfd' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd'
+'xpacks/.bin/arm-none-eabi-lto-dump' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump'
+'xpacks/.bin/arm-none-eabi-nm' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm'
+'xpacks/.bin/arm-none-eabi-objcopy' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy'
+'xpacks/.bin/arm-none-eabi-objdump' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump'
+'xpacks/.bin/arm-none-eabi-ranlib' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib'
+'xpacks/.bin/arm-none-eabi-readelf' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf'
+'xpacks/.bin/arm-none-eabi-size' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-size'
+'xpacks/.bin/arm-none-eabi-strings' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings'
+'xpacks/.bin/arm-none-eabi-strip' -&gt; '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip'
+ilg@wksi my-project %
+</code></pre></div></div>
 
 <p>Finally, build and run the test:</p>
 
