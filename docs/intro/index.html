@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="xPack 101" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-09-11T15:54:15+00:00","datePublished":"2019-06-26T05:57:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xPack 101","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/intro/"},"url":"https://xpack.github.io/web-preview/intro/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2023-09-11T16:01:07+00:00","datePublished":"2019-06-26T05:57:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"xPack 101","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/intro/"},"url":"https://xpack.github.io/web-preview/intro/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1322,15 +1322,15 @@ ilg@wksi my-project %
       </span><span class="nl">"@xpack-dev-tools/qemu-arm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7.0.0-1.1"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"buildFolderRelativePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"build"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"buildFolderRelativePathPosix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"build"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"commandCMakePrepare"</span><span class="p">:</span><span class="w"> </span><span class="s2">" --log-level=VERBOSE"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"commandCMakePrepareWithToolchain"</span><span class="p">:</span><span class="w"> </span><span class="s2">" -D CMAKE_TOOLCHAIN_FILE=xpacks/micro-os-plus-build-helper/cmake/toolchains/"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"commandCMakeReconfigure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmake -S . -B  -G Ninja -D CMAKE_BUILD_TYPE= -D PLATFORM_NAME= -D CMAKE_EXPORT_COMPILE_COMMANDS=ON"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"commandCMakeBuild"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmake --build "</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"commandCMakeBuildVerbose"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmake --build  --verbose"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"buildFolderRelativePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ 'build' | path_join: configuration.name | to_filename | downcase }}"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"buildFolderRelativePathPosix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ 'build' | path_posix_join: configuration.name | downcase }}"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"commandCMakePrepare"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ properties.commandCMakeReconfigure }} --log-level=VERBOSE"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"commandCMakePrepareWithToolchain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ properties.commandCMakePrepare }} -D CMAKE_TOOLCHAIN_FILE=xpacks/micro-os-plus-build-helper/cmake/toolchains/{{ properties.toolchainFileName }}"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"commandCMakeReconfigure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmake -S . -B {{ properties.buildFolderRelativePathPosix }} -G Ninja -D CMAKE_BUILD_TYPE={{ properties.buildType }} -D PLATFORM_NAME={{ properties.platformName }} -D CMAKE_EXPORT_COMPILE_COMMANDS=ON"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"commandCMakeBuild"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmake --build {{ properties.buildFolderRelativePathPosix }}"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"commandCMakeBuildVerbose"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmake --build {{ properties.buildFolderRelativePathPosix }} --verbose"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"commandCMakeClean"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmake --build  --target clean"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"commandCMakePerformTests"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cd  &amp;&amp; ctest -V"</span><span class="w">
+      </span><span class="nl">"commandCMakePerformTests"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cd {{ properties.buildFolderRelativePath }} &amp;&amp; ctest -V"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"test-qemu-cortex-m7f-cmake-debug"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -1369,13 +1369,13 @@ ilg@wksi my-project %
           </span><span class="nl">"toolchainFileName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arm-none-eabi-gcc.cmake"</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"prepare"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"prepare"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ properties.commandCMakePrepareWithToolchain }}"</span><span class="p">,</span><span class="w">
           </span><span class="nl">"build"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">""</span><span class="w">
+            </span><span class="s2">"{{ properties.commandCMakeReconfigure }}"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"{{ properties.commandCMakeBuild }}"</span><span class="w">
           </span><span class="p">],</span><span class="w">
-          </span><span class="nl">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"clean"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+          </span><span class="nl">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ properties.commandCMakePerformTests }}"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"clean"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ properties.commandCMakeClean }}"</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="nl">"qemu-cortex-m7f-cmake-release"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
