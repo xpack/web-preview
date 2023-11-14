@@ -3000,7 +3000,7 @@
 "tags": "releaseswindows-build-toolsbuildmakermmkdirbusybox",
 "keywords": "",
 "url": "/web-preview/blog/2023/11/14/windows-build-tools-v4-4-1-2-released/",
-"summary": "<p>Version <strong>4.4.1-2</strong> is a maintenance release of the <strong>xPack Windows Build Tools</strong> package; it disables the BusyBox make applet which interfered with the GNU make.</p>"
+"summary": "<p>Version <strong>4.4.1-2</strong> is a maintenance release of the <strong>xPack Windows Build Tools</strong> package; it disables the BusyBox <strong>make</strong> applet which interferes with the <strong>GNU make</strong>.</p>"
 }
 ,
 
