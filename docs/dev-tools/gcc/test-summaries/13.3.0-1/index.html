@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>GCC 13.3.0-1 test results | The xPack Build Framework</title>
+<link rel="stylesheet" href="https://xpack.github.io/web-preview/css/syntax.css">
+
+
+<link type="application/atom+xml" rel="alternate" href="https://xpack.github.io/web-preview/feed.xml"/>
+<link type="application/rss+xml" rel="alternate" title="xpack.github.io" href="https://xpack.github.io/web-preview/feed.xml">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>GCC 13.3.0-1 test results | xpack.github.io</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="GCC 13.3.0-1 test results" />
+<meta name="author" content="Liviu Ionescu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<meta property="og:description" content="Tools to manage, configure and build complex, package based, multi-target, C/C++ projects." />
+<link rel="canonical" href="https://xpack.github.io/web-preview/dev-tools/gcc/test-summaries/13.3.0-1/" />
+<meta property="og:url" content="https://xpack.github.io/web-preview/dev-tools/gcc/test-summaries/13.3.0-1/" />
+<meta property="og:site_name" content="xpack.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-06-06T08:17:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="GCC 13.3.0-1 test results" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2024-06-07T08:21:13+00:00","datePublished":"2024-06-06T08:17:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"GCC 13.3.0-1 test results","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/dev-tools/gcc/test-summaries/13.3.0-1/"},"url":"https://xpack.github.io/web-preview/dev-tools/gcc/test-summaries/13.3.0-1/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://xpack.github.io/web-preview/css/modern-business.css?202211092358">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://xpack.github.io/web-preview/css/customstyles.css?202211092358">
+<link rel="stylesheet" href="https://xpack.github.io/web-preview/css/boxshadowproperties.css?202211092358">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="https://xpack.github.io/web-preview/css/theme-blue.css?202211092358">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://xpack.github.io/web-preview/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="https://xpack.github.io/web-preview/js/toc.js"></script>
+<script src="https://xpack.github.io/web-preview/js/customscripts.js"></script>
+
+<!-- Use absolute URLs, to cover preview cases too -->
+<link rel="shortcut icon" href="https://xpack.github.io/web-preview/images/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://xpack.github.io/web-preview/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://xpack.github.io/web-preview/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xpack.github.io/web-preview/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://xpack.github.io/web-preview/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xpack.github.io/web-preview/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://xpack.github.io/web-preview/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://xpack.github.io/web-preview/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks" style="">
+        <div style="display: inline-block; float: left; margin-top: 8px; margin-left: auto; margin-right: 10px;"><img src="/web-preview/images/company_logo.png" alt="logo" width="32px" height="32px"/></div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/web-preview/">&nbsp;<span class="projectTitle"> The xPack Project</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="/web-preview/news/">Latest News</a></li>
+                        
+                        
+                        
+                        <li><a href="/web-preview/news/archive/">Archive</a></li>
+                        
+                        
+                        
+                        <li><a href="/web-preview/tags/">Tags</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a class="extern" href="https://eclipse-embed-cdt.github.io" target="_blank" rel="noopener">Eclipse Embedded CDT</a></li>
+                        
+                        
+                        
+                        <li><a class="extern" href="https://micro-os-plus.github.io" target="_blank" rel="noopener">µOS++ IIIe</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">GitHub<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a class="extern" href="https://github.com/xpack/" target="_blank" rel="noopener">xPack</a></li>
+                        
+                        
+                        
+                        <li><a class="extern" href="https://github.com/xpack-dev-tools/" target="_blank" rel="noopener">3rd Party xPack Dev Tools</a></li>
+                        
+                        
+                        
+                        <li><a class="extern" href="https://github.com/micro-os-plus/" target="_blank" rel="noopener">µOS++ IIIe</a></li>
+                        
+                        
+                        
+                        <li><a class="extern" href="https://github.com/xpack-3rd-party/" target="_blank" rel="noopener">3rd Party xPacks</a></li>
+                        
+                        
+                        
+                        <li><a class="extern" href="https://github.com/eclipse-embed-cdt/" target="_blank" rel="noopener">Eclipse Embedded CDT</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/web-preview/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/web-preview/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="GCC 13.3.0-1 test results">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3 sticky" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">GNU Compiler Collection GCC </li>
+  
+  
+  
+  <li>
+      <a title="Getting Started" href="#">Getting Started</a>
+      <ul>
+          
+          
+          
+          <li><a title="Overview" href="/web-preview/dev-tools/gcc/">Overview</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Install" href="/web-preview/dev-tools/gcc/install/">Install</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Support" href="/web-preview/dev-tools/gcc/support/">Support</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FAQ" href="/web-preview/dev-tools/gcc/faq/">FAQ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Releases" href="/web-preview/dev-tools/gcc/releases/">Releases</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar.
+this is critical so that the parent expands when you're viewing a page.
+This must appear below the sidebar code above. Otherwise, if placed
+inside customscripts.js, the script runs before the sidebar code runs
+and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">GCC 13.3.0-1 test results</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+        
+    <a target="_blank" rel="noopener" href="https://github.com/xpack/web-jekyll/blob/master/pages/dev-tools/gcc/tests-summaries/13.3.0-1.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit</a>
+
+    
+
+
+   <h2 id="macos-darwin-x86_64">macOS Darwin x86_64</h2>
+
+<p>On macOS there are 2 tests that fail.</p>
+
+<ul>
+  <li>the 2 overload-new-cpp tests fail only when gc is used
+(to be investigated <a href="https://github.com/iains/gcc-darwin-arm64/issues/132">https://github.com/iains/gcc-darwin-arm64/issues/132</a>)</li>
+</ul>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Tests summary for gcc 13.3.0-1 on darwin-x64 (macOS 12.7.5)
+
+264 test(s) passed, 2 failed:
+
+- xfail: gc-overload-new-cpp
+- xfail: gc-lto-overload-new-cpp
+
+Verdict: tests reluctantly accepted
+</span></code></pre></div></div>
+
+<p>The failing tests are:</p>
+
+<h3 id="test-overload-new-cpp">Test overload-new-cpp</h3>
+
+<h4 id="test-case-gc-overload-new-cpp">Test case gc-overload-new-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/Users/runner/work/gcc-xpack/gcc-xpack/build/darwin-x64/x86_64-apple-darwin21.6.0/tests/gcc-xpack/xpacks/.bin/g++ gc-overload-new.cpp.o -o gc-overload-new-cpp -ffunction-sections -fdata-sections -Wl,-dead_strip]
+
+[/Users/runner/work/gcc-xpack/gcc-xpack/build/darwin-x64/x86_64-apple-darwin21.6.0/tests/gcc/c-cpp/weak/gc-overload-new-cpp ]
+news: 1, deletes: 0
+
+Test "gc-overload-new-cpp " failed, got exit code: 1, expected 0 :-(
+
+
+xfail: gc-overload-new-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-lto-overload-new-cpp">Test case gc-lto-overload-new-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/Users/runner/work/gcc-xpack/gcc-xpack/build/darwin-x64/x86_64-apple-darwin21.6.0/tests/gcc-xpack/xpacks/.bin/g++ gc-lto-overload-new.cpp.o -o gc-lto-overload-new-cpp -flto -ffunction-sections -fdata-sections -Wl,-dead_strip]
+
+[/Users/runner/work/gcc-xpack/gcc-xpack/build/darwin-x64/x86_64-apple-darwin21.6.0/tests/gcc/c-cpp/weak/gc-lto-overload-new-cpp ]
+news: 1, deletes: 0
+
+Test "gc-lto-overload-new-cpp " failed, got exit code: 1, expected 0 :-(
+
+
+xfail: gc-lto-overload-new-cpp
+</span></code></pre></div></div>
+
+<h2 id="macos-darwin-arm64">macOS Darwin arm64</h2>
+
+<p>Same for Apple Silicon:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Tests summary for gcc 13.3.0-1 on darwin-arm64 (macOS 14.5)
+
+264 test(s) passed, 2 failed:
+
+- xfail: gc-overload-new-cpp
+- xfail: gc-lto-overload-new-cpp
+
+Verdict: tests reluctantly accepted
+</span></code></pre></div></div>
+
+<h2 id="debian-linux-x86_64">Debian Linux x86_64</h2>
+
+<p>On GNU/Linux there is only one test that fails and only in the static variant.
+The issue is not specific to GCC 14 or to the xPack distribution, it
+occurs even with the system g++:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>g++ sleepy-threads-cv.cpp <span class="nt">-o</span> static-sleepy-threads-cv-64 <span class="nt">-static</span> <span class="nt">-g</span> <span class="nt">-v</span> <span class="nt">-lpthread</span>
+<span class="gp">$</span><span class="w"> </span>./static-sleepy-threads-cv 4
+<span class="go">Segmentation fault
+</span></code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Tests summary for gcc 13.3.0-1 on linux-x64 (Debian 12)
+
+788 test(s) passed, 8 failed:
+
+- xfail: static-sleepy-threads-cv-64
+- xfail: static-gc-sleepy-threads-cv-64
+- xfail: static-lto-sleepy-threads-cv-64
+- xfail: static-gc-lto-sleepy-threads-cv-64
+- xfail: static-sleepy-threads-cv-32
+- xfail: static-gc-sleepy-threads-cv-32
+- xfail: static-lto-sleepy-threads-cv-32
+- xfail: static-gc-lto-sleepy-threads-cv-32
+
+Verdict: tests reluctantly accepted
+</span></code></pre></div></div>
+
+<p>The failing tests are:</p>
+
+<h3 id="test-sleepy-threads-cv-32">Test sleepy-threads-cv-32</h3>
+
+<h4 id="test-case-static-sleepy-threads-cv-32">Test case static-sleepy-threads-cv-32</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-sleepy-threads-cv-32 -static -m32 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-sleepy-threads-cv-32 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-sleepy-threads-cv-32 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-sleepy-threads-cv-32
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-sleepy-threads-cv-32">Test case static-gc-sleepy-threads-cv-32</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-gc-sleepy-threads-cv-32 -ffunction-sections -fdata-sections -Wl,--gc-sections -static -m32 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-gc-sleepy-threads-cv-32 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-gc-sleepy-threads-cv-32 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-gc-sleepy-threads-cv-32
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lto-sleepy-threads-cv-32">Test case static-lto-sleepy-threads-cv-32</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-lto-sleepy-threads-cv-32 -flto -static -m32 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-lto-sleepy-threads-cv-32 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-lto-sleepy-threads-cv-32 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-lto-sleepy-threads-cv-32
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-lto-sleepy-threads-cv-32">Test case static-gc-lto-sleepy-threads-cv-32</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-gc-lto-sleepy-threads-cv-32 -flto -ffunction-sections -fdata-sections -Wl,--gc-sections -static -m32 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-gc-lto-sleepy-threads-cv-32 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-gc-lto-sleepy-threads-cv-32 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-gc-lto-sleepy-threads-cv-32
+</span></code></pre></div></div>
+
+<h3 id="test-sleepy-threads-cv-64">Test sleepy-threads-cv-64</h3>
+
+<h4 id="test-case-static-sleepy-threads-cv-64">Test case static-sleepy-threads-cv-64</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-sleepy-threads-cv-64 -static -m64 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-sleepy-threads-cv-64 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-sleepy-threads-cv-64 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-sleepy-threads-cv-64
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-sleepy-threads-cv-64">Test case static-gc-sleepy-threads-cv-64</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-gc-sleepy-threads-cv-64 -ffunction-sections -fdata-sections -Wl,--gc-sections -static -m64 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-gc-sleepy-threads-cv-64 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-gc-sleepy-threads-cv-64 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-gc-sleepy-threads-cv-64
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lto-sleepy-threads-cv-64">Test case static-lto-sleepy-threads-cv-64</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-lto-sleepy-threads-cv-64 -flto -static -m64 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-lto-sleepy-threads-cv-64 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-lto-sleepy-threads-cv-64 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-lto-sleepy-threads-cv-64
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-lto-sleepy-threads-cv-64">Test case static-gc-lto-sleepy-threads-cv-64</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc-xpack/xpacks/.bin/g++ sleepy-threads-cv.cpp -o static-gc-lto-sleepy-threads-cv-64 -flto -ffunction-sections -fdata-sections -Wl,--gc-sections -static -m64 -lpthread]
+
+[/github/workspace/build/linux-x64/x86_64-pc-linux-gnu/tests/gcc/c-cpp/static-gc-lto-sleepy-threads-cv-64 4]
+terminate called after throwing an instance of 'std::system_error'
+  what():  Enable multithreading to use std::thread: Operation not permitted
+
+
+Test "static-gc-lto-sleepy-threads-cv-64 4" failed :-(
+expected output 4 chars: "abcd"
+got 0 chars: ""
+
+
+xfail: static-gc-lto-sleepy-threads-cv-64
+</span></code></pre></div></div>
+
+<h2 id="debian-linux-aarch64">Debian Linux aarch64</h2>
+
+<p>Same for arm64.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Tests summary for gcc 13.3.0-1 on linux-arm64 (Debian 12)
+
+394 test(s) passed, 4 failed:
+
+- xfail: static-sleepy-threads-cv
+- xfail: static-gc-sleepy-threads-cv
+- xfail: static-lto-sleepy-threads-cv
+- xfail: static-gc-lto-sleepy-threads-cv
+
+Verdict: tests reluctantly accepted
+</span></code></pre></div></div>
+
+<h2 id="debian-linux-armv7l">Debian Linux armv7l</h2>
+
+<p>Same for arm 32-bit.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Tests summary for gcc 13.3.0-1 on linux-arm (Debian 12)
+
+394 test(s) passed, 4 failed:
+
+- xfail: static-sleepy-threads-cv
+- xfail: static-gc-sleepy-threads-cv
+- xfail: static-lto-sleepy-threads-cv
+- xfail: static-gc-lto-sleepy-threads-cv
+
+Verdict: tests reluctantly accepted
+</span></code></pre></div></div>
+
+<h2 id="msys-windows-x86_64">Msys Windows x86_64</h2>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Tests summary for gcc 13.3.0-1 on win32-x64 (Msys 3.4.10)
+
+410 test(s) passed, 42 failed:
+
+- xfail: hello-weak1-c
+- xfail: hello-weak2-cpp
+- xfail: weak-use-c
+- xfail: weak-duplicate-c
+- xfail: overload-new-cpp
+- xfail: unwind-weak-cpp
+- xfail: gc-hello-weak1-c
+- xfail: gc-hello-weak2-cpp
+- xfail: gc-weak-use-c
+- xfail: gc-weak-duplicate-c
+- xfail: gc-overload-new-cpp
+- xfail: gc-unwind-weak-cpp
+- xfail: lto-overload-new-cpp
+- xfail: lto-throwcatch-main
+- xfail: lto-autoimport-main
+- xfail: gc-lto-overload-new-cpp
+- xfail: gc-lto-throwcatch-main
+- xfail: gc-lto-autoimport-main
+- xfail: static-lib-hello-weak1-c
+- xfail: static-lib-hello-weak2-cpp
+- xfail: static-lib-weak-use-c
+- xfail: static-lib-weak-duplicate-c
+- xfail: static-lib-unwind-weak-cpp
+- xfail: static-lib-gc-hello-weak1-c
+- xfail: static-lib-gc-hello-weak2-cpp
+- xfail: static-lib-gc-weak-use-c
+- xfail: static-lib-gc-weak-duplicate-c
+- xfail: static-lib-gc-unwind-weak-cpp
+- xfail: static-lib-lto-throwcatch-main
+- xfail: static-lib-lto-autoimport-main
+- xfail: static-lib-gc-lto-throwcatch-main
+- xfail: static-lib-gc-lto-autoimport-main
+- xfail: static-hello-weak1-c
+- xfail: static-hello-weak2-cpp
+- xfail: static-weak-use-c
+- xfail: static-weak-duplicate-c
+- xfail: static-unwind-weak-cpp
+- xfail: static-gc-hello-weak1-c
+- xfail: static-gc-hello-weak2-cpp
+- xfail: static-gc-weak-use-c
+- xfail: static-gc-weak-duplicate-c
+- xfail: static-gc-unwind-weak-cpp
+
+Verdict: tests reluctantly accepted
+</span></code></pre></div></div>
+
+<p>The failing tests are:</p>
+
+<h3 id="test-autoimport-main">Test autoimport-main</h3>
+
+<h4 id="test-case-lto-autoimport-main">Test case lto-autoimport-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-lib.c -o autoimport-lib.dll -shared -Wl,--out-implib,libautoimport-lib.dll.a -flto]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-main.c -o lto-autoimport-main.exe -L. -lautoimport-lib -flto]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/lto-autoimport-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF65F67144A out of range, targeting 00007FFD1E88136C, yielding the value 00000006BF20FF1E.
+
+Test "lto-autoimport-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: lto-autoimport-main
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-lto-autoimport-main">Test case gc-lto-autoimport-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-lib.c -o autoimport-lib.dll -shared -Wl,--out-implib,libautoimport-lib.dll.a -flto -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-main.c -o gc-lto-autoimport-main.exe -L. -lautoimport-lib -flto -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/gc-lto-autoimport-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF6ECDC293A out of range, targeting 00007FFD1E882570, yielding the value 0000000631ABFC32.
+
+Test "gc-lto-autoimport-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: gc-lto-autoimport-main
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-lto-autoimport-main">Test case static-lib-lto-autoimport-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-lib.c -o autoimport-lib.dll -shared -Wl,--out-implib,libautoimport-lib.dll.a -flto -static-libgcc]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-main.c -o static-lib-lto-autoimport-main.exe -L. -lautoimport-lib -flto -static-libgcc]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/static-lib-lto-autoimport-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF7293B144A out of range, targeting 00007FFD2C20136C, yielding the value 0000000602E4FF1E.
+
+Test "static-lib-lto-autoimport-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: static-lib-lto-autoimport-main
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-gc-lto-autoimport-main">Test case static-lib-gc-lto-autoimport-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-lib.c -o autoimport-lib.dll -shared -Wl,--out-implib,libautoimport-lib.dll.a -flto -ffunction-sections -fdata-sections -static-libgcc]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc autoimport-main.c -o static-lib-gc-lto-autoimport-main.exe -L. -lautoimport-lib -flto -ffunction-sections -fdata-sections -static-libgcc]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/static-lib-gc-lto-autoimport-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF7D454293A out of range, targeting 00007FFD2C202570, yielding the value 0000000557CBFC32.
+
+Test "static-lib-gc-lto-autoimport-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: static-lib-gc-lto-autoimport-main
+</span></code></pre></div></div>
+
+<h3 id="test-hello-weak1-c">Test hello-weak1-c</h3>
+
+<h4 id="test-case-hello-weak1-c">Test case hello-weak1-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-weak1.c -o hello-weak1.c.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-f-weak1.c -o hello-f-weak1.c.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc hello-weak1.c.o hello-f-weak1.c.o -o hello-weak1-c.exe -lm]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: hello-weak1.c.o:hello-weak1.c:(.text+0x15): undefined reference to `world'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: hello-weak1-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-hello-weak1-c">Test case gc-hello-weak1-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-weak1.c -o gc-hello-weak1.c.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-f-weak1.c -o gc-hello-f-weak1.c.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc gc-hello-weak1.c.o gc-hello-f-weak1.c.o -o gc-hello-weak1-c.exe -lm -ffunction-sections -fdata-sections]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: gc-hello-weak1.c.o:hello-weak1.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>world<span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: gc-hello-weak1-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-hello-weak1-c">Test case static-lib-hello-weak1-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-weak1.c -o static-lib-hello-weak1.c.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-f-weak1.c -o static-lib-hello-f-weak1.c.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-lib-hello-weak1.c.o static-lib-hello-f-weak1.c.o -o static-lib-hello-weak1-c.exe -lm -static-libgcc]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-hello-weak1.c.o:hello-weak1.c:(.text+0x15): undefined reference to `world'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-hello-weak1-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-gc-hello-weak1-c">Test case static-lib-gc-hello-weak1-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-weak1.c -o static-lib-gc-hello-weak1.c.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-f-weak1.c -o static-lib-gc-hello-f-weak1.c.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-lib-gc-hello-weak1.c.o static-lib-gc-hello-f-weak1.c.o -o static-lib-gc-hello-weak1-c.exe -lm -ffunction-sections -fdata-sections -static-libgcc]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-gc-hello-weak1.c.o:hello-weak1.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>world<span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-gc-hello-weak1-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-hello-weak1-c">Test case static-hello-weak1-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-weak1.c -o static-hello-weak1.c.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-f-weak1.c -o static-hello-f-weak1.c.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-hello-weak1.c.o static-hello-f-weak1.c.o -o static-hello-weak1-c.exe -lm -static]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-hello-weak1.c.o:hello-weak1.c:(.text+0x15): undefined reference to `world'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-hello-weak1-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-hello-weak1-c">Test case static-gc-hello-weak1-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-weak1.c -o static-gc-hello-weak1.c.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc -c hello-f-weak1.c -o static-gc-hello-f-weak1.c.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-gc-hello-weak1.c.o static-gc-hello-f-weak1.c.o -o static-gc-hello-weak1-c.exe -lm -ffunction-sections -fdata-sections -static]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-gc-hello-weak1.c.o:hello-weak1.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>world<span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-gc-hello-weak1-c
+</span></code></pre></div></div>
+
+<h3 id="test-hello-weak2-cpp">Test hello-weak2-cpp</h3>
+
+<h4 id="test-case-hello-weak2-cpp">Test case hello-weak2-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-weak2.cpp -o hello-weak2.cpp.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-f-weak2.cpp -o hello-f-weak2.cpp.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ hello-weak2.cpp.o hello-f-weak2.cpp.o -o hello-weak2-cpp.exe -lm]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: hello-weak2.cpp.o:hello-weak2.cp:(.text+0x25): undefined reference to `hello()'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: hello-weak2-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-hello-weak2-cpp">Test case gc-hello-weak2-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-weak2.cpp -o gc-hello-weak2.cpp.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-f-weak2.cpp -o gc-hello-f-weak2.cpp.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ gc-hello-weak2.cpp.o gc-hello-f-weak2.cpp.o -o gc-hello-weak2-cpp.exe -lm -ffunction-sections -fdata-sections]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: gc-hello-weak2.cpp.o:hello-weak2.cp:(.text$</span>main+0x18<span class="o">)</span>: undefined reference to <span class="sb">`</span>hello<span class="o">()</span><span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: gc-hello-weak2-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-hello-weak2-cpp">Test case static-lib-hello-weak2-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-weak2.cpp -o static-lib-hello-weak2.cpp.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-f-weak2.cpp -o static-lib-hello-f-weak2.cpp.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-lib-hello-weak2.cpp.o static-lib-hello-f-weak2.cpp.o -o static-lib-hello-weak2-cpp.exe -lm -static-libgcc -static-libstdc++]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-hello-weak2.cpp.o:hello-weak2.cp:(.text+0x25): undefined reference to `hello()'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-hello-weak2-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-gc-hello-weak2-cpp">Test case static-lib-gc-hello-weak2-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-weak2.cpp -o static-lib-gc-hello-weak2.cpp.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-f-weak2.cpp -o static-lib-gc-hello-f-weak2.cpp.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-lib-gc-hello-weak2.cpp.o static-lib-gc-hello-f-weak2.cpp.o -o static-lib-gc-hello-weak2-cpp.exe -lm -ffunction-sections -fdata-sections -static-libgcc -static-libstdc++]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-gc-hello-weak2.cpp.o:hello-weak2.cp:(.text$</span>main+0x18<span class="o">)</span>: undefined reference to <span class="sb">`</span>hello<span class="o">()</span><span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-gc-hello-weak2-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-hello-weak2-cpp">Test case static-hello-weak2-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-weak2.cpp -o static-hello-weak2.cpp.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-f-weak2.cpp -o static-hello-f-weak2.cpp.o]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-hello-weak2.cpp.o static-hello-f-weak2.cpp.o -o static-hello-weak2-cpp.exe -lm -static]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-hello-weak2.cpp.o:hello-weak2.cp:(.text+0x25): undefined reference to `hello()'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-hello-weak2-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-hello-weak2-cpp">Test case static-gc-hello-weak2-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-weak2.cpp -o static-gc-hello-weak2.cpp.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ -c hello-f-weak2.cpp -o static-gc-hello-f-weak2.cpp.o -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-gc-hello-weak2.cpp.o static-gc-hello-f-weak2.cpp.o -o static-gc-hello-weak2-cpp.exe -lm -ffunction-sections -fdata-sections -static]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-gc-hello-weak2.cpp.o:hello-weak2.cp:(.text$</span>main+0x18<span class="o">)</span>: undefined reference to <span class="sb">`</span>hello<span class="o">()</span><span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-gc-hello-weak2-cpp
+</span></code></pre></div></div>
+
+<h3 id="test-overload-new-cpp-1">Test overload-new-cpp</h3>
+
+<h4 id="test-case-overload-new-cpp">Test case overload-new-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ overload-new.cpp.o -o overload-new-cpp.exe]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/weak/overload-new-cpp.exe ]
+news: 1, deletes: 0
+
+Test "overload-new-cpp.exe " failed, got exit code: 1, expected 0 :-(
+
+
+xfail: overload-new-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-overload-new-cpp-1">Test case gc-overload-new-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ gc-overload-new.cpp.o -o gc-overload-new-cpp.exe -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/weak/gc-overload-new-cpp.exe ]
+news: 1, deletes: 0
+
+Test "gc-overload-new-cpp.exe " failed, got exit code: 1, expected 0 :-(
+
+
+xfail: gc-overload-new-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-lto-overload-new-cpp">Test case lto-overload-new-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ lto-overload-new.cpp.o -o lto-overload-new-cpp.exe -flto]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/weak/lto-overload-new-cpp.exe ]
+news: 1, deletes: 0
+
+Test "lto-overload-new-cpp.exe " failed, got exit code: 1, expected 0 :-(
+
+
+xfail: lto-overload-new-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-lto-overload-new-cpp-1">Test case gc-lto-overload-new-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ gc-lto-overload-new.cpp.o -o gc-lto-overload-new-cpp.exe -flto -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/weak/gc-lto-overload-new-cpp.exe ]
+news: 1, deletes: 0
+
+Test "gc-lto-overload-new-cpp.exe " failed, got exit code: 1, expected 0 :-(
+
+
+xfail: gc-lto-overload-new-cpp
+</span></code></pre></div></div>
+
+<h3 id="test-throwcatch-main">Test throwcatch-main</h3>
+
+<h4 id="test-case-lto-throwcatch-main">Test case lto-throwcatch-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-lib.cpp -shared -o throwcatch-lib.dll -Wl,--out-implib,libthrowcatch-lib.dll.a -flto]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-main.cpp -o lto-throwcatch-main.exe -L. -lthrowcatch-lib -flto -Wl,--allow-multiple-definition]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/lto-throwcatch-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF7B5CD14A7 out of range, targeting 00007FFD1E881660, yielding the value 0000000568BB01B5.
+
+Test "lto-throwcatch-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: lto-throwcatch-main
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-lto-throwcatch-main">Test case gc-lto-throwcatch-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-lib.cpp -shared -o throwcatch-lib.dll -Wl,--out-implib,libthrowcatch-lib.dll.a -flto -ffunction-sections -fdata-sections]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-main.cpp -o gc-lto-throwcatch-main.exe -L. -lthrowcatch-lib -flto -ffunction-sections -fdata-sections -Wl,--allow-multiple-definition]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/gc-lto-throwcatch-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF7D2387954 out of range, targeting 00007FFD1E857570, yielding the value 000000054C4CFC18.
+
+Test "gc-lto-throwcatch-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: gc-lto-throwcatch-main
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-lto-throwcatch-main">Test case static-lib-lto-throwcatch-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-lib.cpp -shared -o throwcatch-lib.dll -Wl,--out-implib,libthrowcatch-lib.dll.a -flto -static-libgcc -static-libstdc++]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-main.cpp -o static-lib-lto-throwcatch-main.exe -L. -lthrowcatch-lib -flto -static-libgcc -static-libstdc++ -Wl,--allow-multiple-definition]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/static-lib-lto-throwcatch-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF6905014A7 out of range, targeting 00007FFD1E851660, yielding the value 000000068E3501B5.
+
+Test "static-lib-lto-throwcatch-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: static-lib-lto-throwcatch-main
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-gc-lto-throwcatch-main">Test case static-lib-gc-lto-throwcatch-main</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-lib.cpp -shared -o throwcatch-lib.dll -Wl,--out-implib,libthrowcatch-lib.dll.a -flto -ffunction-sections -fdata-sections -static-libgcc -static-libstdc++]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ throwcatch-main.cpp -o static-lib-gc-lto-throwcatch-main.exe -L. -lthrowcatch-lib -flto -ffunction-sections -fdata-sections -static-libgcc -static-libstdc++ -Wl,--allow-multiple-definition]
+
+[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc/c-cpp/static-lib-gc-lto-throwcatch-main.exe ]
+Mingw-w64 runtime failure:
+32 bit pseudo relocation at 00007FF6E1093C74 out of range, targeting 00007FFD1E857CD0, yielding the value 000000063D7C4058.
+
+Test "static-lib-gc-lto-throwcatch-main.exe " failed, got exit code: 127, expected 0 :-(
+
+
+xfail: static-lib-gc-lto-throwcatch-main
+</span></code></pre></div></div>
+
+<h3 id="test-unwind-weak-cpp">Test unwind-weak-cpp</h3>
+
+<h4 id="test-case-unwind-weak-cpp">Test case unwind-weak-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ unwind-weak.cpp.o unwind-main.cpp.o -o unwind-weak-cpp.exe]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: unwind-main.cpp.o:unwind-main.cp:(.text+0x4e): undefined reference to `step1'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: unwind-weak-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-unwind-weak-cpp">Test case gc-unwind-weak-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ gc-unwind-weak.cpp.o gc-unwind-main.cpp.o -o gc-unwind-weak-cpp.exe -ffunction-sections -fdata-sections]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: gc-unwind-main.cpp.o:unwind-main.cp:(.text$</span>main+0x1c<span class="o">)</span>: undefined reference to <span class="sb">`</span>step1<span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: gc-unwind-weak-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-unwind-weak-cpp">Test case static-lib-unwind-weak-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-lib-unwind-weak.cpp.o static-lib-unwind-main.cpp.o -o static-lib-unwind-weak-cpp.exe -static-libgcc -static-libstdc++]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-unwind-main.cpp.o:unwind-main.cp:(.text+0x4e): undefined reference to `step1'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-unwind-weak-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-gc-unwind-weak-cpp">Test case static-lib-gc-unwind-weak-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-lib-gc-unwind-weak.cpp.o static-lib-gc-unwind-main.cpp.o -o static-lib-gc-unwind-weak-cpp.exe -ffunction-sections -fdata-sections -static-libgcc -static-libstdc++]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-gc-unwind-main.cpp.o:unwind-main.cp:(.text$</span>main+0x1c<span class="o">)</span>: undefined reference to <span class="sb">`</span>step1<span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-gc-unwind-weak-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-unwind-weak-cpp">Test case static-unwind-weak-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-unwind-weak.cpp.o static-unwind-main.cpp.o -o static-unwind-weak-cpp.exe -static]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-unwind-main.cpp.o:unwind-main.cp:(.text+0x4e): undefined reference to `step1'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-unwind-weak-cpp
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-unwind-weak-cpp">Test case static-gc-unwind-weak-cpp</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/g++ static-gc-unwind-weak.cpp.o static-gc-unwind-main.cpp.o -o static-gc-unwind-weak-cpp.exe -ffunction-sections -fdata-sections -static]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-gc-unwind-main.cpp.o:unwind-main.cp:(.text$</span>main+0x1c<span class="o">)</span>: undefined reference to <span class="sb">`</span>step1<span class="s1">'
+</span><span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-gc-unwind-weak-cpp
+</span></code></pre></div></div>
+
+<h3 id="test-weak-duplicate-c">Test weak-duplicate-c</h3>
+
+<h4 id="test-case-weak-duplicate-c">Test case weak-duplicate-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc main.c.o add1-weak-dummy-chained.c.o expected3-add1-weak.c.o -o weak-duplicate-c.exe]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: main.c.o:main.c:(.text+0x15): undefined reference to `func'
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text+0x25): undefined reference to `func'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: weak-duplicate-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-weak-duplicate-c">Test case gc-weak-duplicate-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc gc-main.c.o gc-add1-weak-dummy-chained.c.o gc-expected3-add1-weak.c.o -o gc-weak-duplicate-c.exe -ffunction-sections -fdata-sections]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: gc-main.c.o:main.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>func<span class="s1">'
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: gc-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text$</span><span class="s1">dummy+0x9): undefined reference to `func'</span>
+<span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: gc-weak-duplicate-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-weak-duplicate-c">Test case static-lib-weak-duplicate-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-lib-main.c.o static-lib-add1-weak-dummy-chained.c.o static-lib-expected3-add1-weak.c.o -o static-lib-weak-duplicate-c.exe -static-libgcc]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-main.c.o:main.c:(.text+0x15): undefined reference to `func'
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text+0x25): undefined reference to `func'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-weak-duplicate-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-gc-weak-duplicate-c">Test case static-lib-gc-weak-duplicate-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-lib-gc-main.c.o static-lib-gc-add1-weak-dummy-chained.c.o static-lib-gc-expected3-add1-weak.c.o -o static-lib-gc-weak-duplicate-c.exe -ffunction-sections -fdata-sections -static-libgcc]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-gc-main.c.o:main.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>func<span class="s1">'
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-gc-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text$</span><span class="s1">dummy+0x9): undefined reference to `func'</span>
+<span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-gc-weak-duplicate-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-weak-duplicate-c">Test case static-weak-duplicate-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-main.c.o static-add1-weak-dummy-chained.c.o static-expected3-add1-weak.c.o -o static-weak-duplicate-c.exe -static]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-main.c.o:main.c:(.text+0x15): undefined reference to `func'
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text+0x25): undefined reference to `func'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-weak-duplicate-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-weak-duplicate-c">Test case static-gc-weak-duplicate-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-gc-main.c.o static-gc-add1-weak-dummy-chained.c.o static-gc-expected3-add1-weak.c.o -o static-gc-weak-duplicate-c.exe -ffunction-sections -fdata-sections -static]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-gc-main.c.o:main.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>func<span class="s1">'
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-gc-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text$</span><span class="s1">dummy+0x9): undefined reference to `func'</span>
+<span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-gc-weak-duplicate-c
+</span></code></pre></div></div>
+
+<h3 id="test-weak-use-c">Test weak-use-c</h3>
+
+<h4 id="test-case-weak-use-c">Test case weak-use-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc main.c.o add1-weak-dummy-chained.c.o expected3.c.o -o weak-use-c.exe]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: main.c.o:main.c:(.text+0x15): undefined reference to `func'
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text+0x25): undefined reference to `func'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: weak-use-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-gc-weak-use-c">Test case gc-weak-use-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc gc-main.c.o gc-add1-weak-dummy-chained.c.o gc-expected3.c.o -o gc-weak-use-c.exe -ffunction-sections -fdata-sections]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: gc-main.c.o:main.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>func<span class="s1">'
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: gc-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text$</span><span class="s1">dummy+0x9): undefined reference to `func'</span>
+<span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: gc-weak-use-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-weak-use-c">Test case static-lib-weak-use-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-lib-main.c.o static-lib-add1-weak-dummy-chained.c.o static-lib-expected3.c.o -o static-lib-weak-use-c.exe -static-libgcc]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-main.c.o:main.c:(.text+0x15): undefined reference to `func'
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text+0x25): undefined reference to `func'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-weak-use-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-lib-gc-weak-use-c">Test case static-lib-gc-weak-use-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-lib-gc-main.c.o static-lib-gc-add1-weak-dummy-chained.c.o static-lib-gc-expected3.c.o -o static-lib-gc-weak-use-c.exe -ffunction-sections -fdata-sections -static-libgcc]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-gc-main.c.o:main.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>func<span class="s1">'
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-lib-gc-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text$</span><span class="s1">dummy+0x9): undefined reference to `func'</span>
+<span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-lib-gc-weak-use-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-weak-use-c">Test case static-weak-use-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-main.c.o static-add1-weak-dummy-chained.c.o static-expected3.c.o -o static-weak-use-c.exe -static]
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-main.c.o:main.c:(.text+0x15): undefined reference to `func'
+C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text+0x25): undefined reference to `func'
+collect2.exe: error: ld returned 1 exit status
+
+xfail: static-weak-use-c
+</span></code></pre></div></div>
+
+<h4 id="test-case-static-gc-weak-use-c">Test case static-gc-weak-use-c</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">[/d/a/gcc-xpack/gcc-xpack/build/win32-x64/x86_64-pc-mingw64/tests/gcc-xpack/xpacks/.bin/gcc static-gc-main.c.o static-gc-add1-weak-dummy-chained.c.o static-gc-expected3.c.o -o static-gc-weak-use-c.exe -ffunction-sections -fdata-sections -static]
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-gc-main.c.o:main.c:(.text$</span>main+0x15<span class="o">)</span>: undefined reference to <span class="sb">`</span>func<span class="s1">'
+</span><span class="gp">C:/Users/runneradmin/AppData/Roaming/xPacks/@xpack-dev-tools/gcc/13.3.0-1.1/.content/bin/../lib/gcc/x86_64-w64-mingw32/13.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: static-gc-add1-weak-dummy-chained.c.o:add1-weak-dummy-chained.c:(.text$</span><span class="s1">dummy+0x9): undefined reference to `func'</span>
+<span class="go">collect2.exe: error: ld returned 1 exit status
+
+xfail: static-gc-weak-use-c
+</span></code></pre></div></div>
+
+
+    <div class="tags">
+        
+    </div>
+
+    
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2024 Liviu Ionescu. All rights reserved. <br />
+<span>Page last updated:</span> Jun 7, 2024<br/> Site last generated: Jun 7, 2024 <br />
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8WX9T80JEK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8WX9T80JEK');
+</script>
+
+
+</html>
