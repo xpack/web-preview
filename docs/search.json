@@ -3051,6 +3051,16 @@
 
 
 {
+"title": "xPack LLVM clang v18.1.8-1 released",
+"tags": "releasesclang",
+"keywords": "",
+"url": "/web-preview/blog/2024/06/25/clang-v18-1-8-1-released/",
+"summary": "<p>Version <strong>18.1.8-1</strong> is a new release; it follows the upstream release.</p>"
+}
+,
+
+
+{
 "title": "xPack LLVM clang v17.0.6-3 released",
 "tags": "releasesclang",
 "keywords": "",
