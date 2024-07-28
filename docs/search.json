@@ -3117,6 +3117,16 @@
 
 
 {
+"title": "xPack MinGW-w64 GCC v11.5.0-1 released",
+"tags": "releasesgccmingwmingw-w64",
+"keywords": "",
+"url": "/web-preview/blog/2024/07/28/mingw-w64-gcc-v11-5-0-1-released/",
+"summary": "<p>Version <strong>11.5.0-1</strong> is a new release; it follows the official GNU GCC release.</p>"
+}
+,
+
+
+{
 "title": "xPack GNU RISC-V Embedded GCC v11.5.0-1 released",
 "tags": "releasesriscvriscv-none-elf-gccgccbinariesc++",
 "keywords": "",
