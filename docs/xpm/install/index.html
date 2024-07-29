@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install xpm" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2024-07-29T04:49:45+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install xpm","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/install/"},"url":"https://xpack.github.io/web-preview/xpm/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2024-07-29T05:06:54+00:00","datePublished":"2017-10-09T11:14:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install xpm","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/xpm/install/"},"url":"https://xpack.github.io/web-preview/xpm/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -437,8 +437,6 @@ require new features</li>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Please be sure you are installing <strong>xpm</strong> as the <strong>xPack Project Manager</strong>, since there are other projects that unfortunately use the same name (for example <em>uniX Package Manager</em>).</div>
 
-<h2 id="xpm-install"><code class="language-plaintext highlighter-rouge">xpm</code> install</h2>
-
 <ul id="profileTabs_1" class="nav nav-tabs">
     <li class="active"><a href="#windows_1" data-toggle="tab">Windows</a></li>
     <li><a href="#macos_1" data-toggle="tab">macOS</a></li>
@@ -447,6 +445,8 @@ require new features</li>
 <div class="tab-content">
 	<div role="tabpanel" class="tab-pane active" id="windows_1">
 		
+<h2 id="xpm-install"><code class="language-plaintext highlighter-rouge">xpm</code> install</h2>
+
 <p>On Windows, by default, global Node.js packages are installed in the
 user home folder, in <code class="language-plaintext highlighter-rouge">%APPDATA%\npm</code>
 (like <code class="language-plaintext highlighter-rouge">C:\Users\ilg\AppData\Roaming\npm</code>), and managing packages
@@ -535,6 +535,13 @@ at least for files in the
 
 <p>If this is not possible, temporarily disable the antivirus program.</p>
 
+<h2 id="uninstall">Uninstall</h2>
+
+<p>To remove xpm, the command is:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm uninstall <span class="nt">--location</span><span class="o">=</span>global xpm
+</code></pre></div></div>
+
 <h3 id="xpm-clean-ups">xpm clean-ups</h3>
 
 <p>For a thorough clean-up, please note that <strong>xpm</strong> uses only two folders:</p>
@@ -550,6 +557,8 @@ at least for files in the
 	</div>
 	<div role="tabpanel" class="tab-pane" id="macos_1">
 		
+<h2 id="xpm-install"><code class="language-plaintext highlighter-rouge">xpm</code> install</h2>
+
 <p>On macOS, by default, global Node.js packages are installed in
 <code class="language-plaintext highlighter-rouge">/usr/local</code>, and managing them requires administrative rights,
 but if you followed the instructions in the
@@ -569,6 +578,13 @@ already have configured npm to use a location in the home folder.</p>
 <span class="go">0.19.1
 </span></code></pre></div></div>
 
+<h2 id="uninstall">Uninstall</h2>
+
+<p>To remove xpm, the command is:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm uninstall <span class="nt">--location</span><span class="o">=</span>global xpm
+</code></pre></div></div>
+
 <h3 id="xpm-clean-ups">xpm clean-ups</h3>
 
 <p>For a thorough clean-up, please note that <strong>xpm</strong> uses only two folders:</p>
@@ -580,10 +596,43 @@ already have configured npm to use a location in the home folder.</p>
 
 <p>They can be removed at any time, and <strong>xpm</strong> will recreate them on new installs.</p>
 
+<h3 id="macos-specifics">macOS specifics</h3>
+
+<p>The default location used to install the global packages is
+in <code class="language-plaintext highlighter-rouge">~/Library</code>, a folder that, due to an unfortunate Apple decision,
+is hidden for regular browsing in Finder.</p>
+
+<p>To make it back visible, use:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/chflags nohidden ~/Library
+xattr <span class="nt">-d</span> com.apple.FinderInfo ~/Library
+</code></pre></div></div>
+
+<p>A more general solution is to make all hidden files visible:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.Finder AppleShowAllFiles <span class="nb">true
+</span>killall Finder
+</code></pre></div></div>
+
+<p>Another annoying behaviour of the file browser is to hide names starting
+with <code class="language-plaintext highlighter-rouge">.</code> (dot), which is a real pity since the binary packages are
+extracted in a folder named <code class="language-plaintext highlighter-rouge">.content</code>.</p>
+
+<p>Fortunately there is a workaround for this too:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">cmd+shift+'.'
+</span></code></pre></div></div>
+
+<p>This keyboard shortcut works like a toggle, using it once makes files
+starting with dot visible,
+using it again reverts to hiding them.</p>
+
 
 	</div>
 	<div role="tabpanel" class="tab-pane" id="linux_1">
 		
+<h2 id="xpm-install"><code class="language-plaintext highlighter-rouge">xpm</code> install</h2>
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Support for Arm platforms was
 added in the 0.6.2 release of xpm.</div>
 
@@ -636,6 +685,13 @@ SyntaxError: Unexpected identifier
 <a href="/web-preview/install/">prerequisites</a> page and update your
 <code class="language-plaintext highlighter-rouge">node</code> &amp; <code class="language-plaintext highlighter-rouge">npm</code> programs.</p>
 
+<h2 id="uninstall">Uninstall</h2>
+
+<p>To remove xpm, the command is:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm uninstall <span class="nt">--location</span><span class="o">=</span>global xpm
+</code></pre></div></div>
+
 <h3 id="xpm-clean-ups">xpm clean-ups</h3>
 
 <p>For a thorough clean-up, please note that <strong>xpm</strong> uses only two folders:</p>
@@ -650,13 +706,6 @@ SyntaxError: Unexpected identifier
 
 	</div>
 </div>
-
-<h2 id="uninstall">Uninstall</h2>
-
-<p>To remove xpm, the command is:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm uninstall <span class="nt">--location</span><span class="o">=</span>global xpm
-</code></pre></div></div>
 
 <h2 id="miscellaneous">Miscellaneous</h2>
 
@@ -695,37 +744,6 @@ in the user home.</p>
 </ul>
 
 <p>For more details see <a href="/web-preview/xpm/folders/">xpm folders</a>.</p>
-
-<h3 id="macos-specifics">macOS specifics</h3>
-
-<p>The default location used to install the global packages is
-in <code class="language-plaintext highlighter-rouge">~/Library</code>, a folder that, due to an unfortunate Apple decision,
-is hidden for regular browsing in Finder.</p>
-
-<p>To make it back visible, use:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/chflags nohidden ~/Library
-xattr <span class="nt">-d</span> com.apple.FinderInfo ~/Library
-</code></pre></div></div>
-
-<p>A more general solution is to make all hidden files visible:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.Finder AppleShowAllFiles <span class="nb">true
-</span>killall Finder
-</code></pre></div></div>
-
-<p>Another annoying behaviour of the file browser is to hide names starting
-with <code class="language-plaintext highlighter-rouge">.</code> (dot), which is a real pity since the binary packages are
-extracted in a folder named <code class="language-plaintext highlighter-rouge">.content</code>.</p>
-
-<p>Fortunately there is a workaround for this too:</p>
-
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">cmd+shift+'.'
-</span></code></pre></div></div>
-
-<p>This keyboard shortcut works like a toggle, using it once makes files
-starting with dot visible,
-using it again reverts to hiding them.</p>
 
 <h2 id="proxy">Proxy</h2>
 
