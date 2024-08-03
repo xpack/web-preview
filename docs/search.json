@@ -5302,7 +5302,7 @@
 "tags": "releasesopenocd",
 "keywords": "",
 "url": "/web-preview/blog/2021/03/15/openocd-v0-11-0-1-released/",
-"summary": "<p>Version 0.11.0-1 is a new major release; it updates to the latest upstream major release.</p>"
+"summary": "<p>Version <strong>0.11.0-1</strong> is a new major release; it updates to the latest upstream major release.</p>"
 }
 ,
 
@@ -5472,7 +5472,7 @@
 "tags": "releasesopenocd",
 "keywords": "",
 "url": "/web-preview/blog/2020/10/13/openocd-v0-10-0-15-released/",
-"summary": "<p>Version 0.10.0-15 is a maintenance release; it updates to the latest upstream master.</p>"
+"summary": "<p>Version <strong>0.10.0-15</strong> is a maintenance release; it updates to the latest upstream master.</p>"
 }
 ,
 
@@ -5602,7 +5602,7 @@
 "tags": "releasesopenocd",
 "keywords": "",
 "url": "/web-preview/blog/2020/06/24/openocd-v0-10-0-14-released/",
-"summary": "<p>Version 0.10.0-14 is a maintenance release; it updates to the latest upstream master and adds support for running on Arm platforms, like Raspberry Pi.</p>"
+"summary": "<p>Version <strong>0.10.0-14</strong> is a maintenance release; it updates to the latest upstream master and adds support for running on Arm platforms, like Raspberry Pi.</p>"
 }
 ,
 
@@ -5722,13 +5722,13 @@
 "tags": "releasesopenocd",
 "keywords": "",
 "url": "/web-preview/blog/2019/07/17/openocd-v0-10-0-13-released/",
-"summary": "<p>Version 0.10.0-13 is a maintenance release; it updates to the latest upstream master.</p>"
+"summary": "<p>Version <strong>0.10.0-13</strong> is a maintenance release; it updates to the latest upstream master.</p>"
 }
 ,
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.7 20190524 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.7 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinarieslto",
 "keywords": "",
 "url": "/web-preview/blog/2019/05/24/arm-none-eabi-gcc-v8-2-1-1-7-released/",
@@ -5758,7 +5758,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.6 20190510 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.6 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinarieslto",
 "keywords": "",
 "url": "/web-preview/blog/2019/05/10/arm-none-eabi-gcc-v8-2-1-1-6-released/",
@@ -5768,7 +5768,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.5 20190426 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.5 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinarieslto",
 "keywords": "",
 "url": "/web-preview/blog/2019/04/26/arm-none-eabi-gcc-v8-2-1-1-5-released/",
@@ -5818,7 +5818,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.4 20190214 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.4 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinarieslto",
 "keywords": "",
 "url": "/web-preview/blog/2019/02/14/arm-none-eabi-gcc-v8-2-1-1-4-released/",
@@ -5838,7 +5838,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.3 20190202 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.3 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinarieslto",
 "keywords": "",
 "url": "/web-preview/blog/2019/02/02/arm-none-eabi-gcc-v8-2-1-1-3-released/",
@@ -5848,7 +5848,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.2 20190119 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.2 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinaries",
 "keywords": "",
 "url": "/web-preview/blog/2019/01/19/arm-none-eabi-gcc-v8-2-1-1-2-released/",
@@ -5868,7 +5868,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.1 20190102 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.1 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinaries",
 "keywords": "",
 "url": "/web-preview/blog/2019/01/03/arm-none-eabi-gcc-v8-2-1-1-1-released/",
@@ -5908,7 +5908,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v7.3.1-1.1 20180724 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v7.3.1-1.1 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinaries",
 "keywords": "",
 "url": "/web-preview/blog/2018/07/24/arm-none-eabi-gcc-v7-3-1-1-1-released/",
@@ -5968,7 +5968,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 20180401 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v7.2.1-1.1 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinaries",
 "keywords": "",
 "url": "/web-preview/blog/2018/04/01/arm-none-eabi-gcc-v7-2-1-1-1-released/",
@@ -5978,7 +5978,7 @@
 
 
 {
-"title": "GNU MCU Eclipse ARM Embedded GCC v6.3.1-1.1 20180331 released",
+"title": "GNU MCU Eclipse ARM Embedded GCC v6.3.1-1.1 released",
 "tags": "releasesarmarm-none-eabi-gccgccbinaries",
 "keywords": "",
 "url": "/web-preview/blog/2018/03/31/arm-none-eabi-gcc-v6-3-1-1-1-released/",
