@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to install the xPack LLVM clang binaries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2024-08-03T13:47:55+00:00","datePublished":"2021-05-21T21:27:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack LLVM clang binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/dev-tools/clang/install/"},"url":"https://xpack.github.io/web-preview/dev-tools/clang/install/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Liviu Ionescu"},"dateModified":"2024-08-06T12:41:22+00:00","datePublished":"2021-05-21T21:27:00+00:00","description":"Tools to manage, configure and build complex, package based, multi-target, C/C++ projects.","headline":"How to install the xPack LLVM clang binaries","mainEntityOfPage":{"@type":"WebPage","@id":"https://xpack.github.io/web-preview/dev-tools/clang/install/"},"url":"https://xpack.github.io/web-preview/dev-tools/clang/install/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -584,7 +584,7 @@ GitHub <a href="https://github.com/xpack-dev-tools/clang-xpack/releases/">releas
 
 <h3 id="download">Download</h3>
 
-<p>The macOS versions of <strong>xPack LLVM clang</strong> are packed as a
+<p>The macOS versions of <strong>xPack LLVM clang</strong> are packed as a
 <code class="language-plaintext highlighter-rouge">.tar.gz</code> archive.
 Download the latest version named like:</p>
 
@@ -617,116 +617,116 @@ install location is different from the xpm install folders.</div>
 <span class="go">/Users/ilg/.local/xPacks/clang/xpack-clang-13.0.1-1
 ├── README.md
 ├── bin
-│   ├── analyze-build
-</span><span class="gp">│   ├── clang -&gt;</span><span class="w"> </span>clang-13
-<span class="gp">│   ├── clang++ -&gt;</span><span class="w"> </span>clang
-<span class="go">│   ├── clang-13
-│   ├── clang-check
-</span><span class="gp">│   ├── clang-cl -&gt;</span><span class="w"> </span>clang
-<span class="gp">│   ├── clang-cpp -&gt;</span><span class="w"> </span>clang
-<span class="go">│   ├── clang-doc
-│   ├── clang-format
-│   ├── clang-offload-bundler
-│   ├── clang-offload-wrapper
-│   ├── clang-refactor
-│   ├── clang-rename
-│   ├── clang-repl
-│   ├── clang-scan-deps
-│   ├── clang-tidy
-│   ├── clangd
-│   ├── clangd-xpc-test-client
-│   ├── darwin-debug
-│   ├── diagtool
-│   ├── git-clang-format
-│   ├── hmaptool
-│   ├── intercept-build
-</span><span class="gp">│   ├── ld.lld -&gt;</span><span class="w"> </span>lld
-<span class="gp">│   ├── ld64.lld -&gt;</span><span class="w"> </span>lld
-<span class="gp">│   ├── ld64.lld.darwinnew -&gt;</span><span class="w"> </span>lld
-<span class="gp">│   ├── ld64.lld.darwinold -&gt;</span><span class="w"> </span>lld
-<span class="go">│   ├── lld
-</span><span class="gp">│   ├── lld-link -&gt;</span><span class="w"> </span>lld
-<span class="go">│   ├── lldb
-│   ├── lldb-argdumper
-│   ├── lldb-instr
-│   ├── lldb-server
-│   ├── lldb-vscode
-</span><span class="gp">│   ├── llvm-addr2line -&gt;</span><span class="w"> </span>llvm-symbolizer
-<span class="go">│   ├── llvm-ar
-│   ├── llvm-as
-</span><span class="gp">│   ├── llvm-bitcode-strip -&gt;</span><span class="w"> </span>llvm-objcopy
-<span class="go">│   ├── llvm-config
-│   ├── llvm-cov
-│   ├── llvm-cxxdump
-│   ├── llvm-cxxfilt
-│   ├── llvm-cxxmap
-│   ├── llvm-diff
-│   ├── llvm-dis
-</span><span class="gp">│   ├── llvm-dlltool -&gt;</span><span class="w"> </span>llvm-ar
-<span class="gp">│   ├── llvm-lib -&gt;</span><span class="w"> </span>llvm-ar
-<span class="go">│   ├── llvm-libtool-darwin
-│   ├── llvm-nm
-│   ├── llvm-objcopy
-│   ├── llvm-objdump
-</span><span class="gp">│   ├── llvm-otool -&gt;</span><span class="w"> </span>llvm-objdump
-<span class="go">│   ├── llvm-profdata
-</span><span class="gp">│   ├── llvm-ranlib -&gt;</span><span class="w"> </span>llvm-ar
-<span class="go">│   ├── llvm-rc
-</span><span class="gp">│   ├── llvm-readelf -&gt;</span><span class="w"> </span>llvm-readobj
-<span class="go">│   ├── llvm-readobj
-│   ├── llvm-sim
-│   ├── llvm-size
-│   ├── llvm-strings
-</span><span class="gp">│   ├── llvm-strip -&gt;</span><span class="w"> </span>llvm-objcopy
-<span class="go">│   ├── llvm-symbolizer
-│   ├── llvm-tapi-diff
-│   ├── llvm-tblgen
-</span><span class="gp">│   ├── llvm-windres -&gt;</span><span class="w"> </span>llvm-rc
-<span class="go">│   ├── run-clang-tidy
-│   ├── scan-build-py
-│   ├── set-xcode-analyzer
-│   ├── split-file
-</span><span class="gp">│   └── wasm-ld -&gt;</span><span class="w"> </span>lld
+│   ├── analyze-build
+</span><span class="gp">│   ├── clang -&gt;</span><span class="w"> </span>clang-13
+<span class="gp">│   ├── clang++ -&gt;</span><span class="w"> </span>clang
+<span class="go">│   ├── clang-13
+│   ├── clang-check
+</span><span class="gp">│   ├── clang-cl -&gt;</span><span class="w"> </span>clang
+<span class="gp">│   ├── clang-cpp -&gt;</span><span class="w"> </span>clang
+<span class="go">│   ├── clang-doc
+│   ├── clang-format
+│   ├── clang-offload-bundler
+│   ├── clang-offload-wrapper
+│   ├── clang-refactor
+│   ├── clang-rename
+│   ├── clang-repl
+│   ├── clang-scan-deps
+│   ├── clang-tidy
+│   ├── clangd
+│   ├── clangd-xpc-test-client
+│   ├── darwin-debug
+│   ├── diagtool
+│   ├── git-clang-format
+│   ├── hmaptool
+│   ├── intercept-build
+</span><span class="gp">│   ├── ld.lld -&gt;</span><span class="w"> </span>lld
+<span class="gp">│   ├── ld64.lld -&gt;</span><span class="w"> </span>lld
+<span class="gp">│   ├── ld64.lld.darwinnew -&gt;</span><span class="w"> </span>lld
+<span class="gp">│   ├── ld64.lld.darwinold -&gt;</span><span class="w"> </span>lld
+<span class="go">│   ├── lld
+</span><span class="gp">│   ├── lld-link -&gt;</span><span class="w"> </span>lld
+<span class="go">│   ├── lldb
+│   ├── lldb-argdumper
+│   ├── lldb-instr
+│   ├── lldb-server
+│   ├── lldb-vscode
+</span><span class="gp">│   ├── llvm-addr2line -&gt;</span><span class="w"> </span>llvm-symbolizer
+<span class="go">│   ├── llvm-ar
+│   ├── llvm-as
+</span><span class="gp">│   ├── llvm-bitcode-strip -&gt;</span><span class="w"> </span>llvm-objcopy
+<span class="go">│   ├── llvm-config
+│   ├── llvm-cov
+│   ├── llvm-cxxdump
+│   ├── llvm-cxxfilt
+│   ├── llvm-cxxmap
+│   ├── llvm-diff
+│   ├── llvm-dis
+</span><span class="gp">│   ├── llvm-dlltool -&gt;</span><span class="w"> </span>llvm-ar
+<span class="gp">│   ├── llvm-lib -&gt;</span><span class="w"> </span>llvm-ar
+<span class="go">│   ├── llvm-libtool-darwin
+│   ├── llvm-nm
+│   ├── llvm-objcopy
+│   ├── llvm-objdump
+</span><span class="gp">│   ├── llvm-otool -&gt;</span><span class="w"> </span>llvm-objdump
+<span class="go">│   ├── llvm-profdata
+</span><span class="gp">│   ├── llvm-ranlib -&gt;</span><span class="w"> </span>llvm-ar
+<span class="go">│   ├── llvm-rc
+</span><span class="gp">│   ├── llvm-readelf -&gt;</span><span class="w"> </span>llvm-readobj
+<span class="go">│   ├── llvm-readobj
+│   ├── llvm-sim
+│   ├── llvm-size
+│   ├── llvm-strings
+</span><span class="gp">│   ├── llvm-strip -&gt;</span><span class="w"> </span>llvm-objcopy
+<span class="go">│   ├── llvm-symbolizer
+│   ├── llvm-tapi-diff
+│   ├── llvm-tblgen
+</span><span class="gp">│   ├── llvm-windres -&gt;</span><span class="w"> </span>llvm-rc
+<span class="go">│   ├── run-clang-tidy
+│   ├── scan-build-py
+│   ├── set-xcode-analyzer
+│   ├── split-file
+</span><span class="gp">│   └── wasm-ld -&gt;</span><span class="w"> </span>lld
 <span class="go">├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
 ├── lib
-│   ├── LLVMPolly.so
-│   ├── clang
-│   ├── cmake
-│   ├── libLLVM.dylib
-│   ├── libLTO.dylib
-│   ├── libRemarks.dylib
-│   ├── libclang-cpp.dylib
-│   ├── libclang.dylib
-│   ├── libear
-│   ├── liblldb.13.0.1.dylib
-</span><span class="gp">│   ├── liblldb.dylib -&gt;</span><span class="w"> </span>liblldb.13.0.1.dylib
-<span class="go">│   └── libscanbuild
+│   ├── LLVMPolly.so
+│   ├── clang
+│   ├── cmake
+│   ├── libLLVM.dylib
+│   ├── libLTO.dylib
+│   ├── libRemarks.dylib
+│   ├── libclang-cpp.dylib
+│   ├── libclang.dylib
+│   ├── libear
+│   ├── liblldb.13.0.1.dylib
+</span><span class="gp">│   ├── liblldb.dylib -&gt;</span><span class="w"> </span>liblldb.13.0.1.dylib
+<span class="go">│   └── libscanbuild
 ├── libexec
-│   ├── analyze-c++
-│   ├── analyze-cc
-│   ├── c++-analyzer
-│   ├── ccc-analyzer
-│   ├── intercept-c++
-│   ├── intercept-cc
-│   ├── libLLVM.dylib
-│   ├── libclang-cpp.dylib
-│   ├── libedit.0.dylib
-│   ├── libffi.8.dylib
-│   ├── libform.6.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libiconv.2.dylib
-│   ├── liblldb.13.0.1.dylib
-│   ├── liblzma.5.dylib
-│   ├── libncurses.6.dylib
-│   ├── libpanel.6.dylib
-│   ├── libxml2.2.dylib
-│   ├── libz.1.2.11.dylib
-</span><span class="gp">│   └── libz.1.dylib -&gt;</span><span class="w"> </span>libz.1.2.11.dylib
+│   ├── analyze-c++
+│   ├── analyze-cc
+│   ├── c++-analyzer
+│   ├── ccc-analyzer
+│   ├── intercept-c++
+│   ├── intercept-cc
+│   ├── libLLVM.dylib
+│   ├── libclang-cpp.dylib
+│   ├── libedit.0.dylib
+│   ├── libffi.8.dylib
+│   ├── libform.6.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libiconv.2.dylib
+│   ├── liblldb.13.0.1.dylib
+│   ├── liblzma.5.dylib
+│   ├── libncurses.6.dylib
+│   ├── libpanel.6.dylib
+│   ├── libxml2.2.dylib
+│   ├── libz.1.2.11.dylib
+</span><span class="gp">│   └── libz.1.dylib -&gt;</span><span class="w"> </span>libz.1.2.11.dylib
 <span class="go">└── share
     ├── clang
     ├── opt-viewer
@@ -837,7 +837,7 @@ GitHub <a href="https://github.com/xpack-dev-tools/clang-xpack/releases/">releas
 
 <h3 id="download">Download</h3>
 
-<p>The GNU/Linux versions of <strong>xPack LLVM clang</strong> 
+<p>The GNU/Linux versions of <strong>xPack LLVM clang</strong>
 are packed as <code class="language-plaintext highlighter-rouge">.tar.gz</code> archives.
 Download the latest version named like:</p>
 
@@ -847,8 +847,8 @@ Download the latest version named like:</p>
   <li><code class="language-plaintext highlighter-rouge">xpack-clang-13.0.1-1-linux-arm64.tar.gz</code></li>
 </ul>
 
-<p>As the name implies, these are GNU/Linux <code class="language-plaintext highlighter-rouge">tar.gz</code> archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.</p>
+<p>As the name implies, these are GNU/Linux <code class="language-plaintext highlighter-rouge">tar.gz</code> archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.</p>
 
 <h3 id="unpack">Unpack</h3>
 
@@ -875,149 +875,149 @@ and <code class="language-plaintext highlighter-rouge">.content</code> to store 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tree <span class="nt">-L</span> 2 /home/ilg/.local/xPacks/clang/xpack-clang-13.0.1-1
 <span class="go">/home/ilg/.local/xPacks/clang/xpack-clang-13.0.1-1
 ├── bin
-│   ├── analyze-build
-</span><span class="gp">│   ├── clang -&gt;</span><span class="w"> </span>clang-13
-<span class="gp">│   ├── clang++ -&gt;</span><span class="w"> </span>clang
-<span class="go">│   ├── clang-13
-│   ├── clang-check
-</span><span class="gp">│   ├── clang-cl -&gt;</span><span class="w"> </span>clang
-<span class="gp">│   ├── clang-cpp -&gt;</span><span class="w"> </span>clang
-<span class="go">│   ├── clangd
-│   ├── clang-doc
-│   ├── clang-format
-│   ├── clang-offload-bundler
-│   ├── clang-offload-wrapper
-│   ├── clang-refactor
-│   ├── clang-rename
-│   ├── clang-repl
-│   ├── clang-scan-deps
-│   ├── clang-tidy
-│   ├── diagtool
-│   ├── dwp
-│   ├── git-clang-format
-│   ├── hmaptool
-│   ├── intercept-build
-</span><span class="gp">│   ├── ld64.lld -&gt;</span><span class="w"> </span>lld
-<span class="gp">│   ├── ld64.lld.darwinnew -&gt;</span><span class="w"> </span>lld
-<span class="gp">│   ├── ld64.lld.darwinold -&gt;</span><span class="w"> </span>lld
-<span class="go">│   ├── ld.gold
-</span><span class="gp">│   ├── ld.lld -&gt;</span><span class="w"> </span>lld
-<span class="go">│   ├── lld
-│   ├── lldb
-│   ├── lldb-argdumper
-│   ├── lldb-instr
-│   ├── lldb-server
-│   ├── lldb-vscode
-</span><span class="gp">│   ├── lld-link -&gt;</span><span class="w"> </span>lld
-<span class="gp">│   ├── llvm-addr2line -&gt;</span><span class="w"> </span>llvm-symbolizer
-<span class="go">│   ├── llvm-ar
-│   ├── llvm-as
-</span><span class="gp">│   ├── llvm-bitcode-strip -&gt;</span><span class="w"> </span>llvm-objcopy
-<span class="go">│   ├── llvm-config
-│   ├── llvm-cov
-│   ├── llvm-cxxdump
-│   ├── llvm-cxxfilt
-│   ├── llvm-cxxmap
-│   ├── llvm-diff
-│   ├── llvm-dis
-</span><span class="gp">│   ├── llvm-dlltool -&gt;</span><span class="w"> </span>llvm-ar
-<span class="gp">│   ├── llvm-lib -&gt;</span><span class="w"> </span>llvm-ar
-<span class="go">│   ├── llvm-libtool-darwin
-│   ├── llvm-nm
-│   ├── llvm-objcopy
-│   ├── llvm-objdump
-</span><span class="gp">│   ├── llvm-otool -&gt;</span><span class="w"> </span>llvm-objdump
-<span class="go">│   ├── llvm-profdata
-</span><span class="gp">│   ├── llvm-ranlib -&gt;</span><span class="w"> </span>llvm-ar
-<span class="go">│   ├── llvm-rc
-</span><span class="gp">│   ├── llvm-readelf -&gt;</span><span class="w"> </span>llvm-readobj
-<span class="go">│   ├── llvm-readobj
-│   ├── llvm-sim
-│   ├── llvm-size
-│   ├── llvm-strings
-</span><span class="gp">│   ├── llvm-strip -&gt;</span><span class="w"> </span>llvm-objcopy
-<span class="go">│   ├── llvm-symbolizer
-│   ├── llvm-tapi-diff
-│   ├── llvm-tblgen
-</span><span class="gp">│   ├── llvm-windres -&gt;</span><span class="w"> </span>llvm-rc
-<span class="go">│   ├── run-clang-tidy
-│   ├── scan-build-py
-│   ├── split-file
-</span><span class="gp">│   └── wasm-ld -&gt;</span><span class="w"> </span>lld
+│   ├── analyze-build
+</span><span class="gp">│   ├── clang -&gt;</span><span class="w"> </span>clang-13
+<span class="gp">│   ├── clang++ -&gt;</span><span class="w"> </span>clang
+<span class="go">│   ├── clang-13
+│   ├── clang-check
+</span><span class="gp">│   ├── clang-cl -&gt;</span><span class="w"> </span>clang
+<span class="gp">│   ├── clang-cpp -&gt;</span><span class="w"> </span>clang
+<span class="go">│   ├── clangd
+│   ├── clang-doc
+│   ├── clang-format
+│   ├── clang-offload-bundler
+│   ├── clang-offload-wrapper
+│   ├── clang-refactor
+│   ├── clang-rename
+│   ├── clang-repl
+│   ├── clang-scan-deps
+│   ├── clang-tidy
+│   ├── diagtool
+│   ├── dwp
+│   ├── git-clang-format
+│   ├── hmaptool
+│   ├── intercept-build
+</span><span class="gp">│   ├── ld64.lld -&gt;</span><span class="w"> </span>lld
+<span class="gp">│   ├── ld64.lld.darwinnew -&gt;</span><span class="w"> </span>lld
+<span class="gp">│   ├── ld64.lld.darwinold -&gt;</span><span class="w"> </span>lld
+<span class="go">│   ├── ld.gold
+</span><span class="gp">│   ├── ld.lld -&gt;</span><span class="w"> </span>lld
+<span class="go">│   ├── lld
+│   ├── lldb
+│   ├── lldb-argdumper
+│   ├── lldb-instr
+│   ├── lldb-server
+│   ├── lldb-vscode
+</span><span class="gp">│   ├── lld-link -&gt;</span><span class="w"> </span>lld
+<span class="gp">│   ├── llvm-addr2line -&gt;</span><span class="w"> </span>llvm-symbolizer
+<span class="go">│   ├── llvm-ar
+│   ├── llvm-as
+</span><span class="gp">│   ├── llvm-bitcode-strip -&gt;</span><span class="w"> </span>llvm-objcopy
+<span class="go">│   ├── llvm-config
+│   ├── llvm-cov
+│   ├── llvm-cxxdump
+│   ├── llvm-cxxfilt
+│   ├── llvm-cxxmap
+│   ├── llvm-diff
+│   ├── llvm-dis
+</span><span class="gp">│   ├── llvm-dlltool -&gt;</span><span class="w"> </span>llvm-ar
+<span class="gp">│   ├── llvm-lib -&gt;</span><span class="w"> </span>llvm-ar
+<span class="go">│   ├── llvm-libtool-darwin
+│   ├── llvm-nm
+│   ├── llvm-objcopy
+│   ├── llvm-objdump
+</span><span class="gp">│   ├── llvm-otool -&gt;</span><span class="w"> </span>llvm-objdump
+<span class="go">│   ├── llvm-profdata
+</span><span class="gp">│   ├── llvm-ranlib -&gt;</span><span class="w"> </span>llvm-ar
+<span class="go">│   ├── llvm-rc
+</span><span class="gp">│   ├── llvm-readelf -&gt;</span><span class="w"> </span>llvm-readobj
+<span class="go">│   ├── llvm-readobj
+│   ├── llvm-sim
+│   ├── llvm-size
+│   ├── llvm-strings
+</span><span class="gp">│   ├── llvm-strip -&gt;</span><span class="w"> </span>llvm-objcopy
+<span class="go">│   ├── llvm-symbolizer
+│   ├── llvm-tapi-diff
+│   ├── llvm-tblgen
+</span><span class="gp">│   ├── llvm-windres -&gt;</span><span class="w"> </span>llvm-rc
+<span class="go">│   ├── run-clang-tidy
+│   ├── scan-build-py
+│   ├── split-file
+</span><span class="gp">│   └── wasm-ld -&gt;</span><span class="w"> </span>lld
 <span class="go">├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── c++
+│   └── c++
 ├── lib
-│   ├── clang
-│   ├── cmake
-│   ├── libc++.a
-│   ├── libc++abi.a
-</span><span class="gp">│   ├── libc++abi.so -&gt;</span><span class="w"> </span>libc++abi.so.1
-<span class="gp">│   ├── libc++abi.so.1 -&gt;</span><span class="w"> </span>libc++abi.so.1.0
-<span class="go">│   ├── libc++abi.so.1.0
-│   ├── libc++experimental.a
-</span><span class="gp">│   ├── libclang-cpp.so -&gt;</span><span class="w"> </span>libclang-cpp.so.13
-<span class="go">│   ├── libclang-cpp.so.13
-</span><span class="gp">│   ├── libclang.so -&gt;</span><span class="w"> </span>libclang.so.13
-<span class="gp">│   ├── libclang.so.13 -&gt;</span><span class="w"> </span>libclang.so.13.0.1
-<span class="go">│   ├── libclang.so.13.0.1
-│   ├── libc++.so
-</span><span class="gp">│   ├── libc++.so.1 -&gt;</span><span class="w"> </span>libc++.so.1.0
-<span class="go">│   ├── libc++.so.1.0
-│   ├── libear
-</span><span class="gp">│   ├── liblldbIntelFeatures.so -&gt;</span><span class="w"> </span>liblldbIntelFeatures.so.13
-<span class="go">│   ├── liblldbIntelFeatures.so.13
-</span><span class="gp">│   ├── liblldb.so -&gt;</span><span class="w"> </span>liblldb.so.13
-<span class="gp">│   ├── liblldb.so.13 -&gt;</span><span class="w"> </span>liblldb.so.13.0.1
-<span class="go">│   ├── liblldb.so.13.0.1
-</span><span class="gp">│   ├── libLLVM-13.0.1.so -&gt;</span><span class="w"> </span>libLLVM-13.so
-<span class="go">│   ├── libLLVM-13.so
-</span><span class="gp">│   ├── libLLVM.so -&gt;</span><span class="w"> </span>libLLVM-13.so
-<span class="gp">│   ├── libLTO.so -&gt;</span><span class="w"> </span>libLTO.so.13
-<span class="go">│   ├── libLTO.so.13
-</span><span class="gp">│   ├── libRemarks.so -&gt;</span><span class="w"> </span>libRemarks.so.13
-<span class="go">│   ├── libRemarks.so.13
-│   ├── libscanbuild
-│   ├── libunwind.a
-</span><span class="gp">│   ├── libunwind.so -&gt;</span><span class="w"> </span>libunwind.so.1
-<span class="gp">│   ├── libunwind.so.1 -&gt;</span><span class="w"> </span>libunwind.so.1.0
-<span class="go">│   ├── libunwind.so.1.0
-│   ├── LLVMgold.so
-│   └── LLVMPolly.so
+│   ├── clang
+│   ├── cmake
+│   ├── libc++.a
+│   ├── libc++abi.a
+</span><span class="gp">│   ├── libc++abi.so -&gt;</span><span class="w"> </span>libc++abi.so.1
+<span class="gp">│   ├── libc++abi.so.1 -&gt;</span><span class="w"> </span>libc++abi.so.1.0
+<span class="go">│   ├── libc++abi.so.1.0
+│   ├── libc++experimental.a
+</span><span class="gp">│   ├── libclang-cpp.so -&gt;</span><span class="w"> </span>libclang-cpp.so.13
+<span class="go">│   ├── libclang-cpp.so.13
+</span><span class="gp">│   ├── libclang.so -&gt;</span><span class="w"> </span>libclang.so.13
+<span class="gp">│   ├── libclang.so.13 -&gt;</span><span class="w"> </span>libclang.so.13.0.1
+<span class="go">│   ├── libclang.so.13.0.1
+│   ├── libc++.so
+</span><span class="gp">│   ├── libc++.so.1 -&gt;</span><span class="w"> </span>libc++.so.1.0
+<span class="go">│   ├── libc++.so.1.0
+│   ├── libear
+</span><span class="gp">│   ├── liblldbIntelFeatures.so -&gt;</span><span class="w"> </span>liblldbIntelFeatures.so.13
+<span class="go">│   ├── liblldbIntelFeatures.so.13
+</span><span class="gp">│   ├── liblldb.so -&gt;</span><span class="w"> </span>liblldb.so.13
+<span class="gp">│   ├── liblldb.so.13 -&gt;</span><span class="w"> </span>liblldb.so.13.0.1
+<span class="go">│   ├── liblldb.so.13.0.1
+</span><span class="gp">│   ├── libLLVM-13.0.1.so -&gt;</span><span class="w"> </span>libLLVM-13.so
+<span class="go">│   ├── libLLVM-13.so
+</span><span class="gp">│   ├── libLLVM.so -&gt;</span><span class="w"> </span>libLLVM-13.so
+<span class="gp">│   ├── libLTO.so -&gt;</span><span class="w"> </span>libLTO.so.13
+<span class="go">│   ├── libLTO.so.13
+</span><span class="gp">│   ├── libRemarks.so -&gt;</span><span class="w"> </span>libRemarks.so.13
+<span class="go">│   ├── libRemarks.so.13
+│   ├── libscanbuild
+│   ├── libunwind.a
+</span><span class="gp">│   ├── libunwind.so -&gt;</span><span class="w"> </span>libunwind.so.1
+<span class="gp">│   ├── libunwind.so.1 -&gt;</span><span class="w"> </span>libunwind.so.1.0
+<span class="go">│   ├── libunwind.so.1.0
+│   ├── LLVMgold.so
+│   └── LLVMPolly.so
 ├── libexec
-│   ├── analyze-c++
-│   ├── analyze-cc
-│   ├── c++-analyzer
-│   ├── ccc-analyzer
-│   ├── intercept-c++
-│   ├── intercept-cc
-</span><span class="gp">│   ├── libatomic.so.1 -&gt;</span><span class="w"> </span>libatomic.so.1.2.0
-<span class="go">│   ├── libatomic.so.1.2.0
-</span><span class="gp">│   ├── libedit.so.0 -&gt;</span><span class="w"> </span>libedit.so.0.0.68
-<span class="go">│   ├── libedit.so.0.0.68
-</span><span class="gp">│   ├── libffi.so.8 -&gt;</span><span class="w"> </span>libffi.so.8.1.0
-<span class="go">│   ├── libffi.so.8.1.0
-</span><span class="gp">│   ├── libform.so.6 -&gt;</span><span class="w"> </span>libform.so.6.3
-<span class="go">│   ├── libform.so.6.3
-│   ├── libgcc_s.so.1
-</span><span class="gp">│   ├── libiconv.so.2 -&gt;</span><span class="w"> </span>libiconv.so.2.6.1
-<span class="go">│   ├── libiconv.so.2.6.1
-</span><span class="gp">│   ├── liblzma.so.5 -&gt;</span><span class="w"> </span>liblzma.so.5.2.5
-<span class="go">│   ├── liblzma.so.5.2.5
-</span><span class="gp">│   ├── libncurses.so.6 -&gt;</span><span class="w"> </span>libncurses.so.6.3
-<span class="go">│   ├── libncurses.so.6.3
-</span><span class="gp">│   ├── libpanel.so.6 -&gt;</span><span class="w"> </span>libpanel.so.6.3
-<span class="go">│   ├── libpanel.so.6.3
-</span><span class="gp">│   ├── libstdc++.so.6 -&gt;</span><span class="w"> </span>libstdc++.so.6.0.29
-<span class="go">│   ├── libstdc++.so.6.0.29
-</span><span class="gp">│   ├── libxml2.so.2 -&gt;</span><span class="w"> </span>libxml2.so.2.9.11
-<span class="go">│   ├── libxml2.so.2.9.11
-</span><span class="gp">│   ├── libz.so.1 -&gt;</span><span class="w"> </span>libz.so.1.2.11
-<span class="go">│   └── libz.so.1.2.11
+│   ├── analyze-c++
+│   ├── analyze-cc
+│   ├── c++-analyzer
+│   ├── ccc-analyzer
+│   ├── intercept-c++
+│   ├── intercept-cc
+</span><span class="gp">│   ├── libatomic.so.1 -&gt;</span><span class="w"> </span>libatomic.so.1.2.0
+<span class="go">│   ├── libatomic.so.1.2.0
+</span><span class="gp">│   ├── libedit.so.0 -&gt;</span><span class="w"> </span>libedit.so.0.0.68
+<span class="go">│   ├── libedit.so.0.0.68
+</span><span class="gp">│   ├── libffi.so.8 -&gt;</span><span class="w"> </span>libffi.so.8.1.0
+<span class="go">│   ├── libffi.so.8.1.0
+</span><span class="gp">│   ├── libform.so.6 -&gt;</span><span class="w"> </span>libform.so.6.3
+<span class="go">│   ├── libform.so.6.3
+│   ├── libgcc_s.so.1
+</span><span class="gp">│   ├── libiconv.so.2 -&gt;</span><span class="w"> </span>libiconv.so.2.6.1
+<span class="go">│   ├── libiconv.so.2.6.1
+</span><span class="gp">│   ├── liblzma.so.5 -&gt;</span><span class="w"> </span>liblzma.so.5.2.5
+<span class="go">│   ├── liblzma.so.5.2.5
+</span><span class="gp">│   ├── libncurses.so.6 -&gt;</span><span class="w"> </span>libncurses.so.6.3
+<span class="go">│   ├── libncurses.so.6.3
+</span><span class="gp">│   ├── libpanel.so.6 -&gt;</span><span class="w"> </span>libpanel.so.6.3
+<span class="go">│   ├── libpanel.so.6.3
+</span><span class="gp">│   ├── libstdc++.so.6 -&gt;</span><span class="w"> </span>libstdc++.so.6.0.29
+<span class="go">│   ├── libstdc++.so.6.0.29
+</span><span class="gp">│   ├── libxml2.so.2 -&gt;</span><span class="w"> </span>libxml2.so.2.9.11
+<span class="go">│   ├── libxml2.so.2.9.11
+</span><span class="gp">│   ├── libz.so.1 -&gt;</span><span class="w"> </span>libz.so.1.2.11
+<span class="go">│   └── libz.so.1.2.11
 ├── README.md
 └── share
     ├── clang
@@ -1061,7 +1061,7 @@ the user or system path!</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2024 Liviu Ionescu. All rights reserved. <br />
-<span>Page last updated:</span> Aug 3, 2024<br/> Site last generated: Aug 3, 2024 <br />
+<span>Page last updated:</span> Aug 6, 2024<br/> Site last generated: Aug 6, 2024 <br />
                 </div>
             </div>
 </footer>
