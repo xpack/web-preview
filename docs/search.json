@@ -1394,6 +1394,26 @@
 
 
 {
+"title": "xPack xpm v0.19.4 released",
+"tags": "releasesxpmpackagemanager",
+"keywords": "",
+"url": "/web-preview/blog/2024/10/19/xpm-v0-19-4-released/",
+"summary": "<p>Version <strong>0.19.4</strong> is a maintenance release, it fixes the HttpsProxyAgent import.</p>"
+}
+,
+
+
+{
+"title": "xPack xpm v0.19.3 released",
+"tags": "releasesxpmpackagemanager",
+"keywords": "",
+"url": "/web-preview/blog/2024/08/15/xpm-v0-19-3-released/",
+"summary": "<p>Version <strong>0.19.3</strong> is a maintenance release, it fixes shims on Windows (the ld.gold issue).</p>"
+}
+,
+
+
+{
 "title": "xPack xpm v0.19.2 released",
 "tags": "releasesxpmpackagemanager",
 "keywords": "",
