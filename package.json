@@ -1,0 +1,46 @@
+{
+  "name": "web-preview",
+  "version": "0.0.0",
+  "description": "Website preview for the xPack project",
+  "main": "",
+  "scripts": {
+    "npm-install": "npm install",
+    "npm-link-helpers": "npm link @xpack/npm-packages-helper @xpack/docusaurus-template-liquid",
+    "npm-link": "npm link",
+    "npm-outdated": "npm outdated",
+    "npm-update": "npm update",
+    "deep-clean": "del-cli node_modules package-lock.json",
+    "generate-top-commons": "bash node_modules/@xpack/npm-packages-helper/maintenance-scripts/generate-top-commons.sh --xpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpack/xpm.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Liviu Ionescu",
+    "email": "ilg@livius.net",
+    "url": "https://github.com/ilg-ul"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xpack/xpm/issues"
+  },
+  "homepage": "https://xpack.github.io/xpm/",
+  "dependencies": {},
+  "devDependencies": {
+    "json": "^11.0.0",
+    "liquidjs": "^10.19.1",
+    "del-cli": "^6.0.0"
+  },
+  "bundleDependencies": [],
+  "config": {
+    "isWebDeployOnly": "true",
+    "websiteRepo": "xpack/xpack.github.io",
+    "websiteRepoBranch": "master"
+  },
+  "engines": {
+    "node": " >=18.0.0"
+  }
+}
