@@ -61,7 +61,7 @@ jobs:
 
       - name: Build the Docusaurus site
         env:
-          DOCUSAURUS_BASEURL: '/xpm/'
+          DOCUSAURUS_BASEURL: '/web-preview/'
         run: cd website && npm run build
 
       - name: Setup Pages
