@@ -46,7 +46,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: 'xpack/xpack.github.io'
-          ref: 'master'
+          ref: 'website'
           # The full history, required to compute lastUpdatedAt
           fetch-depth: 0
 
