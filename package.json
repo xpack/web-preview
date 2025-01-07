@@ -30,9 +30,9 @@
   "homepage": "https://xpack.github.io/web-preview/",
   "dependencies": {},
   "devDependencies": {
+    "del-cli": "^6.0.0",
     "json": "^11.0.0",
-    "liquidjs": "^10.19.1",
-    "del-cli": "^6.0.0"
+    "liquidjs": "^10.19.1"
   },
   "bundleDependencies": [],
   "config": {

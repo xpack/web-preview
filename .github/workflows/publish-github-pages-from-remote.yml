@@ -20,6 +20,13 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      repository:
+        description: The GitHub repository with the web content
+        required: true
+      ref:
+        description: The branch with the web content
+        required: true
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -45,8 +52,8 @@ jobs:
         # https://github.com/actions/checkout
         uses: actions/checkout@v4
         with:
-          repository: 'xpack/xpack.github.io'
-          ref: 'website'
+          repository: '${{ inputs.repository }}'
+          ref: '${{ inputs.ref }}'
           # The full history, required to compute lastUpdatedAt
           fetch-depth: 0
 
