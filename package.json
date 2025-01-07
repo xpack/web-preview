@@ -37,9 +37,7 @@
   "bundleDependencies": [],
   "config": {
     "isWebDeployOnly": "true",
-    "isWebPreview": "true",
-    "websiteRepo": "xpack/xpack.github.io",
-    "websiteRepoBranch": "master"
+    "isWebPreview": "true"
   },
   "engines": {
     "node": " >=18.0.0"
